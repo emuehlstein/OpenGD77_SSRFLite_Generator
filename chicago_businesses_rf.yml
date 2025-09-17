@@ -1,0 +1,604 @@
+chicago_businesses_rf:
+  location_anchor:
+    name: "Rosehill Cemetery"
+    address: "5800 N Ravenswood Ave, Chicago, IL 60660"
+    lat: 41.98668
+    lon: -87.67519
+    notes: "Anchor point on Chicago’s north side for proximity/context."
+
+  channels:
+    - group: "Theaters"
+      entries:
+        - {
+            freq_mhz:
+              [452.1125, 451.6625, 452.8375, 451.7125, 452.4125, 452.8125],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "AMC (multiple sites)",
+            description: "Mobiles/portables; site mixes by location",
+            mode: "NFM",
+            tag: "Business",
+          }
+        - {
+            freq_mhz: [451.2375, 451.4125, 456.2375, 456.4125, 457.1875],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Harper Theatre",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Business",
+          }
+
+    - group: "Retail"
+      entries:
+        - {
+            freq_mhz:
+              [
+                451.3625,
+                452.0375,
+                452.6375,
+                452.7875,
+                452.8625,
+                452.9875,
+                456.3625,
+                457.0375,
+                457.6375,
+                457.7875,
+                457.8625,
+                457.9875,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "American Girl Place (835 N Michigan)",
+            description: "Portables",
+            mode: "NFM/DMR",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz: [457.250, 466.025, 466.125, 466.300, 466.350],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Cook Brothers (1740 N Kostner)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz: [151.655, 151.955],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Costco (2746 N Clybourn)",
+            description: "Portables",
+            mode: "NFM",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz:
+              [
+                452.125,
+                452.225,
+                461.200,
+                464.975,
+                451.3125,
+                452.0625,
+                452.1375,
+                462.1875,
+                462.5125,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Macy's (111 N State)",
+            description: "Repeaters + portables",
+            mode: "NFM",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz:
+              [
+                452.2125,
+                461.4625,
+                451.4375,
+                451.5375,
+                451.5625,
+                451.5875,
+                451.6375,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Macy's (835 N Michigan)",
+            description: "Repeaters + portables",
+            mode: "NFM",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz: [466.025, 467.200, 467.375],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Nike Store (669 N Michigan)",
+            description: "Portables",
+            mode: "NFM",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz: [452.625, 462.075, 464.6125, 464.650, 469.650],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Nordstrom (24 N State)",
+            description: "Portables",
+            mode: "NFM/DMR",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz:
+              [
+                463.8375,
+                464.6125,
+                464.0875,
+                464.2625,
+                467.850,
+                467.875,
+                467.900,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Nordstrom (55 E Grand)",
+            description: "Repeaters + portables",
+            mode: "NFM",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz: [452.625, 462.075, 464.6125, 464.650, 469.650],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Nordstrom Rack (24 N State)",
+            description: "Portables",
+            mode: "NFM",
+            tag: "Retail",
+          }
+        - {
+            freq_mhz: [463.8375, 464.0875, 464.2625, 464.6125, 467.7625],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Nordstrom Rack (101 E Chicago Ave)",
+            description: "Portables",
+            mode: "NFM",
+            tag: "Retail",
+          }
+
+    - group: "Hotels"
+      entries:
+        - {
+            freq_mhz: [466.300, 466.325, 466.350, 466.375, 466.3875],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "AC Hotel Chicago Downtown (630 N Rush)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [452.8875, 457.8875, 462.2125, 462.2375, 467.4125],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Ace Hotel (311 N Morgan)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [
+                451.55,
+                461.825,
+                462.200,
+                463.725,
+                462.1625,
+                463.4125,
+                464.325,
+                464.4125,
+                464.4375,
+                464.450,
+                464.475,
+                464.800,
+                467.1625,
+                468.4125,
+                469.4375,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Allegro Royal Sonesta (171 W Randolph)",
+            description: "Repeaters + portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [456.7375, 457.6625, 456.5625, 456.6875, 457.4875, 457.6375],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Ambassador East (1301 N State Pkwy)",
+            description: "Portables",
+            mode: "NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [457.150, 457.175, 457.275, 457.400, 457.550],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Best Western Grant Park (1100 S Michigan)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [463.5875, 452.6875, 452.9875, 456.5625, 456.6625, 457.8375],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Drake Hotel",
+            description: "Repeater + portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [464.1250, 466.300, 466.275, 466.250, 466.225, 466.200],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Embassy Suites Downtown/Lakefront (511 N Columbus)",
+            description: "Repeater + portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [
+                462.1125,
+                457.000,
+                457.100,
+                457.225,
+                457.350,
+                468.825,
+                463.6875,
+                451.3375,
+                452.6625,
+                461.475,
+                464.800,
+                464.850,
+                466.5375,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Essex Inn (808 S Michigan)",
+            description: "Repeaters + portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [
+                451.1875,
+                451.4625,
+                451.7375,
+                452.0625,
+                452.4875,
+                464.8750,
+                466.3250,
+                466.3500,
+                466.5375,
+                466.5875,
+                469.8125,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Fairmont Chicago (200 N Columbus)",
+            description: "Repeaters + portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [
+                456.6875,
+                457.3125,
+                456.7375,
+                457.8125,
+                456.7675,
+                457.8375,
+                461.9125,
+                464.6625,
+                467.4125,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "The Gwen (521 N Rush) + PSAV A/V",
+            description: "Portables (hotel + A/V)",
+            mode: "DMR/NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [456.8625, 466.5875, 466.875, 467.275, 468.225],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hampton Inn West Loop (116 N Jefferson)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [
+                461.375,
+                461.4375,
+                461.9125,
+                461.9625,
+                462.0125,
+                462.0375,
+                462.0625,
+                462.1125,
+                466.225,
+                466.4375,
+                466.9125,
+                466.9625,
+                467.0125,
+                467.0375,
+                467.0625,
+                467.1125,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hilton Chicago (720 S Michigan)",
+            description: "Repeater + portables",
+            mode: "NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [464.2375, 467.7625, 467.7875, 467.8125, 469.2375],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hilton Garden Inn Magnificent Mile (10 E Grand)",
+            description: "Portables",
+            mode: "NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [463.2375, 464.0125, 457.050, 457.100, 457.350, 468.250, 468.875],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hilton Garden Inn McCormick Place (123 E Cermak)",
+            description: "Repeaters + portables",
+            mode: "DMR/NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [464.0125, 464.275, 456.875, 457.100, 457.350, 468.200],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hilton Garden Inn South Loop (55 E 11th)",
+            description: "Repeaters + portables",
+            mode: "DMR/NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [463.4125, 464.9500],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hilton Suites Mag Mile (198 E Delaware)",
+            description: "Repeaters",
+            mode: "NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [456.8625, 466.5875, 466.875, 467.275, 468.225],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Homewood Suites West Loop (118 N Jefferson)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [452.1875, 452.4875, 456.5125, 457.1875, 457.4875],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hotel Audrey (166 E Superior)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [451.8875, 464.6625, 467.0125, 467.250, 468.325, 469.950],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hotel Blake (500 S Dearborn)",
+            description: "Repeater + portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [457.050, 457.250, 457.350, 468.250, 468.875],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hotel Eurostars Mag Mile (660 N State)",
+            description: "Portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [463.700, 463.8875],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hotel Intercontinental (505 N Michigan)",
+            description: "Encrypted MotoTRBO Capacity Plus (trunked DMR)",
+            mode: "DMR (trunked)",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [464.3875],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hotel Julian (168 N Michigan)",
+            description: "Repeater (DMR), site notes suggest CC5/TGs on-site",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [462.200, 462.400, 463.575, 464.150, 464.750],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hotel Palomar (505 N State)",
+            description: "Repeaters (DMR/NFM); 464.15 noted DMR CC4",
+            mode: "DMR/NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [457.200, 457.450, 457.800, 466.050, 466.250],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hotel Zachary (3630 N Clark)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [
+                452.225,
+                464.3125,
+                462.1875,
+                462.2875,
+                462.4125,
+                462.4625,
+                467.100,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "The Hoxton (200 N Green)",
+            description: "Repeaters + portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [452.8625, 457.8625],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hyatt Place Chicago South / UMC (5225 S Harper)",
+            description: "Portables (15–4 W)",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [
+                463.4250,
+                454.0250,
+                464.2250,
+                464.3750,
+                464.5250,
+                464.7750,
+                464.9250,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hyatt Regency Chicago (151 E Wacker)",
+            description: "Repeaters",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [462.500, 463.6125, 464.125, 468.6125],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Hyatt Regency McCormick Place",
+            description: "Also on Capacity Plus multi-site (trunked DMR)",
+            mode: "DMR/NFM",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [463.375],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "JW Marriott Chicago (151 E Adams)",
+            description: "Repeater",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [457.350, 452.350, 452.3875, 457.3875, 457.725],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Kimpton Gray (122 W Monroe)",
+            description: "Mobiles/portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [466.400, 466.7875, 466.850, 467.100, 467.500],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "The LaSalle Chicago (208 S LaSalle)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz: [456.325, 457.450, 457.800, 466.075, 466.125],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Level Chicago – Fulton Market (354 N Union)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel/Residential",
+          }
+        - {
+            freq_mhz:
+              [
+                456.875,
+                457.000,
+                457.050,
+                457.325,
+                457.350,
+                466.600,
+                466.725,
+                466.900,
+                466.925,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "London House (85 E Wacker)",
+            description: "Portables",
+            mode: "DMR",
+            tag: "Hotel",
+          }
+        - {
+            freq_mhz:
+              [
+                461.400,
+                463.2375,
+                462.075,
+                462.4875,
+                461.475,
+                463.9125,
+                464.9375,
+              ],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Marriott Hotel Services (540 N Michigan)",
+            description: "Repeaters + portables",
+            mode: "NFM/DMR",
+            tag: "Hotel",
+          }
+
+    - group: "Miscellaneous (Parking / Property Mgmt / Security — sample)"
+      entries:
+        # This section in the source includes many subcategories; here’s a small sample.
+        - {
+            freq_mhz: [461.9125, 464.6625, 467.4125],
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "PSAV / Audio Visual (various hotels)",
+            description: "Hotel A/V operations",
+            mode: "NFM/DMR",
+            tag: "A/V",
+          }
+        # Add more from the PDF as needed for your project taxonomy

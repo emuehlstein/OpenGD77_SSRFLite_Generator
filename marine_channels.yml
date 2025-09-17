@@ -1,0 +1,375 @@
+us_marine_vhf_channels:
+  notes: "Full list of U.S. VHF Marine Band channels (156–162 MHz). FM (16K0F3E). Typical ship power ≤25 W. 'A' channels are U.S. simplex. Core set commonly used by recreational/safety traffic."
+
+  channels:
+    - {
+        ch: "01A",
+        channel_name: "MRN 01A",
+        freq_mhz: 156.050,
+        description: "Port Operations / Vessel Traffic",
+        tag: extra,
+      }
+    - {
+        ch: "02A",
+        channel_name: "MRN 02A",
+        freq_mhz: 156.100,
+        description: "Port Operations / Vessel Traffic",
+        tag: extra,
+      }
+    - {
+        ch: "03A",
+        channel_name: "MRN 03A",
+        freq_mhz: 156.150,
+        description: "Port Operations / Vessel Traffic",
+        tag: extra,
+      }
+    - {
+        ch: "04A",
+        channel_name: "MRN 04A",
+        freq_mhz: 156.200,
+        description: "Port Operations",
+        tag: extra,
+      }
+    - {
+        ch: "05A",
+        channel_name: "MRN 05A",
+        freq_mhz: 156.250,
+        description: "Port Operations / Vessel Traffic",
+        tag: extra,
+      }
+    - {
+        ch: "06",
+        channel_name: "MRN 06 S2S",
+        freq_mhz: 156.300,
+        description: "Intership Safety (ship-to-ship only)",
+        tag: core,
+      }
+    - {
+        ch: "07A",
+        channel_name: "MRN 07A",
+        freq_mhz: 156.350,
+        description: "Commercial",
+        tag: extra,
+      }
+    - {
+        ch: "08",
+        channel_name: "MRN 08",
+        freq_mhz: 156.400,
+        description: "Commercial (ship-to-ship only)",
+        tag: extra,
+      }
+    - {
+        ch: "09",
+        channel_name: "MRN 09 B2B",
+        freq_mhz: 156.450,
+        description: "Commercial & Non-Commercial (Bridge-to-Bridge)",
+        tag: core,
+      }
+    - {
+        ch: "10",
+        channel_name: "MRN 10",
+        freq_mhz: 156.500,
+        description: "Commercial",
+        tag: extra,
+      }
+    - {
+        ch: "11",
+        channel_name: "MRN 11",
+        freq_mhz: 156.550,
+        description: "Port Operations / Vessel Traffic",
+        tag: extra,
+      }
+    - {
+        ch: "12",
+        channel_name: "MRN 12",
+        freq_mhz: 156.600,
+        description: "Port Operations / Vessel Traffic",
+        tag: extra,
+      }
+    - {
+        ch: "13",
+        channel_name: "MRN 13 NAV",
+        freq_mhz: 156.650,
+        description: "Bridge-to-Bridge Navigation Safety",
+        tag: core,
+      }
+    - {
+        ch: "14",
+        channel_name: "MRN 14",
+        freq_mhz: 156.700,
+        description: "Port Operations / Vessel Traffic",
+        tag: extra,
+      }
+    - {
+        ch: "15",
+        channel_name: "MRN 15",
+        freq_mhz: 156.750,
+        description: "Environmental (low power only)",
+        tag: extra,
+      }
+    - {
+        ch: "16",
+        channel_name: "MRN 16 EMERG",
+        freq_mhz: 156.800,
+        description: "Distress, Safety, Calling (International)",
+        tag: core,
+      }
+    - {
+        ch: "17",
+        channel_name: "MRN 17",
+        freq_mhz: 156.850,
+        description: "State and Local Government / Ship",
+        tag: extra,
+      }
+    - {
+        ch: "18A",
+        channel_name: "MRN 18A",
+        freq_mhz: 156.900,
+        description: "Commercial",
+        tag: extra,
+      }
+    - {
+        ch: "19A",
+        channel_name: "MRN 19A",
+        freq_mhz: 156.950,
+        description: "Commercial",
+        tag: extra,
+      }
+    - {
+        ch: "20A",
+        channel_name: "MRN 20A",
+        freq_mhz: 157.000,
+        description: "Port Operations",
+        tag: extra,
+      }
+    - {
+        ch: "21A",
+        channel_name: "MRN 21A",
+        freq_mhz: 157.050,
+        description: "USCG Liaison",
+        tag: extra,
+      }
+    - {
+        ch: "22A",
+        channel_name: "MRN 22A USCG",
+        freq_mhz: 157.100,
+        description: "U.S. Coast Guard liaison (after hailing on 16)",
+        tag: core,
+      }
+    - {
+        ch: "23A",
+        channel_name: "MRN 23A",
+        freq_mhz: 157.150,
+        description: "USCG only",
+        tag: extra,
+      }
+    - {
+        ch: "24",
+        channel_name: "MRN 24",
+        freq_mhz: 157.200,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "25",
+        channel_name: "MRN 25",
+        freq_mhz: 157.250,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "26",
+        channel_name: "MRN 26",
+        freq_mhz: 157.300,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "27",
+        channel_name: "MRN 27",
+        freq_mhz: 157.350,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "28",
+        channel_name: "MRN 28",
+        freq_mhz: 157.400,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "63A",
+        channel_name: "MRN 63A",
+        freq_mhz: 156.175,
+        description: "Port Operations / Vessel Traffic",
+        tag: extra,
+      }
+    - {
+        ch: "65A",
+        channel_name: "MRN 65A",
+        freq_mhz: 156.275,
+        description: "Port Operations",
+        tag: extra,
+      }
+    - {
+        ch: "66A",
+        channel_name: "MRN 66A",
+        freq_mhz: 156.325,
+        description: "Port Operations",
+        tag: extra,
+      }
+    - {
+        ch: "67",
+        channel_name: "MRN 67 B2B",
+        freq_mhz: 156.375,
+        description: "Bridge-to-Bridge (Intership only)",
+        tag: extra,
+      }
+    - {
+        ch: "68",
+        channel_name: "MRN 68 REC",
+        freq_mhz: 156.425,
+        description: "Non-Commercial",
+        tag: core,
+      }
+    - {
+        ch: "69",
+        channel_name: "MRN 69 REC",
+        freq_mhz: 156.475,
+        description: "Non-Commercial",
+        tag: core,
+      }
+    - {
+        ch: "70",
+        channel_name: "MRN 70",
+        freq_mhz: 156.525,
+        description: "Digital Selective Calling (DSC)",
+        tag: extra,
+      }
+    - {
+        ch: "71",
+        channel_name: "MRN 71 REC",
+        freq_mhz: 156.575,
+        description: "Non-Commercial",
+        tag: core,
+      }
+    - {
+        ch: "72",
+        channel_name: "MRN 72 S2S",
+        freq_mhz: 156.625,
+        description: "Non-Commercial (Intership only)",
+        tag: core,
+      }
+    - {
+        ch: "73",
+        channel_name: "MRN 73",
+        freq_mhz: 156.675,
+        description: "Port Operations",
+        tag: extra,
+      }
+    - {
+        ch: "74",
+        channel_name: "MRN 74",
+        freq_mhz: 156.725,
+        description: "Port Operations",
+        tag: extra,
+      }
+    - {
+        ch: "75",
+        channel_name: "MRN 75",
+        freq_mhz: 156.775,
+        description: "Environmental (low power only)",
+        tag: extra,
+      }
+    - {
+        ch: "76",
+        channel_name: "MRN 76",
+        freq_mhz: 156.825,
+        description: "Environmental (low power only)",
+        tag: extra,
+      }
+    - {
+        ch: "77",
+        channel_name: "MRN 77 S2S",
+        freq_mhz: 156.875,
+        description: "Non-Commercial (Intership only)",
+        tag: core,
+      }
+    - {
+        ch: "78A",
+        channel_name: "MRN 78A",
+        freq_mhz: 156.925,
+        description: "Non-Commercial",
+        tag: extra,
+      }
+    - {
+        ch: "79A",
+        channel_name: "MRN 79A",
+        freq_mhz: 156.975,
+        description: "Commercial",
+        tag: extra,
+      }
+    - {
+        ch: "80A",
+        channel_name: "MRN 80A",
+        freq_mhz: 157.025,
+        description: "Commercial",
+        tag: extra,
+      }
+    - {
+        ch: "81A",
+        channel_name: "MRN 81A",
+        freq_mhz: 157.075,
+        description: "U.S. Government only",
+        tag: extra,
+      }
+    - {
+        ch: "82A",
+        channel_name: "MRN 82A",
+        freq_mhz: 157.125,
+        description: "U.S. Government only",
+        tag: extra,
+      }
+    - {
+        ch: "83A",
+        channel_name: "MRN 83A",
+        freq_mhz: 157.175,
+        description: "U.S. Government only",
+        tag: extra,
+      }
+    - {
+        ch: "84",
+        channel_name: "MRN 84",
+        freq_mhz: 157.225,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "85",
+        channel_name: "MRN 85",
+        freq_mhz: 157.275,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "86",
+        channel_name: "MRN 86",
+        freq_mhz: 157.325,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "87",
+        channel_name: "MRN 87",
+        freq_mhz: 157.375,
+        description: "Public Correspondence (duplex)",
+        tag: extra,
+      }
+    - {
+        ch: "88A",
+        channel_name: "MRN 88A",
+        freq_mhz: 157.425,
+        description: "Commercial",
+        tag: extra,
+      }

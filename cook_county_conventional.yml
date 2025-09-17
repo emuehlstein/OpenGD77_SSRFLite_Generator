@@ -1,0 +1,596 @@
+cook_county_conventional:
+  location_anchor:
+    name: "Rosehill Cemetery"
+    address: "5800 N Ravenswood Ave, Chicago, IL 60660"
+    lat: 41.98668
+    lon: -87.67519
+    notes: "Anchor point on Chicago’s north side for proximity/context."
+
+  channels:
+    - group: "Cook County Sheriff (Conventional)"
+      notes: "Primary dispatch is on STARCOM21 P25 and largely encrypted; below are non-P25 conventional channels that remain in use."
+      entries:
+        - {
+            freq_mhz: 153.905,
+            input_mhz: null,
+            tone: "107.2 PL",
+            alpha_tag: "Cook Shrf C2C6",
+            description: "Sheriff Car-to-Car [Ch 6]",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 159.090,
+            input_mhz: null,
+            tone: "107.2 PL",
+            alpha_tag: "Cook Shrf Alt7",
+            description: "Sheriff Alternate [Ch 7]",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 159.090,
+            input_mhz: null,
+            tone: "173.8 PL",
+            alpha_tag: "Cook Shrf*Alt7",
+            description: "Rebroadcast of 155.535R",
+            mode: "FMN",
+            tag: "Law Dispatch",
+          }
+        - {
+            freq_mhz: 153.845,
+            input_mhz: null,
+            tone: "107.2 PL",
+            alpha_tag: "Cook Shrf Tac 9",
+            description: "Sheriff Tactical [Ch 9]",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 153.845,
+            input_mhz: null,
+            tone: "173.8 PL",
+            alpha_tag: "Cook Shrf Court",
+            description: "Courts [Ch 10]",
+            mode: "FMN",
+            tag: "Corrections",
+          }
+        - {
+            freq_mhz: 154.025,
+            input_mhz: null,
+            tone: "173.8 PL",
+            alpha_tag: "Cook Shrf Tac11",
+            description: "Sheriff Tactical [Ch 11]",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 153.815,
+            input_mhz: null,
+            tone: "107.2 PL",
+            alpha_tag: "Cook Shrf Tac12",
+            description: "Sheriff Tactical [Ch 12]",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 158.865,
+            input_mhz: null,
+            tone: "107.2 PL",
+            alpha_tag: "Cook Shrf Tac14",
+            description: "Tactical / Emergency Management",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 153.815,
+            input_mhz: null,
+            tone: "173.8 PL",
+            alpha_tag: "Cook Shrf Jail 1",
+            description: "Jail, Surveillance [Ch 1]",
+            mode: "FMN",
+            tag: "Corrections",
+          }
+        - {
+            freq_mhz: 154.025,
+            input_mhz: null,
+            tone: "173.8 PL",
+            alpha_tag: "Cook Shrf Jail 2",
+            description: "Jail [Ch 2]",
+            mode: "FMN",
+            tag: "Corrections",
+          }
+        - {
+            freq_mhz: 153.845,
+            input_mhz: null,
+            tone: "173.8 PL",
+            alpha_tag: "Cook Shrf Jail 3",
+            description: "Jail [Ch 3]",
+            mode: "FMN",
+            tag: "Corrections",
+          }
+        - {
+            freq_mhz: 158.865,
+            input_mhz: null,
+            tone: "173.8 PL",
+            alpha_tag: "Cook Shrf Jail 4",
+            description: "Corrections Vans/Transportation [Ch 4]",
+            mode: "FMN",
+            tag: "Corrections",
+          }
+
+    - group: "Cook County Interoperability (VHF/UHF)"
+      notes: "Weekly radio checks Wednesdays 11:00 AM. Repeater inputs shown where listed."
+      entries:
+        - {
+            freq_mhz: 154.995,
+            input_mhz: 153.785,
+            tone: "107.2 PL",
+            alpha_tag: "Cook Interop V1",
+            description: "Interop VHF 1 // Sheriff Backup (Ch 3)",
+            mode: "FMN",
+            tag: "Interop",
+          }
+        - {
+            freq_mhz: 155.640,
+            input_mhz: 153.935,
+            tone: "107.2 PL",
+            alpha_tag: "Cook Interop V2",
+            description: "Interop VHF 2 // Sheriff Backup (Aux Band 5 / Ch 5)",
+            mode: "FMN",
+            tag: "Interop",
+          }
+        - {
+            freq_mhz: 153.770,
+            input_mhz: 154.010,
+            tone: "156.7 PL",
+            alpha_tag: "Cook I/O VMetro3",
+            description: "Interop V Metro 3",
+            mode: "FMN",
+            tag: "Interop",
+          }
+        - {
+            freq_mhz: 154.130,
+            input_mhz: 153.950,
+            tone: "156.7 PL",
+            alpha_tag: "Cook I/O VMetro4",
+            description: "Interop V Metro 4",
+            mode: "FMN",
+            tag: "Interop",
+          }
+        - {
+            freq_mhz: 154.220,
+            input_mhz: null,
+            tone: "156.7 PL",
+            alpha_tag: "Cook I/O VMetro5",
+            description: "Interop V Metro 5",
+            mode: "FMN",
+            tag: "Interop",
+          }
+        - {
+            freq_mhz: 453.950,
+            input_mhz: 458.950,
+            tone: "141.3 PL",
+            alpha_tag: "Cook Interop U1",
+            description: "Interop UHF 1",
+            mode: "FMN",
+            tag: "Interop",
+          }
+        - {
+            freq_mhz: 453.750,
+            input_mhz: 458.750,
+            tone: "156.7 PL",
+            alpha_tag: "Cook Interop U2",
+            description: "Interop UHF 2 (ISPERN patch full-time)",
+            mode: "FMN",
+            tag: "Law Dispatch",
+          }
+
+    - group: "Chicago Police — Citywide (Analog Conventional)"
+      notes: "Primary district dispatch is on encrypted P25; below are the conventional Citywide/Tac channels that are analog."
+      entries:
+        - {
+            freq_mhz: 154.650,
+            input_mhz: null,
+            tone: "CSQ",
+            alpha_tag: "Chi Police VHF 2",
+            description: "Police Car-to-Car [Ch 2]",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 460.125,
+            input_mhz: 465.125,
+            tone: "173.8 PL",
+            alpha_tag: "Chi Police C/W 1",
+            description: "Citywide 1",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 460.175,
+            input_mhz: 465.175,
+            tone: "123.0 PL",
+            alpha_tag: "Chi Police C/W 2",
+            description: "Citywide 2",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 460.275,
+            input_mhz: 465.275,
+            tone: "141.3 PL",
+            alpha_tag: "Chi Police C/W 3",
+            description: "Citywide 3",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 460.325,
+            input_mhz: 465.325,
+            tone: "192.8 PL",
+            alpha_tag: "Chi Police C/W 4",
+            description: "Citywide 4",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 460.350,
+            input_mhz: 465.350,
+            tone: "97.4 PL",
+            alpha_tag: "Chi Police C/W 5",
+            description: "Citywide 5",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 460.250,
+            input_mhz: 465.250,
+            tone: "162.2 PL",
+            alpha_tag: "Chi Police C/W 6",
+            description: "Citywide 6",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+        - {
+            freq_mhz: 460.300,
+            input_mhz: 465.300,
+            tone: "131.8 PL",
+            alpha_tag: "Chi Police C/W 7",
+            description: "Citywide 7",
+            mode: "FMN",
+            tag: "Law Tac",
+          }
+
+    - group: "Chicago OEMC / Citywide Ops (non-P25, non-Telem)"
+      notes: "Filtered to keep only conventional analog operations; all Mobile Data Terminal ‘Telm Data’ freqs removed."
+      entries:
+        - {
+            freq_mhz: 462.950,
+            input_mhz: 467.950,
+            tone: "203.5 PL",
+            alpha_tag: "ChiDPH HCRS",
+            description: "Public Health — HCRS",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 460.5875,
+            input_mhz: 465.5875,
+            tone: "031 DPL",
+            alpha_tag: "OEMC UHF 19",
+            description: "Operations",
+            mode: "FMN",
+            tag: "Emergency Ops",
+          }
+        - {
+            freq_mhz: 460.525,
+            input_mhz: null,
+            tone: "179.9 PL",
+            alpha_tag: "Chi CERT Ops",
+            description: "Chicago CERT Operations",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 855.4375,
+            input_mhz: null,
+            tone: "703 DPL",
+            alpha_tag: "OEMC OWS Data",
+            description: "Outdoor Warning Siren Data (FM analog)",
+            mode: "FMN",
+            tag: "Emergency Ops",
+          }
+
+    - group: "Chicago Fire/EMS (Analog Conventional — alternates/ops)"
+      notes: "Current primary dispatch uses the OEMC 800 MHz P25 trunked system; below are analog ops/FG channels that remain conventional."
+      entries:
+        - {
+            freq_mhz: 458.025,
+            input_mhz: null,
+            tone: "203.5 PL",
+            alpha_tag: "CFD FG A",
+            description: "Fireground",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 458.125,
+            input_mhz: null,
+            tone: "218.1 PL",
+            alpha_tag: "CFD Cmnd A",
+            description: "Command",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 470.1625,
+            input_mhz: 473.1625,
+            tone: "97.4 PL",
+            alpha_tag: "CFD Tac A",
+            description: "Tac",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 480.6625,
+            input_mhz: null,
+            tone: "85.4 PL",
+            alpha_tag: "CFD Ops 7 A",
+            description: "Operations 7",
+            mode: "FMN",
+            tag: "EMS-Tac",
+          }
+        - {
+            freq_mhz: 476.2875,
+            input_mhz: null,
+            tone: "69.3 PL",
+            alpha_tag: "CFD Ops 8 A",
+            description: "Operations 8",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 479.2875,
+            input_mhz: null,
+            tone: "74.4 PL",
+            alpha_tag: "CFD Ops 9 A",
+            description: "Operations 9",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 477.6625,
+            input_mhz: null,
+            tone: "79.7 PL",
+            alpha_tag: "CFD Ops 10 A",
+            description: "Operations 10",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 458.075,
+            input_mhz: null,
+            tone: "210.7 PL",
+            alpha_tag: "CFD Lakefrnt",
+            description: "Lakefront",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 478.500,
+            input_mhz: null,
+            tone: "103.5 PL",
+            alpha_tag: "CFD SpcEv1 A",
+            description: "Special Events 1",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 481.500,
+            input_mhz: null,
+            tone: "110.9 PL",
+            alpha_tag: "CFD SpcEv2 A",
+            description: "Special Events 2",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+        - {
+            freq_mhz: 460.0625,
+            input_mhz: 465.0625,
+            tone: "203.5 PL",
+            alpha_tag: "CTA Fire",
+            description: "CTA Fire",
+            mode: "FMN",
+            tag: "Fire-Tac",
+          }
+
+    - group: "Chicago Streets & Sanitation / Public Works"
+      entries:
+        - {
+            freq_mhz: 453.650,
+            input_mhz: 458.650,
+            tone: "107.2 PL",
+            alpha_tag: "Chi Streets N1/2",
+            description: "Streets — North Bureau 1,2 [Ch 1]",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 453.725,
+            input_mhz: 458.725,
+            tone: "107.2 PL",
+            alpha_tag: "Chi Frstry/AnCnt",
+            description: "Bureau of Forestry / Animal Control [Ch 2]",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 453.775,
+            input_mhz: 458.775,
+            tone: "107.2 PL",
+            alpha_tag: "Chi Towing/Park",
+            description: "Traffic / City Towing [Ch 3]",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 453.825,
+            input_mhz: 458.825,
+            tone: "107.2 PL",
+            alpha_tag: "Chi HHS/Revenue",
+            description: "Dept of Revenue Boot Trucks",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 453.975,
+            input_mhz: 458.975,
+            tone: "107.2 PL",
+            alpha_tag: "Chi Electric",
+            description: "Bureau of Electricity [Ch 5]",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 453.675,
+            input_mhz: 458.675,
+            tone: "107.2 PL",
+            alpha_tag: "Chi Sewers/DOT",
+            description: "Sewers / Transportation",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 453.100,
+            input_mhz: 458.100,
+            tone: "107.2 PL",
+            alpha_tag: "Chi Loop B3",
+            description: "Loop — Operations Bureau 3 [Ch 7] (FMNe)",
+            mode: "FMNe",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 453.550,
+            input_mhz: 458.550,
+            tone: "107.2 PL",
+            alpha_tag: "Chi Streets S4/5",
+            description: "Streets/Sanitation — South Bureau 4,5 [Ch 8]",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 853.2125,
+            input_mhz: 806.2125,
+            tone: "107.2 PL",
+            alpha_tag: "Chi Street/San",
+            description: "Streets and Sanitation",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 453.500,
+            input_mhz: null,
+            tone: "CSQ",
+            alpha_tag: "Chi S/S Pgng",
+            description: "Streets & Sanitation Paging",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+
+    - group: "Chicago Park District / Beaches"
+      entries:
+        - {
+            freq_mhz: 458.075,
+            input_mhz: null,
+            tone: "210.7 PL",
+            alpha_tag: "Chi Park L/G SE6",
+            description: "Lifeguards [SE6]",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 151.055,
+            input_mhz: 159.135,
+            tone: "074 DPL",
+            alpha_tag: "Chicago Parks 1",
+            description: "Operations",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 151.190,
+            input_mhz: null,
+            tone: null,
+            alpha_tag: "Chicago Parks 2",
+            description: "Operations",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 151.295,
+            input_mhz: 159.405,
+            tone: "114.8 PL",
+            alpha_tag: "Chicago Parks 4",
+            description: "Operations",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 151.955,
+            input_mhz: 158.340,
+            tone: "065 DPL",
+            alpha_tag: "Chicago Parks 5",
+            description: "Operations",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 462.6125,
+            input_mhz: null,
+            tone: "311 DPL",
+            alpha_tag: "Montrose Bch L/G",
+            description: "Montrose Beach Lifeguards",
+            mode: "FMN",
+            tag: "Public Works",
+          }
+
+    - group: "Public Building Commission — Richard J. Daley Center (DMR)"
+      notes: "DMR Capacity Plus single-site users; timeslot/TG as listed."
+      entries:
+        - {
+            freq_mhz: 461.0125,
+            input_mhz: 466.0125,
+            dmr: { cc: 5, tg: 15000, slot: 1 },
+            alpha_tag: "RJDC Engineers",
+            description: "Building Engineers (Ch 1)",
+            mode: "DMR",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 461.0125,
+            input_mhz: 466.0125,
+            dmr: { cc: 5, tg: 15000, slot: 2 },
+            alpha_tag: "RJDC Security",
+            description: "Security (Ch 2)",
+            mode: "DMR",
+            tag: "Security",
+          }
+        - {
+            freq_mhz: 461.3875,
+            input_mhz: 466.3875,
+            dmr: { cc: 8, tg: 15000, slot: 1 },
+            alpha_tag: "RJDC Hskpg",
+            description: "Housekeeping (Ch 3)",
+            mode: "DMR",
+            tag: "Public Works",
+          }
+        - {
+            freq_mhz: 461.3875,
+            input_mhz: 466.3875,
+            dmr: { cc: 8, tg: 15000, slot: 2 },
+            alpha_tag: "RJDC Elevators",
+            description: "Elevator Maintenance (Ch 4)",
+            mode: "DMR",
+            tag: "Public Works",
+          }

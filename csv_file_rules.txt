@@ -1,0 +1,5 @@
+- There should be 32 columns in the TG List CSV file.
+ - There should be 81 columns in the Zones CSV file.
+ - The first column in each file should be the name of the list or zone.
+ - The remaining columns should be filled with either a valid entry or left blank.
+ - Limit TG List names to 15 charsters.

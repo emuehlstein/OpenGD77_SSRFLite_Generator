@@ -1,0 +1,243 @@
+ham_simplex_and_aprs:
+  notes: "Common U.S. amateur VHF/UHF FM simplex and APRS. Check your local band plan—regional variations exist."
+
+  voice_simplex_vhf:
+    band: "2 m (144–148 MHz)"
+    spacing: "mostly 20 kHz"
+    entries:
+      - {
+          channel_name: "VHF CALL",
+          freq_mhz: 146.520,
+          mode: "FM",
+          tag: core,
+          description: "National simplex calling",
+        }
+      # Standard VHF FM simplex (ARRL plan: 146.400–146.580 & 147.420–147.560 at 20 kHz)
+      - {
+          channel_name: "VHF 146.400",
+          freq_mhz: 146.400,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.415",
+          freq_mhz: 146.415,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.430",
+          freq_mhz: 146.430,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.445",
+          freq_mhz: 146.445,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.460",
+          freq_mhz: 146.460,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.475",
+          freq_mhz: 146.475,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.490",
+          freq_mhz: 146.490,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.505",
+          freq_mhz: 146.505,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.535",
+          freq_mhz: 146.535,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.550",
+          freq_mhz: 146.550,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.565",
+          freq_mhz: 146.565,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 146.580",
+          freq_mhz: 146.580,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 147.420",
+          freq_mhz: 147.420,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 147.440",
+          freq_mhz: 147.440,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 147.460",
+          freq_mhz: 147.460,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 147.480",
+          freq_mhz: 147.480,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 147.500",
+          freq_mhz: 147.500,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 147.520",
+          freq_mhz: 147.520,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 147.540",
+          freq_mhz: 147.540,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "VHF 147.560",
+          freq_mhz: 147.560,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+
+  voice_simplex_uhf:
+    band: "70 cm (420–450 MHz)"
+    spacing: "commonly 25 kHz"
+    entries:
+      - {
+          channel_name: "UHF CALL",
+          freq_mhz: 446.000,
+          mode: "FM",
+          tag: core,
+          description: "National simplex calling",
+        }
+      # Common UHF FM simplex per ARRL band plan (446.000–446.175) + widely used locals
+      - {
+          channel_name: "UHF 446.025",
+          freq_mhz: 446.025,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "UHF 446.050",
+          freq_mhz: 446.050,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "UHF 446.075",
+          freq_mhz: 446.075,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "UHF 446.100",
+          freq_mhz: 446.100,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "UHF 446.125",
+          freq_mhz: 446.125,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "UHF 446.150",
+          freq_mhz: 446.150,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      - {
+          channel_name: "UHF 446.175",
+          freq_mhz: 446.175,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex",
+        }
+      # Widely used local/simplex (regional practice varies)
+      - {
+          channel_name: "UHF 446.500",
+          freq_mhz: 446.500,
+          mode: "FM",
+          tag: extra,
+          description: "Simplex (regional use)",
+        }
+
+  aprs:
+    notes: "APRS typically 1200 bps AFSK on VHF; some regions experiment with 70 cm (often 9600 bps). Confirm local coordination."
+    entries:
+      - {
+          channel_name: "APRS VHF",
+          freq_mhz: 144.390,
+          mode: "FM/1200",
+          tag: core,
+          description: "Primary APRS (U.S./NA)",
+        }
+      - {
+          channel_name: "APRS UHF",
+          freq_mhz: 445.925,
+          mode: "FM/9600",
+          tag: extra,
+          description: "Alt/experimental (regional)",
+        }

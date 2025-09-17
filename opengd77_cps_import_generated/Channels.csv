@@ -1,0 +1,492 @@
+Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kHz),Colour Code,Timeslot,Contact,TG List,DMR ID,TS1_TA_Tx,TS2_TA_Tx ID,RX Tone,TX Tone,Squelch,Power,Rx Only,Zone Skip,All Skip,TOT,VOX,No Beep,No Eco,APRS,Latitude,Longitude
+1,Cook Shrf C2C6,Analogue,153.905,153.905,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+2,Cook Shrf Alt7,Analogue,159.09,159.09,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+3,Cook Shrf*Alt7,Analogue,159.09,159.09,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+4,Cook Shrf Tac 9,Analogue,153.845,153.845,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+5,Cook Shrf Court,Analogue,153.845,153.845,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+6,Cook Shrf Tac11,Analogue,154.025,154.025,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+7,Cook Shrf Tac12,Analogue,153.815,153.815,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+8,Cook Shrf Tac14,Analogue,158.865,158.865,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+9,Cook Shrf Jail 1,Analogue,153.815,153.815,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+10,Cook Shrf Jail 2,Analogue,154.025,154.025,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+11,Cook Shrf Jail 3,Analogue,153.845,153.845,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+12,Cook Shrf Jail 4,Analogue,158.865,158.865,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+13,Cook Interop V1,Analogue,154.995,153.785,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+14,Cook Interop V2,Analogue,155.64,153.935,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+15,Cook I/O VMetro3,Analogue,153.77,154.01,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+16,Cook I/O VMetro4,Analogue,154.13,153.95,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+17,Cook I/O VMetro5,Analogue,154.22,154.22,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+18,Cook Interop U1,Analogue,453.95,458.95,12.5,,,None,None,None,Off,Off,141.3,141.3,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+19,Cook Interop U2,Analogue,453.75,458.75,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+20,Chi Police VHF 2,Analogue,154.65,154.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+21,Chi Police C/W 1,Analogue,460.125,465.125,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+22,Chi Police C/W 2,Analogue,460.175,465.175,12.5,,,None,None,None,Off,Off,123.0,123.0,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+23,Chi Police C/W 3,Analogue,460.275,465.275,12.5,,,None,None,None,Off,Off,141.3,141.3,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+24,Chi Police C/W 4,Analogue,460.325,465.325,12.5,,,None,None,None,Off,Off,192.8,192.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+25,Chi Police C/W 5,Analogue,460.35,465.35,12.5,,,None,None,None,Off,Off,97.4,97.4,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+26,Chi Police C/W 6,Analogue,460.25,465.25,12.5,,,None,None,None,Off,Off,162.2,162.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+27,Chi Police C/W 7,Analogue,460.3,465.3,12.5,,,None,None,None,Off,Off,131.8,131.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+28,ChiDPH HCRS,Analogue,462.95,467.95,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+29,OEMC UHF 19,Analogue,460.5875,465.5875,12.5,,,None,None,None,Off,Off,031,031,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+30,Chi CERT Ops,Analogue,460.525,460.525,12.5,,,None,None,None,Off,Off,179.9,179.9,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+31,OEMC OWS Data,Analogue,855.4375,855.4375,12.5,,,None,None,None,Off,Off,703,703,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+32,CFD FG A,Analogue,458.025,458.025,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+33,CFD Cmnd A,Analogue,458.125,458.125,12.5,,,None,None,None,Off,Off,218.1,218.1,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+34,CFD Tac A,Analogue,470.1625,473.1625,12.5,,,None,None,None,Off,Off,97.4,97.4,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+35,CFD Ops 7 A,Analogue,480.6625,480.6625,12.5,,,None,None,None,Off,Off,85.4,85.4,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+36,CFD Ops 8 A,Analogue,476.2875,476.2875,12.5,,,None,None,None,Off,Off,69.3,69.3,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+37,CFD Ops 9 A,Analogue,479.2875,479.2875,12.5,,,None,None,None,Off,Off,74.4,74.4,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+38,CFD Ops 10 A,Analogue,477.6625,477.6625,12.5,,,None,None,None,Off,Off,79.7,79.7,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+39,CFD Lakefrnt,Analogue,458.075,458.075,12.5,,,None,None,None,Off,Off,210.7,210.7,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+40,CFD SpcEv1 A,Analogue,478.5,478.5,12.5,,,None,None,None,Off,Off,103.5,103.5,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+41,CFD SpcEv2 A,Analogue,481.5,481.5,12.5,,,None,None,None,Off,Off,110.9,110.9,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+42,CTA Fire,Analogue,460.0625,465.0625,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+43,Chi Streets N1/2,Analogue,453.65,458.65,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+44,Chi Frstry/AnCnt,Analogue,453.725,458.725,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+45,Chi Towing/Park,Analogue,453.775,458.775,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+46,Chi HHS/Revenue,Analogue,453.825,458.825,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+47,Chi Electric,Analogue,453.975,458.975,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+48,Chi Sewers/DOT,Analogue,453.675,458.675,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+49,Chi Loop B3,Analogue,453.1,458.1,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+50,Chi Streets S4/5,Analogue,453.55,458.55,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+51,Chi Street/San,Analogue,853.2125,806.2125,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+52,Chi S/S Pgng,Analogue,453.5,453.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+53,Chi Park L/G SE6,Analogue,458.075,458.075,12.5,,,None,None,None,Off,Off,210.7,210.7,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+54,Chicago Parks 1,Analogue,151.055,159.135,12.5,,,None,None,None,Off,Off,074,074,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+55,Chicago Parks 2,Analogue,151.19,151.19,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+56,Chicago Parks 4,Analogue,151.295,159.405,12.5,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+57,Chicago Parks 5,Analogue,151.955,158.34,12.5,,,None,None,None,Off,Off,065,065,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+58,Montrose Bch L/G,Analogue,462.6125,462.6125,12.5,,,None,None,None,Off,Off,311,311,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+59,RJDC Engineers,Digital,461.0125,466.0125,,1,1,CL Local 1,ChicagoLand,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+60,RJDC Security,Digital,461.0125,466.0125,,1,1,CL Local 1,ChicagoLand,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+61,RJDC Hskpg,Digital,461.3875,466.3875,,1,1,CL Local 1,ChicagoLand,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+62,RJDC Elevators,Digital,461.3875,466.3875,,1,1,CL Local 1,ChicagoLand,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+63,FISHFAR CHICAGO,Digital,442.975,447.975,,1,1,CL Local 1,ChicagoLand,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+64,CHICAGOLAND CHI,Digital,443.925,448.925,,1,1,CL Local 1,ChicagoLand,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+65,BM-CHICAGO,Digital,444,449,,0,1,TG 9-1,Brandmeister,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+66,CHICAGOLAND BMK,Digital,444.125,449.125,,1,1,CL Local 1,ChicagoLand,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+67,TRISTATE CHI,Digital,441.21875,446.21875,,1,1,TRI AllStates,TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+68,AMC (multiple sites),Analogue,452.1125,452.1125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+69,AMC (multiple sites),Analogue,451.6625,451.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+70,AMC (multiple sites),Analogue,452.8375,452.8375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+71,AMC (multiple sites),Analogue,451.7125,451.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+72,AMC (multiple sites),Analogue,452.4125,452.4125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+73,AMC (multiple sites),Analogue,452.8125,452.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+74,Harper Theatre,Digital,451.2375,451.2375,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+75,Harper Theatre,Digital,451.4125,451.4125,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+76,Harper Theatre,Digital,456.2375,456.2375,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+77,Harper Theatre,Digital,456.4125,456.4125,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+78,Harper Theatre,Digital,457.1875,457.1875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+79,American Girl Place (835 N Michigan),Analogue,451.3625,451.3625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+80,American Girl Place (835 N Michigan),Analogue,452.0375,452.0375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+81,American Girl Place (835 N Michigan),Analogue,452.6375,452.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+82,American Girl Place (835 N Michigan),Analogue,452.7875,452.7875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+83,American Girl Place (835 N Michigan),Analogue,452.8625,452.8625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+84,American Girl Place (835 N Michigan),Analogue,452.9875,452.9875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+85,American Girl Place (835 N Michigan),Analogue,456.3625,456.3625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+86,American Girl Place (835 N Michigan),Analogue,457.0375,457.0375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+87,American Girl Place (835 N Michigan),Analogue,457.6375,457.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+88,American Girl Place (835 N Michigan),Analogue,457.7875,457.7875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+89,American Girl Place (835 N Michigan),Analogue,457.8625,457.8625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+90,American Girl Place (835 N Michigan),Analogue,457.9875,457.9875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+91,Cook Brothers (1740 N Kostner),Digital,457.25,457.25,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+92,Cook Brothers (1740 N Kostner),Digital,466.025,466.025,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+93,Cook Brothers (1740 N Kostner),Digital,466.125,466.125,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+94,Cook Brothers (1740 N Kostner),Digital,466.3,466.3,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+95,Cook Brothers (1740 N Kostner),Digital,466.35,466.35,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+96,Costco (2746 N Clybourn),Analogue,151.655,151.655,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+97,Costco (2746 N Clybourn),Analogue,151.955,151.955,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+98,Macy's (111 N State),Analogue,452.125,452.125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+99,Macy's (111 N State),Analogue,452.225,452.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+100,Macy's (111 N State),Analogue,461.2,461.2,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+101,Macy's (111 N State),Analogue,464.975,464.975,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+102,Macy's (111 N State),Analogue,451.3125,451.3125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+103,Macy's (111 N State),Analogue,452.0625,452.0625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+104,Macy's (111 N State),Analogue,452.1375,452.1375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+105,Macy's (111 N State),Analogue,462.1875,462.1875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+106,Macy's (111 N State),Analogue,462.5125,462.5125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+107,Macy's (835 N Michigan),Analogue,452.2125,452.2125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+108,Macy's (835 N Michigan),Analogue,461.4625,461.4625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+109,Macy's (835 N Michigan),Analogue,451.4375,451.4375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+110,Macy's (835 N Michigan),Analogue,451.5375,451.5375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+111,Macy's (835 N Michigan),Analogue,451.5625,451.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+112,Macy's (835 N Michigan),Analogue,451.5875,451.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+113,Macy's (835 N Michigan),Analogue,451.6375,451.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+114,Nike Store (669 N Michigan),Analogue,466.025,466.025,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+115,Nike Store (669 N Michigan),Analogue,467.2,467.2,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+116,Nike Store (669 N Michigan),Analogue,467.375,467.375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+117,Nordstrom (24 N State),Analogue,452.625,452.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+118,Nordstrom (24 N State),Analogue,462.075,462.075,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+119,Nordstrom (24 N State),Analogue,464.6125,464.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+120,Nordstrom (24 N State),Analogue,464.65,464.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+121,Nordstrom (24 N State),Analogue,469.65,469.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+122,Nordstrom (55 E Grand),Analogue,463.8375,463.8375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+123,Nordstrom (55 E Grand),Analogue,464.6125,464.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+124,Nordstrom (55 E Grand),Analogue,464.0875,464.0875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+125,Nordstrom (55 E Grand),Analogue,464.2625,464.2625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+126,Nordstrom (55 E Grand),Analogue,467.85,467.85,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+127,Nordstrom (55 E Grand),Analogue,467.875,467.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+128,Nordstrom (55 E Grand),Analogue,467.9,467.9,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+129,Nordstrom Rack (24 N State),Analogue,452.625,452.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+130,Nordstrom Rack (24 N State),Analogue,462.075,462.075,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+131,Nordstrom Rack (24 N State),Analogue,464.6125,464.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+132,Nordstrom Rack (24 N State),Analogue,464.65,464.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+133,Nordstrom Rack (24 N State),Analogue,469.65,469.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+134,Nordstrom Rack (101 E Chicago Ave),Analogue,463.8375,463.8375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+135,Nordstrom Rack (101 E Chicago Ave),Analogue,464.0875,464.0875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+136,Nordstrom Rack (101 E Chicago Ave),Analogue,464.2625,464.2625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+137,Nordstrom Rack (101 E Chicago Ave),Analogue,464.6125,464.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+138,Nordstrom Rack (101 E Chicago Ave),Analogue,467.7625,467.7625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+139,AC Hotel Chicago Downtown (630 N Rush),Digital,466.3,466.3,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+140,AC Hotel Chicago Downtown (630 N Rush),Digital,466.325,466.325,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+141,AC Hotel Chicago Downtown (630 N Rush),Digital,466.35,466.35,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+142,AC Hotel Chicago Downtown (630 N Rush),Digital,466.375,466.375,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+143,AC Hotel Chicago Downtown (630 N Rush),Digital,466.3875,466.3875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+144,Ace Hotel (311 N Morgan),Digital,452.8875,452.8875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+145,Ace Hotel (311 N Morgan),Digital,457.8875,457.8875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+146,Ace Hotel (311 N Morgan),Digital,462.2125,462.2125,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+147,Ace Hotel (311 N Morgan),Digital,462.2375,462.2375,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+148,Ace Hotel (311 N Morgan),Digital,467.4125,467.4125,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+149,Allegro Royal Sonesta (171 W Randolph),Analogue,451.55,451.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+150,Allegro Royal Sonesta (171 W Randolph),Analogue,461.825,461.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+151,Allegro Royal Sonesta (171 W Randolph),Analogue,462.2,462.2,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+152,Allegro Royal Sonesta (171 W Randolph),Analogue,463.725,463.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+153,Allegro Royal Sonesta (171 W Randolph),Analogue,462.1625,462.1625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+154,Allegro Royal Sonesta (171 W Randolph),Analogue,463.4125,463.4125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+155,Allegro Royal Sonesta (171 W Randolph),Analogue,464.325,464.325,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+156,Allegro Royal Sonesta (171 W Randolph),Analogue,464.4125,464.4125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+157,Allegro Royal Sonesta (171 W Randolph),Analogue,464.4375,464.4375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+158,Allegro Royal Sonesta (171 W Randolph),Analogue,464.45,464.45,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+159,Allegro Royal Sonesta (171 W Randolph),Analogue,464.475,464.475,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+160,Allegro Royal Sonesta (171 W Randolph),Analogue,464.8,464.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+161,Allegro Royal Sonesta (171 W Randolph),Analogue,467.1625,467.1625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+162,Allegro Royal Sonesta (171 W Randolph),Analogue,468.4125,468.4125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+163,Allegro Royal Sonesta (171 W Randolph),Analogue,469.4375,469.4375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+164,Ambassador East (1301 N State Pkwy),Analogue,456.7375,456.7375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+165,Ambassador East (1301 N State Pkwy),Analogue,457.6625,457.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+166,Ambassador East (1301 N State Pkwy),Analogue,456.5625,456.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+167,Ambassador East (1301 N State Pkwy),Analogue,456.6875,456.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+168,Ambassador East (1301 N State Pkwy),Analogue,457.4875,457.4875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+169,Ambassador East (1301 N State Pkwy),Analogue,457.6375,457.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+170,Best Western Grant Park (1100 S Michigan),Digital,457.15,457.15,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+171,Best Western Grant Park (1100 S Michigan),Digital,457.175,457.175,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+172,Best Western Grant Park (1100 S Michigan),Digital,457.275,457.275,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+173,Best Western Grant Park (1100 S Michigan),Digital,457.4,457.4,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+174,Best Western Grant Park (1100 S Michigan),Digital,457.55,457.55,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+175,Drake Hotel,Analogue,463.5875,463.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+176,Drake Hotel,Analogue,452.6875,452.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+177,Drake Hotel,Analogue,452.9875,452.9875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+178,Drake Hotel,Analogue,456.5625,456.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+179,Drake Hotel,Analogue,456.6625,456.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+180,Drake Hotel,Analogue,457.8375,457.8375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+181,Embassy Suites Downtown/Lakefront (511 N Columbus),Analogue,464.125,464.125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+182,Embassy Suites Downtown/Lakefront (511 N Columbus),Analogue,466.3,466.3,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+183,Embassy Suites Downtown/Lakefront (511 N Columbus),Analogue,466.275,466.275,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+184,Embassy Suites Downtown/Lakefront (511 N Columbus),Analogue,466.25,466.25,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+185,Embassy Suites Downtown/Lakefront (511 N Columbus),Analogue,466.225,466.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+186,Embassy Suites Downtown/Lakefront (511 N Columbus),Analogue,466.2,466.2,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+187,Essex Inn (808 S Michigan),Analogue,462.1125,462.1125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+188,Essex Inn (808 S Michigan),Analogue,457,457,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+189,Essex Inn (808 S Michigan),Analogue,457.1,457.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+190,Essex Inn (808 S Michigan),Analogue,457.225,457.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+191,Essex Inn (808 S Michigan),Analogue,457.35,457.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+192,Essex Inn (808 S Michigan),Analogue,468.825,468.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+193,Essex Inn (808 S Michigan),Analogue,463.6875,463.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+194,Essex Inn (808 S Michigan),Analogue,451.3375,451.3375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+195,Essex Inn (808 S Michigan),Analogue,452.6625,452.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+196,Essex Inn (808 S Michigan),Analogue,461.475,461.475,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+197,Essex Inn (808 S Michigan),Analogue,464.8,464.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+198,Essex Inn (808 S Michigan),Analogue,464.85,464.85,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+199,Essex Inn (808 S Michigan),Analogue,466.5375,466.5375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+200,Fairmont Chicago (200 N Columbus),Analogue,451.1875,451.1875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+201,Fairmont Chicago (200 N Columbus),Analogue,451.4625,451.4625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+202,Fairmont Chicago (200 N Columbus),Analogue,451.7375,451.7375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+203,Fairmont Chicago (200 N Columbus),Analogue,452.0625,452.0625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+204,Fairmont Chicago (200 N Columbus),Analogue,452.4875,452.4875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+205,Fairmont Chicago (200 N Columbus),Analogue,464.875,464.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+206,Fairmont Chicago (200 N Columbus),Analogue,466.325,466.325,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+207,Fairmont Chicago (200 N Columbus),Analogue,466.35,466.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+208,Fairmont Chicago (200 N Columbus),Analogue,466.5375,466.5375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+209,Fairmont Chicago (200 N Columbus),Analogue,466.5875,466.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+210,Fairmont Chicago (200 N Columbus),Analogue,469.8125,469.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+211,The Gwen (521 N Rush) + PSAV A/V,Analogue,456.6875,456.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+212,The Gwen (521 N Rush) + PSAV A/V,Analogue,457.3125,457.3125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+213,The Gwen (521 N Rush) + PSAV A/V,Analogue,456.7375,456.7375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+214,The Gwen (521 N Rush) + PSAV A/V,Analogue,457.8125,457.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+215,The Gwen (521 N Rush) + PSAV A/V,Analogue,456.7675,456.7675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+216,The Gwen (521 N Rush) + PSAV A/V,Analogue,457.8375,457.8375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+217,The Gwen (521 N Rush) + PSAV A/V,Analogue,461.9125,461.9125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+218,The Gwen (521 N Rush) + PSAV A/V,Analogue,464.6625,464.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+219,The Gwen (521 N Rush) + PSAV A/V,Analogue,467.4125,467.4125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+220,Hampton Inn West Loop (116 N Jefferson),Digital,456.8625,456.8625,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+221,Hampton Inn West Loop (116 N Jefferson),Digital,466.5875,466.5875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+222,Hampton Inn West Loop (116 N Jefferson),Digital,466.875,466.875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+223,Hampton Inn West Loop (116 N Jefferson),Digital,467.275,467.275,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+224,Hampton Inn West Loop (116 N Jefferson),Digital,468.225,468.225,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+225,Hilton Chicago (720 S Michigan),Analogue,461.375,461.375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+226,Hilton Chicago (720 S Michigan),Analogue,461.4375,461.4375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+227,Hilton Chicago (720 S Michigan),Analogue,461.9125,461.9125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+228,Hilton Chicago (720 S Michigan),Analogue,461.9625,461.9625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+229,Hilton Chicago (720 S Michigan),Analogue,462.0125,462.0125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+230,Hilton Chicago (720 S Michigan),Analogue,462.0375,462.0375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+231,Hilton Chicago (720 S Michigan),Analogue,462.0625,462.0625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+232,Hilton Chicago (720 S Michigan),Analogue,462.1125,462.1125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+233,Hilton Chicago (720 S Michigan),Analogue,466.225,466.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+234,Hilton Chicago (720 S Michigan),Analogue,466.4375,466.4375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+235,Hilton Chicago (720 S Michigan),Analogue,466.9125,466.9125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+236,Hilton Chicago (720 S Michigan),Analogue,466.9625,466.9625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+237,Hilton Chicago (720 S Michigan),Analogue,467.0125,467.0125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+238,Hilton Chicago (720 S Michigan),Analogue,467.0375,467.0375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+239,Hilton Chicago (720 S Michigan),Analogue,467.0625,467.0625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+240,Hilton Chicago (720 S Michigan),Analogue,467.1125,467.1125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+241,Hilton Garden Inn Magnificent Mile (10 E Grand),Analogue,464.2375,464.2375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+242,Hilton Garden Inn Magnificent Mile (10 E Grand),Analogue,467.7625,467.7625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+243,Hilton Garden Inn Magnificent Mile (10 E Grand),Analogue,467.7875,467.7875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+244,Hilton Garden Inn Magnificent Mile (10 E Grand),Analogue,467.8125,467.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+245,Hilton Garden Inn Magnificent Mile (10 E Grand),Analogue,469.2375,469.2375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+246,Hilton Garden Inn McCormick Place (123 E Cermak),Analogue,463.2375,463.2375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+247,Hilton Garden Inn McCormick Place (123 E Cermak),Analogue,464.0125,464.0125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+248,Hilton Garden Inn McCormick Place (123 E Cermak),Analogue,457.05,457.05,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+249,Hilton Garden Inn McCormick Place (123 E Cermak),Analogue,457.1,457.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+250,Hilton Garden Inn McCormick Place (123 E Cermak),Analogue,457.35,457.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+251,Hilton Garden Inn McCormick Place (123 E Cermak),Analogue,468.25,468.25,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+252,Hilton Garden Inn McCormick Place (123 E Cermak),Analogue,468.875,468.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+253,Hilton Garden Inn South Loop (55 E 11th),Analogue,464.0125,464.0125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+254,Hilton Garden Inn South Loop (55 E 11th),Analogue,464.275,464.275,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+255,Hilton Garden Inn South Loop (55 E 11th),Analogue,456.875,456.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+256,Hilton Garden Inn South Loop (55 E 11th),Analogue,457.1,457.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+257,Hilton Garden Inn South Loop (55 E 11th),Analogue,457.35,457.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+258,Hilton Garden Inn South Loop (55 E 11th),Analogue,468.2,468.2,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+259,Hilton Suites Mag Mile (198 E Delaware),Analogue,463.4125,463.4125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+260,Hilton Suites Mag Mile (198 E Delaware),Analogue,464.95,464.95,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+261,Homewood Suites West Loop (118 N Jefferson),Digital,456.8625,456.8625,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+262,Homewood Suites West Loop (118 N Jefferson),Digital,466.5875,466.5875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+263,Homewood Suites West Loop (118 N Jefferson),Digital,466.875,466.875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+264,Homewood Suites West Loop (118 N Jefferson),Digital,467.275,467.275,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+265,Homewood Suites West Loop (118 N Jefferson),Digital,468.225,468.225,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+266,Hotel Audrey (166 E Superior),Digital,452.1875,452.1875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+267,Hotel Audrey (166 E Superior),Digital,452.4875,452.4875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+268,Hotel Audrey (166 E Superior),Digital,456.5125,456.5125,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+269,Hotel Audrey (166 E Superior),Digital,457.1875,457.1875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+270,Hotel Audrey (166 E Superior),Digital,457.4875,457.4875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+271,Hotel Blake (500 S Dearborn),Analogue,451.8875,451.8875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+272,Hotel Blake (500 S Dearborn),Analogue,464.6625,464.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+273,Hotel Blake (500 S Dearborn),Analogue,467.0125,467.0125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+274,Hotel Blake (500 S Dearborn),Analogue,467.25,467.25,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+275,Hotel Blake (500 S Dearborn),Analogue,468.325,468.325,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+276,Hotel Blake (500 S Dearborn),Analogue,469.95,469.95,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+277,Hotel Eurostars Mag Mile (660 N State),Analogue,457.05,457.05,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+278,Hotel Eurostars Mag Mile (660 N State),Analogue,457.25,457.25,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+279,Hotel Eurostars Mag Mile (660 N State),Analogue,457.35,457.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+280,Hotel Eurostars Mag Mile (660 N State),Analogue,468.25,468.25,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+281,Hotel Eurostars Mag Mile (660 N State),Analogue,468.875,468.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+282,Hotel Intercontinental (505 N Michigan),Digital,463.7,463.7,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+283,Hotel Intercontinental (505 N Michigan),Digital,463.8875,463.8875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+284,Hotel Julian (168 N Michigan),Digital,464.3875,464.3875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+285,Hotel Palomar (505 N State),Analogue,462.2,462.2,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+286,Hotel Palomar (505 N State),Analogue,462.4,462.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+287,Hotel Palomar (505 N State),Analogue,463.575,463.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+288,Hotel Palomar (505 N State),Analogue,464.15,464.15,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+289,Hotel Palomar (505 N State),Analogue,464.75,464.75,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+290,Hotel Zachary (3630 N Clark),Digital,457.2,457.2,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+291,Hotel Zachary (3630 N Clark),Digital,457.45,457.45,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+292,Hotel Zachary (3630 N Clark),Digital,457.8,457.8,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+293,Hotel Zachary (3630 N Clark),Digital,466.05,466.05,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+294,Hotel Zachary (3630 N Clark),Digital,466.25,466.25,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+295,The Hoxton (200 N Green),Analogue,452.225,452.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+296,The Hoxton (200 N Green),Analogue,464.3125,464.3125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+297,The Hoxton (200 N Green),Analogue,462.1875,462.1875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+298,The Hoxton (200 N Green),Analogue,462.2875,462.2875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+299,The Hoxton (200 N Green),Analogue,462.4125,462.4125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+300,The Hoxton (200 N Green),Analogue,462.4625,462.4625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+301,The Hoxton (200 N Green),Analogue,467.1,467.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+302,Hyatt Place Chicago South / UMC (5225 S Harper),Analogue,452.8625,452.8625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+303,Hyatt Place Chicago South / UMC (5225 S Harper),Analogue,457.8625,457.8625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+304,Hyatt Regency Chicago (151 E Wacker),Analogue,463.425,463.425,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+305,Hyatt Regency Chicago (151 E Wacker),Analogue,454.025,454.025,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+306,Hyatt Regency Chicago (151 E Wacker),Analogue,464.225,464.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+307,Hyatt Regency Chicago (151 E Wacker),Analogue,464.375,464.375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+308,Hyatt Regency Chicago (151 E Wacker),Analogue,464.525,464.525,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+309,Hyatt Regency Chicago (151 E Wacker),Analogue,464.775,464.775,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+310,Hyatt Regency Chicago (151 E Wacker),Analogue,464.925,464.925,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+311,Hyatt Regency McCormick Place,Analogue,462.5,462.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+312,Hyatt Regency McCormick Place,Analogue,463.6125,463.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+313,Hyatt Regency McCormick Place,Analogue,464.125,464.125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+314,Hyatt Regency McCormick Place,Analogue,468.6125,468.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+315,JW Marriott Chicago (151 E Adams),Digital,463.375,463.375,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+316,Kimpton Gray (122 W Monroe),Analogue,457.35,457.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+317,Kimpton Gray (122 W Monroe),Analogue,452.35,452.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+318,Kimpton Gray (122 W Monroe),Analogue,452.3875,452.3875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+319,Kimpton Gray (122 W Monroe),Analogue,457.3875,457.3875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+320,Kimpton Gray (122 W Monroe),Analogue,457.725,457.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+321,The LaSalle Chicago (208 S LaSalle),Digital,466.4,466.4,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+322,The LaSalle Chicago (208 S LaSalle),Digital,466.7875,466.7875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+323,The LaSalle Chicago (208 S LaSalle),Digital,466.85,466.85,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+324,The LaSalle Chicago (208 S LaSalle),Digital,467.1,467.1,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+325,The LaSalle Chicago (208 S LaSalle),Digital,467.5,467.5,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+326,Level Chicago – Fulton Market (354 N Union),Digital,456.325,456.325,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+327,Level Chicago – Fulton Market (354 N Union),Digital,457.45,457.45,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+328,Level Chicago – Fulton Market (354 N Union),Digital,457.8,457.8,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+329,Level Chicago – Fulton Market (354 N Union),Digital,466.075,466.075,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+330,Level Chicago – Fulton Market (354 N Union),Digital,466.125,466.125,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+331,London House (85 E Wacker),Digital,456.875,456.875,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+332,London House (85 E Wacker),Digital,457,457,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+333,London House (85 E Wacker),Digital,457.05,457.05,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+334,London House (85 E Wacker),Digital,457.325,457.325,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+335,London House (85 E Wacker),Digital,457.35,457.35,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+336,London House (85 E Wacker),Digital,466.6,466.6,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+337,London House (85 E Wacker),Digital,466.725,466.725,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+338,London House (85 E Wacker),Digital,466.9,466.9,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+339,London House (85 E Wacker),Digital,466.925,466.925,,1,1,None,None,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+340,Marriott Hotel Services (540 N Michigan),Analogue,461.4,461.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+341,Marriott Hotel Services (540 N Michigan),Analogue,463.2375,463.2375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+342,Marriott Hotel Services (540 N Michigan),Analogue,462.075,462.075,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+343,Marriott Hotel Services (540 N Michigan),Analogue,462.4875,462.4875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+344,Marriott Hotel Services (540 N Michigan),Analogue,461.475,461.475,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+345,Marriott Hotel Services (540 N Michigan),Analogue,463.9125,463.9125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+346,Marriott Hotel Services (540 N Michigan),Analogue,464.9375,464.9375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+347,PSAV / Audio Visual (various hotels),Analogue,461.9125,461.9125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+348,PSAV / Audio Visual (various hotels),Analogue,464.6625,464.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+349,PSAV / Audio Visual (various hotels),Analogue,467.4125,467.4125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+350,MURS 1,Analogue,151.82,151.82,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+351,MURS 2,Analogue,151.88,151.88,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+352,MURS 3,Analogue,151.94,151.94,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+353,MURS 4,Analogue,154.57,154.57,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+354,MURS 5,Analogue,154.6,154.6,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+355,WX2-Plano,Analogue,162.4,162.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+356,WX4-Lockport,Analogue,162.425,162.425,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+357,WX5-Hebron,Analogue,162.45,162.45,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+358,WX3-Rockford,Analogue,162.475,162.475,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+359,WX6-CrystLake,Analogue,162.5,162.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+360,WX7-Dixon,Analogue,162.525,162.525,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+361,WX1-Chicago,Analogue,162.55,162.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+362,MRN 01A,Analogue,156.05,156.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+363,MRN 02A,Analogue,156.1,156.1,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+364,MRN 03A,Analogue,156.15,156.15,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+365,MRN 04A,Analogue,156.2,156.2,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+366,MRN 05A,Analogue,156.25,156.25,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+367,MRN 06 S2S,Analogue,156.3,156.3,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+368,MRN 07A,Analogue,156.35,156.35,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+369,MRN 08,Analogue,156.4,156.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+370,MRN 09 B2B,Analogue,156.45,156.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+371,MRN 10,Analogue,156.5,156.5,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+372,MRN 11,Analogue,156.55,156.55,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+373,MRN 12,Analogue,156.6,156.6,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+374,MRN 13 NAV,Analogue,156.65,156.65,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+375,MRN 14,Analogue,156.7,156.7,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+376,MRN 15,Analogue,156.75,156.75,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+377,MRN 16 EMERG,Analogue,156.8,156.8,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+378,MRN 17,Analogue,156.85,156.85,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+379,MRN 18A,Analogue,156.9,156.9,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+380,MRN 19A,Analogue,156.95,156.95,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+381,MRN 20A,Analogue,157,157,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+382,MRN 21A,Analogue,157.05,157.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+383,MRN 22A USCG,Analogue,157.1,157.1,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+384,MRN 23A,Analogue,157.15,157.15,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+385,MRN 24,Analogue,157.2,157.2,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+386,MRN 25,Analogue,157.25,157.25,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+387,MRN 26,Analogue,157.3,157.3,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+388,MRN 27,Analogue,157.35,157.35,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+389,MRN 28,Analogue,157.4,157.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+390,MRN 63A,Analogue,156.175,156.175,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+391,MRN 65A,Analogue,156.275,156.275,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+392,MRN 66A,Analogue,156.325,156.325,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+393,MRN 67 B2B,Analogue,156.375,156.375,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+394,MRN 68 REC,Analogue,156.425,156.425,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+395,MRN 69 REC,Analogue,156.475,156.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+396,MRN 70,Analogue,156.525,156.525,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+397,MRN 71 REC,Analogue,156.575,156.575,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+398,MRN 72 S2S,Analogue,156.625,156.625,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+399,MRN 73,Analogue,156.675,156.675,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+400,MRN 74,Analogue,156.725,156.725,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+401,MRN 75,Analogue,156.775,156.775,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+402,MRN 76,Analogue,156.825,156.825,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+403,MRN 77 S2S,Analogue,156.875,156.875,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+404,MRN 78A,Analogue,156.925,156.925,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+405,MRN 79A,Analogue,156.975,156.975,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+406,MRN 80A,Analogue,157.025,157.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+407,MRN 81A,Analogue,157.075,157.075,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+408,MRN 82A,Analogue,157.125,157.125,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+409,MRN 83A,Analogue,157.175,157.175,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+410,MRN 84,Analogue,157.225,157.225,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+411,MRN 85,Analogue,157.275,157.275,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+412,MRN 86,Analogue,157.325,157.325,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+413,MRN 87,Analogue,157.375,157.375,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+414,MRN 88A,Analogue,157.425,157.425,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+415,VHF CALL,Analogue,146.52,146.52,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+416,VHF 146.400,Analogue,146.4,146.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+417,VHF 146.415,Analogue,146.415,146.415,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+418,VHF 146.430,Analogue,146.43,146.43,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+419,VHF 146.445,Analogue,146.445,146.445,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+420,VHF 146.460,Analogue,146.46,146.46,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+421,VHF 146.475,Analogue,146.475,146.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+422,VHF 146.490,Analogue,146.49,146.49,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+423,VHF 146.505,Analogue,146.505,146.505,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+424,VHF 146.535,Analogue,146.535,146.535,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+425,VHF 146.550,Analogue,146.55,146.55,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+426,VHF 146.565,Analogue,146.565,146.565,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+427,VHF 146.580,Analogue,146.58,146.58,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+428,VHF 147.420,Analogue,147.42,147.42,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+429,VHF 147.440,Analogue,147.44,147.44,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+430,VHF 147.460,Analogue,147.46,147.46,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+431,VHF 147.480,Analogue,147.48,147.48,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+432,VHF 147.500,Analogue,147.5,147.5,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+433,VHF 147.520,Analogue,147.52,147.52,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+434,VHF 147.540,Analogue,147.54,147.54,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+435,VHF 147.560,Analogue,147.56,147.56,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+436,CHGOFM-VHF,Analogue,146.94,146.34,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+437,NS9RC-VHF,Analogue,146.76,146.16,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+438,SARA-VHF,Analogue,147.06,147.66,25,,,None,None,None,Off,Off,127.3,127.3,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+439,SSARC-VHF,Analogue,146.85,146.25,25,,,None,None,None,Off,Off,103.5,103.5,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+440,CHGOFM-UHF,Analogue,444.4,449.4,25,,,None,None,None,Off,Off,023,023,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+441,NWARC-UHF,Analogue,443.75,448.75,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+442,CHGOFM-220,Analogue,224.94,223.34,25,,,None,None,None,Off,Off,110.9,110.9,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+443,NS9RC-UHF,Analogue,444.55,449.55,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+444,SARA-VHF2,Analogue,145.25,144.65,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+445,SSARC-UHF,Analogue,444.8,449.8,25,,,None,None,None,Off,Off,131.8,131.8,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+446,NWARC-VHF,Analogue,147.18,147.78,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+447,CHGOFM-VHF2,Analogue,146.76,146.16,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+448,UHF CALL,Analogue,446,446,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+449,UHF 446.025,Analogue,446.025,446.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+450,UHF 446.050,Analogue,446.05,446.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+451,UHF 446.075,Analogue,446.075,446.075,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+452,UHF 446.100,Analogue,446.1,446.1,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+453,UHF 446.125,Analogue,446.125,446.125,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+454,UHF 446.150,Analogue,446.15,446.15,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+455,UHF 446.175,Analogue,446.175,446.175,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+456,UHF 446.500,Analogue,446.5,446.5,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+457,APRS VHF,Analogue,144.39,144.39,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+458,APRS UHF,Analogue,445.925,445.925,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+459,GMRS 01,Analogue,462.5625,462.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+460,GMRS 02,Analogue,462.5875,462.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+461,GMRS 03,Analogue,462.6125,462.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+462,GMRS 04,Analogue,462.6375,462.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+463,GMRS 05,Analogue,462.6625,462.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+464,GMRS 06,Analogue,462.6875,462.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+465,GMRS 07,Analogue,462.7125,462.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+466,GMRS 08,Analogue,467.5625,467.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+467,GMRS 09,Analogue,467.5875,467.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+468,GMRS 10,Analogue,467.6125,467.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+469,GMRS 11,Analogue,467.6375,467.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+470,GMRS 12,Analogue,467.6625,467.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+471,GMRS 13,Analogue,467.6875,467.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+472,GMRS 14,Analogue,467.7125,467.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
+473,GMRS 15,Analogue,462.55,462.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+474,GMRS 16,Analogue,462.575,462.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+475,GMRS 17,Analogue,462.6,462.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+476,GMRS 18,Analogue,462.625,462.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+477,GMRS 19,Analogue,462.65,462.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+478,GMRS 20,Analogue,462.675,462.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+479,GMRS 21,Analogue,462.7,462.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+480,GMRS 22,Analogue,462.725,462.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+481,GMRS RPT-15,Analogue,462.55,467.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+482,GMRS RPT-16,Analogue,462.575,467.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+483,GMRS RPT-17,Analogue,462.6,467.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+484,GMRS RPT-18,Analogue,462.625,467.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+485,GMRS RPT-19,Analogue,462.65,467.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+486,GMRS RPT-20,Analogue,462.675,467.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+487,GMRS RPT-21,Analogue,462.7,467.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+488,GMRS RPT-22,Analogue,462.725,467.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+489,GMRS CHICAGO,Analogue,462.6,467.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+490,GMRS EVANSTON,Analogue,462.725,467.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0.128,0.008
+491,GMRS CHI-552,Analogue,462.55,467.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0.128,0.008
