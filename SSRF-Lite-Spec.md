@@ -10,7 +10,7 @@ Last updated: 2025-09-17
 SSRF-Lite is a trimmed-down profile of the [Standard Spectrum Resource Format (SSRF)](https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf) designed for:  
 
 - Representing radio channels, repeaters, and channel plans in **YAML**.  
-- Driving automated **codeplug generators** (e.g. OpenGD77).  
+- Driving automated codeplug generators ex. OpenGD77, qdmr, OpenRTX, & OEM imports.
 - Remaining close enough to SSRF that future expansion or exchange is straightforward.  
 
 ---
