@@ -33,7 +33,9 @@ SSRF‑Lite reference:
 │   ├── cfmc_repeaters.yml
 │   ├── sara_repeaters.yml
 │   ├── us_gmrs_channels.yml
-│   └── us_murs_channels.yml
+│   ├── us_murs_channels.yml
+│   ├── us_ham_vhf_simplex.yml           # 2m simplex + calling
+│   └── us_ham_uhf_simplex.yml           # 70cm simplex + calling
 │   └── us_marine_vhf_channels.yml       # US Marine VHF channel plan + assignments
 ├── opengd77_cps_import_generated/       # Fresh CSV outputs from the generator
 └── opengd77_cps_import_workingcheckpoint/ # A working snapshot for CPS import/testing
