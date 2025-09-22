@@ -9,7 +9,7 @@ Important:
 
 SSRF‑Lite reference:
 
-- Project doc: [SSRF‑Lite Spec](./SSRF-Lite-Spec.md)
+- Project doc: [SSRF‑Lite Spec](./ssrf_lite_systems/SSRF-Lite-Spec.md)
 - Background (NTIA SSRF): [https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf](https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf)
 
 ## What’s New (current state)
@@ -26,8 +26,7 @@ SSRF‑Lite reference:
 .
 ├── generate_opengd_import.py            # Main generator: SSRF‑Lite → OpenGD77 CSVs
 ├── pyproject.toml                       # Dependencies (managed with uv)
-├── SSRF-Lite-Spec.md                    # In‑repo SSRF‑Lite profile used here
-├── ssrf_lite_systems/                   # All SSRF‑Lite inputs (YAML)
+├── ssrf_lite_systems/                   # All SSRF‑Lite inputs (YAML) and spec
 │   ├── ns9rc_repeaters.yml
 │   ├── chicagoland_dmr_system.yml
 │   ├── cfmc_repeaters.yml
@@ -50,26 +49,35 @@ SSRF‑Lite reference:
 │   └── public_works_parks.yml            # Public Works & Parks (RX-only)
 │   └── transit_transport.yml             # Transit & Transport (RX-only)
 ├── opengd77_cps_import_generated/       # Fresh CSV outputs from the generator
-└── opengd77_cps_import_workingcheckpoint/ # A working snapshot for CPS import/testing
 ```
 
 ## SSRF-Lite Systems
 
-- `ssrf_lite_systems/us_marine_vhf_channels.yml`
-- `ssrf_lite_systems/us_ham_vhf_simplex.yml`
-- `ssrf_lite_systems/us_ham_uhf_simplex.yml`
-- `ssrf_lite_systems/noaa_weather.yml`  ← new: NOAA Weather WX1–WX7 (RX-only)
-- `ssrf_lite_systems/il_statewide_interop.yml`  ← new: IL Interop (RX-only)
-- `ssrf_lite_systems/rail_aar_scan.yml`  ← new: Railroads – AAR (RX-only)
-- `ssrf_lite_systems/rosehill_cemetery_dmr.yml`
-- `ssrf_lite_systems/chicago_police_department.yml`
-- `ssrf_lite_systems/cook_county_interop.yml`
+All SSRF‑Lite inputs live under `ssrf_lite_systems/`:
+
+- `ssrf_lite_systems/SSRF-Lite-Spec.md`
+- `ssrf_lite_systems/cfmc_repeaters.yml`
+- `ssrf_lite_systems/chicago_businesses_northside.yml`
 - `ssrf_lite_systems/chicago_fire_ems_northside.yml`
-- `ssrf_lite_systems/chicago_businesses_northside.yml`  ← new: curated northside business/property ops
-- `ssrf_lite_systems/us_itinerant_business.yml`  ← new: US common itinerant/business FM simplex (RX-only)
-- `ssrf_lite_systems/venues_chicago.yml`  ← new: Venues – Chicago (RX-only)
-- `ssrf_lite_systems/public_works_parks.yml`  ← new: Public Works & Parks (RX-only)
-- `ssrf_lite_systems/transit_transport.yml`  ← new: Transit & Transport (RX-only)
+- `ssrf_lite_systems/chicago_police_department.yml`
+- `ssrf_lite_systems/chicagoland_dmr_system.yml`
+- `ssrf_lite_systems/cook_county_interop.yml`
+- `ssrf_lite_systems/il_statewide_interop.yml`
+- `ssrf_lite_systems/noaa_weather.yml`
+- `ssrf_lite_systems/ns9rc_repeaters.yml`
+- `ssrf_lite_systems/public_works_parks.yml`
+- `ssrf_lite_systems/rail_aar_scan.yml`
+- `ssrf_lite_systems/rosehill_cemetery_dmr.yml`
+- `ssrf_lite_systems/sara_repeaters.yml`
+- `ssrf_lite_systems/transit_transport.yml`
+- `ssrf_lite_systems/us_gmrs_channels.yml`
+- `ssrf_lite_systems/us_ham_dmr_simplex.yml`
+- `ssrf_lite_systems/us_ham_uhf_simplex.yml`
+- `ssrf_lite_systems/us_ham_vhf_simplex.yml`
+- `ssrf_lite_systems/us_itinerant_business.yml`
+- `ssrf_lite_systems/us_marine_vhf_channels.yml`
+- `ssrf_lite_systems/us_murs_channels.yml`
+- `ssrf_lite_systems/venues_chicago.yml`
 
 Generated zones now include examples like `Marine`, `Ham VHF`, `Ham UHF`, `Ham-Repeaters`, `GMRS`, `MURS`, `NOAA Weather`, `IL Interop`, `Rail – AAR`, `Local-Commercial`, `Chicago PD`, `Cook Interop`, `Fire/EMS`, `US Itinerant`, `Ham DMR Simplex`, `Venues – Chicago`, `Public Works & Parks`, and `Transit & Transport`.
 
