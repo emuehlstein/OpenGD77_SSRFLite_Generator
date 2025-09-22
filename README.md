@@ -1,6 +1,6 @@
-# Chicago OpenGD77 Generator
+# OpenGD77 SSRFLite Generator
 
-A reproducible, data‑driven codeplug builder for OpenGD77 handhelds focused on Chicagoland. The generator ingests SSRF‑Lite YAML files and produces OpenGD77‑compatible CSVs (`Channels.csv`, `Contacts.csv`, `TG_Lists.csv`, `Zones.csv`) suitable for import via the CPS.
+A reproducible, data‑driven codeplug builder for OpenGD77 handhelds. The generator ingests SSRF‑Lite YAML files and produces OpenGD77‑compatible CSVs (`Channels.csv`, `Contacts.csv`, `TG_Lists.csv`, `Zones.csv`) suitable for import via the CPS.
 
 Important:
 
