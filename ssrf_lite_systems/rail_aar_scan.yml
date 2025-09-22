@@ -142,6 +142,88 @@ rf_chains:
       mode: { type: "FM" },
     }
 
+  # Additional common Chicago-area AAR channels
+  - {
+      id: chain_aar_160335,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 160.335 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_160485,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 160.485 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_160680,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 160.680 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_160710,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 160.710 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_160815,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 160.815 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_160860,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 160.860 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_160875,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 160.875 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_161115,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 161.115 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_161190,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 161.190 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: chain_aar_161205,
+      station_id: stn_rail,
+      antenna_id: ant_rail,
+      rx: { freq_mhz: 161.205 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+
 assignments:
   - {
       id: asg_aar_160230,
@@ -240,6 +322,78 @@ assignments:
       usage: "simplex",
       zones: ["Rail – AAR"],
       codeplug: { name: "AAR 161.160", rx_only: true },
+    }
+
+  # Assignments for additional channels
+  - {
+      id: asg_aar_160335,
+      rf_chain_id: chain_aar_160335,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 160.335", rx_only: true },
+    }
+  - {
+      id: asg_aar_160485,
+      rf_chain_id: chain_aar_160485,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 160.485", rx_only: true },
+    }
+  - {
+      id: asg_aar_160680,
+      rf_chain_id: chain_aar_160680,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 160.680", rx_only: true },
+    }
+  - {
+      id: asg_aar_160710,
+      rf_chain_id: chain_aar_160710,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 160.710", rx_only: true },
+    }
+  - {
+      id: asg_aar_160815,
+      rf_chain_id: chain_aar_160815,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 160.815", rx_only: true },
+    }
+  - {
+      id: asg_aar_160860,
+      rf_chain_id: chain_aar_160860,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 160.860", rx_only: true },
+    }
+  - {
+      id: asg_aar_160875,
+      rf_chain_id: chain_aar_160875,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 160.875", rx_only: true },
+    }
+  - {
+      id: asg_aar_161115,
+      rf_chain_id: chain_aar_161115,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 161.115", rx_only: true },
+    }
+  - {
+      id: asg_aar_161190,
+      rf_chain_id: chain_aar_161190,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 161.190", rx_only: true },
+    }
+  - {
+      id: asg_aar_161205,
+      rf_chain_id: chain_aar_161205,
+      usage: "simplex",
+      zones: ["Rail – AAR"],
+      codeplug: { name: "AAR 161.205", rx_only: true },
     }
 
 comments:

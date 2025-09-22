@@ -1,4 +1,4 @@
-# SSRF-Lite: Chicago Fire/EMS (Analogue RX-only) + Northside Fire
+# SSRF-Lite: Fire/EMS (Chicago + Northside analogue RX-only)
 # Source: RadioReference Cook County IL – Chicago Fire/EMS and Northside suburbs
 # Notes: Many primary ops are on OEMC 800MHz P25; below includes analogue backups and TAC/OPS you can monitor.
 
@@ -200,114 +200,114 @@ rf_chains:
     mode: { type: "FM", ctcss_rx_hz: 225.7 }
 
 assignments:
-  # Chicago Fire/EMS Zone
+  # Fire/EMS Zone (merged Chicago + Northside)
   - id: asg_cfd_fg_a
     rf_chain_id: chain_cfd_fg_a
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Fireground A", rx_only: true }
 
   - id: asg_cfd_cmd_a
     rf_chain_id: chain_cfd_cmd_a
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Command A", rx_only: true }
 
   - id: asg_cfd_lakefront
     rf_chain_id: chain_cfd_lakefront
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Lakefront", rx_only: true }
 
   - id: asg_cfd_tac_a
     rf_chain_id: chain_cfd_tac_a
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Tac A", rx_only: true }
 
   - id: asg_cfd_ops8_a
     rf_chain_id: chain_cfd_ops8_a
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Ops 8 A", rx_only: true }
 
   - id: asg_cfd_ops9_a
     rf_chain_id: chain_cfd_ops9_a
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Ops 9 A", rx_only: true }
 
   - id: asg_cfd_ops10_a
     rf_chain_id: chain_cfd_ops10_a
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Ops 10 A", rx_only: true }
 
   - id: asg_cfd_cta_fire
     rf_chain_id: chain_cfd_cta_fire
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CTA Fire", rx_only: true }
 
   - id: asg_cfd_specevt1_a
     rf_chain_id: chain_cfd_specevt1_a
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Special Events 1 A", rx_only: true }
 
   - id: asg_cfd_admin_a
     rf_chain_id: chain_cfd_admin_a
     usage: "simplex"
-    zones: ["Chicago Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "CFD Admin A", rx_only: true }
 
-  # Northside Fire/EMS Zone
+  # Northside Fire/EMS (merged into Fire/EMS zone name)
   - id: asg_red_south_bu
     rf_chain_id: chain_red_south_bu
     usage: "repeater"
-    zones: ["Northside Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "RED South Backup", rx_only: true }
 
   - id: asg_red_north_bu
     rf_chain_id: chain_red_north_bu
     usage: "repeater"
-    zones: ["Northside Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "RED North Backup", rx_only: true }
 
   - id: asg_red_fire_north
     rf_chain_id: chain_red_fire_north
     usage: "repeater"
-    zones: ["Northside Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "RED Fire North", rx_only: true }
 
   - id: asg_red_fire_south
     rf_chain_id: chain_red_fire_south
     usage: "repeater"
-    zones: ["Northside Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "RED Fire South", rx_only: true }
 
   - id: asg_skookie_fire_disp
     rf_chain_id: chain_skookie_fire_disp
     usage: "repeater"
-    zones: ["Northside Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "Skokie Fire Dispatch", rx_only: true }
 
   - id: asg_north_shore_admin
     rf_chain_id: chain_north_shore_admin
     usage: "simplex"
-    zones: ["Northside Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "North Shore Fire Admin", rx_only: true }
 
   - id: asg_evanston_fire
     rf_chain_id: chain_evanston_fire
     usage: "repeater"
-    zones: ["Northside Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "Evanston Fire Dispatch", rx_only: true }
 
   - id: asg_desplaines_fire
     rf_chain_id: chain_desplaines_fire
     usage: "repeater"
-    zones: ["Northside Fire/EMS"]
+    zones: ["Fire/EMS"]
     codeplug: { name: "Des Plaines Fire Dispatch", rx_only: true }
 
 comments:

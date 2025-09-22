@@ -71,6 +71,24 @@ TG_LISTS_HEADER = ["TG List Name"] + [f"Contact{i}" for i in range(1, 33)]
 ZONES_HEADER = ["Zone Name"] + [f"Channel{i}" for i in range(1, 81)]
 
 
+# CSV rules: sanitize names to exclude: , ; " ' < > \ ( )
+FORBIDDEN_CHARS = set([",", ";", '"', "'", "<", ">", "\\", "(", ")"])  # noqa: W605
+
+
+def sanitize_name(name: str) -> str:
+    """Remove forbidden characters and normalize whitespace.
+
+    Applies to Channel names, Zone names, and TG List names.
+    """
+    if not isinstance(name, str):
+        name = str(name)
+    # Remove forbidden characters
+    cleaned = "".join(ch for ch in name if ch not in FORBIDDEN_CHARS)
+    # Collapse excessive whitespace
+    cleaned = " ".join(cleaned.split())
+    return cleaned.strip()
+
+
 def fmt_freq(v: Optional[float]) -> str:
     if v is None:
         return ""
@@ -211,7 +229,8 @@ def build_outputs(ds: Dataset):
         for zn in zone_names or []:
             if not zn:
                 continue
-            zones.setdefault(zn, []).append(channel_name)
+            zn_clean = sanitize_name(zn)
+            zones.setdefault(zn_clean, []).append(channel_name)
 
     # Band/mode filter helpers
     def is_supported_mode(mode: str) -> bool:
@@ -230,6 +249,7 @@ def build_outputs(ds: Dataset):
         codeplug = asg.get("codeplug", {}) or {}
         # Ensure a non-empty string for channel name
         asg_name = codeplug.get("name") or asg.get("id") or f"Ch{channel_num}"
+        asg_name = sanitize_name(asg_name)
         zone_names: List[str] = asg.get("zones", []) or []
         rx_only = bool(codeplug.get("rx_only", False)) or (
             asg.get("usage") == "receive-only"
@@ -271,7 +291,7 @@ def build_outputs(ds: Dataset):
                                 default_ts = ts
                             break
                 # TG List name derived from assignment name (limit 15 chars per rules)
-                tgl_name = (asg_name or "DMR").replace("/", "-")[:15]
+                tgl_name = sanitize_name(asg_name or "DMR")[:15]
                 # Store TG list membership (max 32)
                 if pref_names:
                     existing = tg_lists.setdefault(tgl_name, [])
@@ -443,7 +463,9 @@ def build_outputs(ds: Dataset):
         for m in members:
             if m not in unique_members and len(unique_members) < 80:
                 unique_members.append(m)
-        row = [zname] + unique_members + [""] * (80 - len(unique_members))
+        row = (
+            [sanitize_name(zname)] + unique_members + [""] * (80 - len(unique_members))
+        )
         zone_rows.append(row)
 
     return contact_rows, channels_rows, tg_list_rows, zone_rows
