@@ -3,4 +3,4 @@
 - The first column in each file should be the name of the list or zone.
 - The remaining columns should be filled with either a valid entry or left blank.
 - Limit TG List names to 15 charsters.
-- Channel and Zone names must not contain the following characters: , ; " ' < > \ ( )
+- Channel and Zone names must not contain the following characters: , ; " ' < > \ ( ) –

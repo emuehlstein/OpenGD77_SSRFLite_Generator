@@ -95,6 +95,82 @@ rf_chains:
       mode: { type: "DMR" },
     }
 
+  # Chicago Department of Transportation (CDOT) & Streets/Sanitation
+  # Source: RadioReference Cook County -> Chicago Department of Transportation
+  # All RX-only monitoring. PL tones set where listed; conventional FM.
+  - {
+      id: ch_cdot_streets_n12,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.650 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM", ctcss_rx_hz: 107.2, ctcss_tx_hz: 107.2 },
+    }
+  - {
+      id: ch_cdot_forestry_animal,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.725 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM", ctcss_rx_hz: 107.2, ctcss_tx_hz: 107.2 },
+    }
+  - {
+      id: ch_cdot_towing_parking,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.775 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM", ctcss_rx_hz: 107.2, ctcss_tx_hz: 107.2 },
+    }
+  - {
+      id: ch_cdot_revenue_boot,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.825 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM", ctcss_rx_hz: 107.2, ctcss_tx_hz: 107.2 },
+    }
+  - {
+      id: ch_cdot_electricity_boe,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.975 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM", ctcss_rx_hz: 107.2, ctcss_tx_hz: 107.2 },
+    }
+  - {
+      id: ch_cdot_sewers_transport,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.675 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM", ctcss_rx_hz: 107.2, ctcss_tx_hz: 107.2 },
+    }
+  - {
+      id: ch_cdot_loop_ob3,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.100 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM", ctcss_rx_hz: 107.2, ctcss_tx_hz: 107.2 },
+    }
+  - {
+      id: ch_cdot_streets_s45,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.550 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM", ctcss_rx_hz: 107.2, ctcss_tx_hz: 107.2 },
+    }
+  - {
+      id: ch_cdot_paging,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.500 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+
 assignments:
   - {
       id: asg_dss_n1,
@@ -151,6 +227,71 @@ assignments:
       usage: "repeater",
       zones: ["Public Works & Parks"],
       codeplug: { name: "FPDCC DMR 453.050", rx_only: true },
+    }
+
+  # CDOT assignments (RX-only)
+  - {
+      id: asg_cdot_streets_n12,
+      rf_chain_id: ch_cdot_streets_n12,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Streets N 453.650", rx_only: true },
+    }
+  - {
+      id: asg_cdot_forestry_animal,
+      rf_chain_id: ch_cdot_forestry_animal,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Forestry/Animal 453.725", rx_only: true },
+    }
+  - {
+      id: asg_cdot_towing_parking,
+      rf_chain_id: ch_cdot_towing_parking,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Towing/Parking 453.775", rx_only: true },
+    }
+  - {
+      id: asg_cdot_revenue_boot,
+      rf_chain_id: ch_cdot_revenue_boot,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Revenue Boot 453.825", rx_only: true },
+    }
+  - {
+      id: asg_cdot_electricity_boe,
+      rf_chain_id: ch_cdot_electricity_boe,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Electricity 453.975", rx_only: true },
+    }
+  - {
+      id: asg_cdot_sewers_transport,
+      rf_chain_id: ch_cdot_sewers_transport,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Sewers/Transport 453.675", rx_only: true },
+    }
+  - {
+      id: asg_cdot_loop_ob3,
+      rf_chain_id: ch_cdot_loop_ob3,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Loop OB3 453.100", rx_only: true },
+    }
+  - {
+      id: asg_cdot_streets_s45,
+      rf_chain_id: ch_cdot_streets_s45,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Streets S 453.550", rx_only: true },
+    }
+  - {
+      id: asg_cdot_paging,
+      rf_chain_id: ch_cdot_paging,
+      usage: "receive-only",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "CDOT Paging 453.500", rx_only: true },
     }
 
 comments:

@@ -97,193 +97,202 @@ Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kH
 96,Park District DMR 463.2625,Digital,463.2625,463.2625,,1,1,Site Local,Park District D,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 97,FPDCC 453.175,Analogue,453.175,453.175,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 98,FPDCC DMR 453.050,Digital,453.05,453.05,,1,1,Site Local,FPDCC DMR 453.0,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-99,AAR 160.230,Analogue,160.23,160.23,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-100,AAR 160.320,Analogue,160.32,160.32,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-101,AAR 160.470,Analogue,160.47,160.47,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-102,AAR 160.530,Analogue,160.53,160.53,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-103,AAR 160.560,Analogue,160.56,160.56,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-104,AAR 160.590,Analogue,160.59,160.59,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-105,AAR 160.620,Analogue,160.62,160.62,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-106,AAR 160.650,Analogue,160.65,160.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-107,AAR 160.695,Analogue,160.695,160.695,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-108,AAR 160.770,Analogue,160.77,160.77,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-109,AAR 160.800,Analogue,160.8,160.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-110,AAR 160.845,Analogue,160.845,160.845,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-111,AAR 161.100,Analogue,161.1,161.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-112,AAR 161.160,Analogue,161.16,161.16,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-113,AAR 160.335,Analogue,160.335,160.335,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-114,AAR 160.485,Analogue,160.485,160.485,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-115,AAR 160.680,Analogue,160.68,160.68,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-116,AAR 160.710,Analogue,160.71,160.71,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-117,AAR 160.815,Analogue,160.815,160.815,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-118,AAR 160.860,Analogue,160.86,160.86,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-119,AAR 160.875,Analogue,160.875,160.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-120,AAR 161.115,Analogue,161.115,161.115,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-121,AAR 161.190,Analogue,161.19,161.19,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-122,AAR 161.205,Analogue,161.205,161.205,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-123,Rosehill Ops,Digital,463.5125,468.5125,,1,1,Site Local,Rosehill Ops,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.989,-87.689
-124,KA9HHH 146.880,Analogue,146.88,146.28,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
-125,KA9HHH 444.375,Analogue,444.375,449.375,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
-126,CTA Ops 461.575,Analogue,461.575,461.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-127,CTA Ops 461.825,Analogue,461.825,461.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-128,CTA Yard 462.100,Analogue,462.1,462.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-129,ORD Ops 464.575,Analogue,464.575,464.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-130,MDW Ops 462.225,Analogue,462.225,462.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-131,Delivery DMR 464.550,Digital,464.55,464.55,,1,1,Site Local,Delivery DMR 46,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-132,Delivery FM 464.450,Analogue,464.45,464.45,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-133,GMRS 01,Analogue,462.5625,462.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-134,GMRS 02,Analogue,462.5875,462.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-135,GMRS 03,Analogue,462.6125,462.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-136,GMRS 04,Analogue,462.6375,462.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-137,GMRS 05,Analogue,462.6625,462.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-138,GMRS 06,Analogue,462.6875,462.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-139,GMRS 07,Analogue,462.7125,462.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-140,GMRS 08 RX,Analogue,467.5625,467.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-141,GMRS 09 RX,Analogue,467.5875,467.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-142,GMRS 10 RX,Analogue,467.6125,467.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-143,GMRS 11 RX,Analogue,467.6375,467.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-144,GMRS 12 RX,Analogue,467.6625,467.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-145,GMRS 13 RX,Analogue,467.6875,467.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-146,GMRS 14 RX,Analogue,467.7125,467.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-147,GMRS 15,Analogue,462.55,462.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-148,GMRS 16,Analogue,462.575,462.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-149,GMRS 17,Analogue,462.6,462.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-150,GMRS 18,Analogue,462.625,462.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-151,GMRS 19,Analogue,462.65,462.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-152,GMRS 20,Analogue,462.675,462.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-153,GMRS 21,Analogue,462.7,462.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-154,GMRS 22,Analogue,462.725,462.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-155,GMRS 15 RPT,Analogue,462.55,462.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-156,GMRS 16 RPT,Analogue,462.575,462.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-157,GMRS 17 RPT,Analogue,462.6,462.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-158,GMRS 18 RPT,Analogue,462.625,462.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-159,GMRS 19 RPT,Analogue,462.65,462.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-160,GMRS 20 RPT,Analogue,462.675,462.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-161,GMRS 21 RPT,Analogue,462.7,462.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-162,GMRS 22 RPT,Analogue,462.725,462.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-163,DMR Simplex 446.500,Digital,446.5,446.5,,1,1,DMR Simplex,DMR Simplex 446,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.8781,-87.6298
-164,DMR Simplex 446.075,Digital,446.075,446.075,,1,1,DMR Simplex,DMR Simplex 446,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.8781,-87.6298
-165,70cm 446.000 Call,Analogue,446,446,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-166,70cm 446.025,Analogue,446.025,446.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-167,70cm 446.050,Analogue,446.05,446.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-168,70cm 446.075,Analogue,446.075,446.075,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-169,70cm 446.100,Analogue,446.1,446.1,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-170,70cm 446.125,Analogue,446.125,446.125,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-171,70cm 446.150,Analogue,446.15,446.15,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-172,70cm 446.175,Analogue,446.175,446.175,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-173,70cm 446.200,Analogue,446.2,446.2,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-174,70cm 446.225,Analogue,446.225,446.225,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-175,70cm 446.250,Analogue,446.25,446.25,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-176,70cm 446.275,Analogue,446.275,446.275,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-177,70cm 446.300,Analogue,446.3,446.3,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-178,70cm 446.325,Analogue,446.325,446.325,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-179,70cm 446.350,Analogue,446.35,446.35,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-180,70cm 446.375,Analogue,446.375,446.375,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-181,70cm 446.400,Analogue,446.4,446.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-182,70cm 446.425,Analogue,446.425,446.425,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-183,70cm 446.450,Analogue,446.45,446.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-184,70cm 446.475,Analogue,446.475,446.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-185,2m 146.520 Call,Analogue,146.52,146.52,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-186,2m 146.400,Analogue,146.4,146.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-187,2m 146.415,Analogue,146.415,146.415,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-188,2m 146.430,Analogue,146.43,146.43,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-189,2m 146.445,Analogue,146.445,146.445,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-190,2m 146.460,Analogue,146.46,146.46,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-191,2m 146.475,Analogue,146.475,146.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-192,2m 146.490,Analogue,146.49,146.49,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-193,2m 146.505,Analogue,146.505,146.505,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-194,2m 146.535,Analogue,146.535,146.535,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-195,2m 146.550,Analogue,146.55,146.55,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-196,2m 146.565,Analogue,146.565,146.565,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-197,2m 146.580,Analogue,146.58,146.58,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-198,2m 147.420,Analogue,147.42,147.42,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-199,2m 147.450,Analogue,147.45,147.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-200,2m 147.480,Analogue,147.48,147.48,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-201,2m 147.510,Analogue,147.51,147.51,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-202,2m 147.540,Analogue,147.54,147.54,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-203,2m 147.570,Analogue,147.57,147.57,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-204,VHF 151.505 Itin,Analogue,151.505,151.505,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-205,VHF 151.5125 Itin,Analogue,151.5125,151.5125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-206,Red Dot 151.625,Analogue,151.625,151.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-207,VHF 151.640,Analogue,151.64,151.64,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-208,VHF 151.700,Analogue,151.7,151.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-209,VHF 151.760,Analogue,151.76,151.76,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-210,Purple Dot 151.955,Analogue,151.955,151.955,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-211,VHF 154.5275,Analogue,154.5275,154.5275,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-212,VHF 158.400,Analogue,158.4,158.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-213,VHF 158.4075,Analogue,158.4075,158.4075,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-214,UHF 451.800,Analogue,451.8,451.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-215,UHF 451.8125,Analogue,451.8125,451.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-216,UHF 456.800,Analogue,456.8,456.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-217,UHF 456.8125,Analogue,456.8125,456.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-218,UHF 457.525,Analogue,457.525,457.525,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-219,UHF 457.550,Analogue,457.55,457.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-220,UHF 457.575,Analogue,457.575,457.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-221,Brown Dot 464.500,Analogue,464.5,464.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-222,Yellow Dot 464.550,Analogue,464.55,464.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-223,J Dot 467.7625,Analogue,467.7625,467.7625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-224,K Dot 467.8125,Analogue,467.8125,467.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-225,Silver Star 467.850,Analogue,467.85,467.85,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-226,Gold Star 467.875,Analogue,467.875,467.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-227,Red Star 467.900,Analogue,467.9,467.9,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-228,Blue Star 467.925,Analogue,467.925,467.925,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-229,UHF 469.500,Analogue,469.5,469.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-230,UHF 469.550,Analogue,469.55,469.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
-231,Marine 06,Analogue,156.3,156.3,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-232,Marine 09,Analogue,156.45,156.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-233,Marine 13,Analogue,156.65,156.65,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-234,Marine 16,Analogue,156.8,156.8,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-235,Marine 22A,Analogue,157.1,157.1,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-236,Marine 68,Analogue,156.425,156.425,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-237,Marine 69,Analogue,156.475,156.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-238,Marine 71,Analogue,156.575,156.575,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-239,Marine 72,Analogue,156.625,156.625,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-240,Marine 73,Analogue,156.675,156.675,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-241,Marine 78A,Analogue,156.925,156.925,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-242,Marine 01A,Analogue,156.05,156.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-243,Marine 05A,Analogue,156.25,156.25,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-244,Marine 07A,Analogue,156.35,156.35,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-245,Marine 08,Analogue,156.4,156.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-246,Marine 10,Analogue,156.5,156.5,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-247,Marine 11,Analogue,156.55,156.55,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-248,Marine 12,Analogue,156.6,156.6,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-249,Marine 14,Analogue,156.7,156.7,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-250,Marine 15,Analogue,156.75,156.75,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-251,Marine 17,Analogue,156.85,156.85,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-252,Marine 18A,Analogue,156.9,156.9,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-253,Marine 19A,Analogue,156.95,156.95,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-254,Marine 20A,Analogue,157,157,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-255,Marine 21A,Analogue,157.05,157.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-256,Marine 23A,Analogue,157.15,157.15,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-257,Marine 63A,Analogue,156.175,156.175,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-258,Marine 64A,Analogue,156.225,156.225,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-259,Marine 65A,Analogue,156.275,156.275,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-260,Marine 66A,Analogue,156.325,156.325,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-261,Marine 67,Analogue,156.375,156.375,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-262,Marine 70 DSC,Analogue,156.525,156.525,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-263,Marine 74,Analogue,156.725,156.725,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-264,Marine 77,Analogue,156.875,156.875,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-265,Marine 79A,Analogue,156.975,156.975,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-266,Marine 80A,Analogue,157.025,157.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-267,Marine 87B AIS,Analogue,161.975,161.975,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-268,Marine 88B AIS,Analogue,162.025,162.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
-269,MURS 1,Analogue,151.82,151.82,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-270,MURS 2,Analogue,151.88,151.88,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-271,MURS 3,Analogue,151.94,151.94,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-272,MURS 4,Analogue,154.57,154.57,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-273,MURS 5,Analogue,154.6,154.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-274,Aon 464.2125,Digital,464.2125,464.2125,,1,1,Site Local,Aon 464.2125,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-275,Two Prudential 464.925,Digital,464.925,464.925,,1,1,Site Local,Two Prudential ,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-276,BCBS 461.6625,Digital,461.6625,461.6625,,1,1,Site Local,BCBS 461.6625,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-277,333 S Wabash 464.7125,Digital,464.7125,464.7125,,1,1,Site Local,333 S Wabash 46,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-278,AMA Plaza 463.400,Digital,463.4,463.4,,1,1,Site Local,AMA Plaza 463.4,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-279,Old Post Office 463.925,Digital,463.925,463.925,,1,1,Site Local,Old Post Office,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-280,Merch Mart 463.5125,Digital,463.5125,463.5125,,1,1,Site Local,Merch Mart 463.,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-281,Two Prudential FM 464.925,Analogue,464.925,464.925,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-282,Allegro 463.725 FM,Analogue,463.725,463.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-283,Wrigley FM 464.5125,Analogue,464.5125,464.5125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-284,Wrigley DMR 463.4375,Digital,463.4375,463.4375,,1,1,Site Local,Wrigley DMR 463,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-285,United Center 464.300,Analogue,464.3,464.3,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-286,Soldier Field 462.1125,Analogue,462.1125,462.1125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-287,Navy Pier FM,Analogue,464.825,464.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-288,McCormick Place FM,Analogue,464.5,464.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+99,CDOT Streets N 453.650,Analogue,453.65,453.65,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+100,CDOT Forestry/Animal 453.725,Analogue,453.725,453.725,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+101,CDOT Towing/Parking 453.775,Analogue,453.775,453.775,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+102,CDOT Revenue Boot 453.825,Analogue,453.825,453.825,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+103,CDOT Electricity 453.975,Analogue,453.975,453.975,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+104,CDOT Sewers/Transport 453.675,Analogue,453.675,453.675,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+105,CDOT Loop OB3 453.100,Analogue,453.1,453.1,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+106,CDOT Streets S 453.550,Analogue,453.55,453.55,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+107,CDOT Paging 453.500,Analogue,453.5,453.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+108,AAR 160.230,Analogue,160.23,160.23,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+109,AAR 160.320,Analogue,160.32,160.32,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+110,AAR 160.470,Analogue,160.47,160.47,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+111,AAR 160.530,Analogue,160.53,160.53,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+112,AAR 160.560,Analogue,160.56,160.56,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+113,AAR 160.590,Analogue,160.59,160.59,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+114,AAR 160.620,Analogue,160.62,160.62,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+115,AAR 160.650,Analogue,160.65,160.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+116,AAR 160.695,Analogue,160.695,160.695,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+117,AAR 160.770,Analogue,160.77,160.77,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+118,AAR 160.800,Analogue,160.8,160.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+119,AAR 160.845,Analogue,160.845,160.845,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+120,AAR 161.100,Analogue,161.1,161.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+121,AAR 161.160,Analogue,161.16,161.16,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+122,AAR 160.335,Analogue,160.335,160.335,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+123,AAR 160.485,Analogue,160.485,160.485,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+124,AAR 160.680,Analogue,160.68,160.68,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+125,AAR 160.710,Analogue,160.71,160.71,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+126,AAR 160.815,Analogue,160.815,160.815,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+127,AAR 160.860,Analogue,160.86,160.86,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+128,AAR 160.875,Analogue,160.875,160.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+129,AAR 161.115,Analogue,161.115,161.115,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+130,AAR 161.190,Analogue,161.19,161.19,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+131,AAR 161.205,Analogue,161.205,161.205,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+132,Rosehill Ops,Digital,463.5125,468.5125,,1,1,Site Local,Rosehill Ops,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.989,-87.689
+133,KA9HHH 146.880,Analogue,146.88,146.28,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
+134,KA9HHH 444.375,Analogue,444.375,449.375,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
+135,CTA Ops 461.575,Analogue,461.575,461.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+136,CTA Ops 461.825,Analogue,461.825,461.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+137,CTA Yard 462.100,Analogue,462.1,462.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+138,ORD Ops 464.575,Analogue,464.575,464.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+139,MDW Ops 462.225,Analogue,462.225,462.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+140,Delivery DMR 464.550,Digital,464.55,464.55,,1,1,Site Local,Delivery DMR 46,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+141,Delivery FM 464.450,Analogue,464.45,464.45,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+142,GMRS 01,Analogue,462.5625,462.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+143,GMRS 02,Analogue,462.5875,462.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+144,GMRS 03,Analogue,462.6125,462.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+145,GMRS 04,Analogue,462.6375,462.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+146,GMRS 05,Analogue,462.6625,462.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+147,GMRS 06,Analogue,462.6875,462.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+148,GMRS 07,Analogue,462.7125,462.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+149,GMRS 08 RX,Analogue,467.5625,467.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+150,GMRS 09 RX,Analogue,467.5875,467.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+151,GMRS 10 RX,Analogue,467.6125,467.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+152,GMRS 11 RX,Analogue,467.6375,467.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+153,GMRS 12 RX,Analogue,467.6625,467.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+154,GMRS 13 RX,Analogue,467.6875,467.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+155,GMRS 14 RX,Analogue,467.7125,467.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+156,GMRS 15,Analogue,462.55,462.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+157,GMRS 16,Analogue,462.575,462.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+158,GMRS 17,Analogue,462.6,462.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+159,GMRS 18,Analogue,462.625,462.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+160,GMRS 19,Analogue,462.65,462.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+161,GMRS 20,Analogue,462.675,462.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+162,GMRS 21,Analogue,462.7,462.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+163,GMRS 22,Analogue,462.725,462.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+164,GMRS 15 RPT,Analogue,462.55,462.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+165,GMRS 16 RPT,Analogue,462.575,462.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+166,GMRS 17 RPT,Analogue,462.6,462.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+167,GMRS 18 RPT,Analogue,462.625,462.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+168,GMRS 19 RPT,Analogue,462.65,462.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+169,GMRS 20 RPT,Analogue,462.675,462.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+170,GMRS 21 RPT,Analogue,462.7,462.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+171,GMRS 22 RPT,Analogue,462.725,462.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+172,DMR Simplex 446.500,Digital,446.5,446.5,,1,1,DMR Simplex,DMR Simplex 446,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.8781,-87.6298
+173,DMR Simplex 446.075,Digital,446.075,446.075,,1,1,DMR Simplex,DMR Simplex 446,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.8781,-87.6298
+174,70cm 446.000 Call,Analogue,446,446,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+175,70cm 446.025,Analogue,446.025,446.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+176,70cm 446.050,Analogue,446.05,446.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+177,70cm 446.075,Analogue,446.075,446.075,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+178,70cm 446.100,Analogue,446.1,446.1,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+179,70cm 446.125,Analogue,446.125,446.125,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+180,70cm 446.150,Analogue,446.15,446.15,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+181,70cm 446.175,Analogue,446.175,446.175,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+182,70cm 446.200,Analogue,446.2,446.2,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+183,70cm 446.225,Analogue,446.225,446.225,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+184,70cm 446.250,Analogue,446.25,446.25,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+185,70cm 446.275,Analogue,446.275,446.275,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+186,70cm 446.300,Analogue,446.3,446.3,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+187,70cm 446.325,Analogue,446.325,446.325,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+188,70cm 446.350,Analogue,446.35,446.35,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+189,70cm 446.375,Analogue,446.375,446.375,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+190,70cm 446.400,Analogue,446.4,446.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+191,70cm 446.425,Analogue,446.425,446.425,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+192,70cm 446.450,Analogue,446.45,446.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+193,70cm 446.475,Analogue,446.475,446.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+194,2m 146.520 Call,Analogue,146.52,146.52,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+195,2m 146.400,Analogue,146.4,146.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+196,2m 146.415,Analogue,146.415,146.415,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+197,2m 146.430,Analogue,146.43,146.43,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+198,2m 146.445,Analogue,146.445,146.445,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+199,2m 146.460,Analogue,146.46,146.46,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+200,2m 146.475,Analogue,146.475,146.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+201,2m 146.490,Analogue,146.49,146.49,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+202,2m 146.505,Analogue,146.505,146.505,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+203,2m 146.535,Analogue,146.535,146.535,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+204,2m 146.550,Analogue,146.55,146.55,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+205,2m 146.565,Analogue,146.565,146.565,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+206,2m 146.580,Analogue,146.58,146.58,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+207,2m 147.420,Analogue,147.42,147.42,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+208,2m 147.450,Analogue,147.45,147.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+209,2m 147.480,Analogue,147.48,147.48,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+210,2m 147.510,Analogue,147.51,147.51,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+211,2m 147.540,Analogue,147.54,147.54,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+212,2m 147.570,Analogue,147.57,147.57,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+213,VHF 151.505 Itin,Analogue,151.505,151.505,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+214,VHF 151.5125 Itin,Analogue,151.5125,151.5125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+215,Red Dot 151.625,Analogue,151.625,151.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+216,VHF 151.640,Analogue,151.64,151.64,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+217,VHF 151.700,Analogue,151.7,151.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+218,VHF 151.760,Analogue,151.76,151.76,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+219,Purple Dot 151.955,Analogue,151.955,151.955,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+220,VHF 154.5275,Analogue,154.5275,154.5275,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+221,VHF 158.400,Analogue,158.4,158.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+222,VHF 158.4075,Analogue,158.4075,158.4075,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+223,UHF 451.800,Analogue,451.8,451.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+224,UHF 451.8125,Analogue,451.8125,451.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+225,UHF 456.800,Analogue,456.8,456.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+226,UHF 456.8125,Analogue,456.8125,456.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+227,UHF 457.525,Analogue,457.525,457.525,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+228,UHF 457.550,Analogue,457.55,457.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+229,UHF 457.575,Analogue,457.575,457.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+230,Brown Dot 464.500,Analogue,464.5,464.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+231,Yellow Dot 464.550,Analogue,464.55,464.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+232,J Dot 467.7625,Analogue,467.7625,467.7625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+233,K Dot 467.8125,Analogue,467.8125,467.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+234,Silver Star 467.850,Analogue,467.85,467.85,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+235,Gold Star 467.875,Analogue,467.875,467.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+236,Red Star 467.900,Analogue,467.9,467.9,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+237,Blue Star 467.925,Analogue,467.925,467.925,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+238,UHF 469.500,Analogue,469.5,469.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+239,UHF 469.550,Analogue,469.55,469.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,39.8283,-98.5795
+240,Marine 06,Analogue,156.3,156.3,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+241,Marine 09,Analogue,156.45,156.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+242,Marine 13,Analogue,156.65,156.65,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+243,Marine 16,Analogue,156.8,156.8,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+244,Marine 22A,Analogue,157.1,157.1,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+245,Marine 68,Analogue,156.425,156.425,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+246,Marine 69,Analogue,156.475,156.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+247,Marine 71,Analogue,156.575,156.575,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+248,Marine 72,Analogue,156.625,156.625,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+249,Marine 73,Analogue,156.675,156.675,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+250,Marine 78A,Analogue,156.925,156.925,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+251,Marine 01A,Analogue,156.05,156.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+252,Marine 05A,Analogue,156.25,156.25,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+253,Marine 07A,Analogue,156.35,156.35,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+254,Marine 08,Analogue,156.4,156.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+255,Marine 10,Analogue,156.5,156.5,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+256,Marine 11,Analogue,156.55,156.55,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+257,Marine 12,Analogue,156.6,156.6,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+258,Marine 14,Analogue,156.7,156.7,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+259,Marine 15,Analogue,156.75,156.75,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+260,Marine 17,Analogue,156.85,156.85,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+261,Marine 18A,Analogue,156.9,156.9,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+262,Marine 19A,Analogue,156.95,156.95,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+263,Marine 20A,Analogue,157,157,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+264,Marine 21A,Analogue,157.05,157.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+265,Marine 23A,Analogue,157.15,157.15,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+266,Marine 63A,Analogue,156.175,156.175,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+267,Marine 64A,Analogue,156.225,156.225,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+268,Marine 65A,Analogue,156.275,156.275,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+269,Marine 66A,Analogue,156.325,156.325,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+270,Marine 67,Analogue,156.375,156.375,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+271,Marine 70 DSC,Analogue,156.525,156.525,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+272,Marine 74,Analogue,156.725,156.725,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+273,Marine 77,Analogue,156.875,156.875,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+274,Marine 79A,Analogue,156.975,156.975,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+275,Marine 80A,Analogue,157.025,157.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+276,Marine 87B AIS,Analogue,161.975,161.975,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+277,Marine 88B AIS,Analogue,162.025,162.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+278,MURS 1,Analogue,151.82,151.82,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+279,MURS 2,Analogue,151.88,151.88,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+280,MURS 3,Analogue,151.94,151.94,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+281,MURS 4,Analogue,154.57,154.57,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+282,MURS 5,Analogue,154.6,154.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+283,Aon 464.2125,Digital,464.2125,464.2125,,1,1,Site Local,Aon 464.2125,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+284,Two Prudential 464.925,Digital,464.925,464.925,,1,1,Site Local,Two Prudential ,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+285,BCBS 461.6625,Digital,461.6625,461.6625,,1,1,Site Local,BCBS 461.6625,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+286,333 S Wabash 464.7125,Digital,464.7125,464.7125,,1,1,Site Local,333 S Wabash 46,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+287,AMA Plaza 463.400,Digital,463.4,463.4,,1,1,Site Local,AMA Plaza 463.4,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+288,Old Post Office 463.925,Digital,463.925,463.925,,1,1,Site Local,Old Post Office,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+289,Merch Mart 463.5125,Digital,463.5125,463.5125,,1,1,Site Local,Merch Mart 463.,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+290,Two Prudential FM 464.925,Analogue,464.925,464.925,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+291,Allegro 463.725 FM,Analogue,463.725,463.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+292,Wrigley FM 464.5125,Analogue,464.5125,464.5125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+293,Wrigley DMR 463.4375,Digital,463.4375,463.4375,,1,1,Site Local,Wrigley DMR 463,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+294,United Center 464.300,Analogue,464.3,464.3,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+295,Soldier Field 462.1125,Analogue,462.1125,462.1125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+296,Navy Pier FM,Analogue,464.825,464.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+297,McCormick Place FM,Analogue,464.5,464.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298

@@ -72,7 +72,7 @@ ZONES_HEADER = ["Zone Name"] + [f"Channel{i}" for i in range(1, 81)]
 
 
 # CSV rules: sanitize names to exclude: , ; " ' < > \ ( )
-FORBIDDEN_CHARS = set([",", ";", '"', "'", "<", ">", "\\", "(", ")"])  # noqa: W605
+FORBIDDEN_CHARS = set([",", ";", '"', "'", "<", ">", "\\", "(", ")", "–"])  # noqa: W605
 
 
 def sanitize_name(name: str) -> str:
