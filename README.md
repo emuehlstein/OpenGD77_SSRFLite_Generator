@@ -41,9 +41,25 @@ SSRF‑Lite reference:
 │   └── chicago_police_department.yml    # CPD analogue Citywide + VHF c2c (RX-only)
 │   ├── cook_county_interop.yml          # Cook County Interop VHF/UHF (RX-only)
 │   └── chicago_fire_ems_northside.yml   # CFD analogue + Northside Fire/EMS (RX-only)
+│   └── chicago_businesses_northside.yml  # curated northside business/property ops
+│   └── us_itinerant_business.yml         # US common itinerant/business FM simplex (RX-only)
 ├── opengd77_cps_import_generated/       # Fresh CSV outputs from the generator
 └── opengd77_cps_import_workingcheckpoint/ # A working snapshot for CPS import/testing
 ```
+
+## SSRF-Lite Systems
+
+- `ssrf_lite_systems/us_marine_vhf_channels.yml`
+- `ssrf_lite_systems/us_ham_vhf_simplex.yml`
+- `ssrf_lite_systems/us_ham_uhf_simplex.yml`
+- `ssrf_lite_systems/rosehill_cemetery_dmr.yml`
+- `ssrf_lite_systems/chicago_police_department.yml`
+- `ssrf_lite_systems/cook_county_interop.yml`
+- `ssrf_lite_systems/chicago_fire_ems_northside.yml`
+- `ssrf_lite_systems/chicago_businesses_northside.yml`  ← new: curated northside business/property ops
+- `ssrf_lite_systems/us_itinerant_business.yml`  ← new: US common itinerant/business FM simplex (RX-only)
+
+Generated zones now include examples like `Marine`, `Ham VHF`, `Ham UHF`, `Ham-Repeaters`, `GMRS`, `MURS`, `Local-Commercial`, `Chicago PD`, `Cook Interop`, `Chicago Fire/EMS`, `Northside Fire/EMS`, `Northside Business`, and `US Itinerant`.
 
 ## How It Works
 
