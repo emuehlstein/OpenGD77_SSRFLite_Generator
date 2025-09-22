@@ -34,6 +34,7 @@ SSRF‑Lite reference:
 │   ├── sara_repeaters.yml
 │   ├── us_gmrs_channels.yml
 │   └── us_murs_channels.yml
+│   └── us_marine_vhf_channels.yml       # US Marine VHF channel plan + assignments
 ├── opengd77_cps_import_generated/       # Fresh CSV outputs from the generator
 └── opengd77_cps_import_workingcheckpoint/ # A working snapshot for CPS import/testing
 ```

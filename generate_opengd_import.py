@@ -223,6 +223,7 @@ def build_outputs(ds: Dataset):
             if f is None:
                 return False
             return (136.0 <= f <= 174.0) or (400.0 <= f <= 480.0)
+
         return in_band(rx) and in_band(tx if tx is not None else rx)
 
     for asg in ds.assignments:
@@ -379,11 +380,20 @@ def build_outputs(ds: Dataset):
             ch_name = asg.get("channel_name")
             # find the channel by name in plan
             freq = None
+            bw = "12.5"
+            ch_obj = None
             if isinstance(plan.get("channels"), list):
                 for ch in plan["channels"]:
                     if ch.get("name") == ch_name:
+                        ch_obj = ch
                         freq = ch.get("freq_mhz")
                         break
+            if ch_obj is not None:
+                bw_calc = emission_to_bw_khz(
+                    ch_obj.get("emission"), ch_obj.get("bandwidth_khz")
+                )
+                if bw_calc:
+                    bw = bw_calc
             lat_s, lon_s = ("0", "0")
             row = [
                 channel_num,
@@ -391,7 +401,7 @@ def build_outputs(ds: Dataset):
                 "Analogue",
                 fmt_freq(freq),
                 fmt_freq(freq),
-                "12.5",  # defaults narrowband for NOAA etc.
+                bw,  # default narrowband unless specified per channel
                 "",
                 "",
                 "None",

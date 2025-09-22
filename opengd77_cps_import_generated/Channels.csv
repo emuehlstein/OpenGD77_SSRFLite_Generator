@@ -42,8 +42,46 @@ Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kH
 41,GMRS 20 RPT,Analogue,462.675,462.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
 42,GMRS 21 RPT,Analogue,462.7,462.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
 43,GMRS 22 RPT,Analogue,462.725,462.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-44,MURS 1,Analogue,151.82,151.82,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-45,MURS 2,Analogue,151.88,151.88,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-46,MURS 3,Analogue,151.94,151.94,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-47,MURS 4,Analogue,154.57,154.57,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
-48,MURS 5,Analogue,154.6,154.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+44,Marine 06,Analogue,156.3,156.3,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+45,Marine 09,Analogue,156.45,156.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+46,Marine 13,Analogue,156.65,156.65,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+47,Marine 16,Analogue,156.8,156.8,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+48,Marine 22A,Analogue,157.1,157.1,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+49,Marine 68,Analogue,156.425,156.425,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+50,Marine 69,Analogue,156.475,156.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+51,Marine 71,Analogue,156.575,156.575,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+52,Marine 72,Analogue,156.625,156.625,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+53,Marine 73,Analogue,156.675,156.675,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+54,Marine 78A,Analogue,156.925,156.925,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+55,Marine 01A,Analogue,156.05,156.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+56,Marine 05A,Analogue,156.25,156.25,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+57,Marine 07A,Analogue,156.35,156.35,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+58,Marine 08,Analogue,156.4,156.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+59,Marine 10,Analogue,156.5,156.5,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+60,Marine 11,Analogue,156.55,156.55,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+61,Marine 12,Analogue,156.6,156.6,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+62,Marine 14,Analogue,156.7,156.7,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+63,Marine 15,Analogue,156.75,156.75,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+64,Marine 17,Analogue,156.85,156.85,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+65,Marine 18A,Analogue,156.9,156.9,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+66,Marine 19A,Analogue,156.95,156.95,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+67,Marine 20A,Analogue,157,157,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+68,Marine 21A,Analogue,157.05,157.05,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+69,Marine 23A,Analogue,157.15,157.15,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+70,Marine 63A,Analogue,156.175,156.175,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+71,Marine 64A,Analogue,156.225,156.225,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+72,Marine 65A,Analogue,156.275,156.275,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+73,Marine 66A,Analogue,156.325,156.325,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+74,Marine 67,Analogue,156.375,156.375,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+75,Marine 70 DSC,Analogue,156.525,156.525,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+76,Marine 74,Analogue,156.725,156.725,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+77,Marine 77,Analogue,156.875,156.875,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+78,Marine 79A,Analogue,156.975,156.975,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+79,Marine 80A,Analogue,157.025,157.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+80,Marine 87B AIS,Analogue,161.975,161.975,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+81,Marine 88B AIS,Analogue,162.025,162.025,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+82,MURS 1,Analogue,151.82,151.82,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+83,MURS 2,Analogue,151.88,151.88,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+84,MURS 3,Analogue,151.94,151.94,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+85,MURS 4,Analogue,154.57,154.57,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+86,MURS 5,Analogue,154.6,154.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
