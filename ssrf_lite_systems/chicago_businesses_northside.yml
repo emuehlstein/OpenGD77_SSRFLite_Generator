@@ -191,6 +191,28 @@ rf_chains:
     tx: { emission: "7K60FXE" }
     mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
 
+  # Bucktown / Wicker Park vicinity additions
+  - id: chain_horween_leather
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.150 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
+
+  - id: chain_triangle_square
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 461.6625 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
+
+  - id: chain_lincoln_common
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 462.1625 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
+
 assignments:
   - id: asg_875_n_mich
     rf_chain_id: chain_875_n_mich
@@ -330,6 +352,25 @@ assignments:
     usage: "repeater"
     zones: ["Local-Commercial"]
     codeplug: { name: "Old Post Office", rx_only: true }
+
+  # Assignments for Bucktown / Wicker Park vicinity
+  - id: asg_horween_leather
+    rf_chain_id: chain_horween_leather
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Horween Leather", rx_only: true }
+
+  - id: asg_triangle_square
+    rf_chain_id: chain_triangle_square
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Triangle Square", rx_only: true }
+
+  - id: asg_lincoln_common
+    rf_chain_id: chain_lincoln_common
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Lincoln Common", rx_only: true }
 
 comments:
   - text: |
