@@ -81,6 +81,16 @@ All SSRF‑Lite inputs live under `ssrf_lite_systems/`:
 
 Generated zones now include examples like `Marine`, `Ham VHF`, `Ham UHF`, `Ham-Repeaters`, `GMRS`, `MURS`, `NOAA Weather`, `IL Interop`, `Rail – AAR`, `Local-Commercial`, `Chicago PD`, `Cook Interop`, `Fire/EMS`, `US Itinerant`, `Ham DMR Simplex`, `Venues – Chicago`, `Public Works & Parks`, and `Transit & Transport`.
 
+Emergency zone:
+
+- A compact `Emergency` zone has been added to group practical, licensed‑use calling and assistance channels:
+  - Amateur: `2m 146.520 Call`, `70cm 446.000 Call`, and strong local repeaters `NS9RC 2m FM (147.345 +0.6, 107.2)`, `CFMC 2m FM (146.760 −0.6, 107.2)`.
+  - GMRS: `GMRS 20 (462.6750)` simplex and a generic `GMRS 20 RPT` (+5.000) template.
+
+Notes:
+
+- Transmit only if you hold the appropriate license (Amateur/GMRS) and follow local coordination and emergency traffic practices.
+
 ## How It Works
 
 The generator loads and merges SSRF‑Lite YAMLs, then:

@@ -105,7 +105,7 @@ assignments:
   - id: asgn_ka9hhh_2m_fm
     rf_chain_id: chain_ka9hhh_2m_fm
     usage: "repeater"
-    zones: ["Ham-Repeaters"]
+    zones: ["Ham-Repeaters", "Emergency"]
     codeplug:
       name: "KA9HHH 146.880"
       rx_only: false
@@ -115,7 +115,7 @@ assignments:
   - id: asgn_ka9hhh_440_fm
     rf_chain_id: chain_ka9hhh_440_fm
     usage: "repeater"
-    zones: ["Ham-Repeaters"]
+    zones: ["Ham-Repeaters", "Emergency"]
     codeplug:
       name: "KA9HHH 444.375"
       rx_only: false

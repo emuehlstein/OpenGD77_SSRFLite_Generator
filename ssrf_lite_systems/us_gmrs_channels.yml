@@ -278,7 +278,7 @@ assignments:
     channel_plan_id: chplan_us_gmrs
     channel_name: "GMRS 20"
     usage: "simplex"
-    zones: ["GMRS"]
+    zones: ["GMRS", "Emergency"]
     codeplug:
       name: "GMRS 20"
       rx_only: false

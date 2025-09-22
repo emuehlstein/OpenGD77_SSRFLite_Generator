@@ -67,7 +67,7 @@ assignments:
   - id: us_ham_vhf_call
     channel_plan_id: us_ham_vhf_simplex_plan
     channel_name: 146.520 Call
-    zones: [Ham VHF]
+    zones: [Ham VHF, Emergency]
     codeplug:
       name: 2m 146.520 Call
       rx_only: false

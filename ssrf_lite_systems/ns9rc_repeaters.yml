@@ -307,7 +307,7 @@ assignments:
   - id: asgn_ns9rc_2m_fm
     rf_chain_id: chain_ns9rc_2m_fm
     usage: "repeater"
-    zones: ["Ham-Repeaters"]
+    zones: ["Ham-Repeaters", "Emergency"]
     codeplug:
       name: "NS9RC 2m FM"
       rx_only: false
@@ -339,7 +339,7 @@ assignments:
   - id: asgn_ns9rc_440
     rf_chain_id: chain_ns9rc_440_fm
     usage: "repeater"
-    zones: ["Ham-Repeaters"]
+    zones: ["Ham-Repeaters", "Emergency"]
     codeplug:
       name: "NS9RC 440"
       rx_only: false

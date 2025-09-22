@@ -70,7 +70,7 @@ assignments:
   - id: us_ham_uhf_call
     channel_plan_id: us_ham_uhf_simplex_plan
     channel_name: 446.000 Call
-    zones: [Ham UHF]
+    zones: [Ham UHF, Emergency]
     codeplug:
       name: 70cm 446.000 Call
       rx_only: false
