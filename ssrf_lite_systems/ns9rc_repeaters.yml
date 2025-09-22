@@ -412,24 +412,24 @@ assignments:
   - id: asgn_ns9rc_simplex_446_025
     rf_chain_id: chain_ns9rc_simplex_446_025
     usage: "simplex"
-    zones: ["Ham-Simplex"]
+    zones: ["UHF Simplex"]
     codeplug:
-      name: "Simplex 446.025 PL114.8"
+      name: "NS9RC UHF Simplex 446.025 PL114.8"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
   - id: asgn_ns9rc_simplex_147_405
     rf_chain_id: chain_ns9rc_simplex_147_405
     usage: "simplex"
-    zones: ["Ham-Simplex"]
+    zones: ["VHF Simplex"]
     codeplug:
-      name: "Simplex 147.405 DCS073"
+      name: "NS9RC VHF Simplex 147.405 DCS073"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
   - id: asgn_ns9rc_simplex_146_460
     rf_chain_id: chain_ns9rc_simplex_146_460
     usage: "simplex"
-    zones: ["Ham-Simplex"]
+    zones: ["VHF Simplex"]
     codeplug:
-      name: "Simplex 146.460"
+      name: "NS9RC VHF Simplex 146.460"
       rx_only: false
     authorization_id: auth_fcc_amateur_t

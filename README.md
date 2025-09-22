@@ -24,7 +24,7 @@ SSRF‑Lite reference:
 
 ```text
 .
-├── generate_channels.py                 # Main generator: SSRF‑Lite → OpenGD77 CSVs
+├── generate_opengd_import.py            # Main generator: SSRF‑Lite → OpenGD77 CSVs
 ├── pyproject.toml                       # Dependencies (managed with uv)
 ├── SSRF-Lite-Spec.md                    # In‑repo SSRF‑Lite profile used here
 ├── ssrf_lite_systems/                   # All SSRF‑Lite inputs (YAML)
@@ -35,8 +35,12 @@ SSRF‑Lite reference:
 │   ├── us_gmrs_channels.yml
 │   ├── us_murs_channels.yml
 │   ├── us_ham_vhf_simplex.yml           # 2m simplex + calling
-│   └── us_ham_uhf_simplex.yml           # 70cm simplex + calling
-│   └── us_marine_vhf_channels.yml       # US Marine VHF channel plan + assignments
+│   ├── us_ham_uhf_simplex.yml           # 70cm simplex + calling
+│   ├── us_marine_vhf_channels.yml       # US Marine VHF channel plan + assignments
+│   ├── rosehill_cemetery_dmr.yml        # Rosehill Cemetery DMR (RX-only pending verification)
+│   └── chicago_police_department.yml    # CPD analogue Citywide + VHF c2c (RX-only)
+│   ├── cook_county_interop.yml          # Cook County Interop VHF/UHF (RX-only)
+│   └── chicago_fire_ems_northside.yml   # CFD analogue + Northside Fire/EMS (RX-only)
 ├── opengd77_cps_import_generated/       # Fresh CSV outputs from the generator
 └── opengd77_cps_import_workingcheckpoint/ # A working snapshot for CPS import/testing
 ```
@@ -67,7 +71,7 @@ Install dependencies and run:
 
 ```zsh
 uv sync
-uv run python generate_channels.py
+uv run python generate_opengd_import.py
 ```
 
 Expected output:
@@ -103,7 +107,7 @@ Import the generated CSVs into OpenGD77 CPS.
 
 1. Create a branch
 2. Edit or add SSRF‑Lite YAML in `ssrf_lite_systems/`
-3. `uv run python generate_channels.py` and review diffs
+3. `uv run python generate_opengd_import.py` and review diffs
 4. Update docs/tests as needed and open a PR
 
 ## License
