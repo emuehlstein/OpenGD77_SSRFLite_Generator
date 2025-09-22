@@ -32,16 +32,16 @@ rf_chains:
   - id: chain_875_n_mich
     station_id: stn_biz_north
     antenna_id: ant_biz_north
-    rx: { freq_mhz: 463.6375 }
-    tx: { emission: "7K60FXE" }
-    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
+    rx: { freq_mhz: 464.775 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 565, dcs_tx_code: 565 }
 
   - id: chain_401_n_mich
     station_id: stn_biz_north
     antenna_id: ant_biz_north
-    rx: { freq_mhz: 464.950 }
-    tx: { emission: "7K60FXE" }
-    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
+    rx: { freq_mhz: 469.9125 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 311, dcs_tx_code: 311 }
 
   - id: chain_tribune_tower
     station_id: stn_biz_north
@@ -134,13 +134,85 @@ rf_chains:
     tx: { emission: "11K2F3E" }
     mode: { type: "FM" }
 
+  # Retail and venues (Near North / River North)
+  - id: chain_apple_mich
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 469.5625 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", ctcss_rx_hz: 82.5, ctcss_tx_hz: 82.5 }
+
+  - id: chain_northbridge_sec
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 467.0875 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 156, dcs_tx_code: 156 }
+
+  - id: chain_flemings_a1
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.8125 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 624, dcs_tx_code: 624 }
+
+  - id: chain_flemings_a2
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.5125 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 624, dcs_tx_code: 624 }
+
+  - id: chain_dave_busters_clark
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 467.1125 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM" }
+
+  - id: chain_morettis_ep
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 469.1125 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", ctcss_rx_hz: 186.2, ctcss_tx_hz: 186.2 }
+
+  - id: chain_maxbar
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 467.925 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 565, dcs_tx_code: 565 }
+
+  - id: chain_park_place_rest
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 467.925 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", ctcss_rx_hz: 173.8, ctcss_tx_hz: 173.8 }
+
+  # Misc near-north businesses
+  - id: chain_holy_name_cathedral
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 461.0625 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", ctcss_rx_hz: 67.0, ctcss_tx_hz: 67.0 }
+
+  - id: chain_perillo_bmw
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.500 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM" }
+
   # Loop tall buildings / hotels (repeaters where provided)
   - id: chain_allegro_sonesta
     station_id: stn_biz_north
     antenna_id: ant_biz_north
     rx: { freq_mhz: 463.725 }
     tx: { emission: "7K60FXE" }
-    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
+    mode: { type: "DMR", color_code: 6, timeslots: [1, 2] }
 
   - id: chain_allegro_sonesta_alt
     station_id: stn_biz_north
@@ -191,6 +263,42 @@ rf_chains:
     tx: { emission: "7K60FXE" }
     mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
 
+  # Apartments / Condos (Streeterville / River North / Lakeshore East)
+  - id: chain_340_on_the_park
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 463.8125 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 132, dcs_tx_code: 132 }
+
+  - id: chain_mcclurg_court
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.9375 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 411, dcs_tx_code: 411 }
+
+  - id: chain_north_water_apts
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.000 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 132, dcs_tx_code: 132 }
+
+  - id: chain_river_east_center
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 451.5125 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", ctcss_rx_hz: 123.0, ctcss_tx_hz: 123.0 }
+
+  - id: chain_cityview_condos
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 466.350 }
+    tx: { emission: "11K2F3E" }
+    mode: { type: "FM", dcs_rx_code: 32, dcs_tx_code: 32 }
+
   # Bucktown / Wicker Park vicinity additions
   - id: chain_horween_leather
     station_id: stn_biz_north
@@ -213,18 +321,82 @@ rf_chains:
     tx: { emission: "7K60FXE" }
     mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
 
+  # Hotels (Near North / River North / Loop-adjacent)
+  - id: chain_marriott_mm_sec
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 462.4875 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 4, timeslots: [1] }
+
+  - id: chain_sheraton_grand_sec
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 462.1625 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 9, timeslots: [2] }
+
+  - id: chain_sheraton_grand_ops
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 461.5625 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 11, timeslots: [1] }
+
+  - id: chain_peninsula_ops
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.4625 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 3, timeslots: [1, 2] }
+
+  - id: chain_trump_sec
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.9375 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 9, timeslots: [1] }
+
+  - id: chain_trump_ops
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.2875 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 9, timeslots: [1] }
+
+  - id: chain_renaissance_dt_h_e
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 463.600 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 8, timeslots: [2] }
+
+  - id: chain_caa_hotel_sec
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 461.9125 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 10, timeslots: [1] }
+
+  - id: chain_caa_hotel_hskp
+    station_id: stn_biz_north
+    antenna_id: ant_biz_north
+    rx: { freq_mhz: 464.7625 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 11, timeslots: [1] }
+
 assignments:
   - id: asg_875_n_mich
     rf_chain_id: chain_875_n_mich
     usage: "repeater"
     zones: ["Local-Commercial"]
-    codeplug: { name: "875 N Mich Ops", rx_only: true }
+    codeplug: { name: "875 N Mich Sec", rx_only: true }
 
   - id: asg_401_n_mich
     rf_chain_id: chain_401_n_mich
     usage: "repeater"
     zones: ["Local-Commercial"]
-    codeplug: { name: "401 N Mich Ops", rx_only: true }
+    codeplug: { name: "401 N Mich Sec", rx_only: true }
 
   - id: asg_tribune_tower
     rf_chain_id: chain_tribune_tower
@@ -304,6 +476,68 @@ assignments:
     zones: ["Local-Commercial"]
     codeplug: { name: "Cubby Bear", rx_only: true }
 
+  # Assignments for Retail and venues
+  - id: asg_apple_mich
+    rf_chain_id: chain_apple_mich
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Apple Mich Ave", rx_only: true }
+
+  - id: asg_northbridge_sec
+    rf_chain_id: chain_northbridge_sec
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "North Bridge Sec", rx_only: true }
+
+  - id: asg_flemings_a1
+    rf_chain_id: chain_flemings_a1
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Flemings A1", rx_only: true }
+
+  - id: asg_flemings_a2
+    rf_chain_id: chain_flemings_a2
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Flemings A2", rx_only: true }
+
+  - id: asg_dave_busters_clark
+    rf_chain_id: chain_dave_busters_clark
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Dave & Busters", rx_only: true }
+
+  - id: asg_morettis_ep
+    rf_chain_id: chain_morettis_ep
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Morettis EP", rx_only: true }
+
+  - id: asg_maxbar
+    rf_chain_id: chain_maxbar
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "MaxBar Chicago", rx_only: true }
+
+  - id: asg_park_place_rest
+    rf_chain_id: chain_park_place_rest
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Park Place Rest", rx_only: true }
+
+  # Assignments for misc near-north businesses
+  - id: asg_holy_name_cathedral
+    rf_chain_id: chain_holy_name_cathedral
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Holy Name Cath", rx_only: true }
+
+  - id: asg_perillo_bmw
+    rf_chain_id: chain_perillo_bmw
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Perillo BMW", rx_only: true }
+
   # Assignments for Loop tall buildings / hotels
   - id: asg_allegro_sonesta
     rf_chain_id: chain_allegro_sonesta
@@ -353,6 +587,37 @@ assignments:
     zones: ["Local-Commercial"]
     codeplug: { name: "Old Post Office", rx_only: true }
 
+  # Assignments for Apartments / Condos
+  - id: asg_340_on_the_park
+    rf_chain_id: chain_340_on_the_park
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "340 on the Park", rx_only: true }
+
+  - id: asg_mcclurg_court
+    rf_chain_id: chain_mcclurg_court
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "McClurg Court Ctr", rx_only: true }
+
+  - id: asg_north_water_apts
+    rf_chain_id: chain_north_water_apts
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "North Water Apts", rx_only: true }
+
+  - id: asg_river_east_center
+    rf_chain_id: chain_river_east_center
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "River East Ctr", rx_only: true }
+
+  - id: asg_cityview_condos
+    rf_chain_id: chain_cityview_condos
+    usage: "simplex"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "City View Condos", rx_only: true }
+
   # Assignments for Bucktown / Wicker Park vicinity
   - id: asg_horween_leather
     rf_chain_id: chain_horween_leather
@@ -371,6 +636,61 @@ assignments:
     usage: "repeater"
     zones: ["Local-Commercial"]
     codeplug: { name: "Lincoln Common", rx_only: true }
+
+  # Assignments for Hotels
+  - id: asg_marriott_mm_sec
+    rf_chain_id: chain_marriott_mm_sec
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Marriott MM Sec", rx_only: true }
+
+  - id: asg_sheraton_grand_sec
+    rf_chain_id: chain_sheraton_grand_sec
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Sheraton Sec", rx_only: true }
+
+  - id: asg_sheraton_grand_ops
+    rf_chain_id: chain_sheraton_grand_ops
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Sheraton Ops", rx_only: true }
+
+  - id: asg_peninsula_ops
+    rf_chain_id: chain_peninsula_ops
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Peninsula Ops", rx_only: true }
+
+  - id: asg_trump_sec
+    rf_chain_id: chain_trump_sec
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Trump Hotel Sec", rx_only: true }
+
+  - id: asg_trump_ops
+    rf_chain_id: chain_trump_ops
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Trump Hotel Ops", rx_only: true }
+
+  - id: asg_renaissance_dt_h_e
+    rf_chain_id: chain_renaissance_dt_h_e
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "Renaissance H/E", rx_only: true }
+
+  - id: asg_caa_hotel_sec
+    rf_chain_id: chain_caa_hotel_sec
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "CAA Hotel Sec", rx_only: true }
+
+  - id: asg_caa_hotel_hskp
+    rf_chain_id: chain_caa_hotel_hskp
+    usage: "repeater"
+    zones: ["Local-Commercial"]
+    codeplug: { name: "CAA Hotel Hskp", rx_only: true }
 
 comments:
   - text: |
