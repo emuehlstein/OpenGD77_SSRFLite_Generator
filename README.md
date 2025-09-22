@@ -37,6 +37,9 @@ SSRF‑Lite reference:
 │   ├── us_ham_vhf_simplex.yml           # 2m simplex + calling
 │   ├── us_ham_uhf_simplex.yml           # 70cm simplex + calling
 │   ├── us_marine_vhf_channels.yml       # US Marine VHF channel plan + assignments
+│   ├── noaa_weather.yml                 # NOAA Weather WX1–WX7 (RX-only)
+│   ├── il_statewide_interop.yml         # IL interop (IFERN/IREACH/ISPERN/VCALL/VTAC/UCALL/UTAC), RX-only
+│   ├── rail_aar_scan.yml                # Railroads – AAR VHF scan set (RX-only)
 │   ├── rosehill_cemetery_dmr.yml        # Rosehill Cemetery DMR (RX-only pending verification)
 │   └── chicago_police_department.yml    # CPD analogue Citywide + VHF c2c (RX-only)
 │   ├── cook_county_interop.yml          # Cook County Interop VHF/UHF (RX-only)
@@ -52,6 +55,9 @@ SSRF‑Lite reference:
 - `ssrf_lite_systems/us_marine_vhf_channels.yml`
 - `ssrf_lite_systems/us_ham_vhf_simplex.yml`
 - `ssrf_lite_systems/us_ham_uhf_simplex.yml`
+- `ssrf_lite_systems/noaa_weather.yml`  ← new: NOAA Weather WX1–WX7 (RX-only)
+- `ssrf_lite_systems/il_statewide_interop.yml`  ← new: IL Interop (RX-only)
+- `ssrf_lite_systems/rail_aar_scan.yml`  ← new: Railroads – AAR (RX-only)
 - `ssrf_lite_systems/rosehill_cemetery_dmr.yml`
 - `ssrf_lite_systems/chicago_police_department.yml`
 - `ssrf_lite_systems/cook_county_interop.yml`
@@ -59,7 +65,7 @@ SSRF‑Lite reference:
 - `ssrf_lite_systems/chicago_businesses_northside.yml`  ← new: curated northside business/property ops
 - `ssrf_lite_systems/us_itinerant_business.yml`  ← new: US common itinerant/business FM simplex (RX-only)
 
-Generated zones now include examples like `Marine`, `Ham VHF`, `Ham UHF`, `Ham-Repeaters`, `GMRS`, `MURS`, `Local-Commercial`, `Chicago PD`, `Cook Interop`, `Chicago Fire/EMS`, `Northside Fire/EMS`, `Northside Business`, and `US Itinerant`.
+Generated zones now include examples like `Marine`, `Ham VHF`, `Ham UHF`, `Ham-Repeaters`, `GMRS`, `MURS`, `NOAA Weather`, `IL Interop`, `Rail – AAR`, `Local-Commercial`, `Chicago PD`, `Cook Interop`, `Chicago Fire/EMS`, `Northside Fire/EMS`, and `US Itinerant`.
 
 ## How It Works
 
