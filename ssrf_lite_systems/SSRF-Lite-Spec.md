@@ -182,6 +182,7 @@ assignments:
     codeplug:
       name: "NS9RC 440"
       rx_only: false
+      all_skip: false  # Optional: if true, sets Channels.csv "All Skip" = Yes
     authorization_id: auth_fcc_amateur_t
     comment: |
       Motorola + S-Com 7330 controller, ~80 W ERP.
@@ -197,6 +198,7 @@ assignments:
     codeplug:
       name: "WX1-Chicago"
       rx_only: true
+      all_skip: true
     authorization_id: auth_rx_only_public
 ```
 
@@ -215,12 +217,14 @@ assignments:
 | Authorization | `authorizations[]` | same |
 | Assignment | `assignments[]` | same, plus codeplug extras |
 | Contacts (not in SSRF) | `contacts[]` | **added** for DMR convenience |
-| Codeplug / Zones | `assignments[].codeplug`, `zones` | **added** for generator use |
+| Codeplug / Zones | `assignments[].codeplug`, `zones` | **added** for generator use; `codeplug.all_skip` maps to Channels.csv "All Skip" |
 
 ---
 
 ## 4. Example Summary
-This spec now demonstrates:  
+
+This spec now demonstrates:
+
 - **Analog FM repeater**: NS9RC 440 MHz with ERP, offset, tones, and coverage notes.  
 - **Receive-only channel plan**: NOAA WX frequencies.  
 - **Authorization linkage**: Amateur TX license vs. public RX-only.  

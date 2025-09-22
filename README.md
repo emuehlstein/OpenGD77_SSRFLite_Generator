@@ -46,6 +46,9 @@ SSRF‑Lite reference:
 │   └── chicago_fire_ems_northside.yml   # CFD analogue + Northside Fire/EMS (RX-only)
 │   └── chicago_businesses_northside.yml  # curated northside business/property ops
 │   └── us_itinerant_business.yml         # US common itinerant/business FM simplex (RX-only)
+│   └── venues_chicago.yml                # Venues – Chicago (RX-only)
+│   └── public_works_parks.yml            # Public Works & Parks (RX-only)
+│   └── transit_transport.yml             # Transit & Transport (RX-only)
 ├── opengd77_cps_import_generated/       # Fresh CSV outputs from the generator
 └── opengd77_cps_import_workingcheckpoint/ # A working snapshot for CPS import/testing
 ```
@@ -64,8 +67,11 @@ SSRF‑Lite reference:
 - `ssrf_lite_systems/chicago_fire_ems_northside.yml`
 - `ssrf_lite_systems/chicago_businesses_northside.yml`  ← new: curated northside business/property ops
 - `ssrf_lite_systems/us_itinerant_business.yml`  ← new: US common itinerant/business FM simplex (RX-only)
+- `ssrf_lite_systems/venues_chicago.yml`  ← new: Venues – Chicago (RX-only)
+- `ssrf_lite_systems/public_works_parks.yml`  ← new: Public Works & Parks (RX-only)
+- `ssrf_lite_systems/transit_transport.yml`  ← new: Transit & Transport (RX-only)
 
-Generated zones now include examples like `Marine`, `Ham VHF`, `Ham UHF`, `Ham-Repeaters`, `GMRS`, `MURS`, `NOAA Weather`, `IL Interop`, `Rail – AAR`, `Local-Commercial`, `Chicago PD`, `Cook Interop`, `Chicago Fire/EMS`, `Northside Fire/EMS`, and `US Itinerant`.
+Generated zones now include examples like `Marine`, `Ham VHF`, `Ham UHF`, `Ham-Repeaters`, `GMRS`, `MURS`, `NOAA Weather`, `IL Interop`, `Rail – AAR`, `Local-Commercial`, `Chicago PD`, `Cook Interop`, `Fire/EMS`, `US Itinerant`, `Ham DMR Simplex`, `Venues – Chicago`, `Public Works & Parks`, and `Transit & Transport`.
 
 ## How It Works
 

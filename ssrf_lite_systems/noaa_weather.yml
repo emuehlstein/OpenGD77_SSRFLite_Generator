@@ -92,49 +92,49 @@ assignments:
       rf_chain_id: chain_wx1,
       usage: "simplex",
       zones: ["NOAA Weather"],
-      codeplug: { name: "WX1 162.550", rx_only: true },
+      codeplug: { name: "WX1 162.550", rx_only: true, all_skip: true },
     }
   - {
       id: asg_wx2,
       rf_chain_id: chain_wx2,
       usage: "simplex",
       zones: ["NOAA Weather"],
-      codeplug: { name: "WX2 162.400", rx_only: true },
+      codeplug: { name: "WX2 162.400", rx_only: true, all_skip: true },
     }
   - {
       id: asg_wx3,
       rf_chain_id: chain_wx3,
       usage: "simplex",
       zones: ["NOAA Weather"],
-      codeplug: { name: "WX3 162.475", rx_only: true },
+      codeplug: { name: "WX3 162.475", rx_only: true, all_skip: true },
     }
   - {
       id: asg_wx4,
       rf_chain_id: chain_wx4,
       usage: "simplex",
       zones: ["NOAA Weather"],
-      codeplug: { name: "WX4 162.425", rx_only: true },
+      codeplug: { name: "WX4 162.425", rx_only: true, all_skip: true },
     }
   - {
       id: asg_wx5,
       rf_chain_id: chain_wx5,
       usage: "simplex",
       zones: ["NOAA Weather"],
-      codeplug: { name: "WX5 162.450", rx_only: true },
+      codeplug: { name: "WX5 162.450", rx_only: true, all_skip: true },
     }
   - {
       id: asg_wx6,
       rf_chain_id: chain_wx6,
       usage: "simplex",
       zones: ["NOAA Weather"],
-      codeplug: { name: "WX6 162.500", rx_only: true },
+      codeplug: { name: "WX6 162.500", rx_only: true, all_skip: true },
     }
   - {
       id: asg_wx7,
       rf_chain_id: chain_wx7,
       usage: "simplex",
       zones: ["NOAA Weather"],
-      codeplug: { name: "WX7 162.525", rx_only: true },
+      codeplug: { name: "WX7 162.525", rx_only: true, all_skip: true },
     }
 
 comments:

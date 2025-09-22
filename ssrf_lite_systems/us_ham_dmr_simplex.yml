@@ -1,0 +1,73 @@
+# SSRF-Lite: US Ham DMR Simplex
+# Two commonly used UHF DMR simplex presets. Include a basic TG99 contact for TX use.
+
+contacts:
+  - {
+      id: ct_dmr_simplex,
+      name: "DMR Simplex",
+      number: 99,
+      kind: "Group",
+      default_timeslot: 1,
+    }
+
+organizations:
+  - id: org_ham_dmr_smpx
+    name: "US Ham DMR Simplex"
+
+locations:
+  - id: loc_chi
+    name: "Chicago (approx)"
+    lat: 41.8781
+    lon: -87.6298
+
+stations:
+  - id: stn_ham_dmr
+    call_sign: null
+    organization_id: org_ham_dmr_smpx
+    location_id: loc_chi
+    service: "amateur"
+
+antennas:
+  - id: ant_portable
+    station_id: stn_ham_dmr
+    name: "Portable"
+
+rf_chains:
+  - {
+      id: chain_dmr_smpx_446500,
+      station_id: stn_ham_dmr,
+      antenna_id: ant_portable,
+      rx: { freq_mhz: 446.500 },
+      tx: { emission: "7K60FXE" },
+      mode: { type: "DMR", color_code: 1 },
+    }
+  - {
+      id: chain_dmr_smpx_446075,
+      station_id: stn_ham_dmr,
+      antenna_id: ant_portable,
+      rx: { freq_mhz: 446.075 },
+      tx: { emission: "7K60FXE" },
+      mode: { type: "DMR", color_code: 1 },
+    }
+
+assignments:
+  - {
+      id: asg_dmr_smpx_446500,
+      rf_chain_id: chain_dmr_smpx_446500,
+      usage: "simplex",
+      zones: ["Ham DMR Simplex"],
+      codeplug:
+        { name: "DMR Simplex 446.500", preferred_contacts: ["ct_dmr_simplex"] },
+    }
+  - {
+      id: asg_dmr_smpx_446075,
+      rf_chain_id: chain_dmr_smpx_446075,
+      usage: "simplex",
+      zones: ["Ham DMR Simplex"],
+      codeplug:
+        { name: "DMR Simplex 446.075", preferred_contacts: ["ct_dmr_simplex"] },
+    }
+
+comments:
+  - text: |
+      Common DMR simplex presets. TS1, CC1, TG99 (Group).

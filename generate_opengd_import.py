@@ -254,6 +254,7 @@ def build_outputs(ds: Dataset):
         rx_only = bool(codeplug.get("rx_only", False)) or (
             asg.get("usage") == "receive-only"
         )
+        all_skip = bool(codeplug.get("all_skip", False))
 
         # Channel via rf_chain
         if asg.get("rf_chain_id"):
@@ -332,7 +333,7 @@ def build_outputs(ds: Dataset):
                     "Master",
                     "Yes" if rx_only else "No",
                     "No",
-                    "No",
+                    "Yes" if all_skip else "No",
                     0,
                     "Off",
                     "No",
@@ -378,7 +379,7 @@ def build_outputs(ds: Dataset):
                     "Master",
                     "Yes" if rx_only else "No",
                     "No",
-                    "No",
+                    "Yes" if all_skip else "No",
                     0,
                     "Off",
                     "No",
@@ -435,7 +436,7 @@ def build_outputs(ds: Dataset):
                 "Master",
                 "Yes" if rx_only else "No",
                 "No",
-                "No",
+                "Yes" if all_skip else "No",
                 0,
                 "Off",
                 "No",

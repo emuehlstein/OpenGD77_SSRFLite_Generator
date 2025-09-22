@@ -1,0 +1,158 @@
+# SSRF-Lite: Public Works & Parks (UHF FM/DMR, RX-only)
+# Chicago municipal operations: Streets & Sanitation (DSS), Park District, and Forest Preserves of Cook County.
+# RX-only monitoring. Frequencies and modes can vary by district and may change.
+
+organizations:
+  - id: org_muni
+    name: "Public Works & Parks"
+
+locations:
+  - id: loc_city
+    name: "City of Chicago"
+    lat: 41.8781
+    lon: -87.6298
+
+stations:
+  - id: stn_muni
+    call_sign: null
+    organization_id: org_muni
+    location_id: loc_city
+    service: "public_works"
+
+antennas:
+  - id: ant_m
+    station_id: stn_muni
+    name: "Portable"
+
+rf_chains:
+  # Chicago Streets & Sanitation (example district channels; FM conventional)
+  - {
+      id: ch_dss_north_1,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 460.1375 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: ch_dss_north_2,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 460.1875 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: ch_dss_south_1,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 460.2625 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: ch_dss_snow_ops,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.900 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+
+  # Chicago Park District Ops/Security (mix of FM/DMR conventional by site)
+  - {
+      id: ch_cpdistrict_ops1,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 462.7125 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: ch_cpdistrict_ops2,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 463.2625 },
+      tx: { emission: "7K60FXE" },
+      mode: { type: "DMR" },
+    }
+
+  # Forest Preserves of Cook County (FPDCC) – maintenance/security
+  - {
+      id: ch_fpdcc_ops1,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.175 },
+      tx: { emission: "11K2F3E" },
+      mode: { type: "FM" },
+    }
+  - {
+      id: ch_fpdcc_ops2,
+      station_id: stn_muni,
+      antenna_id: ant_m,
+      rx: { freq_mhz: 453.050 },
+      tx: { emission: "7K60FXE" },
+      mode: { type: "DMR" },
+    }
+
+assignments:
+  - {
+      id: asg_dss_n1,
+      rf_chain_id: ch_dss_north_1,
+      usage: "simplex",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "DSS North 460.1375", rx_only: true },
+    }
+  - {
+      id: asg_dss_n2,
+      rf_chain_id: ch_dss_north_2,
+      usage: "simplex",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "DSS North 460.1875", rx_only: true },
+    }
+  - {
+      id: asg_dss_s1,
+      rf_chain_id: ch_dss_south_1,
+      usage: "simplex",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "DSS South 460.2625", rx_only: true },
+    }
+  - {
+      id: asg_dss_snow,
+      rf_chain_id: ch_dss_snow_ops,
+      usage: "simplex",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "DSS Snow Ops 453.900", rx_only: true },
+    }
+  - {
+      id: asg_cpd1,
+      rf_chain_id: ch_cpdistrict_ops1,
+      usage: "simplex",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "Park District 462.7125", rx_only: true },
+    }
+  - {
+      id: asg_cpd2,
+      rf_chain_id: ch_cpdistrict_ops2,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "Park District DMR 463.2625", rx_only: true },
+    }
+  - {
+      id: asg_fpd1,
+      rf_chain_id: ch_fpdcc_ops1,
+      usage: "simplex",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "FPDCC 453.175", rx_only: true },
+    }
+  - {
+      id: asg_fpd2,
+      rf_chain_id: ch_fpdcc_ops2,
+      usage: "repeater",
+      zones: ["Public Works & Parks"],
+      codeplug: { name: "FPDCC DMR 453.050", rx_only: true },
+    }
+
+comments:
+  - text: |
+      Frequencies are representative/common allocations for municipal ops. Many ops have moved to trunked systems; these are legacy/conventional or site ops often still heard. RX-only.
