@@ -106,6 +106,8 @@ rf_chains:
       type: "FM"
       ctcss_tx_hz: 114.8
       ctcss_rx_hz: 114.8
+      dcs_tx_code: 023        # DCS transmit code (optional)
+      dcs_rx_code: 023        # DCS receive code (optional)
 ```
 Fields:  
 - `id`, `station_id`, `antenna_id`  
@@ -113,9 +115,10 @@ Fields:
 - `rx`: `freq_mhz`, `sensitivity_dbm?`  
 - `mode`:  
   - `type` (`"FM"`, `"DMR"`, etc.)  
-  - Mode-specific fields (`ctcss_*`, `color_code`, `timeslots`, `talkgroups`)  
-
----
+  - Mode-specific fields:
+    - `ctcss_tx_hz`, `ctcss_rx_hz` (optional, Hz)
+    - `dcs_tx_code`, `dcs_rx_code` (optional, DCS code as string or integer, e.g. "023", "205")
+    - `color_code`, `timeslots`, `talkgroups` (for DMR)
 
 ### 2.6 Channel Plan
 Reusable collections (NOAA, Marine, GMRS interstitials).  
