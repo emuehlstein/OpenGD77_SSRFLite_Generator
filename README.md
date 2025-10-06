@@ -2,54 +2,26 @@
 
 A reproducible, data‑driven codeplug builder for OpenGD77 handhelds. The generator ingests SSRF‑Lite YAML files and produces OpenGD77‑compatible CSVs (`Channels.csv`, `Contacts.csv`, `TG_Lists.csv`, `Zones.csv`) suitable for import via the CPS.
 
-Important:
+## SSRF‑Lite:
 
-- Receive‑only monitoring of public safety is emphasized. Transmitting where you’re not authorized is illegal. Always follow regulations and owner policies.
-- Only modes and bands the OpenGD77 supports are emitted: FM and DMR within 136–174 MHz and 400–480 MHz. Other modes (e.g., D‑STAR, C4FM) and out‑of‑band items are ignored.
-
-SSRF‑Lite reference:
+This project includes a proposed format for sharing information about RF systems, "SSRF-Lite," which is a simplified and yamlized version of the SSRF format used by the US DoD.
 
 - Project doc: [SSRF‑Lite Spec](./ssrf_lite_systems/SSRF-Lite-Spec.md)
 - Background (NTIA SSRF): [https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf](https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf)
 
-## What’s New (current state)
 
-- Inputs migrated to SSRF‑Lite under `ssrf_lite_systems/` (assignments, rf_chains, contacts, channel_plans, stations, locations).
-- uv is used for dependency management and isolated runs.
-- Generator now produces all four CSVs: Channels, Contacts, TG Lists, and Zones.
-- Mode/band filtering: only FM/DMR within 136–174 and 400–480 MHz are included.
-- Zones are built from `assignments[].zones` in the SSRF‑Lite data.
 
 ## Repository Structure
 
-```text
-.
-├── generate_opengd_import.py            # Main generator: SSRF‑Lite → OpenGD77 CSVs
-├── pyproject.toml                       # Dependencies (managed with uv)
-├── ssrf_lite_systems/                   # All SSRF‑Lite inputs (YAML) and spec
-│   ├── ns9rc_repeaters.yml
-│   ├── chicagoland_dmr_system.yml
-│   ├── cfmc_repeaters.yml
-│   ├── sara_repeaters.yml
-│   ├── us_gmrs_channels.yml
-│   ├── us_murs_channels.yml
-│   ├── us_ham_vhf_simplex.yml           # 2m simplex + calling
-│   ├── us_ham_uhf_simplex.yml           # 70cm simplex + calling
-│   ├── us_marine_vhf_channels.yml       # US Marine VHF channel plan + assignments
-│   ├── noaa_weather.yml                 # NOAA Weather WX1–WX7 (RX-only)
-│   ├── il_statewide_interop.yml         # IL interop (IFERN/IREACH/ISPERN/VCALL/VTAC/UCALL/UTAC), RX-only
-│   ├── rail_aar_scan.yml                # Railroads – AAR VHF scan set (RX-only)
-│   ├── rosehill_cemetery_dmr.yml        # Rosehill Cemetery DMR (RX-only pending verification)
-│   └── chicago_police_department.yml    # CPD analogue Citywide + VHF c2c (RX-only)
-│   ├── cook_county_interop.yml          # Cook County Interop VHF/UHF (RX-only)
-│   └── chicago_fire_ems_northside.yml   # CFD analogue + Northside Fire/EMS (RX-only)
-│   └── chicago_businesses_northside.yml  # curated northside business/property ops
-│   └── us_itinerant_business.yml         # US common itinerant/business FM simplex (RX-only)
-│   └── venues_chicago.yml                # Venues – Chicago (RX-only)
-│   └── public_works_parks.yml            # Public Works & Parks (RX-only)
-│   └── transit_transport.yml             # Transit & Transport (RX-only)
-├── opengd77_cps_import_generated/       # Fresh CSV outputs from the generator
-```
+- `generate_opengd_import.py` – Converts SSRF-Lite YAML inputs into OpenGD77 CPS CSVs.
+- `generate_dm32_import.py` – Builds a Baofeng DM-32 CPS CSV bundle. (experimental/bad)
+- `ssrf_lite_systems/` – Source SSRF-Lite datasets (`*.yml`) plus `SSRF-Lite-Spec.md` documentation.
+- `opengd77_cps_import_generated/` – Committed OpenGD77 CSV outputs (one file per CPS import requirement).
+- `dm32_cps_import_generated/` – Committed Baofeng DM-32 CSV outputs generated from the same inputs.
+- `DM32_reference/` – Factory DM-32 CPS export kept for column naming and value reference.
+- `opengd_import_csv_file_rules.txt` – Notes on column expectations for OpenGD77 imports.
+- `pyproject.toml`, `uv.lock` – Project dependencies managed via `uv`.
+- `README.md`, `LICENSE`, `NOTICE` – Documentation and licensing.
 
 ## SSRF-Lite Systems
 
@@ -58,11 +30,15 @@ All SSRF‑Lite inputs live under `ssrf_lite_systems/`:
 - `ssrf_lite_systems/SSRF-Lite-Spec.md`
 - `ssrf_lite_systems/cfmc_repeaters.yml`
 - `ssrf_lite_systems/chicago_businesses_northside.yml`
+- `ssrf_lite_systems/chicago_ems_services.yml`
 - `ssrf_lite_systems/chicago_fire_ems_northside.yml`
+- `ssrf_lite_systems/chicago_gmrs_repeaters.yml`
 - `ssrf_lite_systems/chicago_police_department.yml`
 - `ssrf_lite_systems/chicagoland_dmr_system.yml`
 - `ssrf_lite_systems/cook_county_interop.yml`
 - `ssrf_lite_systems/il_statewide_interop.yml`
+- `ssrf_lite_systems/laporte_county_amateur_radio_club.yml`
+- `ssrf_lite_systems/n9iaa_aresc_network.yml`
 - `ssrf_lite_systems/noaa_weather.yml`
 - `ssrf_lite_systems/ns9rc_repeaters.yml`
 - `ssrf_lite_systems/public_works_parks.yml`
@@ -76,16 +52,17 @@ All SSRF‑Lite inputs live under `ssrf_lite_systems/`:
 - `ssrf_lite_systems/us_ham_vhf_simplex.yml`
 - `ssrf_lite_systems/us_itinerant_business.yml`
 - `ssrf_lite_systems/us_marine_vhf_channels.yml`
+- `ssrf_lite_systems/us_mi_kc8brs_four_flags.yml`
 - `ssrf_lite_systems/us_murs_channels.yml`
 - `ssrf_lite_systems/venues_chicago.yml`
 
-Generated zones now include examples like `Marine`, `Ham VHF`, `Ham UHF`, `Ham-Repeaters`, `GMRS`, `MURS`, `NOAA Weather`, `IL Interop`, `Rail – AAR`, `Local-Commercial`, `Chicago PD`, `Cook Interop`, `Fire/EMS`, `US Itinerant`, `Ham DMR Simplex`, `Venues – Chicago`, `Public Works & Parks`, and `Transit & Transport`.
+Generated zones now include examples like `Chicago EMS`, `Chicago PD`, `Cook Interop`, `Emergency`, `Fire/EMS`, `GMRS`, `Ham DMR Simplex`, `Ham-DMR`, `Ham-Repeaters`, `Ham UHF`, `Ham VHF`, `IL Interop`, `Local-Commercial`, `Marine`, `MURS`, `NOAA Weather`, `Public Works & Parks`, `Rail AAR`, `Transit & Transport`, `UHF Simplex`, `US Itinerant`, `VHF Simplex`, and `Venues Chicago`.
 
 Emergency zone:
 
 - A compact `Emergency` zone has been added to group practical, licensed‑use calling and assistance channels:
-  - Amateur: `2m 146.520 Call`, `70cm 446.000 Call`, and strong local repeaters `NS9RC 2m FM (147.345 +0.6, 107.2)`, `CFMC 2m FM (146.760 −0.6, 107.2)`.
-  - GMRS: `GMRS 20 (462.6750)` simplex and a generic `GMRS 20 RPT` (+5.000) template.
+  - Amateur: `CFMC 2m FM`, `CFMC 440 FM`, `K9JSI VHF`, `N9IAA VHF`, `NS9RC 2m FM`, `NS9RC 440`, `KA9HHH VHF`, `KA9HHH UHF`, plus simplex calling channels `2m Call (146.520)` and `70cm Call (446.000)`.
+  - GMRS: `GMRS 20 (462.6750)` simplex for cross‑service monitoring when licensed.
 
 Notes:
 
