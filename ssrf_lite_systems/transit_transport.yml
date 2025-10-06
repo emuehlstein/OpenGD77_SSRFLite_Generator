@@ -52,12 +52,12 @@ rf_chains:
 
   # Airport support/logistics (non-ARFF public-safety; facilities/ops/ramp—conventional)
   - {
-      id: ch_ord_ops_fm,
+      id: ch_ord_ops_dmr,
       station_id: stn_transit,
       antenna_id: ant_t,
       rx: { freq_mhz: 464.575 },
-      tx: { emission: "11K2F3E" },
-      mode: { type: "FM" },
+      tx: { emission: "7K60FXE" },
+      mode: { type: "DMR", color_code: 1, timeslots: [1] },
     }
   - {
       id: ch_midway_ops,
@@ -109,7 +109,7 @@ assignments:
       name: "CTA Yard"
       rx_only: true
   - id: asg_ord_ops
-    rf_chain_id: ch_ord_ops_fm
+    rf_chain_id: ch_ord_ops_dmr
     usage: "simplex"
     zones: ["Transit & Transport"]
     codeplug:

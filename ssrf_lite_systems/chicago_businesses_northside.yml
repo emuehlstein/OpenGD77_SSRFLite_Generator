@@ -97,7 +97,7 @@ rf_chains:
     antenna_id: ant_biz_north
     rx: { freq_mhz: 464.200 }
     tx: { emission: "7K60FXE" }
-    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
+    mode: { type: "DMR", color_code: 7, timeslots: [1, 2] }
 
   - id: chain_500_lsd
     station_id: stn_biz_north
