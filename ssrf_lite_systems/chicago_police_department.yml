@@ -127,6 +127,7 @@ assignments:
     codeplug:
       name: "CPD Citywide 1"
       rx_only: true
+      all_skip: true
 
   - id: asg_cpd_cw2
     rf_chain_id: chain_cpd_cw2
@@ -135,6 +136,7 @@ assignments:
     codeplug:
       name: "CPD Citywide 2"
       rx_only: true
+      all_skip: true
 
   - id: asg_cpd_cw3
     rf_chain_id: chain_cpd_cw3
@@ -143,6 +145,7 @@ assignments:
     codeplug:
       name: "CPD Citywide 3"
       rx_only: true
+      all_skip: true
 
   - id: asg_cpd_cw4
     rf_chain_id: chain_cpd_cw4
@@ -151,6 +154,7 @@ assignments:
     codeplug:
       name: "CPD Citywide 4"
       rx_only: true
+      all_skip: true
 
   - id: asg_cpd_cw5
     rf_chain_id: chain_cpd_cw5
@@ -159,6 +163,7 @@ assignments:
     codeplug:
       name: "CPD Citywide 5"
       rx_only: true
+      all_skip: true
 
   - id: asg_cpd_cw6
     rf_chain_id: chain_cpd_cw6
@@ -167,6 +172,7 @@ assignments:
     codeplug:
       name: "CPD Citywide 6"
       rx_only: true
+      all_skip: true
 
   - id: asg_cpd_cw7
     rf_chain_id: chain_cpd_cw7
@@ -175,6 +181,7 @@ assignments:
     codeplug:
       name: "CPD Citywide 7"
       rx_only: true
+      all_skip: true
 
   - id: asg_cpd_vhf2
     rf_chain_id: chain_cpd_vhf2

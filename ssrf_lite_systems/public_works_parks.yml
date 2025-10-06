@@ -55,8 +55,8 @@ rf_chains:
       station_id: stn_muni,
       antenna_id: ant_m,
       rx: { freq_mhz: 453.900 },
-      tx: { emission: "11K2F3E" },
-      mode: { type: "FM" },
+      tx: { emission: "7K60FXE" },
+      mode: { type: "DMR" },
     }
 
   # Chicago Park District Ops/Security (mix of FM/DMR conventional by site)

@@ -33,8 +33,8 @@ rf_chains:
     station_id: stn_biz_north
     antenna_id: ant_biz_north
     rx: { freq_mhz: 464.775 }
-    tx: { emission: "11K2F3E" }
-    mode: { type: "FM", dcs_rx_code: 565, dcs_tx_code: 565 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
 
   - id: chain_401_n_mich
     station_id: stn_biz_north
@@ -268,8 +268,8 @@ rf_chains:
     station_id: stn_biz_north
     antenna_id: ant_biz_north
     rx: { freq_mhz: 463.8125 }
-    tx: { emission: "11K2F3E" }
-    mode: { type: "FM", dcs_rx_code: 132, dcs_tx_code: 132 }
+    tx: { emission: "7K60FXE" }
+    mode: { type: "DMR", color_code: 1, timeslots: [1, 2] }
 
   - id: chain_mcclurg_court
     station_id: stn_biz_north

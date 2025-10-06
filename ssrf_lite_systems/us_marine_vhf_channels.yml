@@ -219,6 +219,7 @@ assignments:
     codeplug:
       name: Marine 05A
       rx_only: true
+      all_skip: true
   - id: us_marine_vhf_ch07a
     channel_plan_id: us_marine_vhf_plan
     channel_name: Ch 07A
