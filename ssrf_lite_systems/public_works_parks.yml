@@ -56,7 +56,7 @@ rf_chains:
       antenna_id: ant_m,
       rx: { freq_mhz: 453.900 },
       tx: { emission: "7K60FXE" },
-      mode: { type: "DMR" },
+      mode: { type: "DMR", color_code: 11, timeslots: [1, 2] },
     }
 
   # Chicago Park District Ops/Security (mix of FM/DMR conventional by site)

@@ -383,7 +383,7 @@ rf_chains:
     antenna_id: ant_biz_north
     rx: { freq_mhz: 464.7625 }
     tx: { emission: "7K60FXE" }
-    mode: { type: "DMR", color_code: 11, timeslots: [1] }
+    mode: { type: "DMR", color_code: 1, timeslots: [1] }
 
 assignments:
   - id: asg_875_n_mich

@@ -38,8 +38,8 @@ rf_chains:
       station_id: stn_transit,
       antenna_id: ant_t,
       rx: { freq_mhz: 461.825 },
-      tx: { emission: "11K2F3E" },
-      mode: { type: "FM" },
+      tx: { emission: "7K60FXE" },
+      mode: { type: "DMR", color_code: 6, timeslots: [1] },
     }
   - {
       id: ch_cta_yard,

@@ -301,6 +301,7 @@ assignments:
     zones: ["Rail – AAR"]
     codeplug:
       name: "AAR 160800"
+      all_skip: true
       rx_only: true
   - id: asg_aar_160845
     rf_chain_id: chain_aar_160845

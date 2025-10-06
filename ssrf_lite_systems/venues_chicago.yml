@@ -128,8 +128,8 @@ rf_chains:
       station_id: stn_venues,
       antenna_id: ant_v,
       rx: { freq_mhz: 462.1125 },
-      tx: { emission: "11K2F3E" },
-      mode: { type: "FM" },
+      tx: { emission: "7K60FXE" },
+      mode: { type: "DMR", color_code: 1, timeslots: [1] },
     }
   - {
       id: ch_navy_pier_fm,
