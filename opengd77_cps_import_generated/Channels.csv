@@ -214,7 +214,7 @@ Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kH
 213,AAR 161115,Analogue,161.115,161.115,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 214,AAR 161190,Analogue,161.19,161.19,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 215,AAR 161205,Analogue,161.205,161.205,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-216,Rosehill Ops,Digital,463.5125,468.5125,,1,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.989,-87.689
+216,Rosehill Ops,Digital,463.5125,468.5125,,4,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.989,-87.689
 217,KA9HHH VHF,Analogue,146.88,146.28,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
 218,KA9HHH UHF,Analogue,444.375,449.375,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
 219,CTA Ops A,Analogue,461.575,461.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298

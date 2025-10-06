@@ -37,7 +37,7 @@ rf_chains:
       freq_mhz: 463.5125 # downlink to monitor per RR wiki
     mode:
       type: "DMR"
-      color_code: 1
+      color_code: 4
       timeslots: [1, 2]
 
 assignments:
