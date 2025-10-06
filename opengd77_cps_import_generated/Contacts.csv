@@ -1,16 +1,20 @@
 Contact Name,ID,ID Type,TS Override
+ARESC Linked,8,Group,1
 AllStar,3167,Group,1
 Audio Test,9999,Group,2
 Bridge,3100,Group,2
 CHI-Net 1,8888,Group,1
 DMR Simplex,99,Group,1
+DMR+ Disconnect,4000,Group,2
+DMR+ Status,5000,Group,2
 Illinois,3117,Group,1
+Indiana Statewide,3118,Group,2
+Local,9,Group,2
 Local 1,3181,Group,1
 Local 2,3166,Group,2
 MidWest Regional,3169,Group,2
-North America,3,Group,2
 Parrot,9998,Group,2
-Site Local,9,Group,1
 TAC 310,310,Group,2
 Tri-State,81,Group,2
-WorldWide,1,Group,2
+Worldwide,1,Group,2
+Worldwide English,3,Group,2
