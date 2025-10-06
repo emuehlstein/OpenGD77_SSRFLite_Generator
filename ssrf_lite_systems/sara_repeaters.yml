@@ -107,7 +107,7 @@ assignments:
     usage: "repeater"
     zones: ["Ham-Repeaters", "Emergency"]
     codeplug:
-      name: "KA9HHH 146.880"
+      name: "KA9HHH VHF"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: "+0.6 MHz, CTCSS 107.2 Hz. Lincoln Park site."
@@ -117,7 +117,7 @@ assignments:
     usage: "repeater"
     zones: ["Ham-Repeaters", "Emergency"]
     codeplug:
-      name: "KA9HHH 444.375"
+      name: "KA9HHH UHF"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: "+5 MHz, CTCSS 114.8 Hz. Lincoln Park site."
@@ -127,7 +127,7 @@ assignments:
     usage: "repeater"
     zones: ["Ham-Digital"]
     codeplug:
-      name: "NA9PL 440.250 C4FM"
+      name: "NA9PL UHF C4FM"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: "+5 MHz, CTCSS 114.8 Hz. Fusion/Wires-X. Lincoln Park site."

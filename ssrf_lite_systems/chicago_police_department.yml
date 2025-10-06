@@ -181,7 +181,7 @@ assignments:
     usage: "simplex"
     zones: ["Chicago PD"]
     codeplug:
-      name: "CPD VHF 2 Car-to-Car"
+      name: "CPD VHF Car2"
       rx_only: true
 
 comments:

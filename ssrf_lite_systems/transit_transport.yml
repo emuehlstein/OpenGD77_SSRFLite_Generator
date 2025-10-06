@@ -87,55 +87,55 @@ rf_chains:
     }
 
 assignments:
-  - {
-      id: asg_cta1,
-      rf_chain_id: ch_cta_ops1,
-      usage: "simplex",
-      zones: ["Transit & Transport"],
-      codeplug: { name: "CTA Ops 461.575", rx_only: true },
-    }
-  - {
-      id: asg_cta2,
-      rf_chain_id: ch_cta_ops2,
-      usage: "simplex",
-      zones: ["Transit & Transport"],
-      codeplug: { name: "CTA Ops 461.825", rx_only: true },
-    }
-  - {
-      id: asg_cta_yard,
-      rf_chain_id: ch_cta_yard,
-      usage: "simplex",
-      zones: ["Transit & Transport"],
-      codeplug: { name: "CTA Yard 462.100", rx_only: true },
-    }
-  - {
-      id: asg_ord_ops,
-      rf_chain_id: ch_ord_ops_fm,
-      usage: "simplex",
-      zones: ["Transit & Transport"],
-      codeplug: { name: "ORD Ops 464.575", rx_only: true },
-    }
-  - {
-      id: asg_midway_ops,
-      rf_chain_id: ch_midway_ops,
-      usage: "simplex",
-      zones: ["Transit & Transport"],
-      codeplug: { name: "MDW Ops 462.225", rx_only: true },
-    }
-  - {
-      id: asg_deliv_u1,
-      rf_chain_id: ch_delivery_u1,
-      usage: "repeater",
-      zones: ["Transit & Transport"],
-      codeplug: { name: "Delivery DMR 464.550", rx_only: true },
-    }
-  - {
-      id: asg_deliv_fm1,
-      rf_chain_id: ch_delivery_fm1,
-      usage: "simplex",
-      zones: ["Transit & Transport"],
-      codeplug: { name: "Delivery FM 464.450", rx_only: true },
-    }
+  - id: asg_cta1
+    rf_chain_id: ch_cta_ops1
+    usage: "simplex"
+    zones: ["Transit & Transport"]
+    codeplug:
+      name: "CTA Ops A"
+      rx_only: true
+  - id: asg_cta2
+    rf_chain_id: ch_cta_ops2
+    usage: "simplex"
+    zones: ["Transit & Transport"]
+    codeplug:
+      name: "CTA Ops B"
+      rx_only: true
+  - id: asg_cta_yard
+    rf_chain_id: ch_cta_yard
+    usage: "simplex"
+    zones: ["Transit & Transport"]
+    codeplug:
+      name: "CTA Yard"
+      rx_only: true
+  - id: asg_ord_ops
+    rf_chain_id: ch_ord_ops_fm
+    usage: "simplex"
+    zones: ["Transit & Transport"]
+    codeplug:
+      name: "ORD Ops"
+      rx_only: true
+  - id: asg_midway_ops
+    rf_chain_id: ch_midway_ops
+    usage: "simplex"
+    zones: ["Transit & Transport"]
+    codeplug:
+      name: "MDW Ops"
+      rx_only: true
+  - id: asg_deliv_u1
+    rf_chain_id: ch_delivery_u1
+    usage: "repeater"
+    zones: ["Transit & Transport"]
+    codeplug:
+      name: "Delivery DMR"
+      rx_only: true
+  - id: asg_deliv_fm1
+    rf_chain_id: ch_delivery_fm1
+    usage: "simplex"
+    zones: ["Transit & Transport"]
+    codeplug:
+      name: "Delivery FM"
+      rx_only: true
 
 comments:
   - text: |

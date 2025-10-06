@@ -151,98 +151,98 @@ assignments:
       rf_chain_id: chain_ifern,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "IFERN 154.265", rx_only: true },
+      codeplug: { name: "IFERN", rx_only: true },
     }
   - {
       id: asg_ireach,
       rf_chain_id: chain_ireach,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "IREACH 155.055", rx_only: true },
+      codeplug: { name: "IREACH", rx_only: true },
     }
   - {
       id: asg_ispern,
       rf_chain_id: chain_ispern,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "ISPERN 155.475", rx_only: true },
+      codeplug: { name: "ISPERN", rx_only: true },
     }
   - {
       id: asg_ptp,
       rf_chain_id: chain_ptp,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "Point-to-Point 155.370", rx_only: true },
+      codeplug: { name: "Point-to-Point", rx_only: true },
     }
   - {
       id: asg_hear,
       rf_chain_id: chain_hear,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "HEAR 155.340", rx_only: true },
+      codeplug: { name: "HEAR", rx_only: true },
     }
   - {
       id: asg_vcall10,
       rf_chain_id: chain_vcall10,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "VCALL10 155.7525", rx_only: true },
+      codeplug: { name: "VCALL10", rx_only: true },
     }
   - {
       id: asg_vtac11,
       rf_chain_id: chain_vtac11,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "VTAC11 151.1375", rx_only: true },
+      codeplug: { name: "VTAC11", rx_only: true },
     }
   - {
       id: asg_vtac12,
       rf_chain_id: chain_vtac12,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "VTAC12 154.4525", rx_only: true },
+      codeplug: { name: "VTAC12", rx_only: true },
     }
   - {
       id: asg_vtac13,
       rf_chain_id: chain_vtac13,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "VTAC13 158.7375", rx_only: true },
+      codeplug: { name: "VTAC13", rx_only: true },
     }
   - {
       id: asg_vtac14,
       rf_chain_id: chain_vtac14,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "VTAC14 159.4725", rx_only: true },
+      codeplug: { name: "VTAC14", rx_only: true },
     }
   - {
       id: asg_ucall40,
       rf_chain_id: chain_ucall40,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "UCALL40 453.2125", rx_only: true },
+      codeplug: { name: "UCALL40", rx_only: true },
     }
   - {
       id: asg_utac41,
       rf_chain_id: chain_utac41,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "UTAC41 453.4625", rx_only: true },
+      codeplug: { name: "UTAC41", rx_only: true },
     }
   - {
       id: asg_utac42,
       rf_chain_id: chain_utac42,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "UTAC42 453.7125", rx_only: true },
+      codeplug: { name: "UTAC42", rx_only: true },
     }
   - {
       id: asg_utac43,
       rf_chain_id: chain_utac43,
       usage: "simplex",
       zones: ["IL Interop"],
-      codeplug: { name: "UTAC43 453.8625", rx_only: true },
+      codeplug: { name: "UTAC43", rx_only: true },
     }
 
 comments:

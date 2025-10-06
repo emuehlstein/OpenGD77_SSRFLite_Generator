@@ -213,7 +213,7 @@ assignments:
     usage: "repeater"
     zones: ["GMRS"]
     codeplug:
-      name: "NSEA Evanston 700"
+      name: "NSEA Evan700"
       rx_only: false
     authorization_id: auth_fcc_gmrs
     comment: "Permission required. 107.2 Hz PL. Output 462.7000 (+5.000 input)."
@@ -243,7 +243,7 @@ assignments:
     usage: "repeater"
     zones: ["GMRS"]
     codeplug:
-      name: "NSEA Heritage 675"
+      name: "NSEA Her675"
       rx_only: false
     authorization_id: auth_fcc_gmrs
     comment: "Permission required. 141.3 Hz PL. Output 462.6750 (+5.000 input)."
@@ -253,7 +253,7 @@ assignments:
     usage: "repeater"
     zones: ["GMRS"]
     codeplug:
-      name: "NSEA Northbrook 650"
+      name: "NSEA NBrk650"
       rx_only: false
     authorization_id: auth_fcc_gmrs
     comment: "Permission required. 107.2 Hz PL. Output 462.6500 (+5.000 input)."

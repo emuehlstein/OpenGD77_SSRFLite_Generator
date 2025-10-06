@@ -244,7 +244,7 @@ assignments:
     usage: "repeater"
     zones: ["Ham-Repeaters"]
     codeplug:
-      name: "CFMC 220 South (Worth)"
+      name: "CFMC 220 S"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: |
@@ -266,7 +266,7 @@ assignments:
     usage: "repeater"
     zones: ["Ham-Repeaters"]
     codeplug:
-      name: "CFMC 2m Fusion (FM)"
+      name: "CFMC 2m FM"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: |
@@ -277,7 +277,7 @@ assignments:
     usage: "repeater"
     zones: ["Ham-Digital"]
     codeplug:
-      name: "CFMC 2m Fusion (C4FM)"
+      name: "CFMC 2m C4FM"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: |

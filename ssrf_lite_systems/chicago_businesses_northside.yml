@@ -487,7 +487,7 @@ assignments:
     rf_chain_id: chain_northbridge_sec
     usage: "simplex"
     zones: ["Local-Commercial"]
-    codeplug: { name: "North Bridge Sec", rx_only: true }
+    codeplug: { name: "NorthBridgeSec", rx_only: true }
 
   - id: asg_flemings_a1
     rf_chain_id: chain_flemings_a1
@@ -549,7 +549,7 @@ assignments:
     rf_chain_id: chain_allegro_sonesta_alt
     usage: "repeater"
     zones: ["Local-Commercial"]
-    codeplug: { name: "Allegro Sonesta 2", rx_only: true }
+    codeplug: { name: "Allegro Son2", rx_only: true }
 
   - id: asg_ama_plaza
     rf_chain_id: chain_ama_plaza
@@ -598,13 +598,13 @@ assignments:
     rf_chain_id: chain_mcclurg_court
     usage: "simplex"
     zones: ["Local-Commercial"]
-    codeplug: { name: "McClurg Court Ctr", rx_only: true }
+    codeplug: { name: "McClurg Court", rx_only: true }
 
   - id: asg_north_water_apts
     rf_chain_id: chain_north_water_apts
     usage: "simplex"
     zones: ["Local-Commercial"]
-    codeplug: { name: "North Water Apts", rx_only: true }
+    codeplug: { name: "NorthWater Apt", rx_only: true }
 
   - id: asg_river_east_center
     rf_chain_id: chain_river_east_center
@@ -616,7 +616,7 @@ assignments:
     rf_chain_id: chain_cityview_condos
     usage: "simplex"
     zones: ["Local-Commercial"]
-    codeplug: { name: "City View Condos", rx_only: true }
+    codeplug: { name: "CityView Condo", rx_only: true }
 
   # Assignments for Bucktown / Wicker Park vicinity
   - id: asg_horween_leather

@@ -353,7 +353,7 @@ assignments:
     usage: "repeater"
     zones: ["Ham-Digital"]
     codeplug:
-      name: "NS9RC D-STAR 440"
+      name: "NS9RC DSTAR4"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: "D-STAR DV 442.09375/447.09375, linked (Talk Group 51C)."
@@ -363,7 +363,7 @@ assignments:
     usage: "repeater"
     zones: ["Ham-Digital"]
     codeplug:
-      name: "NS9RC D-STAR 23cm"
+      name: "NS9RC DSTAR23"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: "D-STAR DV 1292.200/1272.200, no PL."
@@ -383,7 +383,7 @@ assignments:
     usage: "packet"
     zones: ["Packet/Winlink"]
     codeplug:
-      name: "NS9RC Winlink 145.610"
+      name: "NS9RC Winlink"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
     comment: "Open Winlink node on 145.61 MHz; collocated with UHF FM/D-STAR at ~513 ft AGL. Temporarily offline per site notice."
@@ -393,7 +393,7 @@ assignments:
     usage: "receive-only"
     zones: ["Beacons"]
     codeplug:
-      name: "NS9RC 10m Beacon"
+      name: "NS9RC 10m BCN"
       rx_only: true
     authorization_id: auth_fcc_amateur_t
     comment: "10m propagation beacon at Heller Nature Center on 28.297 MHz. ~5 W, vertical."
@@ -403,7 +403,7 @@ assignments:
     usage: "receive-only"
     zones: ["Beacons"]
     codeplug:
-      name: "NS9RC 6m Beacon"
+      name: "NS9RC 6m BCN"
       rx_only: true
     authorization_id: auth_fcc_amateur_t
     comment: "6m beacon 50.072 MHz, ~6 W, halo antenna at ~20 ft. Co-located with 10m beacon."
@@ -414,7 +414,7 @@ assignments:
     usage: "simplex"
     zones: ["UHF Simplex"]
     codeplug:
-      name: "NS9RC UHF Simplex 446.025 PL114.8"
+      name: "NS9RC UHF025"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
   - id: asgn_ns9rc_simplex_147_405
@@ -422,7 +422,7 @@ assignments:
     usage: "simplex"
     zones: ["VHF Simplex"]
     codeplug:
-      name: "NS9RC VHF Simplex 147.405 DCS073"
+      name: "NS9RC VHF405"
       rx_only: false
     authorization_id: auth_fcc_amateur_t
   - id: asgn_ns9rc_simplex_146_460
@@ -430,6 +430,6 @@ assignments:
     usage: "simplex"
     zones: ["VHF Simplex"]
     codeplug:
-      name: "NS9RC VHF Simplex 146.460"
+      name: "NS9RC VHF460"
       rx_only: false
     authorization_id: auth_fcc_amateur_t

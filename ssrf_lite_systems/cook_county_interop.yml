@@ -167,7 +167,7 @@ assignments:
     usage: "repeater"
     zones: ["Cook Interop"]
     codeplug:
-      name: "Interop V-Metro 3"
+      name: "Interop VMet3"
       rx_only: true
 
   - id: asg_interop_vmetro4
@@ -175,7 +175,7 @@ assignments:
     usage: "repeater"
     zones: ["Cook Interop"]
     codeplug:
-      name: "Interop V-Metro 4"
+      name: "Interop VMet4"
       rx_only: true
 
   - id: asg_interop_vmetro5
@@ -183,7 +183,7 @@ assignments:
     usage: "repeater"
     zones: ["Cook Interop"]
     codeplug:
-      name: "Interop V-Metro 5"
+      name: "Interop VMet5"
       rx_only: true
 
   - id: asg_interop_u1

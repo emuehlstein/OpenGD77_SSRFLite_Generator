@@ -205,7 +205,7 @@ assignments:
     rf_chain_id: chain_cfd_fg_a
     usage: "simplex"
     zones: ["Fire/EMS"]
-    codeplug: { name: "CFD Fireground A", rx_only: true }
+    codeplug: { name: "CFD FG A", rx_only: true }
 
   - id: asg_cfd_cmd_a
     rf_chain_id: chain_cfd_cmd_a
@@ -253,7 +253,7 @@ assignments:
     rf_chain_id: chain_cfd_specevt1_a
     usage: "simplex"
     zones: ["Fire/EMS"]
-    codeplug: { name: "CFD Special Events 1 A", rx_only: true }
+    codeplug: { name: "CFD SpecEvt1", rx_only: true }
 
   - id: asg_cfd_admin_a
     rf_chain_id: chain_cfd_admin_a
@@ -266,13 +266,13 @@ assignments:
     rf_chain_id: chain_red_south_bu
     usage: "repeater"
     zones: ["Fire/EMS"]
-    codeplug: { name: "RED South Backup", rx_only: true }
+    codeplug: { name: "RED South BK", rx_only: true }
 
   - id: asg_red_north_bu
     rf_chain_id: chain_red_north_bu
     usage: "repeater"
     zones: ["Fire/EMS"]
-    codeplug: { name: "RED North Backup", rx_only: true }
+    codeplug: { name: "RED North BK", rx_only: true }
 
   - id: asg_red_fire_north
     rf_chain_id: chain_red_fire_north
@@ -290,25 +290,25 @@ assignments:
     rf_chain_id: chain_skookie_fire_disp
     usage: "repeater"
     zones: ["Fire/EMS"]
-    codeplug: { name: "Skokie Fire Dispatch", rx_only: true }
+    codeplug: { name: "Skokie Disp", rx_only: true }
 
   - id: asg_north_shore_admin
     rf_chain_id: chain_north_shore_admin
     usage: "simplex"
     zones: ["Fire/EMS"]
-    codeplug: { name: "North Shore Fire Admin", rx_only: true }
+    codeplug: { name: "NShore Admin", rx_only: true }
 
   - id: asg_evanston_fire
     rf_chain_id: chain_evanston_fire
     usage: "repeater"
     zones: ["Fire/EMS"]
-    codeplug: { name: "Evanston Fire Dispatch", rx_only: true }
+    codeplug: { name: "Evanston Disp", rx_only: true }
 
   - id: asg_desplaines_fire
     rf_chain_id: chain_desplaines_fire
     usage: "repeater"
     zones: ["Fire/EMS"]
-    codeplug: { name: "Des Plaines Fire Dispatch", rx_only: true }
+    codeplug: { name: "DesPlns Disp", rx_only: true }
 
 comments:
   - text: |

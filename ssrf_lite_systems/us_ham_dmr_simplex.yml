@@ -56,16 +56,14 @@ assignments:
       rf_chain_id: chain_dmr_smpx_446500,
       usage: "simplex",
       zones: ["Ham DMR Simplex"],
-      codeplug:
-        { name: "DMR Simplex 446.500", preferred_contacts: ["ct_dmr_simplex"] },
+      codeplug: { name: "DMR Smpx A", preferred_contacts: ["ct_dmr_simplex"] },
     }
   - {
       id: asg_dmr_smpx_446075,
       rf_chain_id: chain_dmr_smpx_446075,
       usage: "simplex",
       zones: ["Ham DMR Simplex"],
-      codeplug:
-        { name: "DMR Simplex 446.075", preferred_contacts: ["ct_dmr_simplex"] },
+      codeplug: { name: "DMR Smpx B", preferred_contacts: ["ct_dmr_simplex"] },
     }
 
 comments:
