@@ -1,8 +1,8 @@
 # SSRF-Lite YAML Specification  
 *A pragmatic spectrum data model for codeplug generation*  
 
-Version: **0.3.2**  
-Last updated: 2025-09-17  
+Version: **0.4.0**  
+Last updated: 2025-10-06  
 
 ---
 
@@ -108,8 +108,23 @@ rf_chains:
       ctcss_rx_hz: 114.8
       dcs_tx_code: 023        # DCS transmit code (optional)
       dcs_rx_code: 023        # DCS receive code (optional)
+
+  - id: chain_n9kd_444_dmr
+    station_id: stn_n9kd
+    antenna_id: ant_n9kd
+    tx:
+      freq_mhz: 449.000
+      emission: "7K60FXE"     # DMR voice/data
+    rx:
+      freq_mhz: 444.000
+    mode:
+      type: "DMR"
+      color_code: 0
+      timeslots: [1, 2]
 ```
+
 Fields:  
+
 - `id`, `station_id`, `antenna_id`  
 - `tx`: `freq_mhz`, `power_w?`, `emission`, `bandwidth_khz?`  
 - `rx`: `freq_mhz`, `sensitivity_dbm?`  
@@ -118,10 +133,16 @@ Fields:
   - Mode-specific fields:
     - `ctcss_tx_hz`, `ctcss_rx_hz` (optional, Hz)
     - `dcs_tx_code`, `dcs_rx_code` (optional, DCS code as string or integer, e.g. "023", "205")
-    - `color_code`, `timeslots`, `talkgroups` (for DMR)
+    - `color_code`, `timeslots` (for DMR repeaters — talkgroup slot priorities live in `contacts`)
+
+For multi-site DMR systems, capture each repeater as an `rf_chain` and centralize talkgroup metadata in `contacts`. See `chicagoland_dmr_system.yml` for a working example.
+
+
 
 ### 2.6 Channel Plan
+
 Reusable collections (NOAA, Marine, GMRS interstitials).  
+
 ```yaml
 channel_plans:
   - id: chplan_noaa
@@ -136,7 +157,9 @@ channel_plans:
 ---
 
 ### 2.7 Authorization
+
 License or permission required.  
+
 ```yaml
 authorizations:
   - id: auth_fcc_amateur_t
@@ -154,6 +177,7 @@ authorizations:
 ```
 
 Fields:  
+
 - `id`  
 - `authority` (e.g. `"FCC"`)  
 - `service` (Amateur, GMRS, Marine, etc.)  
@@ -164,7 +188,9 @@ Fields:
 ---
 
 ### 2.8 Contacts
+
 Directory for DMR talkgroups or similar.  
+
 ```yaml
 contacts:
   - id: tg_310
@@ -172,10 +198,32 @@ contacts:
     kind: "Group"
 ```
 
+Expanded DMR example with slot hints and talkgroup numbers:  
+
+```yaml
+contacts:
+  - id: tg_9
+    name: "Site Local"
+    kind: "Group"
+    number: 9
+    default_timeslot: 1
+    notes: "Local traffic, always-on."
+```
+
+Fields:  
+
+- `id`, `name`, `kind` (`"Group"`, `"Private"`, or `"AllCall"`)  
+- `number` (integer talkgroup ID, optional for analog contacts)  
+- `default_timeslot` (1 or 2, optional)  
+- `notes` (usage guidance, optional)  
+- Future extensions may add `dtmf_id`, `call_type`, etc.  
+
 ---
 
 ### 2.9 Assignment
+
 The “workhorse” — links RF chain or channel plan to an operational use (codeplug row).  
+
 ```yaml
 assignments:
   - id: asgn_ns9rc_440
@@ -186,6 +234,7 @@ assignments:
       name: "NS9RC 440"
       rx_only: false
       all_skip: false  # Optional: if true, sets Channels.csv "All Skip" = Yes
+      preferred_contacts: [tg_9, tg_3181, tg_3166]
     authorization_id: auth_fcc_amateur_t
     comment: |
       Motorola + S-Com 7330 controller, ~80 W ERP.
@@ -204,6 +253,12 @@ assignments:
       all_skip: true
     authorization_id: auth_rx_only_public
 ```
+
+Within `assignments[].codeplug` the following helper flags are recognized:  
+
+- `rx_only`: mark receive-only channels.  
+- `all_skip`: map to CPS "All Skip" or scan lockouts.  
+- `preferred_contacts`: ordered list of contact IDs (typically DMR talkgroups) a generator should populate for that channel.  
 
 ---
 
@@ -231,7 +286,9 @@ This spec now demonstrates:
 - **Analog FM repeater**: NS9RC 440 MHz with ERP, offset, tones, and coverage notes.  
 - **Receive-only channel plan**: NOAA WX frequencies.  
 - **Authorization linkage**: Amateur TX license vs. public RX-only.  
-- **Extensibility**: Ready to add DMR or other modes.  
+- **DMR repeater support**: ChicagoLand control center example with color codes, timeslots, and talkgroup guidance.  
+- **Codeplug guidance**: `codeplug` helpers surface skip flags and ordered talkgroup lists (`preferred_contacts`).  
+- **Extensibility**: Ready to add other digital modes.  
 
 ---
 
@@ -242,3 +299,12 @@ This spec now demonstrates:
 - **Add only what’s practical**: `zones`, `codeplug`, `contacts`.  
 - **Interoperable**: keep ITU emission designators, MHz/kHz/Hz units consistent.  
 - **Extensible**: can grow into full SSRF without breaking the schema.  
+
+---
+
+## 6. DMR & Codeplug Enhancements (v0.4.0)
+
+- **RF chains**: Capture `color_code` and `timeslots` to pin repeater color codes and slot availability. See `chicagoland_dmr_system.yml` for a multi-site example.
+- **Talkgroup catalog**: `contacts` entries may include `number`, `default_timeslot`, and descriptive `notes`, providing enough metadata to build CPS contact lists.
+- **Channel programming hints**: `codeplug.preferred_contacts` expresses the talkgroups a generator should populate first, while existing flags (`rx_only`, `all_skip`) continue to drive receive-only or scan skip behavior.
+- **Backwards compatible**: All new fields are optional; analog-focused data remains valid without changes.
