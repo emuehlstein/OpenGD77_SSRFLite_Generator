@@ -51,7 +51,7 @@ Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kH
 50,Trump Hotel Ops,Digital,464.2875,464.2875,,9,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.96,-87.66
 51,Renaissance H/E,Digital,463.6,463.6,,8,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.96,-87.66
 52,CAA Hotel Sec,Digital,461.9125,461.9125,,10,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.96,-87.66
-53,CAA Hotel Hskp,Digital,464.7625,464.7625,,11,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.96,-87.66
+53,CAA Hotel Hskp,Digital,464.7625,464.7625,,1,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.96,-87.66
 54,CFD EMS Cmd,Analogue,460.6,460.6,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 55,CFD EMS City,Analogue,460.625,460.625,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 56,CFD EMS Admin,Analogue,460.65,460.65,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
@@ -176,7 +176,7 @@ Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kH
 175,DSS North A,Analogue,460.1375,460.1375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 176,DSS North B,Analogue,460.1875,460.1875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 177,DSS South,Analogue,460.2625,460.2625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-178,DSS SnowOps,Digital,453.9,453.9,,1,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+178,DSS SnowOps,Digital,453.9,453.9,,11,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 179,ParkDist FM,Analogue,462.7125,462.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 180,ParkDist DMR,Digital,463.2625,463.2625,,1,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 181,FPDCC FM,Analogue,453.175,453.175,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
@@ -200,7 +200,7 @@ Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kH
 199,AAR 160650,Analogue,160.65,160.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 200,AAR 160695,Analogue,160.695,160.695,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 201,AAR 160770,Analogue,160.77,160.77,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-202,AAR 160800,Analogue,160.8,160.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+202,AAR 160800,Analogue,160.8,160.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
 203,AAR 160845,Analogue,160.845,160.845,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 204,AAR 161100,Analogue,161.1,161.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 205,AAR 161160,Analogue,161.16,161.16,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
@@ -218,7 +218,7 @@ Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kH
 217,KA9HHH VHF,Analogue,146.88,146.28,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
 218,KA9HHH UHF,Analogue,444.375,449.375,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
 219,CTA Ops A,Analogue,461.575,461.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-220,CTA Ops B,Analogue,461.825,461.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+220,CTA Ops B,Digital,461.825,461.825,,6,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 221,CTA Yard,Analogue,462.1,462.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 222,ORD Ops,Digital,464.575,464.575,,1,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 223,MDW Ops,Analogue,462.225,462.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
@@ -390,6 +390,6 @@ Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kH
 389,Wrigley FM,Analogue,464.5125,464.5125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 390,Wrigley DMR,Digital,463.4375,463.4375,,1,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 391,United Center,Analogue,464.3,464.3,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
-392,Soldier Field,Analogue,462.1125,462.1125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
+392,Soldier Field,Digital,462.1125,462.1125,,1,1,None,None,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 393,Navy Pier,Analogue,464.825,464.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
 394,McCormick Pl,Analogue,464.5,464.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.8781,-87.6298
