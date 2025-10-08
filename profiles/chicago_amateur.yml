@@ -1,0 +1,8 @@
+profile:
+  name: "chicago_amateur"
+  description: "Chicago-focused amateur repeaters, DMR talkgroups, and simplex plans."
+  include:
+    paths:
+      - "ssrf/plans/amateur/*.yml"
+      - "ssrf/systems/US/IL/Cook/Chicago/amateur/*.yml"
+    services: ["amateur"]

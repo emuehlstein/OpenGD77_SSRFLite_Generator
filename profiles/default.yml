@@ -1,0 +1,16 @@
+profile:
+  name: "default"
+  description: "Baseline build using common plans and local Chicago systems."
+  include:
+    paths:
+      - "ssrf/plans/gmrs/*.yml"
+      - "ssrf/plans/amateur/*.yml"
+      - "ssrf/plans/murs/*.yml"
+      - "ssrf/plans/marine/*.yml"
+      - "ssrf/plans/business/*.yml"
+      - "ssrf/plans/weather/*.yml"
+      - "ssrf/plans/rail/*.yml"
+      - "ssrf/systems/US/IL/Cook/Chicago/**/*.yml"
+      - "ssrf/systems/US/IL/Cook/_Countywide/**/*.yml"
+      - "ssrf/systems/US/IL/_Statewide/**/*.yml"
+    services: [] # optional filter; empty means no filter

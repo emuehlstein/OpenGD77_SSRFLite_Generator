@@ -1,0 +1,8 @@
+profile:
+  name: "chicago_gmrs"
+  description: "Chicago GMRS repeaters, family operations, and national simplex plans."
+  include:
+    paths:
+      - "ssrf/plans/gmrs/*.yml"
+      - "ssrf/systems/US/IL/Cook/Chicago/gmrs/*.yml"
+    services: ["gmrs"]

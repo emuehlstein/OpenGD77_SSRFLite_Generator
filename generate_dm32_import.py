@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate Baofeng DM-32 CPS CSVs from SSRF-Lite YAML inputs under ssrf_lite_systems/.
+Generate Baofeng DM-32 CPS CSVs from SSRF-Lite YAML inputs under ssrf/.
 
 Outputs (written to dm32_cps_import_generated/):
   - DM32_TalkGroups.csv
@@ -37,7 +37,7 @@ except Exception:
     raise SystemExit("PyYAML is required. Install with: pip install pyyaml")
 
 BASE = pathlib.Path(__file__).parent
-INPUT_DIR = BASE / "ssrf_lite_systems"
+SSRF_ROOT = BASE / "ssrf"
 OUT_DIR = BASE / "dm32_cps_import_generated"
 
 
@@ -125,9 +125,13 @@ class Dataset:
 
 def load_dataset() -> Dataset:
     ds = Dataset()
-    if not INPUT_DIR.exists():
-        raise SystemExit(f"Missing input directory: {INPUT_DIR}")
-    for yf in sorted(INPUT_DIR.glob("*.yml")):
+    if not SSRF_ROOT.exists():
+        raise SystemExit(f"Missing SSRF root: {SSRF_ROOT}")
+    for yf in sorted(
+        p
+        for p in SSRF_ROOT.rglob("*.yml")
+        if "_schema" not in p.parts and p.name != "_defaults.yml"
+    ):
         with open(yf, "r") as f:
             doc = yaml.safe_load(f) or {}
         ds.merge(doc)

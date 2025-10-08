@@ -1,26 +1,27 @@
 #!/usr/bin/env python3
 """
-Generate OpenGD77 CSVs from SSRF-Lite YAML inputs under ssrf_lite_systems/.
+Generate OpenGD77 CSVs from SSRF-Lite YAML inputs selected via profiles.
 
 Outputs:
-  - opengd77_cps_import_generated/Channels.csv
-  - opengd77_cps_import_generated/Contacts.csv
-  - opengd77_cps_import_generated/TG_Lists.csv
-  - opengd77_cps_import_generated/Zones.csv
+    - opengd77_cps_import_generated/Channels.csv
+    - opengd77_cps_import_generated/Contacts.csv
+    - opengd77_cps_import_generated/TG_Lists.csv
+    - opengd77_cps_import_generated/Zones.csv
 
 Notes:
-  - Only FM (analogue) and DMR chains are rendered into Channels.csv. Other
-    digital modes (D-STAR, C4FM, etc.) are skipped as OpenGD77 does not support them.
-  - Zones are taken from assignments[].zones.
-  - For DMR, one channel is created per assignment, using the first
-    codeplug.preferred_contacts (if provided) as the default Contact and Timeslot,
-    with a TG List containing all preferred contacts for that assignment.
+    - Only FM (analogue) and DMR chains are rendered into Channels.csv. Other
+        digital modes (D-STAR, C4FM, etc.) are skipped as OpenGD77 does not support them.
+    - Zones are taken from assignments[].zones.
+    - For DMR, one channel is created per assignment, using the first
+        codeplug.preferred_contacts (if provided) as the default Contact and Timeslot,
+        with a TG List containing all preferred contacts for that assignment.
+    - Input files are chosen by profile patterns declared in profiles/*.yml.
 """
 
+import argparse
 import csv
-import math
 import pathlib
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple, Union
 
 try:
     import yaml  # type: ignore
@@ -28,8 +29,117 @@ except Exception:
     raise SystemExit("PyYAML is required. Install with: pip install pyyaml")
 
 BASE = pathlib.Path(__file__).parent
-INPUT_DIR = BASE / "ssrf_lite_systems"
-OUT_DIR = BASE / "opengd77_cps_import_generated"
+SSRF_ROOT = BASE / "ssrf"
+DEFAULT_PROFILES_DIR = BASE / "profiles"
+DEFAULT_PROFILE_NAME = "default"
+DEFAULT_OUT_DIR = BASE / "opengd77_cps_import_generated"
+
+
+def load_profile(
+    profile_name: str, profiles_dir: Union[str, pathlib.Path] = DEFAULT_PROFILES_DIR
+) -> dict:
+    """Load a profile YAML by name."""
+
+    directory = pathlib.Path(profiles_dir)
+    if not directory.exists():
+        raise SystemExit(f"Profiles directory not found: {directory}")
+
+    profile_path = directory / f"{profile_name}.yml"
+    if not profile_path.exists():
+        available = ", ".join(sorted(p.stem for p in directory.glob("*.yml")))
+        raise SystemExit(
+            f"Profile '{profile_name}' not found in {directory}. Available profiles: {available or 'none'}"
+        )
+
+    with open(profile_path, "r") as fh:
+        data = yaml.safe_load(fh) or {}
+
+    if not isinstance(data, dict) or "profile" not in data:
+        raise SystemExit(
+            f"Profile file {profile_path} is missing top-level 'profile' key"
+        )
+
+    return data
+
+
+def _detect_services(path: pathlib.Path) -> Set[str]:
+    services: Set[str] = set()
+    try:
+        with open(path, "r") as fh:
+            doc = yaml.safe_load(fh) or {}
+    except FileNotFoundError:
+        return services
+
+    if isinstance(doc, dict):
+        for node in doc.get("stations", []) or []:
+            svc = node.get("service")
+            if svc:
+                services.add(str(svc).lower())
+        for node in doc.get("authorizations", []) or []:
+            svc = node.get("service")
+            if svc:
+                services.add(str(svc).lower())
+
+    if services:
+        return services
+
+    parts = [segment.lower() for segment in path.parts]
+    if "plans" in parts:
+        idx = parts.index("plans")
+        if len(parts) > idx + 1:
+            services.add(parts[idx + 1])
+    elif "systems" in parts and len(parts) >= 2:
+        services.add(parts[-2])
+
+    return services
+
+
+def resolve_ssrf_files(
+    profile: dict, base_dir: Union[str, pathlib.Path] = BASE
+) -> List[str]:
+    """Resolve SSRF YAML files for the given profile definition."""
+
+    profile_block = profile.get("profile") if isinstance(profile, dict) else None
+    if not isinstance(profile_block, dict):
+        raise SystemExit("Malformed profile: expected 'profile' mapping")
+
+    include_block = profile_block.get("include") or {}
+    patterns: Iterable[str] = include_block.get("paths", []) or []
+    service_filters = [str(s).lower() for s in (include_block.get("services") or [])]
+    base_path = pathlib.Path(base_dir)
+
+    if not patterns:
+        return []
+
+    resolved: List[str] = []
+    seen: Set[pathlib.Path] = set()
+    service_cache: Dict[pathlib.Path, Set[str]] = {}
+
+    for pattern in patterns:
+        for match in sorted(base_path.glob(pattern)):
+            if not match.is_file() or match in seen:
+                continue
+            if service_filters:
+                services = service_cache.get(match)
+                if services is None:
+                    services = _detect_services(match)
+                    service_cache[match] = services
+                if not services.intersection(service_filters):
+                    continue
+            seen.add(match)
+            resolved.append(str(match))
+
+    return resolved
+
+
+def list_profiles(
+    profiles_dir: Union[str, pathlib.Path] = DEFAULT_PROFILES_DIR,
+) -> List[str]:
+    directory = pathlib.Path(profiles_dir)
+    if not directory.exists():
+        return []
+    return sorted(p.stem for p in directory.glob("*.yml"))
+
 
 # CSV headers based on OpenGD77 importer
 CHANNELS_HEADER = [
@@ -145,14 +255,13 @@ class Dataset:
                         getattr(self, key)[item_id] = item
 
 
-def load_dataset() -> Dataset:
+def load_dataset(file_paths: Sequence[pathlib.Path]) -> Dataset:
     ds = Dataset()
-    if not INPUT_DIR.exists():
-        raise SystemExit(f"Missing input directory: {INPUT_DIR}")
-    for yf in sorted(INPUT_DIR.glob("*.yml")):
+    for yf in file_paths:
+        if not yf.exists():
+            raise SystemExit(f"SSRF file not found: {yf}")
         with open(yf, "r") as f:
             doc = yaml.safe_load(f) or {}
-        # Some files may put SSRF-Lite arrays at root
         ds.merge(doc)
     return ds
 
@@ -472,42 +581,99 @@ def build_outputs(ds: Dataset):
     return contact_rows, channels_rows, tg_list_rows, zone_rows
 
 
-def main():
-    ds = load_dataset()
+def main(argv: Optional[Sequence[str]] = None) -> None:
+    parser = argparse.ArgumentParser(
+        description="Generate OpenGD77 CSVs from SSRF-Lite data"
+    )
+    parser.add_argument(
+        "--profile", default=DEFAULT_PROFILE_NAME, help="Profile name to load"
+    )
+    parser.add_argument(
+        "--profiles-dir",
+        default=str(DEFAULT_PROFILES_DIR),
+        help="Directory containing profile YAML files",
+    )
+    parser.add_argument(
+        "--output-dir",
+        default=str(DEFAULT_OUT_DIR),
+        help="Directory for generated CSV files",
+    )
+    parser.add_argument(
+        "--list-profiles",
+        action="store_true",
+        help="List available profiles and exit",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Show matched SSRF files for the selected profile and exit",
+    )
+
+    args = parser.parse_args(argv)
+
+    profiles_dir = pathlib.Path(args.profiles_dir)
+
+    if args.list_profiles:
+        names = list_profiles(profiles_dir)
+        if not names:
+            print(f"No profiles found in {profiles_dir}")
+        else:
+            print("Available profiles:")
+            for name in names:
+                print(f"  - {name}")
+        return
+
+    profile = load_profile(args.profile, profiles_dir)
+    matched_files = resolve_ssrf_files(profile)
+
+    if not matched_files:
+        raise SystemExit(f"Profile '{args.profile}' matched no SSRF files")
+
+    if args.dry_run:
+        print(
+            f"Profile '{profile['profile'].get('name', args.profile)}' resolved {len(matched_files)} file(s):"
+        )
+        for path in matched_files:
+            print(f"  - {path}")
+        return
+
+    ssrf_paths = [pathlib.Path(p) for p in matched_files]
+    ds = load_dataset(ssrf_paths)
     contacts, channels, tg_lists, zones = build_outputs(ds)
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    output_dir = pathlib.Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     # Write Contacts.csv
-    with open(OUT_DIR / "Contacts.csv", "w", newline="") as f:
+    with open(output_dir / "Contacts.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(CONTACTS_HEADER)
         for r in contacts:
             w.writerow(r)
 
     # Write Channels.csv
-    with open(OUT_DIR / "Channels.csv", "w", newline="") as f:
+    with open(output_dir / "Channels.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(CHANNELS_HEADER)
         for r in channels:
             w.writerow(r)
 
     # Write TG_Lists.csv
-    with open(OUT_DIR / "TG_Lists.csv", "w", newline="") as f:
+    with open(output_dir / "TG_Lists.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(TG_LISTS_HEADER)
         for r in tg_lists:
             w.writerow(r)
 
     # Write Zones.csv
-    with open(OUT_DIR / "Zones.csv", "w", newline="") as f:
+    with open(output_dir / "Zones.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(ZONES_HEADER)
         for r in zones:
             w.writerow(r)
 
     print(
-        f"Wrote {len(channels)} channels, {len(contacts)} contacts, {len(tg_lists)} TG lists, and {len(zones)} zones to {OUT_DIR}"
+        f"Wrote {len(channels)} channels, {len(contacts)} contacts, {len(tg_lists)} TG lists, and {len(zones)} zones to {output_dir}"
     )
 
     # Post-write validation for column counts and headers
@@ -525,10 +691,10 @@ def main():
                         f"Validation failed for {path.name}: row {i} has {len(row)} cols, expected {len(expected_header)}"
                     )
 
-    validate_csv(OUT_DIR / "Contacts.csv", CONTACTS_HEADER)
-    validate_csv(OUT_DIR / "Channels.csv", CHANNELS_HEADER)
-    validate_csv(OUT_DIR / "TG_Lists.csv", TG_LISTS_HEADER)
-    validate_csv(OUT_DIR / "Zones.csv", ZONES_HEADER)
+    validate_csv(output_dir / "Contacts.csv", CONTACTS_HEADER)
+    validate_csv(output_dir / "Channels.csv", CHANNELS_HEADER)
+    validate_csv(output_dir / "TG_Lists.csv", TG_LISTS_HEADER)
+    validate_csv(output_dir / "Zones.csv", ZONES_HEADER)
     print("CSV validation: PASS (headers and column counts correct)")
 
 

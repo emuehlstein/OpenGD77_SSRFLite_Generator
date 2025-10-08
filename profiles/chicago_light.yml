@@ -1,0 +1,10 @@
+profile:
+  name: "chicago_light"
+  description: "Slim scanning profile for Chicago (GMRS + public safety)."
+  include:
+    paths:
+      - "ssrf/plans/gmrs/*.yml"
+      - "ssrf/systems/US/IL/Cook/Chicago/public_safety/*.yml"
+      - "ssrf/systems/US/IL/Cook/Chicago/gmrs/*.yml"
+      - "ssrf/systems/US/IL/Cook/_Countywide/public_safety/*.yml"
+    services: ["gmrs", "public_safety"]
