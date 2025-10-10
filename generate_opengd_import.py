@@ -11,17 +11,20 @@ Outputs:
 Notes:
     - Only FM (analogue) and DMR chains are rendered into Channels.csv. Other
         digital modes (D-STAR, C4FM, etc.) are skipped as OpenGD77 does not support them.
-    - Zones are taken from assignments[].zones.
-    - For DMR, one channel is created per assignment, using the first
-        codeplug.preferred_contacts (if provided) as the default Contact and Timeslot,
-        with a TG List containing all preferred contacts for that assignment.
-    - Input files are chosen by profile patterns declared in profiles/*.yml.
+    - Zone membership, scan behavior, and transmit defaults come from the policy layer
+        declared by the active profile (legacy assignment fields remain supported during migration).
+    - For DMR, one channel is created per assignment, using policy-provided preferred
+        contacts to choose default Contact/Timeslot. Legacy assignment codeplug helpers are still
+        honoured if present.
+    - Input files are chosen by profile patterns declared in profiles/*.yml. Profiles may also
+        declare policy overlays (glob patterns or explicit files).
 """
 
 import argparse
+import copy
 import csv
 import pathlib
-from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple, Union
+from typing import Any, Dict, Iterable, List, Optional, Sequence, Set, Tuple, Union
 
 try:
     import yaml  # type: ignore
@@ -31,6 +34,7 @@ except Exception:
 BASE = pathlib.Path(__file__).parent
 SSRF_ROOT = BASE / "ssrf"
 DEFAULT_PROFILES_DIR = BASE / "profiles"
+DEFAULT_POLICIES_DIR = BASE / "policies"
 DEFAULT_PROFILE_NAME = "default"
 DEFAULT_OUT_DIR = BASE / "opengd77_cps_import_generated"
 
@@ -138,6 +142,56 @@ def resolve_ssrf_files(
     return resolved
 
 
+def resolve_policy_files(
+    profile: dict, base_dir: Union[str, pathlib.Path] = BASE
+) -> List[pathlib.Path]:
+    """Resolve policy files declared by the profile.
+
+    Profiles may specify:
+
+    ```yaml
+    profile:
+      policy:
+        files:
+          - policies/base.yml
+        paths:
+          - policies/chicago/**/*.yml
+    ```
+
+    The order of files is preserved; later files may override earlier ones.
+    """
+
+    profile_block = profile.get("profile") if isinstance(profile, dict) else None
+    if not isinstance(profile_block, dict):
+        return []
+
+    policy_block = profile_block.get("policy") or {}
+    if not isinstance(policy_block, dict):
+        return []
+
+    base_path = pathlib.Path(base_dir)
+    resolved: List[pathlib.Path] = []
+    seen: Set[pathlib.Path] = set()
+
+    explicit_files: Iterable[str] = policy_block.get("files", []) or []
+    for rel in explicit_files:
+        candidate = pathlib.Path(rel)
+        if not candidate.is_absolute():
+            candidate = base_path / candidate
+        if candidate.is_file() and candidate not in seen:
+            resolved.append(candidate)
+            seen.add(candidate)
+
+    patterns: Iterable[str] = policy_block.get("paths", []) or []
+    for pattern in patterns:
+        for match in sorted(base_path.glob(pattern)):
+            if match.is_file() and match not in seen:
+                resolved.append(match)
+                seen.add(match)
+
+    return resolved
+
+
 def list_profiles(
     profiles_dir: Union[str, pathlib.Path] = DEFAULT_PROFILES_DIR,
 ) -> List[str]:
@@ -145,6 +199,59 @@ def list_profiles(
     if not directory.exists():
         return []
     return sorted(p.stem for p in directory.glob("*.yml"))
+
+
+def _deep_merge_dict(target: Dict[str, Any], source: Dict[str, Any]) -> None:
+    for key, value in source.items():
+        if key in target and isinstance(target[key], dict) and isinstance(value, dict):
+            _deep_merge_dict(target[key], value)
+        else:
+            target[key] = copy.deepcopy(value)
+
+
+class PolicySet:
+    """Container for policy directives keyed by assignment ID."""
+
+    def __init__(self) -> None:
+        self.assignment_rules: Dict[str, Dict[str, Any]] = {}
+
+    def merge_document(self, document: Dict[str, Any]) -> None:
+        block: Any = document
+        if isinstance(document, dict):
+            if isinstance(document.get("policy"), dict):
+                block = document["policy"]
+            elif isinstance(document.get("policies"), dict):
+                block = document["policies"]
+        if not isinstance(block, dict):
+            return
+
+        assignments = block.get("assignments")
+        if not isinstance(assignments, dict):
+            return
+
+        for assignment_id, payload in assignments.items():
+            if not isinstance(payload, dict):
+                continue
+            dest = self.assignment_rules.setdefault(str(assignment_id), {})
+            _deep_merge_dict(dest, payload)
+
+    def get_assignment(self, assignment_id: Optional[str]) -> Dict[str, Any]:
+        if not assignment_id:
+            return {}
+        rules = self.assignment_rules.get(str(assignment_id))
+        return copy.deepcopy(rules) if isinstance(rules, dict) else {}
+
+
+def load_policy_documents(paths: Sequence[pathlib.Path]) -> PolicySet:
+    policy_set = PolicySet()
+    for path in paths:
+        if not path.exists():
+            raise SystemExit(f"Policy file not found: {path}")
+        with path.open("r") as fh:
+            doc = yaml.safe_load(fh) or {}
+        if isinstance(doc, dict):
+            policy_set.merge_document(doc)
+    return policy_set
 
 
 # CSV headers based on OpenGD77 importer
@@ -235,6 +342,7 @@ class Dataset:
         self.channel_plans: Dict[str, dict] = {}
         self.stations: Dict[str, dict] = {}
         self.locations: Dict[str, dict] = {}
+        self.authorizations: Dict[str, dict] = {}
 
     def merge(self, doc: dict):
         # Accept either with or without top-level "ssrf_lite" wrapper
@@ -249,6 +357,7 @@ class Dataset:
             "channel_plans",
             "stations",
             "locations",
+            "authorizations",
         ]:
             if key in doc and isinstance(doc[key], list):
                 for item in doc[key]:
@@ -291,11 +400,13 @@ def emission_to_bw_khz(emission: Optional[str], fallback: Optional[float]) -> st
     return ""
 
 
-def build_outputs(ds: Dataset):
+def build_outputs(ds: Dataset, policies: Optional[PolicySet] = None):
     # Prepare Contacts.csv rows and a lookup by id
     contact_rows: List[List[str]] = []
     contact_by_id: Dict[str, Tuple[str, int, Optional[int]]] = {}
     # Prefer consistent ordering by name
+    contact_number_lookup: Dict[str, Tuple[str, int, Optional[int]]] = {}
+
     for cid, c in sorted(ds.contacts.items(), key=lambda kv: kv[1].get("name", "")):
         name = c.get("name") or cid
         number = c.get("number")
@@ -311,6 +422,12 @@ def build_outputs(ds: Dataset):
             int(number),
             ts_override if ts_override in (1, 2) else None,
         )
+        contact_number_lookup[str(number)] = contact_by_id[cid]
+
+    contact_name_lookup: Dict[str, Tuple[str, int, Optional[int]]] = {}
+    for cid, (name, number, ts_override) in contact_by_id.items():
+        normalized = sanitize_name(name).lower()
+        contact_name_lookup[normalized] = (name, number, ts_override)
 
     # Channels and Zones
     channels_rows: List[List[str]] = []
@@ -360,16 +477,114 @@ def build_outputs(ds: Dataset):
 
         return in_band(rx) and in_band(tx if tx is not None else rx)
 
+    def resolve_policy_overlay(asg: dict) -> Dict[str, Any]:
+        policy_data: Dict[str, Any] = {}
+        assignment_id = asg.get("id")
+        if assignment_id and policies is not None:
+            policy_overlay = policies.get_assignment(str(assignment_id))
+            if isinstance(policy_overlay, dict):
+                policy_data = policy_overlay
+        return policy_data
+
+    def resolve_zone_names(asg: dict, policy: Dict[str, Any]) -> List[str]:
+        zone_block = policy.get("zones")
+        base: List[str] = []
+
+        if isinstance(zone_block, dict):
+            include = zone_block.get("include", []) or []
+            exclude = set(zone_block.get("exclude", []) or [])
+            base.extend(asg.get("zones", []) or [])
+            for entry in include:
+                if entry not in base:
+                    base.append(entry)
+            zone_list = [z for z in base if z not in exclude]
+        elif isinstance(zone_block, list):
+            zone_list = zone_block
+        elif isinstance(zone_block, str):
+            zone_list = [zone_block]
+        else:
+            zone_list = asg.get("zones", []) or []
+
+        return [str(z) for z in zone_list if z]
+
     for asg in ds.assignments:
-        codeplug = asg.get("codeplug", {}) or {}
+        policy_overlay = resolve_policy_overlay(asg)
+        codeplug_policy = policy_overlay.get("codeplug")
+        if not isinstance(codeplug_policy, dict):
+            codeplug_policy = {}
+        # Legacy support
+        legacy_codeplug = asg.get("codeplug", {}) or {}
+        codeplug = copy.deepcopy(legacy_codeplug)
+        _deep_merge_dict(codeplug, codeplug_policy)
+        preferred_override = policy_overlay.get("preferred_contacts")
+        if isinstance(preferred_override, list):
+            codeplug["preferred_contacts"] = preferred_override
+        zone_names: List[str] = resolve_zone_names(asg, policy_overlay)
+        scan_block = (
+            policy_overlay.get("scan")
+            if isinstance(policy_overlay.get("scan"), dict)
+            else {}
+        )
+        tx_block = (
+            policy_overlay.get("tx")
+            if isinstance(policy_overlay.get("tx"), dict)
+            else {}
+        )
         # Ensure a non-empty string for channel name
         asg_name = codeplug.get("name") or asg.get("id") or f"Ch{channel_num}"
         asg_name = sanitize_name(asg_name)
-        zone_names: List[str] = asg.get("zones", []) or []
         rx_only = bool(codeplug.get("rx_only", False)) or (
             asg.get("usage") == "receive-only"
         )
-        all_skip = bool(codeplug.get("all_skip", False))
+        if codeplug.get("tx_enabled") is False:
+            rx_only = True
+        if isinstance(tx_block, dict) and tx_block.get("enabled") is False:
+            rx_only = True
+
+        zone_skip_flag = bool(
+            codeplug.get("zone_skip")
+            or (scan_block.get("zone_skip") if isinstance(scan_block, dict) else False)
+        )
+        all_skip = bool(
+            codeplug.get("all_skip")
+            or (scan_block.get("all_skip") if isinstance(scan_block, dict) else False)
+        )
+        tot_raw = None
+        for key in ("tot_seconds", "tot"):
+            value = codeplug.get(key)
+            if value is not None:
+                tot_raw = value
+                break
+        if tot_raw is None and isinstance(scan_block, dict):
+            tot_raw = scan_block.get("tot")
+        try:
+            tot_value = int(float(tot_raw)) if tot_raw is not None else 0
+        except (TypeError, ValueError):
+            tot_value = 0
+
+        raw_power = codeplug.get("power")
+        if raw_power is None and isinstance(scan_block, dict):
+            raw_power = scan_block.get("power")
+        power_setting = sanitize_name(str(raw_power)) if raw_power else "Master"
+
+        raw_squelch = codeplug.get("squelch")
+        if raw_squelch is None and isinstance(scan_block, dict):
+            raw_squelch = scan_block.get("squelch")
+        squelch_setting = sanitize_name(str(raw_squelch)) if raw_squelch else ""
+
+        vox_enabled = bool(
+            codeplug.get("vox")
+            or (scan_block.get("vox") if isinstance(scan_block, dict) else False)
+        )
+        vox_setting = "On" if vox_enabled else "Off"
+
+        raw_aprs = codeplug.get("aprs")
+        if raw_aprs is None and isinstance(scan_block, dict):
+            raw_aprs = scan_block.get("aprs")
+        aprs_setting = sanitize_name(str(raw_aprs)) if raw_aprs else "None"
+
+        no_beep_setting = "Yes" if codeplug.get("no_beep") else "No"
+        no_eco_setting = "Yes" if codeplug.get("no_eco") else "No"
 
         # Channel via rf_chain
         if asg.get("rf_chain_id"):
@@ -388,26 +603,68 @@ def build_outputs(ds: Dataset):
 
             if mode == "DMR":
                 # Determine default contact and timeslot from preferred list
-                pref_ids: List[str] = codeplug.get("preferred_contacts", []) or []
+                pref_ids_raw = codeplug.get("preferred_contacts", [])
+                if isinstance(pref_ids_raw, list):
+                    pref_ids = pref_ids_raw
+                elif pref_ids_raw:
+                    pref_ids = [pref_ids_raw]
+                else:
+                    pref_ids = []
                 # Resolve names for TG List
                 pref_names: List[str] = []
+                resolved_prefs: List[Tuple[str, int, Optional[int]]] = []
                 default_contact_name = "None"
                 default_ts = 1
-                for pcid in pref_ids:
-                    if pcid in contact_by_id:
-                        nm, _, ts = contact_by_id[pcid]
-                        pref_names.append(nm)
-                if pref_ids:
-                    # pick first valid preferred contact as default
-                    for pcid in pref_ids:
-                        if pcid in contact_by_id:
-                            nm, _, ts = contact_by_id[pcid]
-                            default_contact_name = nm
-                            if ts in (1, 2):
-                                default_ts = ts
-                            break
+                for pref in pref_ids:
+                    resolved = None
+                    if pref in contact_by_id:
+                        resolved = contact_by_id[pref]
+                    elif isinstance(pref, (int, float)):
+                        resolved = contact_number_lookup.get(str(int(pref)))
+                    elif isinstance(pref, str) and pref.isdigit():
+                        resolved = contact_number_lookup.get(pref)
+                    if resolved is None and isinstance(pref, str):
+                        normalized = sanitize_name(pref).lower()
+                        resolved = contact_name_lookup.get(normalized)
+                    if resolved:
+                        resolved_prefs.append(resolved)
+                        pref_names.append(resolved[0])
+
+                if resolved_prefs:
+                    first_name, _, first_ts = resolved_prefs[0]
+                    default_contact_name = first_name
+                    if first_ts in (1, 2):
+                        default_ts = first_ts
+                default_contact_override = codeplug.get("default_contact")
+                if isinstance(default_contact_override, str):
+                    override_value = default_contact_override
+                else:
+                    override_value = default_contact_override
+
+                if override_value is not None:
+                    resolved_override = None
+                    if override_value in contact_by_id:
+                        resolved_override = contact_by_id[override_value]
+                    elif isinstance(override_value, (int, float)):
+                        resolved_override = contact_number_lookup.get(
+                            str(int(override_value))
+                        )
+                    elif isinstance(override_value, str) and override_value.isdigit():
+                        resolved_override = contact_number_lookup.get(override_value)
+                    if resolved_override is None:
+                        normalized_override = sanitize_name(str(override_value)).lower()
+                        resolved_override = contact_name_lookup.get(normalized_override)
+
+                    if resolved_override:
+                        nm, _, ts = resolved_override
+                        default_contact_name = nm
+                        if ts in (1, 2):
+                            default_ts = ts
+
                 # TG List name derived from assignment name (limit 15 chars per rules)
-                tgl_name = sanitize_name(asg_name or "DMR")[:15]
+                tgl_name = sanitize_name(
+                    codeplug.get("tg_list_name") or asg_name or "DMR"
+                )[:15]
                 # Store TG list membership (max 32)
                 if pref_names:
                     existing = tg_lists.setdefault(tgl_name, [])
@@ -444,16 +701,16 @@ def build_outputs(ds: Dataset):
                     "Off",
                     "",
                     "",
-                    "",
-                    "Master",
+                    squelch_setting,
+                    power_setting,
                     "Yes" if rx_only else "No",
-                    "No",
+                    "Yes" if zone_skip_flag else "No",
                     "Yes" if all_skip else "No",
-                    0,
-                    "Off",
-                    "No",
-                    "No",
-                    "None",
+                    tot_value,
+                    vox_setting,
+                    no_beep_setting,
+                    no_eco_setting,
+                    aprs_setting,
                     lat_s,
                     lon_s,
                 ]
@@ -490,16 +747,16 @@ def build_outputs(ds: Dataset):
                     "Off",
                     rx_tone,
                     tx_tone if tx_tone != "None" else rx_tone,
-                    "Disabled",
-                    "Master",
+                    squelch_setting or "Disabled",
+                    power_setting,
                     "Yes" if rx_only else "No",
-                    "No",
+                    "Yes" if zone_skip_flag else "No",
                     "Yes" if all_skip else "No",
-                    0,
-                    "Off",
-                    "No",
-                    "No",
-                    "None",
+                    tot_value,
+                    vox_setting,
+                    no_beep_setting,
+                    no_eco_setting,
+                    aprs_setting,
                     lat_s,
                     lon_s,
                 ]
@@ -554,16 +811,16 @@ def build_outputs(ds: Dataset):
                 "Off",
                 "None",
                 "None",
-                "Disabled",
-                "Master",
+                squelch_setting or "Disabled",
+                power_setting,
                 "Yes" if rx_only else "No",
-                "No",
+                "Yes" if zone_skip_flag else "No",
                 "Yes" if all_skip else "No",
-                0,
-                "Off",
-                "No",
-                "No",
-                "None",
+                tot_value,
+                vox_setting,
+                no_beep_setting,
+                no_eco_setting,
+                aprs_setting,
                 lat_s,
                 lon_s,
             ]
@@ -650,9 +907,19 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
             print(f"  - {path}")
         return
 
+    policy_paths = resolve_policy_files(profile)
+    if not policy_paths:
+        fallback_policy = DEFAULT_POLICIES_DIR / f"{args.profile}.yml"
+        if fallback_policy.exists():
+            policy_paths = [fallback_policy]
+
+    policy_set: Optional[PolicySet] = None
+    if policy_paths:
+        policy_set = load_policy_documents(policy_paths)
+
     ssrf_paths = [pathlib.Path(p) for p in matched_files]
     ds = load_dataset(ssrf_paths)
-    contacts, channels, tg_lists, zones = build_outputs(ds)
+    contacts, channels, tg_lists, zones = build_outputs(ds, policy_set)
 
     output_dir = pathlib.Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
