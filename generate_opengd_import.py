@@ -400,7 +400,11 @@ def emission_to_bw_khz(emission: Optional[str], fallback: Optional[float]) -> st
     return ""
 
 
-def build_outputs(ds: Dataset, policies: Optional[PolicySet] = None):
+def build_outputs(
+    ds: Dataset,
+    policies: Optional[PolicySet] = None,
+    allowed_tx_services: Optional[Set[str]] = None,
+):
     # Prepare Contacts.csv rows and a lookup by id
     contact_rows: List[List[str]] = []
     contact_by_id: Dict[str, Tuple[str, int, Optional[int]]] = {}
@@ -507,6 +511,38 @@ def build_outputs(ds: Dataset, policies: Optional[PolicySet] = None):
 
         return [str(z) for z in zone_list if z]
 
+    def infer_assignment_service(asg: dict) -> Optional[str]:
+        svc = asg.get("service")
+        if isinstance(svc, str) and svc.strip():
+            return svc.strip().lower()
+
+        auth_id = asg.get("authorization_id")
+        if isinstance(auth_id, str):
+            auth = ds.authorizations.get(auth_id)
+            if isinstance(auth, dict):
+                svc = auth.get("service")
+                if isinstance(svc, str) and svc.strip():
+                    return svc.strip().lower()
+
+        chain_id = asg.get("rf_chain_id")
+        if isinstance(chain_id, str):
+            chain = ds.rf_chains.get(chain_id) or {}
+            station_id = chain.get("station_id")
+            if isinstance(station_id, str):
+                station = ds.stations.get(station_id) or {}
+                svc = station.get("service")
+                if isinstance(svc, str) and svc.strip():
+                    return svc.strip().lower()
+
+        plan_id = asg.get("channel_plan_id")
+        if isinstance(plan_id, str):
+            plan = ds.channel_plans.get(plan_id) or {}
+            svc = plan.get("service")
+            if isinstance(svc, str) and svc.strip():
+                return svc.strip().lower()
+
+        return None
+
     for asg in ds.assignments:
         policy_overlay = resolve_policy_overlay(asg)
         codeplug_policy = policy_overlay.get("codeplug")
@@ -540,6 +576,17 @@ def build_outputs(ds: Dataset, policies: Optional[PolicySet] = None):
             rx_only = True
         if isinstance(tx_block, dict) and tx_block.get("enabled") is False:
             rx_only = True
+
+        service = infer_assignment_service(asg)
+        normalized_service = service.lower() if isinstance(service, str) else None
+        if allowed_tx_services is not None:
+            can_tx = False
+            if normalized_service and normalized_service in allowed_tx_services:
+                can_tx = True
+            elif normalized_service is None and "amateur" in allowed_tx_services:
+                can_tx = True
+            if not can_tx:
+                rx_only = True
 
         zone_skip_flag = bool(
             codeplug.get("zone_skip")
@@ -878,6 +925,21 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
         action="store_true",
         help="Show matched SSRF files for the selected profile and exit",
     )
+    parser.add_argument(
+        "--tx-service",
+        dest="tx_services",
+        action="append",
+        default=None,
+        help=(
+            "Allow transmit on the specified service (can be repeated). "
+            "Defaults to amateur only."
+        ),
+    )
+    parser.add_argument(
+        "--tx-all-services",
+        action="store_true",
+        help="Allow transmit on every service represented in the data",
+    )
 
     args = parser.parse_args(argv)
 
@@ -917,9 +979,21 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
     if policy_paths:
         policy_set = load_policy_documents(policy_paths)
 
+    if args.tx_all_services:
+        allowed_tx_services = None
+    else:
+        allowed_tx_services = {"amateur"}
+        extra_services = args.tx_services or []
+        for svc in extra_services:
+            if svc is None:
+                continue
+            allowed_tx_services.add(str(svc).strip().lower())
+
     ssrf_paths = [pathlib.Path(p) for p in matched_files]
     ds = load_dataset(ssrf_paths)
-    contacts, channels, tg_lists, zones = build_outputs(ds, policy_set)
+    contacts, channels, tg_lists, zones = build_outputs(
+        ds, policy_set, allowed_tx_services
+    )
 
     output_dir = pathlib.Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
