@@ -3,7 +3,7 @@ profile:
   description: "Slim scanning profile for Chicago (GMRS + public safety)."
   include:
     paths:
-      - "ssrf/plans/gmrs/*.yml"
+      - "ssrf/plans/US/gmrs/*.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/public_safety/*.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/gmrs/*.yml"
       - "ssrf/systems/US/IL/Cook/_Countywide/public_safety/*.yml"

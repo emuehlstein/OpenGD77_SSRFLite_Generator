@@ -3,13 +3,14 @@ profile:
   description: "Baseline build using common plans and local Chicago systems."
   include:
     paths:
-      - "ssrf/plans/gmrs/*.yml"
-      - "ssrf/plans/amateur/*.yml"
-      - "ssrf/plans/murs/*.yml"
-      - "ssrf/plans/marine/*.yml"
-      - "ssrf/plans/business/*.yml"
-      - "ssrf/plans/weather/*.yml"
-      - "ssrf/plans/rail/*.yml"
+      - "ssrf/plans/US/gmrs/*.yml"
+      - "ssrf/plans/US/amateur/*.yml"
+      - "ssrf/plans/US/murs/*.yml"
+      - "ssrf/plans/US/marine/*.yml"
+      - "ssrf/plans/US/business/*.yml"
+      - "ssrf/plans/US/weather/*.yml"
+      - "ssrf/plans/US/rail/*.yml"
+    systems:
       - "ssrf/systems/US/IL/Cook/Chicago/**/*.yml"
       - "ssrf/systems/US/IL/Cook/_Countywide/**/*.yml"
       - "ssrf/systems/US/IL/_Statewide/**/*.yml"

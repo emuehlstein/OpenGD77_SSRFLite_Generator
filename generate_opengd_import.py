@@ -86,8 +86,14 @@ def _detect_services(path: pathlib.Path) -> Set[str]:
     parts = [segment.lower() for segment in path.parts]
     if "plans" in parts:
         idx = parts.index("plans")
-        if len(parts) > idx + 1:
-            services.add(parts[idx + 1])
+        remainder = parts[idx + 1 :]
+        for segment in remainder:
+            if segment.endswith(".yml"):
+                break
+            if len(segment) in {2, 3} and segment.isalpha():
+                continue
+            services.add(segment)
+            break
     elif "systems" in parts and len(parts) >= 2:
         services.add(parts[-2])
 

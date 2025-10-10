@@ -3,9 +3,9 @@ profile:
   description: "Rolling Prairie IN area: La Porte & Berrien county public safety, local amateur, GMRS/MURS/weather plans."
   include:
     paths:
-      - "ssrf/plans/gmrs/gmrs_channels.yml"
-      - "ssrf/plans/murs/murs_channels.yml"
-      - "ssrf/plans/weather/noaa_weather.yml"
+      - "ssrf/plans/US/gmrs/gmrs_channels.yml"
+      - "ssrf/plans/US/murs/murs_channels.yml"
+      - "ssrf/plans/US/weather/noaa_weather.yml"
       - "ssrf/systems/US/IN/LaPorte/LaPorte/**/*.yml"
       - "ssrf/systems/US/MI/Berrien/_Countywide/**/*.yml"
       - "ssrf/systems/US/MI/Berrien/Niles/**/*.yml"

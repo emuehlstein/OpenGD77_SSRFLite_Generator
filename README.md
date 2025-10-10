@@ -29,23 +29,27 @@ This project includes a proposed format for sharing information about RF systems
 ssrf/
   _schema/                # Docs/specs (SSRF-Lite-Spec.md)
   _defaults.yml           # Reserved for future inheritance defaults
-  plans/                  # Portable channel plans (country-agnostic except naming)
-    gmrs/
-      gmrs_channels.yml
-    amateur/
-      ham_vhf_simplex.yml
-      ham_uhf_simplex.yml
-      ham_dmr_simplex.yml
-    murs/
-      murs_channels.yml
-    marine/
-      marine_vhf_channels.yml
-    business/
-      itinerant_business.yml
-    weather/
-      noaa_weather.yml
-    rail/
-      rail_aar_scan.yml
+  plans/                  # Portable channel plans grouped by country
+    US/
+      gmrs/
+        gmrs_channels.yml
+      amateur/
+        ham_vhf_simplex.yml
+        ham_uhf_simplex.yml
+        ham_dmr_simplex.yml
+      murs/
+        murs_channels.yml
+      marine/
+        marine_vhf_channels.yml
+      business/
+        itinerant_business.yml
+      weather/
+        noaa_weather.yml
+      rail/
+        rail_aar_scan.yml
+    EU/
+      pmr446/
+        pmr446_analog.yml
   systems/                # Location-bound systems organised by country/state/county/city
     US/
       IL/
@@ -66,9 +70,7 @@ ssrf/
         Berrien/Niles/amateur/
 ```
 
-Channel content is unchanged—files were simply moved into the new hierarchy to clarify what is reusable (plans) versus location-bound (systems). File names keep their descriptive prefixes so the prior naming references still make sense.
-
-Generated zones now include examples like `Chicago EMS`, `Chicago PD`, `Cook Interop`, `Emergency`, `Fire/EMS`, `GMRS`, `Ham DMR Simplex`, `Ham-DMR`, `Ham-Repeaters`, `Ham UHF`, `Ham VHF`, `IL Interop`, `Local-Commercial`, `Marine`, `MURS`, `NOAA Weather`, `Public Works & Parks`, `Rail AAR`, `Transit & Transport`, `UHF Simplex`, `US Itinerant`, `VHF Simplex`, and `Venues Chicago`.
+Channel content is unchanged—files were moved into the country-aware hierarchy to clarify what is reusable (plans) versus location-bound (systems). File names keep their descriptive prefixes so the prior naming references still make sense. Fresh additions, like the PMR446 analogue plan under `ssrf/plans/EU/pmr446/`, can live alongside the US-focused sets without affecting existing profiles.
 
 Generated zones now include examples like `Chicago EMS`, `Chicago PD`, `Cook Interop`, `Emergency`, `Fire/EMS`, `GMRS`, `Ham DMR Simplex`, `Ham-DMR`, `Ham-Repeaters`, `Ham UHF`, `Ham VHF`, `IL Interop`, `Local-Commercial`, `Marine`, `MURS`, `NOAA Weather`, `Public Works & Parks`, `Rail AAR`, `Transit & Transport`, `UHF Simplex`, `US Itinerant`, `VHF Simplex`, and `Venues Chicago`.
 
@@ -147,7 +149,7 @@ Wrote <channels> channels, <contacts> contacts, <tg_lists> TG lists, and <zones>
 CSV validation: PASS (headers and column counts correct)
 ```
 
-Import the generated CSVs into OpenGD77 CPS.
+Copy the `opengd77_cps_import_generated` folder to a location your OpenGD77 CPS can read (for example, a Documents subfolder or removable media). In the CPS, open **File → CSV → Import CSV**, browse to that folder, and select the generated folder and load that into your codeplug project.
 
 ## Data Notes & Conventions
 
