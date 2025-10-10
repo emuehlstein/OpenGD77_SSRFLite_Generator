@@ -10,7 +10,6 @@ profile:
       - "ssrf/plans/US/business/*.yml"
       - "ssrf/plans/US/weather/*.yml"
       - "ssrf/plans/US/rail/*.yml"
-    systems:
       - "ssrf/systems/US/IL/Cook/Chicago/**/*.yml"
       - "ssrf/systems/US/IL/Cook/_Countywide/**/*.yml"
       - "ssrf/systems/US/IL/_Statewide/**/*.yml"

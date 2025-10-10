@@ -524,6 +524,13 @@ def build_outputs(ds: Dataset):
                         ch_obj = ch
                         freq = ch.get("freq_mhz")
                         break
+            # Skip plan channels that lack a usable frequency or fall outside radio bands
+            try:
+                freq_val = float(freq) if freq is not None else None
+            except (TypeError, ValueError):
+                freq_val = None
+            if freq_val is None or not in_supported_bands(freq_val, freq_val):
+                continue
             if ch_obj is not None:
                 bw_calc = emission_to_bw_khz(
                     ch_obj.get("emission"), ch_obj.get("bandwidth_khz")
@@ -535,8 +542,8 @@ def build_outputs(ds: Dataset):
                 channel_num,
                 asg_name,
                 "Analogue",
-                fmt_freq(freq),
-                fmt_freq(freq),
+                fmt_freq(freq_val),
+                fmt_freq(freq_val),
                 bw,  # default narrowband unless specified per channel
                 "",
                 "",
