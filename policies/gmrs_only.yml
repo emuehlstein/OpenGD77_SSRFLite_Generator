@@ -1,0 +1,199 @@
+# GMRS Only Policy - split into 3 zones: Simplex, Listen (RX only), Repeaters, all with scan enabled
+
+policy:
+  assignments:
+    asgn_gmrs_01:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_02:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_03:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_04:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_05:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_06:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_07:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_08:
+      zones:
+        include:
+          - "GMRS Listen"
+      codeplug:
+        rx_only: true
+      scan:
+        all_skip: false
+    asgn_gmrs_09:
+      zones:
+        include:
+          - "GMRS Listen"
+      codeplug:
+        rx_only: true
+      scan:
+        all_skip: false
+    asgn_gmrs_10:
+      zones:
+        include:
+          - "GMRS Listen"
+      codeplug:
+        rx_only: true
+      scan:
+        all_skip: false
+    asgn_gmrs_11:
+      zones:
+        include:
+          - "GMRS Listen"
+      codeplug:
+        rx_only: true
+      scan:
+        all_skip: false
+    asgn_gmrs_12:
+      zones:
+        include:
+          - "GMRS Listen"
+      codeplug:
+        rx_only: true
+      scan:
+        all_skip: false
+    asgn_gmrs_13:
+      zones:
+        include:
+          - "GMRS Listen"
+      codeplug:
+        rx_only: true
+      scan:
+        all_skip: false
+    asgn_gmrs_14:
+      zones:
+        include:
+          - "GMRS Listen"
+      codeplug:
+        rx_only: true
+      scan:
+        all_skip: false
+    asgn_gmrs_15:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_16:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_17:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_18:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_19:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_20:
+      zones:
+        include:
+          - "GMRS Simplex"
+          - "Emergency"
+      scan:
+        all_skip: false
+    asgn_gmrs_21:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_22:
+      zones:
+        include:
+          - "GMRS Simplex"
+      scan:
+        all_skip: false
+    asgn_gmrs_rpt_15:
+      zones:
+        include:
+          - "GMRS Repeaters"
+      scan:
+        all_skip: false
+    asgn_gmrs_rpt_16:
+      zones:
+        include:
+          - "GMRS Repeaters"
+      scan:
+        all_skip: false
+    asgn_gmrs_rpt_17:
+      zones:
+        include:
+          - "GMRS Repeaters"
+      scan:
+        all_skip: false
+    asgn_gmrs_rpt_18:
+      zones:
+        include:
+          - "GMRS Repeaters"
+      scan:
+        all_skip: false
+    asgn_gmrs_rpt_19:
+      zones:
+        include:
+          - "GMRS Repeaters"
+      scan:
+        all_skip: false
+    asgn_gmrs_rpt_20:
+      zones:
+        include:
+          - "GMRS Repeaters"
+      scan:
+        all_skip: false
+    asgn_gmrs_rpt_21:
+      zones:
+        include:
+          - "GMRS Repeaters"
+      scan:
+        all_skip: false
+    asgn_gmrs_rpt_22:
+      zones:
+        include:
+          - "GMRS Repeaters"
+      scan:
+        all_skip: false

@@ -38,6 +38,42 @@ class ProfileSmokeTest(unittest.TestCase):
                     len(rows), 1, "Expected at least one channel row"
                 )
 
+            gmrs_rows = [row for row in rows if "GMRS" in row[1]]
+            if gmrs_rows:
+                self.assertTrue(
+                    all(row[17] == "Yes" for row in gmrs_rows),
+                    "GMRS channels should default to Rx Only when no GMRS TX flag is provided",
+                )
+
+    def test_gmrs_tx_service_flag_enables_transmit(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_dir = pathlib.Path(tmpdir)
+            gen.main(
+                [
+                    "--profile",
+                    "chicago_light",
+                    "--output-dir",
+                    str(output_dir),
+                    "--tx-service",
+                    "gmrs",
+                ]
+            )
+
+            channels_path = output_dir / "Channels.csv"
+            self.assertTrue(channels_path.exists(), "Channels.csv not generated")
+
+            with channels_path.open(newline="") as fh:
+                reader = csv.reader(fh)
+                next(reader, None)  # skip header
+                gmrs_rows = [row for row in reader if "GMRS" in row[1]]
+            self.assertTrue(
+                gmrs_rows, "Expected GMRS rows when GMRS service is included"
+            )
+            self.assertTrue(
+                any(row[17] == "No" for row in gmrs_rows),
+                "At least one GMRS channel should allow transmit when GMRS service is permitted",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

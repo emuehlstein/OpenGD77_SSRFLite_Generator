@@ -1,0 +1,7 @@
+profile:
+  name: "gmrs_only"
+  description: "GMRS-only build with national simplex plans for quick programming."
+  include:
+    paths:
+      - "ssrf/plans/US/gmrs/*.yml"
+    services: ["gmrs"]
