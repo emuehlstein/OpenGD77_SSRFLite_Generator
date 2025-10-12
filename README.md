@@ -16,6 +16,7 @@ This project includes a proposed format for sharing information about RF systems
 - `generate_opengd_import.py` – Converts SSRF-Lite YAML inputs into OpenGD77 CPS CSVs (now profile-aware).
 - `generate_dm32_import.py` – Builds a Baofeng DM-32 CPS CSV bundle. (experimental/bad)
 - `ssrf/` – SSRF-Lite content split into reusable channel plans and location-bound systems.
+- `policies/` – Optional policy overlays that express codeplug decisions (TX enablement, zones, scan behavior) per profile.
 - `opengd77_cps_import_generated/` – Committed OpenGD77 CSV outputs (one file per CPS import requirement).
 - `dm32_cps_import_generated/` – Committed Baofeng DM-32 CSV outputs generated from the same inputs.
 - `DM32_reference/` – Factory DM-32 CPS export kept for column naming and value reference.
@@ -84,9 +85,34 @@ Notes:
 
 - Transmit only if you hold the appropriate license (Amateur/GMRS) and follow local coordination and emergency traffic practices.
 
-## Profiles (Basic)
+## Profiles & Policies
 
-Profiles provide simple selectors for subsets of SSRF files (no inheritance or overrides yet). Each profile lives in `profiles/<name>.yml` and declares glob patterns plus optional service filters.
+Profiles still provide inclusion filters for SSRF reference data, but they no longer carry codeplug opinions. Each profile lives in `profiles/<name>.yml` and declares glob patterns plus optional service filters under `profile.include`.
+
+Profiles can now point at one or more **policy** files using the optional `profile.policy` block:
+
+```yaml
+profile:
+  name: "chicago_amateur"
+  include:
+    paths:
+      - "ssrf/plans/US/amateur/*.yml"
+      - "ssrf/systems/US/IL/Cook/Chicago/amateur/*.yml"
+  policy:
+    files:
+      - policies/base.yml
+    paths:
+      - policies/chicago/**/*.yml
+```
+
+Policies are simple YAML documents that describe how selected assignments should be rendered. Typical keys include:
+
+- `assignments.<assignment_id>.codeplug.name` – rename channels, mark `rx_only`, choose `preferred_contacts`, etc.
+- `assignments.<assignment_id>.zones` – supply zone include/exclude lists.
+- `assignments.<assignment_id>.scan` – configure `all_skip`, `zone_skip`, `tot`, `power`, `vox`, and related scan hints.
+- `assignments.<assignment_id>.tx` – explicitly disable transmit for receive-only builds.
+
+If a profile omits the `policy` block, the generator will fall back to `policies/<profile>.yml` when present, keeping the flow convenient for small builds.
 
 Available starter profiles:
 
@@ -94,6 +120,9 @@ Available starter profiles:
 - `chicago_light` – slim scan list focused on GMRS and public safety.
 - `chicago_amateur` – Chicago amateur repeaters plus simplex plans.
 - `chicago_gmrs` – Chicago GMRS repeaters and national GMRS plan.
+- `gmrs_only` – National GMRS plan with policy-tuned GMRS zone layout.
+
+`policies/gmrs_only.yml` keeps the national GMRS plan sorted into `GMRS Simplex`, `GMRS Listen`, and `GMRS Repeaters` zones while leaving the FRS-only interstitials receive-only by default.
 
 Inspect the available profiles:
 
@@ -105,7 +134,19 @@ Generate with a specific profile:
 
 ```zsh
 uv run python generate_opengd_import.py --profile chicago_light
+uv run python generate_opengd_import.py --profile gmrs_only --tx-service gmrs  # GMRS-only build, TX enabled on GMRS channels
 ```
+
+Enable transmit on additional services (default is Amateur only):
+
+```zsh
+uv run python generate_opengd_import.py --profile chicago_light --tx-service gmrs
+
+# Allow transmit everywhere the radio supports
+uv run python generate_opengd_import.py --profile chicago_light --tx-all-services
+```
+
+> **GMRS caveat:** The `gmrs_only` profile assumes you hold a valid GMRS license and are programming a radio that is type-accepted for GMRS operation. Do not enable transmit on equipment that lacks the appropriate FCC approval.
 
 Preview the SSRF files a profile would load:
 
@@ -118,13 +159,14 @@ uv run python generate_opengd_import.py --profile chicago_light --dry-run
 The generator loads and merges SSRF‑Lite YAMLs, then:
 
 - Builds `Contacts.csv` from `contacts[]` (only items with numeric IDs are emitted).
+- Resolves policy overlays (if any) and merges them with legacy `assignments.codeplug` hints:
+  - Policy keys drive channel naming, TX enablement, skip flags, TOT, power level, VOX, APRS, and zone membership.
+  - `preferred_contacts` and `default_contact` can reference contact IDs, numbers, or names; the first valid entry sets the default DMR contact/slot.
 - Builds `Channels.csv` from `assignments[]`:
-  - If `rf_chain_id` is set and the chain is FM or DMR, within supported bands:
-    - FM/APRS/Packet/CW are emitted as Analogue channels. CTCSS/DCS are mapped to `RX Tone`/`TX Tone`. Bandwidth derived from `tx.bandwidth_khz` or from emission.
-    - DMR chains are emitted as Digital channels with Colour Code and a default Timeslot. If `codeplug.preferred_contacts` exists, the first valid one becomes the default Contact/TS.
+  - If `rf_chain_id` is set and the chain is FM or DMR within supported bands, the generator emits Analogue or Digital rows using policy+legacy hints.
   - If `channel_plan_id` is set, the matching plan channel is emitted as Analogue (e.g., NOAA), subject to band filter.
-- Builds `TG_Lists.csv` from `codeplug.preferred_contacts` per assignment (max 32, list name derived from assignment name).
-- Builds `Zones.csv` from `assignments[].zones` (max 80 channels per zone).
+- Builds `TG_Lists.csv` from policy/legacy `preferred_contacts` per assignment (max 32, list name derived from assignment or `codeplug.tg_list_name`).
+- Builds `Zones.csv` from policy-derived zone lists (fallback to legacy `assignments[].zones`) with up to 80 channels per zone.
 
 Unsupported modes (e.g., D‑STAR, C4FM) and out‑of‑band items are skipped.
 
@@ -153,9 +195,9 @@ Copy the `opengd77_cps_import_generated` folder to a location your OpenGD77 CPS 
 
 ## Data Notes & Conventions
 
-- SSRF‑Lite entities used here: `organizations`, `locations`, `stations`, `antennas`, `rf_chains`, `contacts`, `channel_plans`, `assignments`.
-- `assignments.codeplug.name` becomes the channel name. `assignments.zones` populate `Zones.csv`.
-- For DMR, `mode.color_code` sets Colour Code; default Timeslot derived from the first preferred contact’s TS if present.
+- SSRF‑Lite entities used here: `organizations`, `locations`, `stations`, `antennas`, `rf_chains`, `contacts`, `channel_plans`, `assignments`. These remain reference-only facts.
+- Policies (or legacy `assignments.codeplug`) provide rendering instructions: channel names, zone membership, skip flags, TOT, power, VOX, and preferred contacts. Transmit enablement defaults to Amateur-only unless additional services are whitelisted via `--tx-service` or `--tx-all-services`.
+- For DMR, `mode.color_code` sets Colour Code; the default Timeslot is derived from policy/legacy preferred contacts (with fallback to global defaults).
 - Latitude/Longitude is taken from the channel’s station → location linkage if available.
 - DCS codes are normalized to numeric; we can preserve leading zeros (e.g., 073) if desired.
 
