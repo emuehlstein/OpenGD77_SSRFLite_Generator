@@ -1,0 +1,275 @@
+# Overlay for Tri-State DMR repeater system assignments
+policy:
+  assignments:
+    asgn_k9bar_bolingbrook:
+      codeplug:
+        name: "K9BAR TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Status All OK per Tri-State DMR (2025-10-08). CC 1."
+    asgn_n9pay_carlsville:
+      codeplug:
+        name: "N9PAY Carlsville"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Door County site. Status All OK; CC 6."
+    asgn_aa9vi_chicago:
+      codeplug:
+        name: "AA9VI TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Chicago Loop site. Status RF OK, No Net; CC 1."
+    asgn_k9vi_crystal_lake:
+      codeplug:
+        name: "K9VI TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Crystal Lake coverage. Status All OK; CC 4."
+    asgn_n9iaa_crown_point:
+      codeplug:
+        name: "N9IAA Crown Point"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "NW Indiana site. Status RF OK, No Net; CC 1."
+    asgn_k9nro_elburn:
+      codeplug:
+        name: "K9NRO TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Fox Valley coverage. Status All OK; CC 1."
+    asgn_n9pay_green_bay:
+      codeplug:
+        name: "N9PAY Green Bay"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Green Bay metro coverage. Status All OK; CC 6."
+    asgn_k9ord_inverness:
+      codeplug:
+        name: "K9ORD TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Inverness/Palatine coverage. Status All OK; CC 1."
+    asgn_n9iaa_la_porte:
+      codeplug:
+        name: "N9IAA La Porte"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "La Porte, IN site. Status RF OK, No Net; CC 1."
+    asgn_n9pay_milwaukee:
+      codeplug:
+        name: "N9PAY Milwaukee"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Milwaukee metro coverage. Status All OK; CC 1."
+    asgn_kc9kko_morris:
+      codeplug:
+        name: "KC9KKO TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Grundy County / I-80 coverage. Status All OK; CC 1."
+    asgn_n9pay_new_berlin:
+      codeplug:
+        name: "N9PAY New Berlin"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Waukesha County coverage. Status All OK; CC 1."
+    asgn_ww9p_rockford:
+      codeplug:
+        name: "WW9P TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Rockford coverage. Status All OK; CC 1."
+    asgn_k9mot_schaumburg:
+      codeplug:
+        name: "K9MOT TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Schaumburg/NW suburbs site. Status All OK; CC 1."
+    asgn_n8ouz_traverse_city:
+      codeplug:
+        name: "N8OUZ TriState"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Traverse City extension. Status All OK; CC 1."
+    asgn_n9iaa_valparaiso:
+      codeplug:
+        name: "N9IAA Valparaiso"
+        rx_only: false
+        preferred_contacts:
+          - tg_8_tristate
+          - tg_3169_midwest
+          - tg_9_talk
+          - tg_1_worldwide
+          - tg_3_north_america
+          - tg_13_worldwide_english
+          - tg_5000_status
+          - tg_4000_disconnect
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: "Porter County site. Status RF OK, No Net; CC 1."

@@ -1,0 +1,10 @@
+# Overlay for KC8BRS Four Flags ARC repeater in Niles, MI
+policy:
+  assignments:
+    asgn_kc8brs_vhf_fm:
+      codeplug:
+        name: "KC8BRS 147.180"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"

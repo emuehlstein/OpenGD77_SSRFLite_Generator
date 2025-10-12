@@ -1,0 +1,266 @@
+# Overlay for national GMRS simplex and repeater boilerplate
+policy:
+  assignments:
+    # Interstitial simplex (1-7)
+    asgn_gmrs_01:
+      codeplug:
+        name: "GMRS 01"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_02:
+      codeplug:
+        name: "GMRS 02"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_03:
+      codeplug:
+        name: "GMRS 03"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_04:
+      codeplug:
+        name: "GMRS 04"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_05:
+      codeplug:
+        name: "GMRS 05"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_06:
+      codeplug:
+        name: "GMRS 06"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_07:
+      codeplug:
+        name: "GMRS 07"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+
+    # Interstitial receive-only (8-14)
+    asgn_gmrs_08:
+      codeplug:
+        name: "GMRS 08 (RX)"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_09:
+      codeplug:
+        name: "GMRS 09 (RX)"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_10:
+      codeplug:
+        name: "GMRS 10 (RX)"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_11:
+      codeplug:
+        name: "GMRS 11 (RX)"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_12:
+      codeplug:
+        name: "GMRS 12 (RX)"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_13:
+      codeplug:
+        name: "GMRS 13 (RX)"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_14:
+      codeplug:
+        name: "GMRS 14 (RX)"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+
+    # Main 20 kHz simplex (15-22)
+    asgn_gmrs_15:
+      codeplug:
+        name: "GMRS 15"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_16:
+      codeplug:
+        name: "GMRS 16"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_17:
+      codeplug:
+        name: "GMRS 17"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_18:
+      codeplug:
+        name: "GMRS 18"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_19:
+      codeplug:
+        name: "GMRS 19"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_20:
+      codeplug:
+        name: "GMRS 20"
+        rx_only: false
+      zones:
+        include:
+          - "GMRS"
+          - "Emergency"
+    asgn_gmrs_21:
+      codeplug:
+        name: "GMRS 21"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_22:
+      codeplug:
+        name: "GMRS 22"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+
+    # Generic repeater placeholders (set local tone as needed)
+    asgn_gmrs_rpt_15:
+      codeplug:
+        name: "GMRS 15 RPT"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_rpt_16:
+      codeplug:
+        name: "GMRS 16 RPT"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_rpt_17:
+      codeplug:
+        name: "GMRS 17 RPT"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_rpt_18:
+      codeplug:
+        name: "GMRS 18 RPT"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_rpt_19:
+      codeplug:
+        name: "GMRS 19 RPT"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_rpt_20:
+      codeplug:
+        name: "GMRS 20 RPT"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_rpt_21:
+      codeplug:
+        name: "GMRS 21 RPT"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_rpt_22:
+      codeplug:
+        name: "GMRS 22 RPT"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"

@@ -1,0 +1,43 @@
+# Overlay for Berrien County, MI amateur and Skywarn repeaters
+policy:
+  assignments:
+    asg_skywarn_primary:
+      codeplug:
+        name: "Skywarn Primary 146.820"
+        rx_only: false
+      zones:
+        include:
+          - "Berrien Amateur"
+          - "Ham-Repeaters"
+    asg_skywarn_secondary:
+      codeplug:
+        name: "Skywarn Secondary 146.720"
+        rx_only: false
+      zones:
+        include:
+          - "Berrien Amateur"
+          - "Ham-Repeaters"
+    asg_skywarn_intercounty:
+      codeplug:
+        name: "IMO Skywarn 145.430"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Amateur"
+          - "Ham-Repeaters"
+    asg_skywarn_link:
+      codeplug:
+        name: "Skywarn UHF Link 442.775"
+        rx_only: false
+      zones:
+        include:
+          - "Berrien Amateur"
+          - "Ham-Repeaters"
+    asg_w8mai_dstar_b:
+      codeplug:
+        name: "W8MAI D-STAR B"
+        rx_only: false
+      zones:
+        include:
+          - "Berrien Amateur"
+          - "Digital Voice"

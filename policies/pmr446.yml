@@ -1,0 +1,131 @@
+# Overlay for analogue PMR446 simplex channels
+policy:
+  assignments:
+    asgn_pmr446_01:
+      codeplug:
+        name: "PMR 01"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_02:
+      codeplug:
+        name: "PMR 02"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_03:
+      codeplug:
+        name: "PMR 03"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_04:
+      codeplug:
+        name: "PMR 04"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_05:
+      codeplug:
+        name: "PMR 05"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_06:
+      codeplug:
+        name: "PMR 06"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_07:
+      codeplug:
+        name: "PMR 07"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_08:
+      codeplug:
+        name: "PMR 08"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_09:
+      codeplug:
+        name: "PMR 09"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_10:
+      codeplug:
+        name: "PMR 10"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_11:
+      codeplug:
+        name: "PMR 11"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_12:
+      codeplug:
+        name: "PMR 12"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_13:
+      codeplug:
+        name: "PMR 13"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_14:
+      codeplug:
+        name: "PMR 14"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_15:
+      codeplug:
+        name: "PMR 15"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"
+    asgn_pmr446_16:
+      codeplug:
+        name: "PMR 16"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "PMR446"

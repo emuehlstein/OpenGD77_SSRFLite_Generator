@@ -1,0 +1,59 @@
+# Overlay for NOAA weather radio scan list
+policy:
+  assignments:
+    asg_wx1:
+      codeplug:
+        name: "WX1"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "NOAA Weather"
+    asg_wx2:
+      codeplug:
+        name: "WX2"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "NOAA Weather"
+    asg_wx3:
+      codeplug:
+        name: "WX3"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "NOAA Weather"
+    asg_wx4:
+      codeplug:
+        name: "WX4"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "NOAA Weather"
+    asg_wx5:
+      codeplug:
+        name: "WX5"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "NOAA Weather"
+    asg_wx6:
+      codeplug:
+        name: "WX6"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "NOAA Weather"
+    asg_wx7:
+      codeplug:
+        name: "WX7"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "NOAA Weather"

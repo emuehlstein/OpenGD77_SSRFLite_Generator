@@ -1,0 +1,43 @@
+# Overlay for US MURS simplex plan
+policy:
+  assignments:
+    asgn_murs_1:
+      codeplug:
+        name: "MURS 1"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "MURS"
+    asgn_murs_2:
+      codeplug:
+        name: "MURS 2"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "MURS"
+    asgn_murs_3:
+      codeplug:
+        name: "MURS 3"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "MURS"
+    asgn_murs_4:
+      codeplug:
+        name: "MURS 4"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "MURS"
+    asgn_murs_5:
+      codeplug:
+        name: "MURS 5"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "MURS"

@@ -8,3 +8,10 @@ profile:
       - "ssrf/systems/US/IL/Cook/Chicago/gmrs/*.yml"
       - "ssrf/systems/US/IL/Cook/_Countywide/public_safety/*.yml"
     services: ["gmrs", "public_safety"]
+  policy:
+    files:
+      - "policies/default.yml"
+      - "policies/gmrs_channels.yml"
+      - "policies/chicago_gmrs_repeaters.yml"
+      - "policies/family_channels.yml"
+      - "policies/cook_public_safety.yml"

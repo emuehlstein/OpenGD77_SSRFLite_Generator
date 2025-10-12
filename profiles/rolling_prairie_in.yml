@@ -10,3 +10,11 @@ profile:
       - "ssrf/systems/US/MI/Berrien/_Countywide/**/*.yml"
       - "ssrf/systems/US/MI/Berrien/Niles/**/*.yml"
     services: []
+  policy:
+    files:
+      - "policies/gmrs_channels.yml"
+      - "policies/murs.yml"
+      - "policies/noaa_weather.yml"
+      - "policies/berrien_county_amateur.yml"
+      - "policies/berrien_county_public_safety.yml"
+      - "policies/niles_kc8brs.yml"

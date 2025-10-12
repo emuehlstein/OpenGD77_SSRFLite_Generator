@@ -1,0 +1,69 @@
+# Overlay for Chicago FM Club analog/digital repeaters
+policy:
+  assignments:
+    asgn_cfmc_440:
+      codeplug:
+        name: "CFMC 440 FM"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+          - "Emergency"
+      notes: |
+        443.750 +5 MHz, PL 114.8. EchoLink 62478 (WA9ORC-R) and AllStar 555492.
+        Dual-mode hardware but analog prioritized; P25 users monitor carrier squelch.
+    asgn_cfmc_2m:
+      codeplug:
+        name: "CFMC 2m FM"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+          - "Emergency"
+      notes: |
+        146.760 -0.6 MHz, PL 107.2. EchoLink 448319 (KD9YDD-R) and AllStar 555491.
+    asgn_cfmc_220_north:
+      codeplug:
+        name: "CFMC 220 North"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: |
+        224.100 -1.6 MHz, PL 110.9 (~15 W). Near North lakefront (~500 ft AGL).
+    asgn_cfmc_220_south:
+      codeplug:
+        name: "CFMC 220 S"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: |
+        224.180 -1.6 MHz, PL 110.9 (~15 W). Worth, IL coverage.
+    asgn_cfmc_dstar_440:
+      codeplug:
+        name: "CFMC D-STAR 440"
+        rx_only: false
+      zones:
+        include:
+          - "DMR Repeater"
+      notes: |
+        D-STAR DV on 441.90625 (-) with input 446.90625. Linked to Reflector 1C. Park Ridge (~180 ft AGL).
+    asgn_cfmc_fusion_2m_fm:
+      codeplug:
+        name: "CFMC 2m FM"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: |
+        145.350 -0.6 MHz with DCS 072 on analog path. Park Ridge (~180 ft AGL). WIRES-X available.
+    asgn_cfmc_fusion_2m_c4fm:
+      codeplug:
+        name: "CFMC 2m C4FM"
+        rx_only: false
+      zones:
+        include:
+          - "DMR Repeater"
+      notes: |
+        System Fusion digital companion on 145.350 (-0.6). Park Ridge (~180 ft AGL), WIRES-X capable.

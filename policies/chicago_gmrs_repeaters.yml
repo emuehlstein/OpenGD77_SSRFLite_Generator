@@ -1,0 +1,75 @@
+# Overlay providing codeplug metadata for Chicago-area GMRS repeaters
+policy:
+  assignments:
+    asgn_gmrs_lincolnwood_575:
+      codeplug:
+        name: "Lincolnwood 575"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_evanston_725:
+      codeplug:
+        name: "Evanston 725"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_evanston_700:
+      codeplug:
+        name: "NSEA Evan700"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_chicago_600:
+      codeplug:
+        name: "PL-600"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_chicago_575:
+      codeplug:
+        name: "OHare 575"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_parkridge_675:
+      codeplug:
+        name: "NSEA Her675"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_northbrook_650:
+      codeplug:
+        name: "NSEA NBrk650"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_forest_view_650:
+      codeplug:
+        name: "PRJ 650"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+    asgn_gmrs_oak_lawn_625:
+      codeplug:
+        name: "Oak Lawn"
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"

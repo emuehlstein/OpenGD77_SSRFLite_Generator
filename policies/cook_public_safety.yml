@@ -1,0 +1,84 @@
+# Overlay for Cook County public safety interoperability channels
+policy:
+  assignments:
+    asg_interop_v1:
+      codeplug:
+        name: "Interop VHF 1"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_interop_v2:
+      codeplug:
+        name: "Interop VHF 2"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_interop_v3:
+      codeplug:
+        name: "Interop VHF 3"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_interop_v4:
+      codeplug:
+        name: "Interop VHF 4"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_interop_vmetro3:
+      codeplug:
+        name: "Interop VMet3"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_interop_vmetro4:
+      codeplug:
+        name: "Interop VMet4"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_interop_vmetro5:
+      codeplug:
+        name: "Interop VMet5"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_interop_u1:
+      codeplug:
+        name: "Interop UHF 1"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_interop_u2:
+      codeplug:
+        name: "Interop UHF 2"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true

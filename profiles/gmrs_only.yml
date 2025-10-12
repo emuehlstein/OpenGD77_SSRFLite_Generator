@@ -5,3 +5,6 @@ profile:
     paths:
       - "ssrf/plans/US/gmrs/*.yml"
     services: ["gmrs"]
+  policy:
+    files:
+      - "policies/gmrs_channels.yml"

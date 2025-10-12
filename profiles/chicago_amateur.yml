@@ -6,3 +6,12 @@ profile:
       - "ssrf/plans/US/amateur/*.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/amateur/*.yml"
     services: ["amateur"]
+  policy:
+    files:
+      - "policies/default.yml"
+      - "policies/chicago_club_dmr.yml"
+      - "policies/cfmc_repeaters.yml"
+      - "policies/ns9rc.yml"
+      - "policies/sara_repeaters.yml"
+      - "policies/ham_fm_simplex.yml"
+      - "policies/ham_dmr_simplex.yml"

@@ -1,0 +1,163 @@
+# Overlay capturing codeplug metadata for family operations channels
+policy:
+  assignments:
+    asgn_family_f1_all:
+      codeplug:
+        name: "F1 All"
+        rx_only: false
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f2_team_a:
+      codeplug:
+        name: "F2 Team A"
+        rx_only: false
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f3_team_b:
+      codeplug:
+        name: "F3 Team B"
+        rx_only: false
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f4_team_c:
+      codeplug:
+        name: "F4 Team C"
+        rx_only: false
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f5_road:
+      codeplug:
+        name: "F5 Road"
+        rx_only: false
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f6_rptr:
+      codeplug:
+        name: "F6 RPTR"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f8_evnstn:
+      codeplug:
+        name: "F8 Evnstn 725"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.025
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f9_prkrdg:
+      codeplug:
+        name: "F9 PrkRdg 675"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f10_evnst:
+      codeplug:
+        name: "F10 Evnst 700"
+        rx_only: false
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f11_nrthbrk:
+      codeplug:
+        name: "F11 Nrthbrk"
+        rx_only: false
+        duplex: "-"
+        tx_offset_mhz: -2.0
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+    asgn_family_f13_uhf_call:
+      codeplug:
+        name: "F13 UHF Call"
+        rx_only: false
+        scan_list: "Family SL"
+      zones:
+        include:
+          - "Family Ops"
+          - "Ham UHF"
+    asgn_family_f14_ns9rc:
+      codeplug:
+        name: "F14 NS9RC UHF"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+      zones:
+        include:
+          - "Family Ops"
+          - "Ham-Repeaters"
+    asgn_family_f15_cmfc:
+      codeplug:
+        name: "F15 CMFC UHF"
+        rx_only: false
+        duplex: "+"
+        tx_offset_mhz: 5.0
+        scan_list: "HamRptrs SL"
+      zones:
+        include:
+          - "Family Ops"
+          - "Ham-Repeaters"
+    asgn_family_fd1_all:
+      codeplug:
+        name: "FD1 All"
+        rx_only: false
+        scan_list: "Family SL"
+        preferred_contacts:
+          - contact_local99
+          - contact_eric
+      zones:
+        include:
+          - "Family Ops Digital"
+    asgn_family_fd2_team_a:
+      codeplug:
+        name: "FD2 Team A"
+        rx_only: false
+        scan_list: "Family SL"
+        preferred_contacts:
+          - contact_local99
+          - contact_eric
+      zones:
+        include:
+          - "Family Ops Digital"
+    asgn_family_fd3_team_b:
+      codeplug:
+        name: "FD3 Team B"
+        rx_only: false
+        scan_list: "Family SL"
+        preferred_contacts:
+          - contact_local99
+          - contact_eric
+      zones:
+        include:
+          - "Family Ops Digital"
+    asgn_family_fd4_team_c:
+      codeplug:
+        name: "FD4 Team C"
+        rx_only: false
+        scan_list: "Family SL"
+        preferred_contacts:
+          - contact_local99
+          - contact_eric
+      zones:
+        include:
+          - "Family Ops Digital"

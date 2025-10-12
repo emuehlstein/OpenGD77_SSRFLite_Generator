@@ -1,0 +1,58 @@
+# Overlay for Chicagoland DMR Club simplex/repeater preferences
+policy:
+  assignments:
+    asgn_n9kd_cl:
+      codeplug:
+        name: "N9KD CL"
+        preferred_contacts:
+          - tg_9
+          - tg_3181
+          - tg_3166
+          - tg_3117
+          - tg_3169
+          - tg_310
+          - tg_9998
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: |
+        Chicagoland C-Bridge member with BrandMeister integration.
+        Color Code 0. TS1: Local 1, IL 3117. TS2: Local 2, Midwest 3169, TAC 310, Parrot.
+      scan:
+        all_skip: false
+    asgn_k9vo_cl:
+      codeplug:
+        name: "K9VO CL"
+        preferred_contacts:
+          - tg_9
+          - tg_3181
+          - tg_3166
+          - tg_3117
+          - tg_3169
+          - tg_310
+          - tg_9998
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: |
+        C-Bridge site with Color Code 1. TS1: Site Local 9, Local 1, IL 3117. TS2: Local 2, Midwest 3169, Parrot.
+      scan:
+        all_skip: false
+    asgn_w9bmk_cl:
+      codeplug:
+        name: "W9BMK CL"
+        preferred_contacts:
+          - tg_9
+          - tg_3181
+          - tg_3166
+          - tg_3117
+          - tg_3169
+          - tg_310
+          - tg_9998
+      zones:
+        include:
+          - "Ham-Repeaters"
+      notes: |
+        Uptown/Lakeview site. Color Code 1. TS1: Local 1, IL 3117. TS2: Local 2, Midwest 3169, Parrot reflector.
+      scan:
+        all_skip: false

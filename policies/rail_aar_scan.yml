@@ -1,0 +1,195 @@
+# Overlay for AAR railroad scan list
+policy:
+  assignments:
+    asg_aar_160230:
+      codeplug:
+        name: "AAR 160230"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160320:
+      codeplug:
+        name: "AAR 160320"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160470:
+      codeplug:
+        name: "AAR 160470"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160530:
+      codeplug:
+        name: "AAR 160530"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160560:
+      codeplug:
+        name: "AAR 160560"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160590:
+      codeplug:
+        name: "AAR 160590"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160620:
+      codeplug:
+        name: "AAR 160620"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160650:
+      codeplug:
+        name: "AAR 160650"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160695:
+      codeplug:
+        name: "AAR 160695"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160770:
+      codeplug:
+        name: "AAR 160770"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160800:
+      codeplug:
+        name: "AAR 160800"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160845:
+      codeplug:
+        name: "AAR 160845"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_161100:
+      codeplug:
+        name: "AAR 161100"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_161160:
+      codeplug:
+        name: "AAR 161160"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160335:
+      codeplug:
+        name: "AAR 160335"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160485:
+      codeplug:
+        name: "AAR 160485"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160680:
+      codeplug:
+        name: "AAR 160680"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160710:
+      codeplug:
+        name: "AAR 160710"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160815:
+      codeplug:
+        name: "AAR 160815"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160860:
+      codeplug:
+        name: "AAR 160860"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_160875:
+      codeplug:
+        name: "AAR 160875"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_161115:
+      codeplug:
+        name: "AAR 161115"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_161190:
+      codeplug:
+        name: "AAR 161190"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"
+    asg_aar_161205:
+      codeplug:
+        name: "AAR 161205"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Rail"

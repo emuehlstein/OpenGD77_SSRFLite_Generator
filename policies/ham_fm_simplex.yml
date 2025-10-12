@@ -1,0 +1,285 @@
+# Overlay capturing codeplug metadata for US amateur FM simplex channel plans
+policy:
+  assignments:
+    us_ham_vhf_aprs:
+      codeplug:
+        name: "APRS 144390"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_call:
+      codeplug:
+        name: "2m Call"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+          - "Emergency"
+    us_ham_vhf_146400:
+      codeplug:
+        name: "2m 146400"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146415:
+      codeplug:
+        name: "2m 146415"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146430:
+      codeplug:
+        name: "2m 146430"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146445:
+      codeplug:
+        name: "2m 146445"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146460:
+      codeplug:
+        name: "2m 146460"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146475:
+      codeplug:
+        name: "2m 146475"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146490:
+      codeplug:
+        name: "2m 146490"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146505:
+      codeplug:
+        name: "2m 146505"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146535:
+      codeplug:
+        name: "2m 146535"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146550:
+      codeplug:
+        name: "2m 146550"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146565:
+      codeplug:
+        name: "2m 146565"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_146580:
+      codeplug:
+        name: "2m 146580"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_147420:
+      codeplug:
+        name: "2m 147420"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_147450:
+      codeplug:
+        name: "2m 147450"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_147480:
+      codeplug:
+        name: "2m 147480"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_147510:
+      codeplug:
+        name: "2m 147510"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_147540:
+      codeplug:
+        name: "2m 147540"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_vhf_147570:
+      codeplug:
+        name: "2m 147570"
+        rx_only: false
+      zones:
+        include:
+          - "Ham VHF"
+    us_ham_uhf_call:
+      codeplug:
+        name: "70cm Call"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+          - "Emergency"
+    us_ham_uhf_446025:
+      codeplug:
+        name: "70cm 446025"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446050:
+      codeplug:
+        name: "70cm 446050"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446075:
+      codeplug:
+        name: "70cm 446075"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446100:
+      codeplug:
+        name: "70cm 446100"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446125:
+      codeplug:
+        name: "70cm 446125"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446150:
+      codeplug:
+        name: "70cm 446150"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446175:
+      codeplug:
+        name: "70cm 446175"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446200:
+      codeplug:
+        name: "70cm 446200"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446225:
+      codeplug:
+        name: "70cm 446225"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446250:
+      codeplug:
+        name: "70cm 446250"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446275:
+      codeplug:
+        name: "70cm 446275"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446300:
+      codeplug:
+        name: "70cm 446300"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446325:
+      codeplug:
+        name: "70cm 446325"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446350:
+      codeplug:
+        name: "70cm 446350"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446375:
+      codeplug:
+        name: "70cm 446375"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446400:
+      codeplug:
+        name: "70cm 446400"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446425:
+      codeplug:
+        name: "70cm 446425"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446450:
+      codeplug:
+        name: "70cm 446450"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"
+    us_ham_uhf_446475:
+      codeplug:
+        name: "70cm 446475"
+        rx_only: false
+      zones:
+        include:
+          - "Ham UHF"

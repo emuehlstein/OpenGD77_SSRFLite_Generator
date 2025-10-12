@@ -1,0 +1,219 @@
+# Overlay for US business and itinerant simplex channels
+policy:
+  assignments:
+    asg_151505:
+      codeplug:
+        name: "151505 Itin"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_1515125:
+      codeplug:
+        name: "1515125 Itin"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_151625:
+      codeplug:
+        name: "RedDot151625"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_151640:
+      codeplug:
+        name: "151640 VHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_151700:
+      codeplug:
+        name: "151700 VHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_151760:
+      codeplug:
+        name: "151760 VHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_151955:
+      codeplug:
+        name: "Purple151955"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_1545275:
+      codeplug:
+        name: "1545275 VHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_158400:
+      codeplug:
+        name: "158400 VHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_1584075:
+      codeplug:
+        name: "1584075 VHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_451800:
+      codeplug:
+        name: "451800 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_4518125:
+      codeplug:
+        name: "4518125 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_456800:
+      codeplug:
+        name: "456800 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_4568125:
+      codeplug:
+        name: "4568125 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_457525:
+      codeplug:
+        name: "457525 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_45755:
+      codeplug:
+        name: "457550 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_457575:
+      codeplug:
+        name: "457575 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_464500:
+      codeplug:
+        name: "Brown464500"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_464550:
+      codeplug:
+        name: "Yellow464550"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_4677625:
+      codeplug:
+        name: "JDot4677625"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_4678125:
+      codeplug:
+        name: "KDot4678125"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_46785:
+      codeplug:
+        name: "Silver467850"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_467875:
+      codeplug:
+        name: "Gold467875"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_4679:
+      codeplug:
+        name: "Red467900"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_467925:
+      codeplug:
+        name: "Blue467925"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_469500:
+      codeplug:
+        name: "469500 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"
+    asg_469550:
+      codeplug:
+        name: "469550 UHF"
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - "Business"

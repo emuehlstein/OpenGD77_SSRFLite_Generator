@@ -1,0 +1,120 @@
+# Overlay for Berrien County, MI conventional public safety monitoring set
+policy:
+  assignments:
+    asg_berrien_jail:
+      codeplug:
+        name: "County Jail"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Sheriff"
+      scan:
+        all_skip: true
+    asg_berrien_sirens:
+      codeplug:
+        name: "EMA Sirens"
+        rx_only: true
+      zones:
+        include:
+          - "Public Service"
+      scan:
+        all_skip: true
+    asg_berrien_eoc:
+      codeplug:
+        name: "EOC"
+        rx_only: true
+      zones:
+        include:
+          - "Public Service"
+      scan:
+        all_skip: true
+    asg_berrien_media_page:
+      codeplug:
+        name: "Media Alert Page"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_fire1:
+      codeplug:
+        name: "Fire Dispatch 1"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_fire2:
+      codeplug:
+        name: "Fire Dispatch 2"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_fire3:
+      codeplug:
+        name: "Fire Dispatch 3"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_fg1:
+      codeplug:
+        name: "Fireground 1"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_fg2:
+      codeplug:
+        name: "Fireground 2"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_fg3:
+      codeplug:
+        name: "Fireground 3"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_fg4:
+      codeplug:
+        name: "Fireground 4"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_fg5:
+      codeplug:
+        name: "Fireground 5"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Fire"
+      scan:
+        all_skip: true
+    asg_berrien_silver_beach:
+      codeplug:
+        name: "Silver Beach Ops"
+        rx_only: true
+      zones:
+        include:
+          - "Berrien Parks"
+      scan:
+        all_skip: true

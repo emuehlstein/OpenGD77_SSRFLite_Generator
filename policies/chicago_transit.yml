@@ -1,0 +1,66 @@
+# Overlay for Chicago transit and transport conventional channels
+policy:
+  assignments:
+    asg_cta1:
+      codeplug:
+        name: "CTA Ops A"
+        rx_only: true
+      zones:
+        include:
+          - "Transit & Transport"
+      scan:
+        all_skip: true
+    asg_cta2:
+      codeplug:
+        name: "CTA Ops B"
+        rx_only: true
+      zones:
+        include:
+          - "Transit & Transport"
+      scan:
+        all_skip: true
+    asg_cta_yard:
+      codeplug:
+        name: "CTA Yard"
+        rx_only: true
+      zones:
+        include:
+          - "Transit & Transport"
+      scan:
+        all_skip: true
+    asg_ord_ops:
+      codeplug:
+        name: "ORD Ops"
+        rx_only: true
+      zones:
+        include:
+          - "Transit & Transport"
+      scan:
+        all_skip: true
+    asg_midway_ops:
+      codeplug:
+        name: "MDW Ops"
+        rx_only: true
+      zones:
+        include:
+          - "Transit & Transport"
+      scan:
+        all_skip: true
+    asg_deliv_u1:
+      codeplug:
+        name: "Delivery DMR"
+        rx_only: true
+      zones:
+        include:
+          - "Transit & Transport"
+      scan:
+        all_skip: true
+    asg_deliv_fm1:
+      codeplug:
+        name: "Delivery FM"
+        rx_only: true
+      zones:
+        include:
+          - "Transit & Transport"
+      scan:
+        all_skip: true

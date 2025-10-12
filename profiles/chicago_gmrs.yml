@@ -6,3 +6,8 @@ profile:
       - "ssrf/plans/US/gmrs/*.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/gmrs/*.yml"
     services: ["gmrs"]
+  policy:
+    files:
+      - "policies/gmrs_channels.yml"
+      - "policies/chicago_gmrs_repeaters.yml"
+      - "policies/family_channels.yml"

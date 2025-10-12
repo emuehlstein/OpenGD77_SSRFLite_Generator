@@ -1,0 +1,115 @@
+# Overlay for Ham DMR simplex presets (shared by multiple profiles)
+policy:
+  assignments:
+    asg_dmr_smpx_446500:
+      codeplug:
+        name: "DMR Smpx A"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_smpx_446075:
+      codeplug:
+        name: "DMR Smpx B"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_4304125:
+      codeplug:
+        name: "HS 4304125"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_4304250:
+      codeplug:
+        name: "HS 4304250"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_4394125:
+      codeplug:
+        name: "HS 4394125"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_4394250:
+      codeplug:
+        name: "HS 4394250"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_duplex_4394375:
+      codeplug:
+        name: "HS 4394375"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_duplex_4394500:
+      codeplug:
+        name: "HS 4394500"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_duplex_4394625:
+      codeplug:
+        name: "HS 4394625"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_duplex_4394750:
+      codeplug:
+        name: "HS 4394750"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_duplex_4304375:
+      codeplug:
+        name: "HS 4304375"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_duplex_4304500:
+      codeplug:
+        name: "HS 4304500"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_duplex_4304625:
+      codeplug:
+        name: "HS 4304625"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
+    asg_dmr_hs_duplex_4304750:
+      codeplug:
+        name: "HS 4304750"
+        preferred_contacts:
+          - ct_dmr_simplex
+      zones:
+        include:
+          - "Ham DMR Simplex"
