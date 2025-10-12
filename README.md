@@ -71,16 +71,6 @@ ssrf/
         Berrien/Niles/amateur/
 ```
 
-Channel content is unchanged—files were moved into the country-aware hierarchy to clarify what is reusable (plans) versus location-bound (systems). File names keep their descriptive prefixes so the prior naming references still make sense. Fresh additions, like the PMR446 analogue plan under `ssrf/plans/EU/pmr446/`, can live alongside the US-focused sets without affecting existing profiles.
-
-Generated zones now include examples like `Chicago EMS`, `Chicago PD`, `Cook Interop`, `Emergency`, `Fire/EMS`, `GMRS`, `Ham DMR Simplex`, `Ham-DMR`, `Ham-Repeaters`, `Ham UHF`, `Ham VHF`, `IL Interop`, `Local-Commercial`, `Marine`, `MURS`, `NOAA Weather`, `Public Works & Parks`, `Rail AAR`, `Transit & Transport`, `UHF Simplex`, `US Itinerant`, `VHF Simplex`, and `Venues Chicago`.
-
-Emergency zone:
-
-- A compact `Emergency` zone has been added to group practical, licensed‑use calling and assistance channels:
-  - Amateur: `CFMC 2m FM`, `CFMC 440 FM`, `K9JSI VHF`, `N9IAA VHF`, `NS9RC 2m FM`, `NS9RC 440`, `KA9HHH VHF`, `KA9HHH UHF`, plus simplex calling channels `2m Call (146.520)` and `70cm Call (446.000)`.
-  - GMRS: `GMRS 20 (462.6750)` simplex for cross‑service monitoring when licensed.
-
 Notes:
 
 - Transmit only if you hold the appropriate license (Amateur/GMRS) and follow local coordination and emergency traffic practices.
