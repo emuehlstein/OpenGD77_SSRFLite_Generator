@@ -1,6 +1,39 @@
 # OpenGD77 SSRFLite Generator
 
-A reproducible, data‑driven codeplug builder for OpenGD77 handhelds. The generator ingests SSRF‑Lite YAML files and produces OpenGD77‑compatible CSVs (`Channels.csv`, `Contacts.csv`, `TG_Lists.csv`, `Zones.csv`) suitable for import via the CPS.
+A reproducible, data‑driven codeplug builder for OpenGD77 handhelds. The generator ingests SSRF-Lite YAML](#ssrf-lite) files and produces OpenGD77‑compatible CSVs (`Channels.csv`, `Contacts.csv`, `TG_Lists.csv`, `Zones.csv`) suitable for import via the CPS.  The generator is opinionated but superuser configurable.
+
+## Quick Start
+
+1. **Install prerequisites** – Make sure Python 3.10+ and the `uv` package manager are available on your system.
+
+1. **Clone the repository and enter it.**
+
+    ```zsh
+    git clone https://github.com/emuehlstein/OpenGD77_SSRFLite_Generator.git
+    cd OpenGD77_SSRFLite_Generator
+    ```
+
+1. **Sync the virtual environment with `uv`.** This creates `.venv/` and installs the generator, Pydantic models, and test tooling.
+
+    ```zsh
+    uv sync
+    ```
+
+1. **Build the OpenGD77 CSV bundle.** The results land in `opengd77_cps_import_generated/`.
+
+    ```zsh
+    uv run python generate_opengd_import.py
+    ```
+
+1. **Import into the CPS.** In the OpenGD77 CPS choose **File → CSV → Import CSV**, point at the generated folder, and load the Channels/Contacts/TG Lists/Zones files.
+
+Need another profile? Add flags such as `--profile chicago_amateur` or `--profile gmrs_only`. Add `--tx-service gmrs` (or `--tx-all-services`) when you want transmit enabled beyond the Amateur defaults.
+
+To verify everything after edits, run the smoke tests:
+
+```zsh
+uv run python -m pytest tests/test_profiles.py
+```
 
 ## SSRF‑Lite
 
@@ -10,6 +43,16 @@ This project includes a proposed format for sharing information about RF systems
 - Background (NTIA SSRF): [https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf](https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf)
 
 
+## Opinions
+
+A few opinions held by this project:
+
+- **Separation of concerns:** keep RF reference data independent of codeplug presentation so the same facts fuel multiple builds.
+- **Layered configuration:** SSRF reference → profile selection → policy overlays, allowing each layer to evolve without breaking the others.
+- **Reproducible outputs:** generators run from version-controlled data and deterministic tooling (`uv`) so CSVs can be regenerated and diffed reliably.
+- **Safety-first defaults:** transmit remains disabled unless explicitly permitted, reducing the risk of illegal or unintended emissions.
+- **Extensibility:** new services, profiles, or radios should drop in via additional SSRF files or policies without refactoring core code.
+  
 
 ## Repository Structure
 
@@ -94,6 +137,8 @@ profile:
     paths:
       - policies/chicago/**/*.yml
 ```
+
+To keep overlays composable, larger systems and plans are broken into focused files (for example `policies/ham_fm_simplex.yml` or `policies/marine_vhf.yml`). Profiles opt into the pieces they need, making it straightforward to layer multiple profiles or overlays together in the future.
 
 Policies are simple YAML documents that describe how selected assignments should be rendered. Typical keys include:
 
