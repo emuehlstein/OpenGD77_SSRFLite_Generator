@@ -1,6 +1,6 @@
 # OpenGD77 SSRFLite Generator
 
-A reproducible, data‑driven codeplug builder for OpenGD77 handhelds. The generator ingests SSRF-Lite YAML](#ssrf-lite) files and produces OpenGD77‑compatible CSVs (`Channels.csv`, `Contacts.csv`, `TG_Lists.csv`, `Zones.csv`) suitable for import via the CPS.  The generator is opinionated but superuser configurable.
+A reproducible, data‑driven codeplug builder for radios running OpenGD77. The generator ingests [SSRF-Lite YAML](#ssrf-lite) files and produces OpenGD77‑compatible CSVs (`Channels.csv`, `Contacts.csv`, `TG_Lists.csv`, `Zones.csv`) suitable for import via the CPS.  The generator is opinionated but superuser configurable.
 
 ## Quick Start
 
