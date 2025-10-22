@@ -1,0 +1,32 @@
+Contact Name,ID,ID Type,TS Override
+BM Disconnect 4000,4000,Group,2
+BM Illinois 3117,3117,Group,2
+BM North America 93,93,Group,1
+BM Parrot 9990,9990,Group,2
+BM Status 5000,5000,Group,2
+BM TAC 310,310,Group,2
+BM USA Nationwide 3100,3100,Group,1
+BM Worldwide 91,91,Group,1
+Disconnect,4000,Group,2
+DMR Simplex,99,Group,1
+Eric M,3207125,Private,
+Illinois,3117,Group,1
+Local 1,3181,Group,1
+Local 2,3166,Group,2
+Local 99,99,Group,
+MidWest Regional,3169,Group,2
+Midwest Regional,3169,Group,2
+North America,3,Group,2
+Parrot,9998,Group,2
+Site Local,9,Group,1
+Status,5000,Group,2
+TAC 310,310,Group,2
+Talk,9,Group,2
+TGIF 556,556,Group,2
+TGIF Disconnect 4000,4000,Group,2
+TGIF Midwest 31672,31672,Group,1
+TGIF Parrot 9990,9990,Group,2
+TGIF Prime 31665,31665,Group,1
+Tri-State,8,Group,1
+Worldwide,1,Group,2
+Worldwide English,13,Group,2

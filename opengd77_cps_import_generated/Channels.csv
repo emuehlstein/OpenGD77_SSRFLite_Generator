@@ -1,0 +1,484 @@
+Channel Number,Channel Name,Channel Type,Rx Frequency,Tx Frequency,Bandwidth (kHz),Colour Code,Timeslot,Contact,TG List,DMR ID,TS1_TA_Tx,TS2_TA_Tx ID,RX Tone,TX Tone,Squelch,Power,Rx Only,Zone Skip,All Skip,TOT,VOX,No Beep,No Eco,APRS,Latitude,Longitude
+1,GMRS 01,Analogue,462.5625,462.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+2,GMRS 02,Analogue,462.5875,462.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+3,GMRS 03,Analogue,462.6125,462.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+4,GMRS 04,Analogue,462.6375,462.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+5,GMRS 05,Analogue,462.6625,462.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+6,GMRS 06,Analogue,462.6875,462.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+7,GMRS 07,Analogue,462.7125,462.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+8,GMRS 08 RX,Analogue,467.5625,467.5625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+9,GMRS 09 RX,Analogue,467.5875,467.5875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+10,GMRS 10 RX,Analogue,467.6125,467.6125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+11,GMRS 11 RX,Analogue,467.6375,467.6375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+12,GMRS 12 RX,Analogue,467.6625,467.6625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+13,GMRS 13 RX,Analogue,467.6875,467.6875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+14,GMRS 14 RX,Analogue,467.7125,467.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+15,GMRS 15,Analogue,462.55,462.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+16,GMRS 16,Analogue,462.575,462.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+17,GMRS 17,Analogue,462.6,462.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+18,GMRS 18,Analogue,462.625,462.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+19,GMRS 19,Analogue,462.65,462.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+20,GMRS 20,Analogue,462.675,462.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,No,0,Off,No,No,None,0,0
+21,GMRS 21,Analogue,462.7,462.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+22,GMRS 22,Analogue,462.725,462.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+23,GMRS 15 RPT,Analogue,462.55,462.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+24,GMRS 16 RPT,Analogue,462.575,462.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+25,GMRS 17 RPT,Analogue,462.6,462.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+26,GMRS 18 RPT,Analogue,462.625,462.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+27,GMRS 19 RPT,Analogue,462.65,462.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+28,GMRS 20 RPT,Analogue,462.675,462.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+29,GMRS 21 RPT,Analogue,462.7,462.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+30,GMRS 22 RPT,Analogue,462.725,462.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+31,PMR 01,Analogue,446.00625,446.00625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+32,PMR 02,Analogue,446.01875,446.01875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+33,PMR 03,Analogue,446.03125,446.03125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+34,PMR 04,Analogue,446.04375,446.04375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+35,PMR 05,Analogue,446.05625,446.05625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+36,PMR 06,Analogue,446.06875,446.06875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+37,PMR 07,Analogue,446.08125,446.08125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+38,PMR 08,Analogue,446.09375,446.09375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+39,PMR 09,Analogue,446.10625,446.10625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+40,PMR 10,Analogue,446.11875,446.11875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+41,PMR 11,Analogue,446.13125,446.13125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+42,PMR 12,Analogue,446.14375,446.14375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+43,PMR 13,Analogue,446.15625,446.15625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+44,PMR 14,Analogue,446.16875,446.16875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+45,PMR 15,Analogue,446.18125,446.18125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+46,PMR 16,Analogue,446.19375,446.19375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+47,DMR Smpx A,Digital,446.5,446.5,,1,1,DMR Simplex,DMR Smpx A,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+48,DMR Smpx B,Digital,446.075,446.075,,1,1,DMR Simplex,DMR Smpx B,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+49,HS 4304125,Digital,430.4125,430.4125,,1,1,DMR Simplex,HS 4304125,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+50,HS 4304250,Digital,430.425,430.425,,1,1,DMR Simplex,HS 4304250,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+51,HS 4394125,Digital,439.4125,439.4125,,1,1,DMR Simplex,HS 4394125,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+52,HS 4394250,Digital,439.425,439.425,,1,1,DMR Simplex,HS 4394250,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+53,HS 4394375 TS1,Digital,439.4375,430.4375,,1,1,DMR Simplex,HS 4394375,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+54,HS 4394375 TS2,Digital,439.4375,430.4375,,1,2,DMR Simplex,HS 4394375,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+55,HS 4394500 TS1,Digital,439.45,430.45,,1,1,DMR Simplex,HS 4394500,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+56,HS 4394500 TS2,Digital,439.45,430.45,,1,2,DMR Simplex,HS 4394500,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+57,HS 4394625 TS1,Digital,439.4625,430.4625,,1,1,DMR Simplex,HS 4394625,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+58,HS 4394625 TS2,Digital,439.4625,430.4625,,1,2,DMR Simplex,HS 4394625,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+59,HS 4394750 TS1,Digital,439.475,430.475,,1,1,DMR Simplex,HS 4394750,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+60,HS 4394750 TS2,Digital,439.475,430.475,,1,2,DMR Simplex,HS 4394750,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+61,HS 4304375 TS1,Digital,430.4375,439.4375,,1,1,DMR Simplex,HS 4304375,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+62,HS 4304375 TS2,Digital,430.4375,439.4375,,1,2,DMR Simplex,HS 4304375,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+63,HS 4304500 TS1,Digital,430.45,439.45,,1,1,DMR Simplex,HS 4304500,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+64,HS 4304500 TS2,Digital,430.45,439.45,,1,2,DMR Simplex,HS 4304500,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+65,HS 4304625 TS1,Digital,430.4625,439.4625,,1,1,DMR Simplex,HS 4304625,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+66,HS 4304625 TS2,Digital,430.4625,439.4625,,1,2,DMR Simplex,HS 4304625,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+67,HS 4304750 TS1,Digital,430.475,439.475,,1,1,DMR Simplex,HS 4304750,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+68,HS 4304750 TS2,Digital,430.475,439.475,,1,2,DMR Simplex,HS 4304750,None,Off,Off,,,,Master,No,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+69,70cm Call,Analogue,446,446,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+70,70cm 446025,Analogue,446.025,446.025,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+71,70cm 446050,Analogue,446.05,446.05,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+72,70cm 446075,Analogue,446.075,446.075,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+73,70cm 446100,Analogue,446.1,446.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+74,70cm 446125,Analogue,446.125,446.125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+75,70cm 446150,Analogue,446.15,446.15,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+76,70cm 446175,Analogue,446.175,446.175,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+77,70cm 446200,Analogue,446.2,446.2,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+78,70cm 446225,Analogue,446.225,446.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+79,70cm 446250,Analogue,446.25,446.25,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+80,70cm 446275,Analogue,446.275,446.275,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+81,70cm 446300,Analogue,446.3,446.3,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+82,70cm 446325,Analogue,446.325,446.325,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+83,70cm 446350,Analogue,446.35,446.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+84,70cm 446375,Analogue,446.375,446.375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+85,70cm 446400,Analogue,446.4,446.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+86,70cm 446425,Analogue,446.425,446.425,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+87,70cm 446450,Analogue,446.45,446.45,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+88,70cm 446475,Analogue,446.475,446.475,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+89,APRS 144390,Analogue,144.39,144.39,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+90,2m Call,Analogue,146.52,146.52,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+91,2m 146400,Analogue,146.4,146.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+92,2m 146415,Analogue,146.415,146.415,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+93,2m 146430,Analogue,146.43,146.43,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+94,2m 146445,Analogue,146.445,146.445,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+95,2m 146460,Analogue,146.46,146.46,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+96,2m 146475,Analogue,146.475,146.475,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+97,2m 146490,Analogue,146.49,146.49,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+98,2m 146505,Analogue,146.505,146.505,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+99,2m 146535,Analogue,146.535,146.535,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+100,2m 146550,Analogue,146.55,146.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+101,2m 146565,Analogue,146.565,146.565,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+102,2m 146580,Analogue,146.58,146.58,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+103,2m 147420,Analogue,147.42,147.42,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+104,2m 147450,Analogue,147.45,147.45,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+105,2m 147480,Analogue,147.48,147.48,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+106,2m 147510,Analogue,147.51,147.51,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+107,2m 147540,Analogue,147.54,147.54,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+108,2m 147570,Analogue,147.57,147.57,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+109,MURS 1,Analogue,151.82,151.82,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+110,MURS 2,Analogue,151.88,151.88,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+111,MURS 3,Analogue,151.94,151.94,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+112,MURS 4,Analogue,154.57,154.57,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+113,MURS 5,Analogue,154.6,154.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+114,Marine 06,Analogue,156.3,156.3,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+115,Marine 09,Analogue,156.45,156.45,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+116,Marine 13,Analogue,156.65,156.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+117,Marine 16,Analogue,156.8,156.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,0,0
+118,Marine 22A,Analogue,157.1,157.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+119,Marine 68,Analogue,156.425,156.425,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+120,Marine 69,Analogue,156.475,156.475,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+121,Marine 71,Analogue,156.575,156.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+122,Marine 72,Analogue,156.625,156.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+123,Marine 73,Analogue,156.675,156.675,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+124,Marine 78A,Analogue,156.925,156.925,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,Yes,0,Off,No,No,None,0,0
+125,Marine 01A,Analogue,156.05,156.05,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+126,Marine 05A,Analogue,156.25,156.25,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+127,Marine 07A,Analogue,156.35,156.35,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+128,Marine 08,Analogue,156.4,156.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+129,Marine 10,Analogue,156.5,156.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+130,Marine 11,Analogue,156.55,156.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+131,Marine 12,Analogue,156.6,156.6,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+132,Marine 14,Analogue,156.7,156.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+133,Marine 15,Analogue,156.75,156.75,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+134,Marine 17,Analogue,156.85,156.85,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+135,Marine 18A,Analogue,156.9,156.9,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+136,Marine 19A,Analogue,156.95,156.95,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+137,Marine 20A,Analogue,157,157,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+138,Marine 21A,Analogue,157.05,157.05,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+139,Marine 23A,Analogue,157.15,157.15,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+140,Marine 63A,Analogue,156.175,156.175,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+141,Marine 64A,Analogue,156.225,156.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+142,Marine 65A,Analogue,156.275,156.275,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+143,Marine 66A,Analogue,156.325,156.325,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+144,Marine 67,Analogue,156.375,156.375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+145,Marine 70 DSC,Analogue,156.525,156.525,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+146,Marine 74,Analogue,156.725,156.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+147,Marine 77,Analogue,156.875,156.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+148,Marine 79A,Analogue,156.975,156.975,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+149,Marine 80A,Analogue,157.025,157.025,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+150,Marine 87B AIS1,Analogue,161.975,161.975,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+151,Marine 88B AIS2,Analogue,162.025,162.025,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+152,151505 Itin,Analogue,151.505,151.505,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+153,1515125 Itin,Analogue,151.5125,151.5125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+154,RedDot151625,Analogue,151.625,151.625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+155,151640 VHF,Analogue,151.64,151.64,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+156,151700 VHF,Analogue,151.7,151.7,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+157,151760 VHF,Analogue,151.76,151.76,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+158,Purple151955,Analogue,151.955,151.955,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+159,1545275 VHF,Analogue,154.5275,154.5275,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+160,158400 VHF,Analogue,158.4,158.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+161,1584075 VHF,Analogue,158.4075,158.4075,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+162,451800 UHF,Analogue,451.8,451.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+163,4518125 UHF,Analogue,451.8125,451.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+164,456800 UHF,Analogue,456.8,456.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+165,4568125 UHF,Analogue,456.8125,456.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+166,457525 UHF,Analogue,457.525,457.525,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+167,457550 UHF,Analogue,457.55,457.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+168,457575 UHF,Analogue,457.575,457.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+169,Brown464500,Analogue,464.5,464.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+170,Yellow464550,Analogue,464.55,464.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+171,JDot4677625,Analogue,467.7625,467.7625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+172,KDot4678125,Analogue,467.8125,467.8125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+173,Silver467850,Analogue,467.85,467.85,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+174,Gold467875,Analogue,467.875,467.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+175,Red467900,Analogue,467.9,467.9,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+176,Blue467925,Analogue,467.925,467.925,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+177,469500 UHF,Analogue,469.5,469.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+178,469550 UHF,Analogue,469.55,469.55,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,39.8283,-98.5795
+179,WX1,Analogue,162.55,162.55,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+180,WX2,Analogue,162.4,162.4,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+181,WX3,Analogue,162.475,162.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+182,WX4,Analogue,162.425,162.425,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+183,WX5,Analogue,162.45,162.45,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+184,WX6,Analogue,162.5,162.5,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+185,WX7,Analogue,162.525,162.525,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+186,AAR 160230,Analogue,160.23,160.23,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+187,AAR 160320,Analogue,160.32,160.32,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+188,AAR 160470,Analogue,160.47,160.47,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+189,AAR 160530,Analogue,160.53,160.53,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+190,AAR 160560,Analogue,160.56,160.56,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+191,AAR 160590,Analogue,160.59,160.59,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+192,AAR 160620,Analogue,160.62,160.62,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+193,AAR 160650,Analogue,160.65,160.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+194,AAR 160695,Analogue,160.695,160.695,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+195,AAR 160770,Analogue,160.77,160.77,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+196,AAR 160800,Analogue,160.8,160.8,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+197,AAR 160845,Analogue,160.845,160.845,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+198,AAR 161100,Analogue,161.1,161.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+199,AAR 161160,Analogue,161.16,161.16,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+200,AAR 160335,Analogue,160.335,160.335,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+201,AAR 160485,Analogue,160.485,160.485,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+202,AAR 160680,Analogue,160.68,160.68,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+203,AAR 160710,Analogue,160.71,160.71,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+204,AAR 160815,Analogue,160.815,160.815,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+205,AAR 160860,Analogue,160.86,160.86,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+206,AAR 160875,Analogue,160.875,160.875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+207,AAR 161115,Analogue,161.115,161.115,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+208,AAR 161190,Analogue,161.19,161.19,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+209,AAR 161205,Analogue,161.205,161.205,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+210,CFMC 440 FM,Analogue,448.75,443.75,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.93,-87.64
+211,CFMC 2m FM,Analogue,146.16,146.76,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,41.93,-87.64
+212,CFMC 2m FM,Analogue,144.75,145.35,25,,,None,None,None,Off,Off,72,72,Disabled,Master,No,No,No,0,Off,No,No,None,42.041,-87.861
+213,CL Loop TS1,Digital,442.975,447.975,,4,1,Site Local,CL Loop,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.881,-87.629
+214,CL Loop TS2,Digital,442.975,447.975,,4,2,Local 2,CL Loop,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.881,-87.629
+215,CL Schaumburg TS1,Digital,443.06875,448.06875,,1,1,Site Local,CL Schaumburg,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,42.033,-88.083
+216,CL Schaumburg TS2,Digital,443.06875,448.06875,,1,2,Local 2,CL Schaumburg,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,42.033,-88.083
+217,NS9RC 2m FM,Analogue,147.345,147.945,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,42.1011,-87.779
+218,NS9RC 440,Analogue,442.725,447.725,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.9804506,-87.6546484
+219,NS9RC UHF025,Analogue,446.025,446.025,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.9804506,-87.6546484
+220,NS9RC VHF405,Analogue,147.405,147.405,25,,,None,None,None,Off,Off,73,73,Disabled,Master,No,No,No,0,Off,No,No,None,42.1011,-87.779
+221,NS9RC VHF460,Analogue,146.46,146.46,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,42.1011,-87.779
+222,SARA VHF,Analogue,146.88,146.28,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
+223,SARA UHF,Analogue,444.375,449.375,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.9256,-87.6493
+224,875 N Mich Sec TS1,Digital,464.775,464.775,,1,1,Site Local,875 N Mich Sec,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+225,875 N Mich Sec TS2,Digital,464.775,464.775,,1,2,Site Local,875 N Mich Sec,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+226,401 N Mich Sec,Analogue,469.9125,469.9125,12.5,,,None,None,None,Off,Off,311,311,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+227,Tribune Tower TS1,Digital,463.3375,463.3375,,1,1,Site Local,Tribune Tower,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+228,Tribune Tower TS2,Digital,463.3375,463.3375,,1,2,Site Local,Tribune Tower,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+229,Merch Mart DMR TS1,Digital,463.5125,463.5125,,1,1,Site Local,Merch Mart DMR,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+230,Merch Mart DMR TS2,Digital,463.5125,463.5125,,1,2,Site Local,Merch Mart DMR,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+231,New York Res TS1,Digital,464.825,464.825,,1,1,Site Local,New York Res,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+232,New York Res TS2,Digital,464.825,464.825,,1,2,Site Local,New York Res,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+233,2650 N Lakeview TS1,Digital,464.8625,464.8625,,1,1,Site Local,2650 N Lakeview,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+234,2650 N Lakeview TS2,Digital,464.8625,464.8625,,1,2,Site Local,2650 N Lakeview,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+235,3950 LSD TS1,Digital,461.975,461.975,,1,1,Site Local,3950 LSD,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+236,3950 LSD TS2,Digital,461.975,461.975,,1,2,Site Local,3950 LSD,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+237,Eugenie Terrace,Analogue,464.1625,464.1625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+238,625 N Mich TS1,Digital,452.1625,452.1625,,1,1,Site Local,625 N Mich,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+239,625 N Mich TS2,Digital,452.1625,452.1625,,1,2,Site Local,625 N Mich,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+240,757 Orleans TS1,Digital,464.2,464.2,,7,1,Site Local,757 Orleans,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+241,757 Orleans TS2,Digital,464.2,464.2,,7,2,Site Local,757 Orleans,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+242,500 LSD CC10,Digital,464.0875,464.0875,,10,1,Site Local,500 LSD CC10,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+243,Park Place Twr TS1,Digital,463.95,463.95,,1,1,Site Local,Park Place Twr,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+244,Park Place Twr TS2,Digital,463.95,463.95,,1,2,Site Local,Park Place Twr,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+245,NMH Parking,Digital,464.8125,464.8125,,6,1,Site Local,NMH Parking,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+246,LiveNation Lwr,Analogue,464.15,464.15,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+247,Cubby Bear,Analogue,461.025,461.025,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+248,Apple Mich Ave,Analogue,469.5625,469.5625,12.5,,,None,None,None,Off,Off,82.5,82.5,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+249,NorthBridgeSec,Analogue,467.0875,467.0875,12.5,,,None,None,None,Off,Off,156,156,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+250,Flemings A1,Analogue,464.8125,464.8125,12.5,,,None,None,None,Off,Off,624,624,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+251,Flemings A2,Analogue,464.5125,464.5125,12.5,,,None,None,None,Off,Off,624,624,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+252,Dave & Busters,Analogue,467.1125,467.1125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+253,Morettis EP,Analogue,469.1125,469.1125,12.5,,,None,None,None,Off,Off,186.2,186.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+254,MaxBar Chicago,Analogue,467.925,467.925,12.5,,,None,None,None,Off,Off,565,565,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+255,Park Place Rest,Analogue,467.925,467.925,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+256,Holy Name Cath,Analogue,461.0625,461.0625,12.5,,,None,None,None,Off,Off,67,67,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+257,Perillo BMW,Analogue,464.5,464.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+258,Allegro Sonesta TS1,Digital,463.725,463.725,,6,1,Site Local,Allegro Sonesta,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+259,Allegro Sonesta TS2,Digital,463.725,463.725,,6,2,Site Local,Allegro Sonesta,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+260,Allegro Son2 TS1,Digital,461.825,461.825,,1,1,Site Local,Allegro Son2,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+261,Allegro Son2 TS2,Digital,461.825,461.825,,1,2,Site Local,Allegro Son2,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+262,AMA Plaza,Digital,463.4,463.4,,1,1,Site Local,AMA Plaza,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+263,Two Prudential,Digital,464.925,464.925,,1,1,Site Local,Two Prudential,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+264,Aon Building TS1,Digital,464.2125,464.2125,,1,1,Site Local,Aon Building,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+265,Aon Building TS2,Digital,464.2125,464.2125,,1,2,Site Local,Aon Building,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+266,BCBS IL HQ TS1,Digital,461.6625,461.6625,,1,1,Site Local,BCBS IL HQ,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+267,BCBS IL HQ TS2,Digital,461.6625,461.6625,,1,2,Site Local,BCBS IL HQ,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+268,333 S Wabash,Digital,464.7125,464.7125,,1,1,Site Local,333 S Wabash,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+269,Old Post Office,Digital,463.925,463.925,,1,1,Site Local,Old Post Office,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+270,340 on the Park TS1,Digital,463.8125,463.8125,,1,1,Site Local,340 on the Park,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+271,340 on the Park TS2,Digital,463.8125,463.8125,,1,2,Site Local,340 on the Park,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+272,McClurg Court,Analogue,464.9375,464.9375,12.5,,,None,None,None,Off,Off,411,411,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+273,NorthWater Apt,Analogue,464,464,12.5,,,None,None,None,Off,Off,132,132,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+274,River East Ctr,Analogue,451.5125,451.5125,12.5,,,None,None,None,Off,Off,123,123,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+275,CityView Condo,Analogue,466.35,466.35,12.5,,,None,None,None,Off,Off,32,32,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+276,Horween Leather TS1,Digital,464.15,464.15,,1,1,Site Local,Horween Leather,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+277,Horween Leather TS2,Digital,464.15,464.15,,1,2,Site Local,Horween Leather,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+278,Triangle Square TS1,Digital,461.6625,461.6625,,1,1,Site Local,Triangle Square,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+279,Triangle Square TS2,Digital,461.6625,461.6625,,1,2,Site Local,Triangle Square,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+280,Lincoln Common TS1,Digital,462.1625,462.1625,,1,1,Site Local,Lincoln Common,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+281,Lincoln Common TS2,Digital,462.1625,462.1625,,1,2,Site Local,Lincoln Common,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+282,Marriott MM Sec,Digital,462.4875,462.4875,,4,1,Site Local,Marriott MM Sec,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+283,Sheraton Sec,Digital,462.1625,462.1625,,9,2,Site Local,Sheraton Sec,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+284,Sheraton Ops,Digital,461.5625,461.5625,,11,1,Site Local,Sheraton Ops,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+285,Peninsula Ops TS1,Digital,464.4625,464.4625,,3,1,Site Local,Peninsula Ops,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+286,Peninsula Ops TS2,Digital,464.4625,464.4625,,3,2,Site Local,Peninsula Ops,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+287,Trump Hotel Sec,Digital,464.9375,464.9375,,9,1,Site Local,Trump Hotel Sec,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+288,Trump Hotel Ops,Digital,464.2875,464.2875,,9,1,Site Local,Trump Hotel Ops,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+289,Renaissance H/E,Digital,463.6,463.6,,8,2,Site Local,Renaissance H/E,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+290,CAA Hotel Sec,Digital,461.9125,461.9125,,10,1,Site Local,CAA Hotel Sec,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+291,CAA Hotel Hskp,Digital,464.7625,464.7625,,1,1,Site Local,CAA Hotel Hskp,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.96,-87.66
+292,Aon Tower,Digital,464.2125,464.2125,,1,1,Site Local,Aon Tower,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+293,Two Prudential,Digital,464.925,464.925,,1,1,Site Local,Two Prudential,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+294,BCBS HQ,Digital,461.6625,461.6625,,1,1,Site Local,BCBS HQ,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+295,333 S Wabash,Digital,464.7125,464.7125,,1,1,Site Local,333 S Wabash,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+296,AMA Plaza,Digital,463.4,463.4,,1,1,Site Local,AMA Plaza,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+297,Old Post Office,Digital,463.925,463.925,,1,1,Site Local,Old Post Office,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+298,Merch Mart,Digital,463.5125,463.5125,,1,1,Site Local,Merch Mart,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+299,Two Prud FM,Analogue,464.925,464.925,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+300,Allegro FM,Analogue,463.725,463.725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+301,Wrigley FM,Analogue,464.5125,464.5125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+302,Wrigley DMR,Digital,463.4375,463.4375,,1,1,Site Local,Wrigley DMR,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+303,United Center,Analogue,464.3,464.3,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+304,Soldier Field,Digital,462.1125,462.1125,,1,1,Site Local,Soldier Field,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+305,Navy Pier,Analogue,464.825,464.825,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+306,McCormick Pl,Analogue,464.5,464.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+307,Lincolnwood 575,Analogue,462.575,467.575,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+308,Evanston 725,Analogue,462.725,467.725,25,,,None,None,None,Off,Off,100,100,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+309,NSEA Evan700,Analogue,462.7,467.7,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+310,PL-600,Analogue,462.6,467.6,25,,,None,None,None,Off,Off,192.8,192.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+311,OHare 575,Analogue,462.575,467.575,25,,,None,None,None,Off,Off,141.3,141.3,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+312,NSEA Her675,Analogue,462.675,467.675,25,,,None,None,None,Off,Off,141.3,141.3,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+313,NSEA NBrk650,Analogue,462.65,467.65,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+314,PRJ 650,Analogue,462.65,467.65,25,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+315,Oak Lawn,Analogue,462.625,467.625,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,0,0
+316,F1 All,Analogue,462.575,462.575,25,,,None,None,None,Off,Off,D023N,D023N,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+317,F2 Team A,Analogue,462.6,462.6,25,,,None,None,None,Off,Off,D023N,D023N,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+318,F3 Team B,Analogue,462.625,462.625,25,,,None,None,None,Off,Off,D023N,D023N,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+319,F4 Team C,Analogue,462.65,462.65,25,,,None,None,None,Off,Off,D023N,D023N,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+320,F5 Road,Analogue,462.675,462.675,25,,,None,None,None,Off,Off,141.3,141.3,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+321,F6 RPTR,Analogue,462.55,467.55,25,,,None,None,None,Off,Off,D023N,D023N,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+322,F8 Evnstn 725,Analogue,462.725,467.75,25,,,None,None,None,Off,Off,100,100,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+323,F9 PrkRdg 675,Analogue,462.675,467.675,25,,,None,None,None,Off,Off,141.3,141.3,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+324,F10 Evnst 700,Analogue,462.7,462.7,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+325,F11 Nrthbrk,Analogue,462.65,460.65,25,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+326,F13 UHF Call,Analogue,446,446,25,,,None,None,None,Off,Off,None,None,Disabled,Master,No,No,No,0,Off,No,No,None,41.98,-87.66
+327,F14 NS9RC UHF,Analogue,442.725,447.725,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.98,-87.66
+328,F15 CMFC UHF,Analogue,443.75,448.75,25,,,None,None,None,Off,Off,114.8,114.8,Disabled,Master,No,No,No,0,Off,No,No,None,41.98,-87.66
+329,FD1 All,Digital,462.575,462.575,,1,1,Local 99,FD1 All,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+330,FD2 Team A,Digital,462.6,462.6,,1,1,Local 99,FD2 Team A,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+331,FD3 Team B,Digital,462.625,462.625,,1,1,Local 99,FD3 Team B,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+332,FD4 Team C,Digital,462.65,462.65,,1,1,Local 99,FD4 Team C,None,Off,Off,,,,Master,Yes,No,No,0,Off,No,No,None,41.98,-87.66
+333,CFD EMS Cmd,Analogue,460.6,460.6,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+334,CFD EMS City,Analogue,460.625,460.625,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+335,CFD EMS Admin,Analogue,460.65,460.65,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+336,MERCI 340,Analogue,155.34,155.34,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+337,MERCI 400,Analogue,155.4,155.4,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+338,MED1 North,Analogue,463,463,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+339,MED2 North,Analogue,463.025,463.025,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+340,MED3 North,Analogue,463.05,463.05,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+341,MED4 North,Analogue,463.075,463.075,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+342,MED5 North,Analogue,463.1,463.1,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+343,MED6 North,Analogue,463.125,463.125,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+344,MED7 North,Analogue,463.15,463.15,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+345,MED8 North,Analogue,463.175,463.175,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+346,MED9 North,Analogue,462.95,462.95,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+347,MED10 North,Analogue,462.975,462.975,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+348,MED11 North,Analogue,462.7375,462.7375,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+349,MED12 North,Analogue,462.7625,462.7625,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+350,MED1 Central,Analogue,463,463,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+351,MED2 Central,Analogue,463.025,463.025,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+352,MED3 Central,Analogue,463.05,463.05,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+353,MED4 Central,Analogue,463.075,463.075,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+354,MED5 Central,Analogue,463.1,463.1,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+355,MED6 Central,Analogue,463.125,463.125,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+356,MED7 Central,Analogue,463.15,463.15,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+357,MED8 Central,Analogue,463.175,463.175,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+358,MED9 Central,Analogue,462.95,462.95,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+359,MED10 Central,Analogue,462.975,462.975,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+360,MED11 Central,Analogue,462.7375,462.7375,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+361,MED12 Central,Analogue,462.7625,462.7625,12.5,,,None,None,None,Off,Off,146.2,146.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+362,MED1 South,Analogue,463,463,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+363,MED2 South,Analogue,463.025,463.025,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+364,MED3 South,Analogue,463.05,463.05,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+365,MED4 South,Analogue,463.075,463.075,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+366,MED5 South,Analogue,463.1,463.1,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+367,MED6 South,Analogue,463.125,463.125,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+368,MED7 South,Analogue,463.15,463.15,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+369,MED8 South,Analogue,463.175,463.175,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+370,MED9 South,Analogue,462.95,462.95,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+371,MED10 South,Analogue,462.975,462.975,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+372,MED11 South,Analogue,462.7375,462.7375,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+373,MED12 South,Analogue,462.7625,462.7625,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+374,CFD FG A,Analogue,458.025,458.025,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+375,CFD Command A,Analogue,458.125,458.125,12.5,,,None,None,None,Off,Off,218.1,218.1,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+376,CFD Lakefront,Analogue,458.075,458.075,12.5,,,None,None,None,Off,Off,210.7,210.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+377,CFD Tac A,Analogue,470.1625,470.1625,12.5,,,None,None,None,Off,Off,97.4,97.4,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+378,CFD Ops 8 A,Analogue,476.2875,476.2875,12.5,,,None,None,None,Off,Off,69.3,69.3,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+379,CFD Ops 9 A,Analogue,479.2875,479.2875,12.5,,,None,None,None,Off,Off,74.4,74.4,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+380,CFD Ops 10 A,Analogue,477.6625,477.6625,12.5,,,None,None,None,Off,Off,79.7,79.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+381,CTA Fire,Analogue,460.0625,460.0625,12.5,,,None,None,None,Off,Off,203.5,203.5,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+382,CFD SpecEvt1,Analogue,478.5,478.5,12.5,,,None,None,None,Off,Off,103.5,103.5,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+383,CFD Admin A,Analogue,458.175,458.175,12.5,,,None,None,None,Off,Off,225.7,225.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+384,RED South BK,Analogue,154.355,154.355,12.5,,,None,None,None,Off,Off,127.3,127.3,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+385,RED North BK,Analogue,154.445,154.445,12.5,,,None,None,None,Off,Off,127.3,127.3,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+386,RED Fire North,Analogue,159.66,159.66,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+387,RED Fire South,Analogue,156.135,156.135,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+388,Skokie Disp,Analogue,159.195,159.195,12.5,,,None,None,None,Off,Off,205,205,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+389,NShore Admin,Analogue,151.01,151.01,12.5,,,None,None,None,Off,Off,127.3,127.3,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+390,Evanston Disp,Analogue,155.6925,155.6925,12.5,,,None,None,None,Off,Off,123,123,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+391,DesPlns Disp,Analogue,155.4375,155.4375,12.5,,,None,None,None,Off,Off,225.7,225.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+392,CPD Citywide 1,Analogue,460.125,460.125,12.5,,,None,None,None,Off,Off,173.8,173.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8776,-87.6244
+393,CPD Citywide 2,Analogue,460.175,460.175,12.5,,,None,None,None,Off,Off,123,123,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8776,-87.6244
+394,CPD Citywide 3,Analogue,460.275,460.275,12.5,,,None,None,None,Off,Off,141.3,141.3,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8776,-87.6244
+395,CPD Citywide 4,Analogue,460.325,460.325,12.5,,,None,None,None,Off,Off,192.8,192.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8776,-87.6244
+396,CPD Citywide 5,Analogue,460.35,460.35,12.5,,,None,None,None,Off,Off,97.4,97.4,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8776,-87.6244
+397,CPD Citywide 6,Analogue,460.25,460.25,12.5,,,None,None,None,Off,Off,162.2,162.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8776,-87.6244
+398,CPD Citywide 7,Analogue,460.3,460.3,12.5,,,None,None,None,Off,Off,131.8,131.8,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8776,-87.6244
+399,CPD VHF Car2,Analogue,154.65,154.65,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8776,-87.6244
+400,DSS North A,Analogue,460.1375,460.1375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+401,DSS North B,Analogue,460.1875,460.1875,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+402,DSS South,Analogue,460.2625,460.2625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+403,DSS SnowOps TS1,Digital,453.9,453.9,,11,1,Site Local,DSS SnowOps,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+404,DSS SnowOps TS2,Digital,453.9,453.9,,11,2,Site Local,DSS SnowOps,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+405,ParkDist FM,Analogue,462.7125,462.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+406,ParkDist DMR,Digital,463.2625,463.2625,,1,1,Site Local,ParkDist DMR,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+407,FPDCC FM,Analogue,453.175,453.175,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+408,FPDCC DMR,Digital,453.05,453.05,,1,1,Site Local,FPDCC DMR,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+409,CDOT Str N12,Analogue,453.65,453.65,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+410,CDOT ForAn,Analogue,453.725,453.725,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+411,CDOT TowPark,Analogue,453.775,453.775,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+412,CDOT Boot,Analogue,453.825,453.825,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+413,CDOT Electric,Analogue,453.975,453.975,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+414,CDOT SewrTr,Analogue,453.675,453.675,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+415,CDOT LoopOB3,Analogue,453.1,453.1,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+416,CDOT Str S45,Analogue,453.55,453.55,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+417,CDOT Paging,Analogue,453.5,453.5,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+418,CTA Ops A,Analogue,461.575,461.575,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+419,CTA Ops B,Digital,461.825,461.825,,6,1,Site Local,CTA Ops B,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+420,CTA Yard,Analogue,462.1,462.1,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+421,ORD Ops,Digital,464.575,464.575,,1,1,Site Local,ORD Ops,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+422,MDW Ops,Analogue,462.225,462.225,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+423,Delivery DMR,Digital,464.55,464.55,,1,1,Site Local,Delivery DMR,None,Off,Off,,,,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+424,Delivery FM,Analogue,464.45,464.45,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+425,Interop VHF 1,Analogue,154.995,154.995,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+426,Interop VHF 2,Analogue,155.64,155.64,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+427,Interop VHF 3,Analogue,155.595,155.595,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+428,Interop VHF 4,Analogue,155.535,155.535,12.5,,,None,None,None,Off,Off,107.2,107.2,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+429,Interop VMet3,Analogue,153.77,153.77,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+430,Interop VMet4,Analogue,154.13,154.13,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+431,Interop VMet5,Analogue,154.22,154.22,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+432,Interop UHF 1,Analogue,453.95,453.95,12.5,,,None,None,None,Off,Off,141.3,141.3,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+433,Interop UHF 2,Analogue,453.75,453.75,12.5,,,None,None,None,Off,Off,156.7,156.7,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,41.8781,-87.6298
+434,K9BAR TriState TS1,Digital,443.7,448.7,,1,1,Tri-State,K9BAR TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,42.2411344,-88.3161965
+435,K9BAR TriState TS2,Digital,443.7,448.7,,1,2,Midwest Regional,K9BAR TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,42.2411344,-88.3161965
+436,N9PAY Carlsville TS1,Digital,443.49375,448.49375,,6,1,Tri-State,N9PAY Carlsvill,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+437,N9PAY Carlsville TS2,Digital,443.49375,448.49375,,6,2,Midwest Regional,N9PAY Carlsvill,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+438,AA9VI TriState TS1,Digital,441.21875,446.21875,,1,1,Tri-State,AA9VI TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+439,AA9VI TriState TS2,Digital,441.21875,446.21875,,1,2,Midwest Regional,AA9VI TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+440,K9VI TriState TS1,Digital,444.80625,449.80625,,4,1,Tri-State,K9VI TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+441,K9VI TriState TS2,Digital,444.80625,449.80625,,4,2,Midwest Regional,K9VI TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+442,N9IAA Crown Point TS1,Digital,444.35,449.35,,1,1,Tri-State,N9IAA Crown Poi,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.4169806,-87.3653136
+443,N9IAA Crown Point TS2,Digital,444.35,449.35,,1,2,Midwest Regional,N9IAA Crown Poi,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.4169806,-87.3653136
+444,K9NRO TriState TS1,Digital,442.425,447.425,,1,1,Tri-State,K9NRO TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.8922499,-88.4723014
+445,K9NRO TriState TS2,Digital,442.425,447.425,,1,2,Midwest Regional,K9NRO TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.8922499,-88.4723014
+446,N9PAY Green Bay TS1,Digital,443.50625,448.50625,,6,1,Tri-State,N9PAY Green Bay,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,44.5126379,-88.0125794
+447,N9PAY Green Bay TS2,Digital,443.50625,448.50625,,6,2,Midwest Regional,N9PAY Green Bay,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,44.5126379,-88.0125794
+448,K9ORD TriState TS1,Digital,441.05,446.05,,1,1,Tri-State,K9ORD TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,42.1180815,-88.0961865
+449,K9ORD TriState TS2,Digital,441.05,446.05,,1,2,Midwest Regional,K9ORD TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,42.1180815,-88.0961865
+450,N9IAA La Porte TS1,Digital,444.675,449.675,,1,1,Tri-State,N9IAA La Porte,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.6105983,-86.7225227
+451,N9IAA La Porte TS2,Digital,444.675,449.675,,1,2,Midwest Regional,N9IAA La Porte,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.6105983,-86.7225227
+452,N9PAY Milwaukee TS1,Digital,444.53125,449.53125,,1,1,Tri-State,N9PAY Milwaukee,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,43.0386475,-87.9090751
+453,N9PAY Milwaukee TS2,Digital,444.53125,449.53125,,1,2,Midwest Regional,N9PAY Milwaukee,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,43.0386475,-87.9090751
+454,KC9KKO TriState TS1,Digital,442,447,,1,1,Tri-State,KC9KKO TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.3574135,-88.4215234
+455,KC9KKO TriState TS2,Digital,442,447,,1,2,Midwest Regional,KC9KKO TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.3574135,-88.4215234
+456,N9PAY New Berlin TS1,Digital,441.4375,446.4375,,1,1,Tri-State,N9PAY New Berli,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.4672552,-87.0604487
+457,N9PAY New Berlin TS2,Digital,441.4375,446.4375,,1,2,Midwest Regional,N9PAY New Berli,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,41.4672552,-87.0604487
+458,WW9P TriState TS1,Digital,443.325,448.325,,1,1,Tri-State,WW9P TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+459,WW9P TriState TS2,Digital,443.325,448.325,,1,2,Midwest Regional,WW9P TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+460,K9MOT TriState TS1,Digital,444.79375,449.79375,,1,1,Tri-State,K9MOT TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+461,K9MOT TriState TS2,Digital,444.79375,449.79375,,1,2,Midwest Regional,K9MOT TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+462,N8OUZ TriState TS1,Digital,442.2875,447.2875,,1,1,Tri-State,N8OUZ TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+463,N8OUZ TriState TS2,Digital,442.2875,447.2875,,1,2,Midwest Regional,N8OUZ TriState,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+464,N9IAA Valparaiso TS1,Digital,441.575,446.575,,1,1,Tri-State,N9IAA Valparais,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+465,N9IAA Valparaiso TS2,Digital,441.575,446.575,,1,2,Midwest Regional,N9IAA Valparais,None,Off,Off,,,,Master,No,No,No,0,Off,No,No,None,0,0
+466,IFERN,Analogue,154.265,154.265,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+467,IREACH,Analogue,155.055,155.055,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+468,ISPERN,Analogue,155.475,155.475,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+469,Point-to-Point,Analogue,155.37,155.37,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+470,HEAR,Analogue,155.34,155.34,25,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+471,VCALL10,Analogue,155.7525,155.7525,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+472,VTAC11,Analogue,151.1375,151.1375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+473,VTAC12,Analogue,154.4525,154.4525,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+474,VTAC13,Analogue,158.7375,158.7375,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+475,VTAC14,Analogue,159.4725,159.4725,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+476,UCALL40,Analogue,453.2125,453.2125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+477,UTAC41,Analogue,453.4625,453.4625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+478,UTAC42,Analogue,453.7125,453.7125,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+479,UTAC43,Analogue,453.8625,453.8625,12.5,,,None,None,None,Off,Off,None,None,Disabled,Master,Yes,No,Yes,0,Off,No,No,None,40.6331,-89.3985
+480,Hotspot BM TS1,Digital,430.4375,439.4375,,1,1,BM Worldwide 91,Hotspot BM,None,Off,Off,,,,Low,No,No,No,180,Off,No,No,None,0,0
+481,Hotspot BM TS2,Digital,430.4375,439.4375,,1,2,BM Illinois 3117,Hotspot BM,None,Off,Off,,,,Low,No,No,No,180,Off,No,No,None,0,0
+482,Hotspot TGIF TS1,Digital,430.4375,439.4375,,1,1,TGIF Prime 31665,Hotspot TGIF,None,Off,Off,,,,Low,No,No,No,180,Off,No,No,None,0,0
+483,Hotspot TGIF TS2,Digital,430.4375,439.4375,,1,2,TGIF 556,Hotspot TGIF,None,Off,Off,,,,Low,No,No,No,180,Off,No,No,None,0,0
