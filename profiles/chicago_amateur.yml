@@ -4,6 +4,7 @@ profile:
   include:
     paths:
       - "ssrf/plans/US/amateur/*.yml"
+      - "ssrf/plans/US/weather/noaa_weather.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/amateur/*.yml"
       - "ssrf/systems/custom/*.yml"
     services: ["amateur"]
@@ -17,4 +18,5 @@ profile:
       - "policies/wcars.yml"
       - "policies/ham_fm_simplex.yml"
       - "policies/ham_dmr_simplex.yml"
+      - "policies/noaa_weather.yml"
       - "policies/mmdvm_duplex_hotspot.yml"

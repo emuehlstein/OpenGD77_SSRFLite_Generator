@@ -1,307 +1,420 @@
 # Overlay for US marine VHF channel plan
+# Sourced from USCG U.S. VHF Channel Information (accessed 2025-10-21).
 policy:
   assignments:
-    us_marine_vhf_ch06:
-      codeplug:
-        name: "Marine 06"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch09:
-      codeplug:
-        name: "Marine 09"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch13:
-      codeplug:
-        name: "Marine 13"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch16:
-      codeplug:
-        name: "Marine 16"
-        rx_only: false
-      zones:
-        include:
-          - "Marine"
-          - "Emergency / Calling"
-    us_marine_vhf_ch22a:
-      codeplug:
-        name: "Marine 22A"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch68:
-      codeplug:
-        name: "Marine 68"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch69:
-      codeplug:
-        name: "Marine 69"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch71:
-      codeplug:
-        name: "Marine 71"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch72:
-      codeplug:
-        name: "Marine 72"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch73:
-      codeplug:
-        name: "Marine 73"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
-    us_marine_vhf_ch78a:
-      codeplug:
-        name: "Marine 78A"
-        rx_only: false
-        all_skip: true
-      zones:
-        include:
-          - "Marine"
     us_marine_vhf_ch01a:
       codeplug:
-        name: "Marine 01A"
+        name: Marine 01A (1001)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch05a:
       codeplug:
-        name: "Marine 05A"
+        name: Marine 05A (1005)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch06:
+      codeplug:
+        name: Marine 06
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch07a:
       codeplug:
-        name: "Marine 07A"
+        name: Marine 07A (1007)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch08:
       codeplug:
-        name: "Marine 08"
+        name: Marine 08
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch09:
+      codeplug:
+        name: Marine 09
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch10:
       codeplug:
-        name: "Marine 10"
+        name: Marine 10
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch11:
       codeplug:
-        name: "Marine 11"
+        name: Marine 11
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch12:
       codeplug:
-        name: "Marine 12"
+        name: Marine 12
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch13:
+      codeplug:
+        name: Marine 13
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch14:
       codeplug:
-        name: "Marine 14"
+        name: Marine 14
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch15:
       codeplug:
-        name: "Marine 15"
+        name: Marine 15 RX
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch16:
+      codeplug:
+        name: Marine 16
+        rx_only: false
+      zones:
+        include:
+          - Marine
+          - Emergency / Calling
     us_marine_vhf_ch17:
       codeplug:
-        name: "Marine 17"
+        name: Marine 17
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch18a:
       codeplug:
-        name: "Marine 18A"
+        name: Marine 18A (1018)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch19a:
       codeplug:
-        name: "Marine 19A"
+        name: Marine 19A (1019)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch20:
+      codeplug:
+        name: Marine 20 Duplex
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch20a:
       codeplug:
-        name: "Marine 20A"
+        name: Marine 20A (1020)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch21a:
       codeplug:
-        name: "Marine 21A"
+        name: Marine 21A (1021)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch22a:
+      codeplug:
+        name: Marine 22A (1022)
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch23a:
       codeplug:
-        name: "Marine 23A"
+        name: Marine 23A (1023)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch24:
+      codeplug:
+        name: Marine 24
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch25:
+      codeplug:
+        name: Marine 25
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch26:
+      codeplug:
+        name: Marine 26
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch27:
+      codeplug:
+        name: Marine 27
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch28:
+      codeplug:
+        name: Marine 28
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch63a:
       codeplug:
-        name: "Marine 63A"
+        name: Marine 63A (1063)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch64a:
       codeplug:
-        name: "Marine 64A"
+        name: Marine 64A (1064)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch65a:
       codeplug:
-        name: "Marine 65A"
+        name: Marine 65A (1065)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch66a:
       codeplug:
-        name: "Marine 66A"
+        name: Marine 66A (1066)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch67:
       codeplug:
-        name: "Marine 67"
+        name: Marine 67
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch68:
+      codeplug:
+        name: Marine 68
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch69:
+      codeplug:
+        name: Marine 69
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch70:
       codeplug:
-        name: "Marine 70 DSC"
+        name: Marine 70 DSC
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch71:
+      codeplug:
+        name: Marine 71
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch72:
+      codeplug:
+        name: Marine 72
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch73:
+      codeplug:
+        name: Marine 73
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch74:
       codeplug:
-        name: "Marine 74"
+        name: Marine 74
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch77:
       codeplug:
-        name: "Marine 77"
+        name: Marine 77
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch78a:
+      codeplug:
+        name: Marine 78A (1078)
+        rx_only: false
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch79a:
       codeplug:
-        name: "Marine 79A"
+        name: Marine 79A (1079)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch80a:
       codeplug:
-        name: "Marine 80A"
+        name: Marine 80A (1080)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
+    us_marine_vhf_ch81a:
+      codeplug:
+        name: Marine 81A (1081)
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch82a:
+      codeplug:
+        name: Marine 82A (1082)
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch83a:
+      codeplug:
+        name: Marine 83A (1083)
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch84:
+      codeplug:
+        name: Marine 84
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch85:
+      codeplug:
+        name: Marine 85
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch86:
+      codeplug:
+        name: Marine 86
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch87:
+      codeplug:
+        name: Marine 87
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
+    us_marine_vhf_ch88:
+      codeplug:
+        name: Marine 88
+        rx_only: true
+        all_skip: true
+      zones:
+        include:
+          - Marine
     us_marine_vhf_ch87b:
       codeplug:
-        name: "Marine 87B AIS1"
+        name: Marine AIS 1 (87B)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine
     us_marine_vhf_ch88b:
       codeplug:
-        name: "Marine 88B AIS2"
+        name: Marine AIS 2 (88B)
         rx_only: true
         all_skip: true
       zones:
         include:
-          - "Marine"
+          - Marine

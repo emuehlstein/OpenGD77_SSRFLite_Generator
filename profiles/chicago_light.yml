@@ -4,6 +4,7 @@ profile:
   include:
     paths:
       - "ssrf/plans/US/gmrs/*.yml"
+      - "ssrf/plans/US/weather/noaa_weather.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/public_safety/*.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/gmrs/*.yml"
       - "ssrf/systems/US/IL/Cook/_Countywide/public_safety/*.yml"
@@ -16,3 +17,4 @@ profile:
       - "policies/family_channels.yml"
       - "policies/chicago_public_services.yml"
       - "policies/cook_public_safety.yml"
+      - "policies/noaa_weather.yml"

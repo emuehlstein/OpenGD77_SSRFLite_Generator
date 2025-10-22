@@ -4,6 +4,7 @@ profile:
   include:
     paths:
       - "ssrf/plans/US/amateur/*.yml"
+      - "ssrf/plans/US/weather/noaa_weather.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/amateur/*.yml"
       - "ssrf/systems/custom/*.yml"
       - "ssrf/plans/US/gmrs/*.yml"
@@ -22,4 +23,5 @@ profile:
       - "policies/gmrs_channels.yml"
       - "policies/chicago_gmrs_repeaters.yml"
       - "policies/family_channels.yml"
+      - "policies/noaa_weather.yml"
       - "policies/mmdvm_duplex_hotspot.yml"
