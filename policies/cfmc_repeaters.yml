@@ -8,7 +8,7 @@ policy:
       zones:
         include:
           - "Ham-Repeaters"
-          - "Emergency"
+          - "Emergency / Calling"
       notes: |
         443.750 +5 MHz, PL 114.8. EchoLink 62478 (WA9ORC-R) and AllStar 555492.
         Dual-mode hardware but analog prioritized; P25 users monitor carrier squelch.
@@ -19,7 +19,7 @@ policy:
       zones:
         include:
           - "Ham-Repeaters"
-          - "Emergency"
+          - "Emergency / Calling"
       notes: |
         146.760 -0.6 MHz, PL 107.2. EchoLink 448319 (KD9YDD-R) and AllStar 555491.
     asgn_cfmc_220_north:
