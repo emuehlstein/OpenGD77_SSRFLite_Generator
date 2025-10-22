@@ -16,7 +16,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Status All OK per Tri-State DMR (2025-10-08). CC 1."
     asgn_n9pay_carlsville:
       codeplug:
@@ -33,7 +33,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Door County site. Status All OK; CC 6."
     asgn_aa9vi_chicago:
       codeplug:
@@ -50,7 +50,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Chicago Loop site. Status RF OK, No Net; CC 1."
     asgn_k9vi_crystal_lake:
       codeplug:
@@ -67,7 +67,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Crystal Lake coverage. Status All OK; CC 4."
     asgn_n9iaa_crown_point:
       codeplug:
@@ -84,7 +84,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "NW Indiana site. Status RF OK, No Net; CC 1."
     asgn_k9nro_elburn:
       codeplug:
@@ -101,7 +101,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Fox Valley coverage. Status All OK; CC 1."
     asgn_n9pay_green_bay:
       codeplug:
@@ -118,7 +118,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Green Bay metro coverage. Status All OK; CC 6."
     asgn_k9ord_inverness:
       codeplug:
@@ -135,7 +135,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Inverness/Palatine coverage. Status All OK; CC 1."
     asgn_n9iaa_la_porte:
       codeplug:
@@ -152,7 +152,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "La Porte, IN site. Status RF OK, No Net; CC 1."
     asgn_n9pay_milwaukee:
       codeplug:
@@ -169,7 +169,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Milwaukee metro coverage. Status All OK; CC 1."
     asgn_kc9kko_morris:
       codeplug:
@@ -186,7 +186,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Grundy County / I-80 coverage. Status All OK; CC 1."
     asgn_n9pay_new_berlin:
       codeplug:
@@ -203,7 +203,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Waukesha County coverage. Status All OK; CC 1."
     asgn_ww9p_rockford:
       codeplug:
@@ -220,7 +220,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Rockford coverage. Status All OK; CC 1."
     asgn_k9mot_schaumburg:
       codeplug:
@@ -237,7 +237,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Schaumburg/NW suburbs site. Status All OK; CC 1."
     asgn_n8ouz_traverse_city:
       codeplug:
@@ -254,7 +254,7 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Traverse City extension. Status All OK; CC 1."
     asgn_n9iaa_valparaiso:
       codeplug:
@@ -271,5 +271,5 @@ policy:
           - tg_4000_disconnect
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "Porter County site. Status RF OK, No Net; CC 1."

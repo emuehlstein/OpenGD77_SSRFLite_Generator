@@ -8,7 +8,7 @@ policy:
       zones:
         include:
           - "Berrien Amateur"
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asg_skywarn_secondary:
       codeplug:
         name: "Skywarn Secondary 146.720"
@@ -16,7 +16,7 @@ policy:
       zones:
         include:
           - "Berrien Amateur"
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asg_skywarn_intercounty:
       codeplug:
         name: "IMO Skywarn 145.430"
@@ -24,7 +24,7 @@ policy:
       zones:
         include:
           - "Berrien Amateur"
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asg_skywarn_link:
       codeplug:
         name: "Skywarn UHF Link 442.775"
@@ -32,7 +32,7 @@ policy:
       zones:
         include:
           - "Berrien Amateur"
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asg_w8mai_dstar_b:
       codeplug:
         name: "W8MAI D-STAR B"

@@ -7,7 +7,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "+0.6 MHz offset, PL 107.2. Lincoln Park site."
     asgn_ka9hhh_440_fm:
       codeplug:
@@ -15,7 +15,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
           - "Emergency / Calling"
       notes: "+5 MHz offset, PL 114.8. Lincoln Park site."
     asgn_na9pl_440_c4fm:

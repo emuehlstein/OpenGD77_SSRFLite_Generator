@@ -1,0 +1,66 @@
+# Overlay for St. Petersburg / Tampa Bay GMRS repeaters
+policy:
+  assignments:
+    asg_gmrs_seminole_725:
+      codeplug:
+        name: "Seminole 725"
+        rx_only: false
+      zones:
+        include:
+          - "GMRS"
+      scan:
+        all_skip: true
+    asg_gmrs_clearwater_675:
+      codeplug:
+        name: "Clearwater 675"
+        rx_only: false
+      zones:
+        include:
+          - "GMRS"
+      scan:
+        all_skip: true
+    asg_gmrs_ruskin_700:
+      codeplug:
+        name: "Ruskin 700"
+        rx_only: false
+      zones:
+        include:
+          - "GMRS"
+      scan:
+        all_skip: true
+    asg_gmrs_tampa_shores_700:
+      codeplug:
+        name: "Tampa Shores 700"
+        rx_only: false
+      zones:
+        include:
+          - "GMRS"
+      scan:
+        all_skip: true
+    asg_gmrs_tampa_shores_650:
+      codeplug:
+        name: "Tampa Shores 650"
+        rx_only: false
+      zones:
+        include:
+          - "GMRS"
+      scan:
+        all_skip: true
+    asg_gmrs_west_bradenton_625:
+      codeplug:
+        name: "Cortez 625"
+        rx_only: false
+      zones:
+        include:
+          - "GMRS"
+      scan:
+        all_skip: true
+    asg_gmrs_tampa_600:
+      codeplug:
+        name: "Tampa Bay 600"
+        rx_only: false
+      zones:
+        include:
+          - "GMRS"
+      scan:
+        all_skip: true

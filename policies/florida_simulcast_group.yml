@@ -7,14 +7,14 @@ policy:
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_fsg_stpete_444_p25:
       codeplug:
         name: "FSG St Pete 444 P25"
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_kj4shl_stpete_dmr:
       codeplug:
         name: "FSG St Pete DMR"
@@ -38,7 +38,7 @@ policy:
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
       scan:
         all_skip: false
     asgn_kj4shl_stpete_nxdn:
@@ -48,7 +48,7 @@ policy:
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_wd4scd_remote_rx:
       codeplug:
         name: "WD4SCD Remote RX"
@@ -56,7 +56,7 @@ policy:
         power: "Low"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
       scan:
         all_skip: true
     asgn_w9cr_tampa_224_fm:
@@ -65,56 +65,56 @@ policy:
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_w9cr_tampa_443_fm:
       codeplug:
         name: "FSG Tampa 443 FM"
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_w9cr_tampa_443_p25:
       codeplug:
         name: "FSG Tampa 443 P25"
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_w9cr_tampa_927_fm:
       codeplug:
         name: "FSG Tampa 927 FM"
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_w9cr_tampa_927_p25:
       codeplug:
         name: "FSG Tampa 927 P25"
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_ka9rix_tampa_fm:
       codeplug:
         name: "FSG Tampa KA9RIX"
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_ka9rix_tampa_dstar:
       codeplug:
         name: "FSG Tampa KA9RIX D-Star"
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
     asgn_wraf954_tampa_fm:
       codeplug:
         name: "FSG Tampa GMRS"
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
       scan:
         all_skip: true
     asgn_wraf954_tampa_p25:
@@ -123,7 +123,7 @@ policy:
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
       scan:
         all_skip: true
     asgn_kj4shl_tampa_dmr:
@@ -149,6 +149,6 @@ policy:
         power: "High"
       zones:
         include:
-          - Ham-Repeaters
+          - Ham Repeaters
       scan:
         all_skip: false

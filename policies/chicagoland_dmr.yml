@@ -14,7 +14,7 @@ policy:
           - tg_9998
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: |
         Loop/Chicago site. Color Code 4. TS1: Local 1, IL 3117. TS2: Local 2,
         Midwest 3169, TAC 310, Parrot.
@@ -33,7 +33,7 @@ policy:
           - tg_9998
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: |
         Schaumburg site. Color Code 0. TS1: Local 1, IL 3117. TS2: Local 2,
         Midwest 3169, TAC 310, Parrot.

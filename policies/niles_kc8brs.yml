@@ -7,4 +7,4 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"

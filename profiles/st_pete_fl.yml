@@ -11,7 +11,7 @@ profile:
       - "ssrf/systems/US/FL/_Regional/florida_simulcast_group.yml"
       - "ssrf/systems/US/FL/Hillsborough/Tampa/amateur/tarc_repeaters.yml"
       - "ssrf/systems/custom/*.yml"
-      - "ssrf/plans/US/marine/*.yml"
+      - "ssrf/systems/US/FL/_Regional/gmrs/st_pete_gmrs_repeaters.yml"
     services: ["amateur", "gmrs", "marine"]
   policy:
     files:
@@ -25,3 +25,4 @@ profile:
       - "policies/florida_simulcast_group.yml"
       - "policies/tampa_amateur_radio_club.yml"
       - "policies/marine_vhf.yml"
+      - "policies/st_pete_gmrs_repeaters.yml"

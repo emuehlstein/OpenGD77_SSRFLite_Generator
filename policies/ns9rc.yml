@@ -7,7 +7,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
           - "Emergency / Calling"
       notes: |
         147.345 +0.6 MHz, PL 107.2. Dual-mode Yaesu DR-2; tone squelch recommended to block digital noise.
@@ -18,7 +18,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "System Fusion DV companion on 147.345 +0.6 MHz."
     asgn_ns9rc_220:
       codeplug:
@@ -26,7 +26,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
       notes: "224.320 -1.6 MHz, PL 110.9. ~60 W ERP from Deerfield water tower (~180 ft AGL)."
     asgn_ns9rc_440:
       codeplug:
@@ -34,7 +34,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
           - "Emergency / Calling"
       notes: |
         442.725 +5 MHz, PL 114.8. Motorola + S-Com 7330 (~80 W) with offset-pattern antenna around 513 ft AGL.

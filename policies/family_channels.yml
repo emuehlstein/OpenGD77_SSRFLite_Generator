@@ -105,7 +105,7 @@ policy:
       zones:
         include:
           - "Family Ops"
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asgn_family_f15_cmfc:
       codeplug:
         name: "F15 CMFC UHF"
@@ -116,7 +116,7 @@ policy:
       zones:
         include:
           - "Family Ops"
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asgn_family_fd1_all:
       codeplug:
         name: "FD1 All"

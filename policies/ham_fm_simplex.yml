@@ -8,6 +8,8 @@ policy:
       zones:
         include:
           - "Ham VHF"
+      scan:
+        all_skip: true
     us_ham_vhf_call:
       codeplug:
         name: "2m Call"

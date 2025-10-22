@@ -7,7 +7,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
           - "Emergency / Calling"
     asgn_w9ly_vhf_fm:
       codeplug:
@@ -15,7 +15,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asgn_w9ly_vhf_c4fm:
       codeplug:
         name: "W9LY VHF C4FM"
@@ -29,14 +29,14 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asgn_w9ly_uhf_c4fm:
       codeplug:
         name: "W9LY UHF C4FM"
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
           - "Fusion Digital"
     asgn_w9sal_uhf_fm:
       codeplug:
@@ -44,7 +44,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
     asg_laporte_sheriff_dispatch:
       codeplug:
         name: "Sheriff Dispatch"
@@ -186,7 +186,7 @@ policy:
         rx_only: false
       zones:
         include:
-          - "Ham-Repeaters"
+          - "Ham Repeaters"
           - "Emergency / Calling"
     asgn_n9iaa_valpo_dmr:
       codeplug:
