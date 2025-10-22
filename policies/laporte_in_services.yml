@@ -1,0 +1,214 @@
+# Overlay consolidating La Porte County (IN) amateur and public safety monitoring channels
+policy:
+  assignments:
+    asgn_k9jsi_vhf_fm:
+      codeplug:
+        name: "K9JSI VHF"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+          - "Emergency / Calling"
+    asgn_w9ly_vhf_fm:
+      codeplug:
+        name: "W9LY VHF FM"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+    asgn_w9ly_vhf_c4fm:
+      codeplug:
+        name: "W9LY VHF C4FM"
+        rx_only: false
+      zones:
+        include:
+          - "DMR Repeater"
+    asgn_w9ly_uhf_fm:
+      codeplug:
+        name: "W9LY UHF FM"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+    asgn_w9ly_uhf_c4fm:
+      codeplug:
+        name: "W9LY UHF C4FM"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+          - "Fusion Digital"
+    asgn_w9sal_uhf_fm:
+      codeplug:
+        name: "W9SAL UHF"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+    asg_laporte_sheriff_dispatch:
+      codeplug:
+        name: "Sheriff Dispatch"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Sheriff"
+      scan:
+        all_skip: true
+    asg_laporte_sheriff_car:
+      codeplug:
+        name: "Sheriff Car-Car"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Sheriff"
+      scan:
+        all_skip: true
+    asg_laporte_sheriff_swat:
+      codeplug:
+        name: "Sheriff SWAT"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Sheriff"
+      scan:
+        all_skip: true
+    asg_laporte_jail:
+      codeplug:
+        name: "County Jail"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Sheriff"
+      scan:
+        all_skip: true
+    asg_laporte_ems_dispatch:
+      codeplug:
+        name: "EMS Dispatch"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte EMS"
+      scan:
+        all_skip: true
+    asg_laporte_ema_ops:
+      codeplug:
+        name: "EMA Ops / Siren"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte EMA"
+      scan:
+        all_skip: true
+    asg_westville_pd:
+      codeplug:
+        name: "Westville B2C"
+        rx_only: true
+      zones:
+        include:
+          - "Westville PD"
+      scan:
+        all_skip: true
+    asg_laporte_fire_dispatch:
+      codeplug:
+        name: "Fire Dispatch"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Fire"
+      scan:
+        all_skip: true
+    asg_laporte_fire_secondary:
+      codeplug:
+        name: "Fire Secondary"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Fire"
+      scan:
+        all_skip: true
+    asg_laporte_fire_tertiary:
+      codeplug:
+        name: "Fire Tertiary"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Fire"
+      scan:
+        all_skip: true
+    asg_laporte_fireground14:
+      codeplug:
+        name: "Fireground 1-4"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Fire"
+      scan:
+        all_skip: true
+    asg_laporte_fireground5:
+      codeplug:
+        name: "Fireground 5"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Fire"
+      scan:
+        all_skip: true
+    asg_laporte_fireground6:
+      codeplug:
+        name: "Fireground 6"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Fire"
+      scan:
+        all_skip: true
+    asg_laporte_fireground7:
+      codeplug:
+        name: "Fireground 7"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Fire"
+      scan:
+        all_skip: true
+    asg_laporte_mutual_aid:
+      codeplug:
+        name: "Fire Mutual Aid"
+        rx_only: true
+      zones:
+        include:
+          - "LaPorte Fire"
+      scan:
+        all_skip: true
+    asgn_n9iaa_146_fm:
+      codeplug:
+        name: "N9IAA VHF"
+        rx_only: false
+      zones:
+        include:
+          - "Ham-Repeaters"
+          - "Emergency / Calling"
+    asgn_n9iaa_valpo_dmr:
+      codeplug:
+        name: "N9IAA Val DMR"
+        rx_only: false
+        preferred_contacts: [tg_8, tg_3118, tg_1, tg_3, tg_9, tg_5000, tg_4000]
+      zones:
+        include:
+          - "Ham-DMR"
+    asgn_n9iaa_crownpoint_dmr:
+      codeplug:
+        name: "N9IAA CP DMR"
+        rx_only: false
+        preferred_contacts: [tg_8, tg_3118, tg_1, tg_3, tg_9, tg_5000, tg_4000]
+      zones:
+        include:
+          - "Ham-DMR"
+    asgn_n9iaa_laporte_dmr:
+      codeplug:
+        name: "N9IAA LP DMR"
+        rx_only: false
+        preferred_contacts: [tg_8, tg_3118, tg_1, tg_3, tg_9, tg_5000, tg_4000]
+      zones:
+        include:
+          - "Ham-DMR"

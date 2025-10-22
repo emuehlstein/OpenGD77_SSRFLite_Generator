@@ -1,0 +1,27 @@
+profile:
+  name: "st_pete_fl"
+  description: "Florida Simulcast Group repeaters around St. Petersburg / Tampa plus national simplex and GMRS"
+  include:
+    paths:
+      - "ssrf/plans/US/amateur/*.yml"
+      - "ssrf/plans/US/gmrs/*.yml"
+      - "ssrf/plans/US/murs/*.yml"
+      - "ssrf/plans/US/marine/*.yml"
+      - "ssrf/plans/US/weather/*.yml"
+      # - "ssrf/systems/US/FL/_Regional/florida_simulcast_group.yml"
+      - "ssrf/systems/US/FL/Hillsborough/Tampa/amateur/tarc_repeaters.yml"
+      - "ssrf/systems/custom/*.yml"
+      - "ssrf/plans/US/marine/*.yml"
+    services: ["amateur", "gmrs", "marine"]
+  policy:
+    files:
+      - "policies/default.yml"
+      - "policies/gmrs_channels.yml"
+      - "policies/family_channels.yml"
+      - "policies/noaa_weather.yml"
+      - "policies/ham_fm_simplex.yml"
+      - "policies/ham_dmr_simplex.yml"
+      - "policies/mmdvm_duplex_hotspot.yml"
+      # - "policies/florida_simulcast_group.yml"
+      - "policies/tampa_amateur_radio_club.yml"
+      - "policies/marine_vhf.yml"

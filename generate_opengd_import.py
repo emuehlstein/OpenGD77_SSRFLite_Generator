@@ -31,6 +31,20 @@ try:
 except Exception:
     raise SystemExit("PyYAML is required. Install with: pip install pyyaml")
 
+from pydantic import ValidationError
+
+from ssrf import (
+    Assignment,
+    Authorization,
+    ChannelPlan,
+    Contact,
+    Location,
+    SSRFReference,
+    RFChain,
+    Station,
+    load_ssrf_document,
+)
+
 BASE = pathlib.Path(__file__).parent
 SSRF_ROOT = BASE / "ssrf"
 DEFAULT_PROFILES_DIR = BASE / "profiles"
@@ -335,39 +349,42 @@ def fmt_tone(value: Optional[Union[float, str]]) -> str:
 
 
 class Dataset:
-    def __init__(self):
-        self.contacts: Dict[str, dict] = {}
-        self.rf_chains: Dict[str, dict] = {}
-        self.assignments: List[dict] = []
-        self.channel_plans: Dict[str, dict] = {}
-        self.stations: Dict[str, dict] = {}
-        self.locations: Dict[str, dict] = {}
-        self.authorizations: Dict[str, dict] = {}
+    """Aggregate multiple SSRF-Lite documents into a single lookup set."""
 
-    def merge(self, doc: dict):
-        # Accept either with or without top-level "ssrf_lite" wrapper
-        top = doc
-        if isinstance(doc, dict) and "ssrf_lite" in doc:
-            # keep references if needed, but real data blocks are at root in examples
-            pass
-        for key in [
-            "contacts",
-            "rf_chains",
-            "assignments",
-            "channel_plans",
-            "stations",
-            "locations",
-            "authorizations",
-        ]:
-            if key in doc and isinstance(doc[key], list):
-                for item in doc[key]:
-                    if not isinstance(item, dict):
-                        continue
-                    item_id = item.get("id")
-                    if key == "assignments":
-                        self.assignments.append(item)
-                    elif item_id:
-                        getattr(self, key)[item_id] = item
+    def __init__(self) -> None:
+        self.contacts: Dict[str, Contact] = {}
+        self.rf_chains: Dict[str, RFChain] = {}
+        self.assignments: List[Assignment] = []
+        self.channel_plans: Dict[str, ChannelPlan] = {}
+        self.stations: Dict[str, Station] = {}
+        self.locations: Dict[str, Location] = {}
+        self.authorizations: Dict[str, Authorization] = {}
+
+    def merge(self, reference: SSRFReference) -> None:
+        for contact in reference.contacts:
+            self.contacts[contact.id] = contact
+        for chain in reference.rf_chains:
+            self.rf_chains[chain.id] = chain
+        for assignment in reference.assignments:
+            has_chain = bool(assignment.rf_chain_id)
+            has_plan = bool(assignment.channel_plan_id)
+            if has_chain == has_plan:
+                raise ValueError(
+                    f"Assignment {assignment.id} must reference exactly one of rf_chain_id or channel_plan_id"
+                )
+            if has_plan and not assignment.channel_name:
+                raise ValueError(
+                    f"Assignment {assignment.id} requires channel_name when channel_plan_id is set"
+                )
+            self.assignments.append(assignment)
+        for plan in reference.channel_plans:
+            self.channel_plans[plan.id] = plan
+        for station in reference.stations:
+            self.stations[station.id] = station
+        for location in reference.locations:
+            self.locations[location.id] = location
+        for auth in reference.authorizations:
+            self.authorizations[auth.id] = auth
 
 
 def load_dataset(file_paths: Sequence[pathlib.Path]) -> Dataset:
@@ -375,9 +392,14 @@ def load_dataset(file_paths: Sequence[pathlib.Path]) -> Dataset:
     for yf in file_paths:
         if not yf.exists():
             raise SystemExit(f"SSRF file not found: {yf}")
-        with open(yf, "r") as f:
-            doc = yaml.safe_load(f) or {}
-        ds.merge(doc)
+        try:
+            reference = load_ssrf_document(yf)
+            ds.merge(reference)
+        except (
+            ValidationError,
+            ValueError,
+        ) as exc:  # pragma: no cover - user feedback path
+            raise SystemExit(f"Validation error in {yf}: {exc}") from exc
     return ds
 
 
@@ -406,58 +428,49 @@ def build_outputs(
     allowed_tx_services: Optional[Set[str]] = None,
 ):
     # Prepare Contacts.csv rows and a lookup by id
-    contact_rows: List[List[str]] = []
-    contact_by_id: Dict[str, Tuple[str, int, Optional[int]]] = {}
-    # Prefer consistent ordering by name
-    contact_number_lookup: Dict[str, Tuple[str, int, Optional[int]]] = {}
+    contact_entries: List[Tuple[str, List[str]]] = []
+    contact_by_id: Dict[str, Tuple[str, int, Optional[int], str]] = {}
+    contact_number_lookup: Dict[str, Tuple[str, int, Optional[int], str]] = {}
+    contact_name_lookup: Dict[str, Tuple[str, int, Optional[int], str]] = {}
 
-    for cid, c in sorted(ds.contacts.items(), key=lambda kv: kv[1].get("name", "")):
-        name = c.get("name") or cid
-        number = c.get("number")
+    for cid, contact in sorted(
+        ds.contacts.items(), key=lambda kv: (sanitize_name(kv[1].name).lower())
+    ):
+        name = contact.name or cid
+        number = contact.number
         if number is None:
-            # Skip contacts without numeric IDs (not usable in codeplug)
             continue
-        id_type = c.get("kind", "Group") or "Group"
-        ts_override = c.get("default_timeslot")  # optional
-        ts_s = str(ts_override) if ts_override in (1, 2) else ""
-        contact_rows.append([name, str(number), id_type, ts_s])
-        contact_by_id[cid] = (
-            name,
-            int(number),
-            ts_override if ts_override in (1, 2) else None,
+        id_type = contact.kind or "Group"
+        ts_override = (
+            contact.default_timeslot if contact.default_timeslot in (1, 2) else None
         )
-        contact_number_lookup[str(number)] = contact_by_id[cid]
-
-    contact_name_lookup: Dict[str, Tuple[str, int, Optional[int]]] = {}
-    for cid, (name, number, ts_override) in contact_by_id.items():
+        ts_s = str(ts_override) if ts_override in (1, 2) else ""
+        row = [name, str(number), id_type, ts_s]
+        entry = (name, int(number), ts_override, cid)
+        contact_entries.append((cid, row))
+        contact_by_id[cid] = entry
+        contact_number_lookup[str(number)] = entry
         normalized = sanitize_name(name).lower()
-        contact_name_lookup[normalized] = (name, number, ts_override)
+        contact_name_lookup[normalized] = entry
 
-    # Channels and Zones
     channels_rows: List[List[str]] = []
     zones: Dict[str, List[str]] = {}
     channel_num = 1
 
-    # TG Lists aggregation: name -> ordered list of contact names (max 32)
     tg_lists: Dict[str, List[str]] = {}
+    used_contact_ids: Set[str] = set()
 
-    # Helpers to resolve lat/lon from station/location
     def station_latlon(station_id: Optional[str]) -> Tuple[str, str]:
         if not station_id:
             return ("0", "0")
-        st = ds.stations.get(station_id)
-        if not st:
+        station = ds.stations.get(station_id)
+        if station is None or station.location_id is None:
             return ("0", "0")
-        loc_id = st.get("location_id")
-        loc = ds.locations.get(loc_id) if isinstance(loc_id, str) else None
-        if not loc:
-            return ("0", "0")
-        lat = loc.get("lat")
-        lon = loc.get("lon")
-        if lat is None or lon is None:
+        location = ds.locations.get(station.location_id)
+        if location is None or location.lat is None or location.lon is None:
             return ("0", "0")
         try:
-            return (str(float(lat)), str(float(lon)))
+            return (str(float(location.lat)), str(float(location.lon)))
         except Exception:
             return ("0", "0")
 
@@ -481,23 +494,18 @@ def build_outputs(
 
         return in_band(rx) and in_band(tx if tx is not None else rx)
 
-    def resolve_policy_overlay(asg: dict) -> Dict[str, Any]:
-        policy_data: Dict[str, Any] = {}
-        assignment_id = asg.get("id")
-        if assignment_id and policies is not None:
-            policy_overlay = policies.get_assignment(str(assignment_id))
-            if isinstance(policy_overlay, dict):
-                policy_data = policy_overlay
-        return policy_data
+    def resolve_policy_overlay(assignment: Assignment) -> Dict[str, Any]:
+        if policies is None:
+            return {}
+        return policies.get_assignment(assignment.id)
 
-    def resolve_zone_names(asg: dict, policy: Dict[str, Any]) -> List[str]:
+    def resolve_zone_names(policy: Dict[str, Any]) -> List[str]:
         zone_block = policy.get("zones")
         base: List[str] = []
 
         if isinstance(zone_block, dict):
             include = zone_block.get("include", []) or []
             exclude = set(zone_block.get("exclude", []) or [])
-            base.extend(asg.get("zones", []) or [])
             for entry in include:
                 if entry not in base:
                     base.append(entry)
@@ -507,55 +515,48 @@ def build_outputs(
         elif isinstance(zone_block, str):
             zone_list = [zone_block]
         else:
-            zone_list = asg.get("zones", []) or []
+            zone_list = []
 
         return [str(z) for z in zone_list if z]
 
-    def infer_assignment_service(asg: dict) -> Optional[str]:
-        svc = asg.get("service")
+    def infer_assignment_service(assignment: Assignment) -> Optional[str]:
+        svc = assignment.service
         if isinstance(svc, str) and svc.strip():
             return svc.strip().lower()
 
-        auth_id = asg.get("authorization_id")
-        if isinstance(auth_id, str):
-            auth = ds.authorizations.get(auth_id)
-            if isinstance(auth, dict):
-                svc = auth.get("service")
-                if isinstance(svc, str) and svc.strip():
-                    return svc.strip().lower()
+        if assignment.authorization_id:
+            auth = ds.authorizations.get(assignment.authorization_id)
+            if auth and isinstance(auth.service, str) and auth.service.strip():
+                return auth.service.strip().lower()
 
-        chain_id = asg.get("rf_chain_id")
-        if isinstance(chain_id, str):
-            chain = ds.rf_chains.get(chain_id) or {}
-            station_id = chain.get("station_id")
-            if isinstance(station_id, str):
-                station = ds.stations.get(station_id) or {}
-                svc = station.get("service")
-                if isinstance(svc, str) and svc.strip():
-                    return svc.strip().lower()
+        if assignment.rf_chain_id:
+            chain = ds.rf_chains.get(assignment.rf_chain_id)
+            if chain:
+                station = ds.stations.get(chain.station_id)
+                if (
+                    station
+                    and isinstance(station.service, str)
+                    and station.service.strip()
+                ):
+                    return station.service.strip().lower()
 
-        plan_id = asg.get("channel_plan_id")
-        if isinstance(plan_id, str):
-            plan = ds.channel_plans.get(plan_id) or {}
-            svc = plan.get("service")
-            if isinstance(svc, str) and svc.strip():
-                return svc.strip().lower()
+        if assignment.channel_plan_id:
+            plan = ds.channel_plans.get(assignment.channel_plan_id)
+            if plan and isinstance(plan.service, str) and plan.service.strip():
+                return plan.service.strip().lower()
 
         return None
 
     for asg in ds.assignments:
         policy_overlay = resolve_policy_overlay(asg)
         codeplug_policy = policy_overlay.get("codeplug")
-        if not isinstance(codeplug_policy, dict):
-            codeplug_policy = {}
-        # Legacy support
-        legacy_codeplug = asg.get("codeplug", {}) or {}
-        codeplug = copy.deepcopy(legacy_codeplug)
-        _deep_merge_dict(codeplug, codeplug_policy)
+        codeplug = (
+            copy.deepcopy(codeplug_policy) if isinstance(codeplug_policy, dict) else {}
+        )
         preferred_override = policy_overlay.get("preferred_contacts")
         if isinstance(preferred_override, list):
             codeplug["preferred_contacts"] = preferred_override
-        zone_names: List[str] = resolve_zone_names(asg, policy_overlay)
+        zone_names: List[str] = resolve_zone_names(policy_overlay)
         scan_block = (
             policy_overlay.get("scan")
             if isinstance(policy_overlay.get("scan"), dict)
@@ -567,11 +568,14 @@ def build_outputs(
             else {}
         )
         # Ensure a non-empty string for channel name
-        asg_name = codeplug.get("name") or asg.get("id") or f"Ch{channel_num}"
-        asg_name = sanitize_name(asg_name)
-        rx_only = bool(codeplug.get("rx_only", False)) or (
-            asg.get("usage") == "receive-only"
+        asg_name_source = (
+            codeplug.get("name")
+            or getattr(asg, "channel_name", None)
+            or asg.id
+            or f"Ch{channel_num}"
         )
+        asg_name = sanitize_name(str(asg_name_source))
+        rx_only = bool(codeplug.get("rx_only", False)) or (asg.usage == "receive-only")
         if codeplug.get("tx_enabled") is False:
             rx_only = True
         if isinstance(tx_block, dict) and tx_block.get("enabled") is False:
@@ -633,13 +637,14 @@ def build_outputs(
         no_beep_setting = "Yes" if codeplug.get("no_beep") else "No"
         no_eco_setting = "Yes" if codeplug.get("no_eco") else "No"
 
-        # Channel via rf_chain
-        if asg.get("rf_chain_id"):
-            chain = ds.rf_chains.get(asg["rf_chain_id"]) or {}
-            mode = (chain.get("mode") or {}).get("type", "").upper()
-            tx = (chain.get("tx") or {}).get("freq_mhz")
-            rx = (chain.get("rx") or {}).get("freq_mhz")
-            lat_s, lon_s = station_latlon(chain.get("station_id"))
+        if asg.rf_chain_id:
+            chain = ds.rf_chains.get(asg.rf_chain_id)
+            if chain is None:
+                continue
+            mode = chain.mode.type.upper()
+            tx = chain.tx.freq_mhz
+            rx = chain.rx.freq_mhz
+            lat_s, lon_s = station_latlon(chain.station_id)
 
             # Filter: only FM or DMR and within supported bands
             if not is_supported_mode(mode):
@@ -657,11 +662,16 @@ def build_outputs(
                     pref_ids = [pref_ids_raw]
                 else:
                     pref_ids = []
+
+                available_slots = [
+                    slot for slot in (chain.mode.timeslots or []) if slot in (1, 2)
+                ]
+                if not available_slots:
+                    available_slots = [1]
+
                 # Resolve names for TG List
                 pref_names: List[str] = []
-                resolved_prefs: List[Tuple[str, int, Optional[int]]] = []
-                default_contact_name = "None"
-                default_ts = 1
+                resolved_prefs: List[Tuple[str, int, Optional[int], str]] = []
                 for pref in pref_ids:
                     resolved = None
                     if pref in contact_by_id:
@@ -676,105 +686,125 @@ def build_outputs(
                     if resolved:
                         resolved_prefs.append(resolved)
                         pref_names.append(resolved[0])
+                        used_contact_ids.add(resolved[3])
 
-                if resolved_prefs:
-                    first_name, _, first_ts = resolved_prefs[0]
-                    default_contact_name = first_name
-                    if first_ts in (1, 2):
-                        default_ts = first_ts
-                default_contact_override = codeplug.get("default_contact")
-                if isinstance(default_contact_override, str):
-                    override_value = default_contact_override
-                else:
-                    override_value = default_contact_override
-
+                # Resolve explicit default contact override if provided
+                resolved_override: Optional[Tuple[str, int, Optional[int], str]] = None
+                override_value = codeplug.get("default_contact")
                 if override_value is not None:
-                    resolved_override = None
+                    candidate = None
                     if override_value in contact_by_id:
-                        resolved_override = contact_by_id[override_value]
+                        candidate = contact_by_id[override_value]
                     elif isinstance(override_value, (int, float)):
-                        resolved_override = contact_number_lookup.get(
-                            str(int(override_value))
-                        )
+                        candidate = contact_number_lookup.get(str(int(override_value)))
                     elif isinstance(override_value, str) and override_value.isdigit():
-                        resolved_override = contact_number_lookup.get(override_value)
-                    if resolved_override is None:
+                        candidate = contact_number_lookup.get(override_value)
+                    if candidate is None and isinstance(override_value, str):
                         normalized_override = sanitize_name(str(override_value)).lower()
-                        resolved_override = contact_name_lookup.get(normalized_override)
-
-                    if resolved_override:
-                        nm, _, ts = resolved_override
-                        default_contact_name = nm
-                        if ts in (1, 2):
-                            default_ts = ts
+                        candidate = contact_name_lookup.get(normalized_override)
+                    if candidate:
+                        resolved_override = candidate
 
                 # TG List name derived from assignment name (limit 15 chars per rules)
                 tgl_name = sanitize_name(
                     codeplug.get("tg_list_name") or asg_name or "DMR"
                 )[:15]
+                site_local_entry = contact_name_lookup.get(
+                    sanitize_name("Site Local").lower()
+                )
+
                 # Store TG list membership (max 32)
                 if pref_names:
                     existing = tg_lists.setdefault(tgl_name, [])
                     for nm in pref_names:
                         if nm not in existing and len(existing) < 32:
                             existing.append(nm)
+                elif site_local_entry:
+                    existing = tg_lists.setdefault(tgl_name, [])
+                    if site_local_entry[0] not in existing and len(existing) < 32:
+                        existing.append(site_local_entry[0])
                 else:
-                    # If no preferred list, default to Site Local if available
-                    if "Site Local" in [c[0] for c in contact_by_id.values()]:
-                        tg_lists.setdefault(tgl_name, ["Site Local"])  # minimal
-                        default_contact_name = "Site Local"
-                        default_ts = 1
-                    else:
-                        tgl_name = "None"
-                        default_contact_name = "None"
-                        default_ts = 1
+                    tgl_name = "None"
 
-                cc = (chain.get("mode") or {}).get("color_code", 1) or 1
+                cc = chain.mode.color_code or 1
                 bw = ""  # DMR leaves bandwidth blank in importer
 
-                row = [
-                    channel_num,
-                    asg_name,
-                    "Digital",
-                    fmt_freq(rx),
-                    fmt_freq(tx) if tx is not None else fmt_freq(rx),
-                    bw,
-                    cc,
-                    default_ts,
-                    default_contact_name,
-                    tgl_name,
-                    "None",  # DMR ID
-                    "Off",
-                    "Off",
-                    "",
-                    "",
-                    squelch_setting,
-                    power_setting,
-                    "Yes" if rx_only else "No",
-                    "Yes" if zone_skip_flag else "No",
-                    "Yes" if all_skip else "No",
-                    tot_value,
-                    vox_setting,
-                    no_beep_setting,
-                    no_eco_setting,
-                    aprs_setting,
-                    lat_s,
-                    lon_s,
-                ]
-                channels_rows.append(row)
-                add_zone_members(zone_names, str(asg_name))
-                channel_num += 1
+                def select_default_contact(slot: int) -> Tuple[str, int]:
+                    # Priority: explicit override -> timeslot-specific preference -> first preference -> Site Local -> None
+                    if resolved_override:
+                        nm, _, ts, cid_override = resolved_override
+                        used_contact_ids.add(cid_override)
+                        resolved_ts = ts if ts in (1, 2) else slot
+                        return nm, resolved_ts
+
+                    for nm, _, ts, cid in resolved_prefs:
+                        if ts == slot:
+                            used_contact_ids.add(cid)
+                            return nm, slot
+
+                    if resolved_prefs:
+                        nm, _, ts, cid = resolved_prefs[0]
+                        used_contact_ids.add(cid)
+                        resolved_ts = ts if ts in (1, 2) else slot
+                        return nm, resolved_ts
+
+                    if site_local_entry:
+                        nm, _, ts, cid = site_local_entry
+                        used_contact_ids.add(cid)
+                        resolved_ts = ts if ts in (1, 2) else slot
+                        return nm, resolved_ts
+
+                    return "None", slot
+
+                multi_slot = len(available_slots) > 1
+                for slot in available_slots:
+                    channel_label = (
+                        sanitize_name(f"{asg_name} TS{slot}")
+                        if multi_slot
+                        else asg_name
+                    )
+                    default_contact_name, default_ts = select_default_contact(slot)
+
+                    row = [
+                        channel_num,
+                        channel_label,
+                        "Digital",
+                        fmt_freq(rx),
+                        fmt_freq(tx) if tx is not None else fmt_freq(rx),
+                        bw,
+                        cc,
+                        slot,
+                        default_contact_name,
+                        tgl_name,
+                        "None",  # DMR ID
+                        "Off",
+                        "Off",
+                        "",
+                        "",
+                        squelch_setting,
+                        power_setting,
+                        "Yes" if rx_only else "No",
+                        "Yes" if zone_skip_flag else "No",
+                        "Yes" if all_skip else "No",
+                        tot_value,
+                        vox_setting,
+                        no_beep_setting,
+                        no_eco_setting,
+                        aprs_setting,
+                        lat_s,
+                        lon_s,
+                    ]
+                    channels_rows.append(row)
+                    add_zone_members(zone_names, channel_label)
+                    channel_num += 1
 
             elif mode in {"FM", "APRS", "PACKET", "CW"}:
-                tx_dict = chain.get("tx") or {}
-                bw = emission_to_bw_khz(
-                    tx_dict.get("emission"), tx_dict.get("bandwidth_khz")
-                )
-                tones = chain.get("mode") or {}
-                ctcss_rx = tones.get("ctcss_rx_hz")
-                ctcss_tx = tones.get("ctcss_tx_hz")
-                dcs_rx = tones.get("dcs_rx_code")
-                dcs_tx = tones.get("dcs_tx_code")
+                bw = emission_to_bw_khz(chain.tx.emission, chain.tx.bandwidth_khz)
+                tones = chain.mode
+                ctcss_rx = tones.ctcss_rx_hz
+                ctcss_tx = tones.ctcss_tx_hz
+                dcs_rx = tones.dcs_rx_code
+                dcs_tx = tones.dcs_tx_code
                 rx_tone = fmt_tone(ctcss_rx if ctcss_rx is not None else dcs_rx)
                 tx_tone = fmt_tone(ctcss_tx if ctcss_tx is not None else dcs_tx)
 
@@ -814,33 +844,22 @@ def build_outputs(
                 # Unsupported mode for OpenGD77 (e.g., D-STAR, C4FM) — skip
                 pass
 
-        # Channel via channel_plan
-        elif asg.get("channel_plan_id"):
-            plan = ds.channel_plans.get(asg["channel_plan_id"]) or {}
-            ch_name = asg.get("channel_name")
-            # find the channel by name in plan
-            freq = None
-            bw = "12.5"
-            ch_obj = None
-            if isinstance(plan.get("channels"), list):
-                for ch in plan["channels"]:
-                    if ch.get("name") == ch_name:
-                        ch_obj = ch
-                        freq = ch.get("freq_mhz")
-                        break
-            # Skip plan channels that lack a usable frequency or fall outside radio bands
-            try:
-                freq_val = float(freq) if freq is not None else None
-            except (TypeError, ValueError):
-                freq_val = None
-            if freq_val is None or not in_supported_bands(freq_val, freq_val):
+        elif asg.channel_plan_id:
+            plan = ds.channel_plans.get(asg.channel_plan_id)
+            if plan is None:
                 continue
-            if ch_obj is not None:
-                bw_calc = emission_to_bw_khz(
-                    ch_obj.get("emission"), ch_obj.get("bandwidth_khz")
-                )
-                if bw_calc:
-                    bw = bw_calc
+            ch_name = asg.channel_name
+            channel_entry = None
+            for ch in plan.channels:
+                if ch.name == ch_name:
+                    channel_entry = ch
+                    break
+            if channel_entry is None:
+                continue
+            freq_val = float(channel_entry.freq_mhz)
+            if not in_supported_bands(freq_val, freq_val):
+                continue
+            bw = "12.5"
             lat_s, lon_s = ("0", "0")
             row = [
                 channel_num,
@@ -874,6 +893,13 @@ def build_outputs(
             channels_rows.append(row)
             add_zone_members(zone_names, str(asg_name))
             channel_num += 1
+
+    # Build Contacts.csv rows (filtered to only the contacts used by DMR channels)
+    contact_rows: List[List[str]] = []
+    if used_contact_ids:
+        for cid, row in contact_entries:
+            if cid in used_contact_ids:
+                contact_rows.append(row)
 
     # Build TG_Lists rows
     tg_list_rows: List[List[str]] = []

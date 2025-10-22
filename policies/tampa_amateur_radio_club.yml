@@ -1,0 +1,26 @@
+# Overlay for Tampa Amateur Radio Club repeaters
+policy:
+  assignments:
+    asgn_tarc_vhf:
+      codeplug:
+        name: "TARC 147.105"
+        power: "High"
+      zones:
+        include:
+          - "Ham Repeaters"
+
+    asgn_tarc_uhf1:
+      codeplug:
+        name: "TARC 444.750"
+        power: "High"
+      zones:
+        include:
+          - "Ham Repeaters"
+
+    asgn_tarc_uhf2:
+      codeplug:
+        name: "TARC 443.025"
+        power: "High"
+      zones:
+        include:
+          - "Ham Repeaters"

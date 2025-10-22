@@ -1,0 +1,139 @@
+# Overlay for Chicago venue and attraction monitoring (RX-only)
+# All entries are monitor-only and skipped in scan lists until on-air details are confirmed.
+policy:
+  assignments:
+    asg_aon:
+      codeplug:
+        name: "Aon Tower"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_two_pru:
+      codeplug:
+        name: "Two Prudential"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_bcbs:
+      codeplug:
+        name: "BCBS HQ"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_333wab:
+      codeplug:
+        name: "333 S Wabash"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_ama:
+      codeplug:
+        name: "AMA Plaza"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_oldpo:
+      codeplug:
+        name: "Old Post Office"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_merch:
+      codeplug:
+        name: "Merch Mart"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_two77:
+      codeplug:
+        name: "Two Prud FM"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_allegro:
+      codeplug:
+        name: "Allegro FM"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_wrigley_fm:
+      codeplug:
+        name: "Wrigley FM"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_wrigley_dmr:
+      codeplug:
+        name: "Wrigley DMR"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_united:
+      codeplug:
+        name: "United Center"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_soldier:
+      codeplug:
+        name: "Soldier Field"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_navy_pier:
+      codeplug:
+        name: "Navy Pier"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_mccormick:
+      codeplug:
+        name: "McCormick Pl"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true

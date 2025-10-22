@@ -134,7 +134,7 @@ policy:
       zones:
         include:
           - "GMRS Simplex"
-          - "Emergency"
+          - "Emergency / Calling"
       scan:
         all_skip: false
     asgn_gmrs_21:

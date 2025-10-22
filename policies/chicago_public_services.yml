@@ -1,0 +1,830 @@
+# Aggregate overlay for Chicago fire, EMS, police, and public works conventional channels
+policy:
+  assignments:
+    asg_cfd_ems_command:
+      codeplug:
+        name: "CFD EMS Cmd"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_ems_citywide:
+      codeplug:
+        name: "CFD EMS City"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_ems_admin:
+      codeplug:
+        name: "CFD EMS Admin"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_il_statewide_ems:
+      codeplug:
+        name: "MERCI 340"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_merci400:
+      codeplug:
+        name: "MERCI 400"
+        rx_only: true
+
+      # MED channels by sector
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med1_north:
+      codeplug:
+        name: "MED1 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med2_north:
+      codeplug:
+        name: "MED2 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med3_north:
+      codeplug:
+        name: "MED3 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med4_north:
+      codeplug:
+        name: "MED4 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med5_north:
+      codeplug:
+        name: "MED5 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med6_north:
+      codeplug:
+        name: "MED6 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med7_north:
+      codeplug:
+        name: "MED7 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med8_north:
+      codeplug:
+        name: "MED8 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med9_north:
+      codeplug:
+        name: "MED9 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med10_north:
+      codeplug:
+        name: "MED10 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med11_north:
+      codeplug:
+        name: "MED11 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med12_north:
+      codeplug:
+        name: "MED12 North"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med1_central:
+      codeplug:
+        name: "MED1 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med2_central:
+      codeplug:
+        name: "MED2 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med3_central:
+      codeplug:
+        name: "MED3 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med4_central:
+      codeplug:
+        name: "MED4 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med5_central:
+      codeplug:
+        name: "MED5 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med6_central:
+      codeplug:
+        name: "MED6 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med7_central:
+      codeplug:
+        name: "MED7 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med8_central:
+      codeplug:
+        name: "MED8 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med9_central:
+      codeplug:
+        name: "MED9 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med10_central:
+      codeplug:
+        name: "MED10 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med11_central:
+      codeplug:
+        name: "MED11 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med12_central:
+      codeplug:
+        name: "MED12 Central"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med1_south:
+      codeplug:
+        name: "MED1 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med2_south:
+      codeplug:
+        name: "MED2 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med3_south:
+      codeplug:
+        name: "MED3 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med4_south:
+      codeplug:
+        name: "MED4 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med5_south:
+      codeplug:
+        name: "MED5 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med6_south:
+      codeplug:
+        name: "MED6 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med7_south:
+      codeplug:
+        name: "MED7 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med8_south:
+      codeplug:
+        name: "MED8 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med9_south:
+      codeplug:
+        name: "MED9 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med10_south:
+      codeplug:
+        name: "MED10 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med11_south:
+      codeplug:
+        name: "MED11 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_med12_south:
+      codeplug:
+        name: "MED12 South"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_fg_a:
+      codeplug: { name: "CFD FG A", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_cmd_a:
+      codeplug: { name: "CFD Command A", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_lakefront:
+      codeplug: { name: "CFD Lakefront", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_tac_a:
+      codeplug: { name: "CFD Tac A", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_ops8_a:
+      codeplug: { name: "CFD Ops 8 A", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_ops9_a:
+      codeplug: { name: "CFD Ops 9 A", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_ops10_a:
+      codeplug: { name: "CFD Ops 10 A", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_cta_fire:
+      codeplug: { name: "CTA Fire", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_specevt1_a:
+      codeplug: { name: "CFD SpecEvt1", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cfd_admin_a:
+      codeplug: { name: "CFD Admin A", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_red_south_bu:
+      codeplug: { name: "RED South BK", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_red_north_bu:
+      codeplug: { name: "RED North BK", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_red_fire_north:
+      codeplug: { name: "RED Fire North", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_red_fire_south:
+      codeplug: { name: "RED Fire South", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_skookie_fire_disp:
+      codeplug: { name: "Skokie Disp", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_north_shore_admin:
+      codeplug: { name: "NShore Admin", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_evanston_fire:
+      codeplug: { name: "Evanston Disp", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_desplaines_fire:
+      codeplug: { name: "DesPlns Disp", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cpd_cw1:
+      codeplug:
+        name: "CPD Citywide 1"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cpd_cw2:
+      codeplug:
+        name: "CPD Citywide 2"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cpd_cw3:
+      codeplug:
+        name: "CPD Citywide 3"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cpd_cw4:
+      codeplug:
+        name: "CPD Citywide 4"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cpd_cw5:
+      codeplug:
+        name: "CPD Citywide 5"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cpd_cw6:
+      codeplug:
+        name: "CPD Citywide 6"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cpd_cw7:
+      codeplug:
+        name: "CPD Citywide 7"
+        rx_only: true
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_cpd_vhf2:
+      codeplug:
+        name: "CPD VHF Car2"
+        rx_only: true
+
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_dss_n1:
+      codeplug: { name: "DSS North A", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_dss_n2:
+      codeplug: { name: "DSS North B", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_dss_s1:
+      codeplug: { name: "DSS South", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_dss_snow:
+      codeplug: { name: "DSS SnowOps", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cpd1:
+      codeplug: { name: "ParkDist FM", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cpd2:
+      codeplug: { name: "ParkDist DMR", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_fpd1:
+      codeplug: { name: "FPDCC FM", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_fpd2:
+      codeplug: { name: "FPDCC DMR", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_streets_n12:
+      codeplug: { name: "CDOT Str N12", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_forestry_animal:
+      codeplug: { name: "CDOT ForAn", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_towing_parking:
+      codeplug: { name: "CDOT TowPark", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_revenue_boot:
+      codeplug: { name: "CDOT Boot", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_electricity_boe:
+      codeplug: { name: "CDOT Electric", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_sewers_transport:
+      codeplug: { name: "CDOT SewrTr", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_loop_ob3:
+      codeplug: { name: "CDOT LoopOB3", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_streets_s45:
+      codeplug: { name: "CDOT Str S45", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_cdot_paging:
+      codeplug: { name: "CDOT Paging", rx_only: true }
+      zones:
+        include:
+          - "Public Works & Parks"
+      scan:
+        all_skip: true
+    asg_ifern:
+      codeplug: { name: "IFERN", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_ireach:
+      codeplug: { name: "IREACH", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_ispern:
+      codeplug: { name: "ISPERN", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_ptp:
+      codeplug: { name: "Point-to-Point", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_hear:
+      codeplug: { name: "HEAR", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_vcall10:
+      codeplug: { name: "VCALL10", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_vtac11:
+      codeplug: { name: "VTAC11", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_vtac12:
+      codeplug: { name: "VTAC12", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_vtac13:
+      codeplug: { name: "VTAC13", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_vtac14:
+      codeplug: { name: "VTAC14", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_ucall40:
+      codeplug: { name: "UCALL40", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_utac41:
+      codeplug: { name: "UTAC41", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_utac42:
+      codeplug: { name: "UTAC42", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true
+    asg_utac43:
+      codeplug: { name: "UTAC43", rx_only: true }
+      zones:
+        include:
+          - "Public Safety"
+      scan:
+        all_skip: true

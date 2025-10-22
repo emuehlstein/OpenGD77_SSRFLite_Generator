@@ -1,0 +1,11 @@
+# Overlay for Windy City Amateur Radio Society Thursday Net participants
+policy:
+  assignments:
+    asg_wcars_thursday_net:
+      codeplug:
+        name: "WCARS Thu Net"
+      zones:
+        include:
+          - "Amateur Nets"
+      notes: |
+        Weekly WCARS Thursday Night Net, Thursdays 7:00 PM–8:00 PM CT on the 146.880 MHz (-0.600) repeater (PL 107.2) hosted by SARA.

@@ -1,12 +1,14 @@
 profile:
   name: "chicago_amateur"
-  description: "Chicago-focused amateur repeaters, DMR talkgroups, and simplex plans."
+  description: "Chicago-focused amateur repeaters, DMR talkgroups, and simplex plans, plus GMRS"
   include:
     paths:
       - "ssrf/plans/US/amateur/*.yml"
       - "ssrf/systems/US/IL/Cook/Chicago/amateur/*.yml"
       - "ssrf/systems/custom/*.yml"
-    services: ["amateur"]
+      - "ssrf/plans/US/gmrs/*.yml"
+      - "ssrf/systems/US/IL/Cook/Chicago/gmrs/*.yml"
+    services: ["amateur", "gmrs"]
   policy:
     files:
       - "policies/default.yml"
@@ -17,4 +19,7 @@ profile:
       - "policies/wcars.yml"
       - "policies/ham_fm_simplex.yml"
       - "policies/ham_dmr_simplex.yml"
+      - "policies/gmrs_channels.yml"
+      - "policies/chicago_gmrs_repeaters.yml"
+      - "policies/family_channels.yml"
       - "policies/mmdvm_duplex_hotspot.yml"

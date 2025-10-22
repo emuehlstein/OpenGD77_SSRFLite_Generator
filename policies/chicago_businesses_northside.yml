@@ -1,0 +1,461 @@
+# Overlay for Chicago northside business monitoring (RX-only)
+# DMR color codes largely unverified; values mirror RadioReference wiki notes. Keep RX-only and skipped from scans.
+policy:
+  assignments:
+    # Near North / Lakeview / Uptown repeaters
+    asg_875_n_mich:
+      codeplug:
+        name: "875 N Mich Sec"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_401_n_mich:
+      codeplug:
+        name: "401 N Mich Sec"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_tribune_tower:
+      codeplug:
+        name: "Tribune Tower"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_merch_mart:
+      codeplug:
+        name: "Merch Mart DMR"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_newyork_res:
+      codeplug:
+        name: "New York Res"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_2650_lakeview:
+      codeplug:
+        name: "2650 N Lakeview"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_3950_lsd:
+      codeplug:
+        name: "3950 LSD"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_eugenie_terrace:
+      codeplug:
+        name: "Eugenie Terrace"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_625_n_mich:
+      codeplug:
+        name: "625 N Mich"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_757_orleans:
+      codeplug:
+        name: "757 Orleans"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_500_lsd:
+      codeplug:
+        name: "500 LSD CC10"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_park_place_tower:
+      codeplug:
+        name: "Park Place Twr"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_abm_nmh_parking:
+      codeplug:
+        name: "NMH Parking"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_live_nation_lawrence:
+      codeplug:
+        name: "LiveNation Lwr"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_cubby_bear:
+      codeplug:
+        name: "Cubby Bear"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    # Retail and venues
+    asg_apple_mich:
+      codeplug:
+        name: "Apple Mich Ave"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_northbridge_sec:
+      codeplug:
+        name: "NorthBridgeSec"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_flemings_a1:
+      codeplug:
+        name: "Flemings A1"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_flemings_a2:
+      codeplug:
+        name: "Flemings A2"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_dave_busters_clark:
+      codeplug:
+        name: "Dave & Busters"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_morettis_ep:
+      codeplug:
+        name: "Morettis EP"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_maxbar:
+      codeplug:
+        name: "MaxBar Chicago"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_park_place_rest:
+      codeplug:
+        name: "Park Place Rest"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    # Misc near-north businesses
+    asg_holy_name_cathedral:
+      codeplug:
+        name: "Holy Name Cath"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_perillo_bmw:
+      codeplug:
+        name: "Perillo BMW"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    # Loop tall buildings / hotels
+    asg_allegro_sonesta:
+      codeplug:
+        name: "Allegro Sonesta"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_allegro_sonesta_alt:
+      codeplug:
+        name: "Allegro Son2"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_ama_plaza:
+      codeplug:
+        name: "AMA Plaza"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_two_prudential:
+      codeplug:
+        name: "Two Prudential"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_aon_bldg:
+      codeplug:
+        name: "Aon Building"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_bcbs_illinois:
+      codeplug:
+        name: "BCBS IL HQ"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_333_s_wabash:
+      codeplug:
+        name: "333 S Wabash"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_old_post_office:
+      codeplug:
+        name: "Old Post Office"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    # Apartments / condos
+    asg_340_on_the_park:
+      codeplug:
+        name: "340 on the Park"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_mcclurg_court:
+      codeplug:
+        name: "McClurg Court"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_north_water_apts:
+      codeplug:
+        name: "NorthWater Apt"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_river_east_center:
+      codeplug:
+        name: "River East Ctr"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_cityview_condos:
+      codeplug:
+        name: "CityView Condo"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    # Bucktown / Wicker Park
+    asg_horween_leather:
+      codeplug:
+        name: "Horween Leather"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_triangle_square:
+      codeplug:
+        name: "Triangle Square"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_lincoln_common:
+      codeplug:
+        name: "Lincoln Common"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    # Hotels
+    asg_marriott_mm_sec:
+      codeplug:
+        name: "Marriott MM Sec"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_sheraton_grand_sec:
+      codeplug:
+        name: "Sheraton Sec"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_sheraton_grand_ops:
+      codeplug:
+        name: "Sheraton Ops"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_peninsula_ops:
+      codeplug:
+        name: "Peninsula Ops"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_trump_sec:
+      codeplug:
+        name: "Trump Hotel Sec"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_trump_ops:
+      codeplug:
+        name: "Trump Hotel Ops"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_renaissance_dt_h_e:
+      codeplug:
+        name: "Renaissance H/E"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_caa_hotel_sec:
+      codeplug:
+        name: "CAA Hotel Sec"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true
+    asg_caa_hotel_hskp:
+      codeplug:
+        name: "CAA Hotel Hskp"
+        rx_only: true
+      zones:
+        include:
+          - "Business"
+      scan:
+        all_skip: true

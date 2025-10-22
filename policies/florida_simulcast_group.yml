@@ -1,0 +1,156 @@
+# Overlay for Florida Simulcast Group assets in St. Petersburg and Tampa
+policy:
+  assignments:
+    asgn_fsg_stpete_444_fm:
+      codeplug:
+        name: "FSG St Pete 444 FM"
+        power: "High"
+      zones:
+        include:
+          - "FL St Pete"
+    asgn_fsg_stpete_444_p25:
+      codeplug:
+        name: "FSG St Pete 444 P25"
+        power: "High"
+      zones:
+        include:
+          - "FL St Pete"
+    asgn_kj4shl_stpete_dmr:
+      codeplug:
+        name: "FSG St Pete DMR"
+        tg_list_name: "FSG SP"
+        preferred_contacts:
+          - tg_fsg_florida_simulcast
+          - tg_fsg_worldwide
+          - tg_fsg_north_america
+          - tg_fsg_worldwide_english
+          - tg_fsg_tac310
+          - tg_fsg_tac311
+          - tg_fsg_tac312
+          - tg_fsg_bridge_3100
+          - tg_fsg_southeast_regional
+          - tg_fsg_parrot
+          - tg_fsg_first_coast
+          - tg_fsg_southeast_florida
+          - tg_fsg_local_repeater
+          - tg_fsg_local_2
+          - tg_fsg_florida_statewide
+        power: "High"
+      zones:
+        include:
+          - "FL St Pete"
+          - "FL DMR"
+      scan:
+        all_skip: false
+    asgn_kj4shl_stpete_nxdn:
+      codeplug:
+        name: "FSG St Pete NXDN"
+        rx_only: false
+        power: "High"
+      zones:
+        include:
+          - "FL St Pete"
+    asgn_wd4scd_remote_rx:
+      codeplug:
+        name: "WD4SCD Remote RX"
+        rx_only: true
+        power: "Low"
+      zones:
+        include:
+          - "FL Remote"
+      scan:
+        all_skip: true
+    asgn_w9cr_tampa_224_fm:
+      codeplug:
+        name: "FSG Tampa 224"
+        power: "High"
+      zones:
+        include:
+          - "FL Tampa"
+    asgn_w9cr_tampa_443_fm:
+      codeplug:
+        name: "FSG Tampa 443 FM"
+        power: "High"
+      zones:
+        include:
+          - "FL Tampa"
+    asgn_w9cr_tampa_443_p25:
+      codeplug:
+        name: "FSG Tampa 443 P25"
+        power: "High"
+      zones:
+        include:
+          - "FL Tampa"
+    asgn_w9cr_tampa_927_fm:
+      codeplug:
+        name: "FSG Tampa 927 FM"
+        power: "High"
+      zones:
+        include:
+          - "FL Tampa"
+    asgn_w9cr_tampa_927_p25:
+      codeplug:
+        name: "FSG Tampa 927 P25"
+        power: "High"
+      zones:
+        include:
+          - "FL Tampa"
+    asgn_ka9rix_tampa_fm:
+      codeplug:
+        name: "FSG Tampa KA9RIX"
+        power: "High"
+      zones:
+        include:
+          - "FL Tampa"
+    asgn_ka9rix_tampa_dstar:
+      codeplug:
+        name: "FSG Tampa KA9RIX D-Star"
+        power: "High"
+      zones:
+        include:
+          - "FL Tampa"
+    asgn_wraf954_tampa_fm:
+      codeplug:
+        name: "FSG Tampa GMRS"
+        power: "High"
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+          - "FL Tampa"
+    asgn_wraf954_tampa_p25:
+      codeplug:
+        name: "FSG Tampa GMRS P25"
+        power: "High"
+        all_skip: true
+      zones:
+        include:
+          - "GMRS"
+          - "FL Tampa"
+    asgn_kj4shl_tampa_dmr:
+      codeplug:
+        name: "FSG Tampa DMR"
+        tg_list_name: "FSG TP"
+        preferred_contacts:
+          - tg_fsg_florida_simulcast
+          - tg_fsg_worldwide
+          - tg_fsg_north_america
+          - tg_fsg_worldwide_english
+          - tg_fsg_tac310
+          - tg_fsg_tac311
+          - tg_fsg_tac312
+          - tg_fsg_bridge_3100
+          - tg_fsg_southeast_regional
+          - tg_fsg_parrot
+          - tg_fsg_first_coast
+          - tg_fsg_southeast_florida
+          - tg_fsg_local_repeater
+          - tg_fsg_local_2
+          - tg_fsg_florida_statewide
+        power: "High"
+      zones:
+        include:
+          - "FL Tampa"
+          - "FL DMR"
+      scan:
+        all_skip: false

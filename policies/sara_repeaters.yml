@@ -3,25 +3,24 @@ policy:
   assignments:
     asgn_ka9hhh_2m_fm:
       codeplug:
-        name: "KA9HHH VHF"
+        name: "SARA VHF"
         rx_only: false
       zones:
         include:
           - "Ham-Repeaters"
-          - "Emergency"
       notes: "+0.6 MHz offset, PL 107.2. Lincoln Park site."
     asgn_ka9hhh_440_fm:
       codeplug:
-        name: "KA9HHH UHF"
+        name: "SARA UHF"
         rx_only: false
       zones:
         include:
           - "Ham-Repeaters"
-          - "Emergency"
+          - "Emergency / Calling"
       notes: "+5 MHz offset, PL 114.8. Lincoln Park site."
     asgn_na9pl_440_c4fm:
       codeplug:
-        name: "NA9PL UHF C4FM"
+        name: "SARA UHF C4FM"
         rx_only: false
       zones:
         include:

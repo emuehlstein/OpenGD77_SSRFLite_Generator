@@ -8,7 +8,7 @@ policy:
       zones:
         include:
           - "Ham-Repeaters"
-          - "Emergency"
+          - "Emergency / Calling"
       notes: |
         147.345 +0.6 MHz, PL 107.2. Dual-mode Yaesu DR-2; tone squelch recommended to block digital noise.
         ~50 W ERP from Northfield (~250 ft AGL). Skywarn priority for north Cook County.
@@ -35,7 +35,7 @@ policy:
       zones:
         include:
           - "Ham-Repeaters"
-          - "Emergency"
+          - "Emergency / Calling"
       notes: |
         442.725 +5 MHz, PL 114.8. Motorola + S-Com 7330 (~80 W) with offset-pattern antenna around 513 ft AGL.
         Coverage across Cook/Lake Counties; mobiles reach south to Merrillville IN and north to Kenosha WI.

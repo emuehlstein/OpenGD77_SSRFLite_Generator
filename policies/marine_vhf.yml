@@ -32,6 +32,7 @@ policy:
       zones:
         include:
           - "Marine"
+          - "Emergency / Calling"
     us_marine_vhf_ch22a:
       codeplug:
         name: "Marine 22A"

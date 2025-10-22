@@ -14,4 +14,5 @@ profile:
       - "policies/gmrs_channels.yml"
       - "policies/chicago_gmrs_repeaters.yml"
       - "policies/family_channels.yml"
+      - "policies/chicago_public_services.yml"
       - "policies/cook_public_safety.yml"

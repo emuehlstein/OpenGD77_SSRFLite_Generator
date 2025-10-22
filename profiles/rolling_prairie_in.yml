@@ -18,3 +18,4 @@ profile:
       - "policies/berrien_county_amateur.yml"
       - "policies/berrien_county_public_safety.yml"
       - "policies/niles_kc8brs.yml"
+      - "policies/laporte_in_services.yml"

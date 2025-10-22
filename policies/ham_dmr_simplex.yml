@@ -6,6 +6,7 @@ policy:
         name: "DMR Smpx A"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -14,6 +15,7 @@ policy:
         name: "DMR Smpx B"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -22,6 +24,7 @@ policy:
         name: "HS 4304125"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -30,6 +33,7 @@ policy:
         name: "HS 4304250"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -38,6 +42,7 @@ policy:
         name: "HS 4394125"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -46,6 +51,7 @@ policy:
         name: "HS 4394250"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -54,6 +60,7 @@ policy:
         name: "HS 4394375"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -62,6 +69,7 @@ policy:
         name: "HS 4394500"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -70,6 +78,7 @@ policy:
         name: "HS 4394625"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -78,6 +87,7 @@ policy:
         name: "HS 4394750"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -86,6 +96,7 @@ policy:
         name: "HS 4304375"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -94,6 +105,7 @@ policy:
         name: "HS 4304500"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -102,6 +114,7 @@ policy:
         name: "HS 4304625"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"
@@ -110,6 +123,7 @@ policy:
         name: "HS 4304750"
         preferred_contacts:
           - ct_dmr_simplex
+        all_skip: true
       zones:
         include:
           - "Ham DMR Simplex"

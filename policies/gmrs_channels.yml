@@ -165,7 +165,7 @@ policy:
       zones:
         include:
           - "GMRS"
-          - "Emergency"
+          - "Emergency / Calling"
     asgn_gmrs_21:
       codeplug:
         name: "GMRS 21"

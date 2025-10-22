@@ -15,11 +15,12 @@ policy:
       zones:
         include:
           - "Ham VHF"
-          - "Emergency"
+          - "Emergency / Calling"
     us_ham_vhf_146400:
       codeplug:
         name: "2m 146400"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -27,6 +28,7 @@ policy:
       codeplug:
         name: "2m 146415"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -34,6 +36,7 @@ policy:
       codeplug:
         name: "2m 146430"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -41,6 +44,7 @@ policy:
       codeplug:
         name: "2m 146445"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -48,6 +52,7 @@ policy:
       codeplug:
         name: "2m 146460"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -55,6 +60,7 @@ policy:
       codeplug:
         name: "2m 146475"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -62,6 +68,7 @@ policy:
       codeplug:
         name: "2m 146490"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -69,6 +76,7 @@ policy:
       codeplug:
         name: "2m 146505"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -76,6 +84,7 @@ policy:
       codeplug:
         name: "2m 146535"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -83,6 +92,7 @@ policy:
       codeplug:
         name: "2m 146550"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -90,6 +100,7 @@ policy:
       codeplug:
         name: "2m 146565"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -97,6 +108,7 @@ policy:
       codeplug:
         name: "2m 146580"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -104,6 +116,7 @@ policy:
       codeplug:
         name: "2m 147420"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -111,6 +124,7 @@ policy:
       codeplug:
         name: "2m 147450"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -118,6 +132,7 @@ policy:
       codeplug:
         name: "2m 147480"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -125,6 +140,7 @@ policy:
       codeplug:
         name: "2m 147510"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -132,6 +148,7 @@ policy:
       codeplug:
         name: "2m 147540"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -139,6 +156,7 @@ policy:
       codeplug:
         name: "2m 147570"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham VHF"
@@ -149,11 +167,12 @@ policy:
       zones:
         include:
           - "Ham UHF"
-          - "Emergency"
+          - "Emergency / Calling"
     us_ham_uhf_446025:
       codeplug:
         name: "70cm 446025"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -161,6 +180,7 @@ policy:
       codeplug:
         name: "70cm 446050"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -168,6 +188,7 @@ policy:
       codeplug:
         name: "70cm 446075"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -175,6 +196,7 @@ policy:
       codeplug:
         name: "70cm 446100"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -182,6 +204,7 @@ policy:
       codeplug:
         name: "70cm 446125"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -189,6 +212,7 @@ policy:
       codeplug:
         name: "70cm 446150"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -196,6 +220,7 @@ policy:
       codeplug:
         name: "70cm 446175"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -203,6 +228,7 @@ policy:
       codeplug:
         name: "70cm 446200"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -210,6 +236,7 @@ policy:
       codeplug:
         name: "70cm 446225"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -217,6 +244,7 @@ policy:
       codeplug:
         name: "70cm 446250"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -224,6 +252,7 @@ policy:
       codeplug:
         name: "70cm 446275"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -231,6 +260,7 @@ policy:
       codeplug:
         name: "70cm 446300"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -238,6 +268,7 @@ policy:
       codeplug:
         name: "70cm 446325"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -245,6 +276,7 @@ policy:
       codeplug:
         name: "70cm 446350"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -252,6 +284,7 @@ policy:
       codeplug:
         name: "70cm 446375"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -259,6 +292,7 @@ policy:
       codeplug:
         name: "70cm 446400"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -266,6 +300,7 @@ policy:
       codeplug:
         name: "70cm 446425"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -273,6 +308,7 @@ policy:
       codeplug:
         name: "70cm 446450"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
@@ -280,6 +316,7 @@ policy:
       codeplug:
         name: "70cm 446475"
         rx_only: false
+        all_skip: true
       zones:
         include:
           - "Ham UHF"
