@@ -11,12 +11,29 @@ A reproducible, data‑driven codeplug builder for radios running OpenGD77. The 
 └────────────────┘   └────────────────────┘   └────────────────────┘
 ```
 
+- **SSRF-Lite** captures authoritative RF facts: who owns a system, where it lives, how it transmits, what authorizations exist.  
+- **Profiles** choose which SSRF assignments apply to a requested configuration (e.g., "Chicago GMRS" vs. "Emergency-only").  
+- **Policies** express consumer-specific opinions such as transmit enablement, scan skip defaults, zone membership, ordering, and naming conventions.  
 
-The generator assembles a codeplug by reading Profile file, assembling the RF information from our SSRFLite library, and finally applying a Policy which describes the radio's presentation of each channel eg. channel name, scan settings, rx only, etc.
+Keeping these concerns separated makes SSRF-Lite reusable across radios, services, and policy stacks.
 
-Features:
+**Configuration Libraries:**
+
  - **Library of RF systems and channel plan data** – [Browse SSRF Documentation →](docs/ssrf/README.md)
  - **Example Profiles for various geographies** – [Browse Profile Documentation →](docs/profiles/README.md)
+ - **Policy overlays and assignment overrides** – [Browse Policy Documentation →](docs/policies/README.md)
+
+
+**Opinions:**
+
+A few opinions held by this project:
+
+- **Separation of concerns:** keep RF reference data independent of codeplug presentation so the same facts fuel multiple builds.
+- **Layered configuration:** SSRF reference → profile selection → policy overlays, allowing each layer to evolve without breaking the others.
+- **Reproducible outputs:** generators run from version-controlled data and deterministic tooling (`uv`) so CSVs can be regenerated and diffed reliably.
+- **Safety-first defaults:** transmit remains disabled unless explicitly permitted, reducing the risk of illegal or unintended emissions.
+- **Extensibility:** new services, profiles, or radios should drop in via additional SSRF files or policies without refactoring core code.
+
 
 ## Quick Start
 
@@ -58,16 +75,6 @@ This project includes a proposed format for sharing information about RF systems
 - Project doc: [SSRF‑Lite Spec](./ssrf/_schema/SSRF-Lite-Spec.md)
 - Background (NTIA SSRF): [https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf](https://www.ntia.gov/publications/2023/standard-spectrum-resource-format-ssrf)
 
-
-## Opinions
-
-A few opinions held by this project:
-
-- **Separation of concerns:** keep RF reference data independent of codeplug presentation so the same facts fuel multiple builds.
-- **Layered configuration:** SSRF reference → profile selection → policy overlays, allowing each layer to evolve without breaking the others.
-- **Reproducible outputs:** generators run from version-controlled data and deterministic tooling (`uv`) so CSVs can be regenerated and diffed reliably.
-- **Safety-first defaults:** transmit remains disabled unless explicitly permitted, reducing the risk of illegal or unintended emissions.
-- **Extensibility:** new services, profiles, or radios should drop in via additional SSRF files or policies without refactoring core code.
   
 ## Profiles & Policies
 
@@ -199,6 +206,25 @@ uv run python generate_profile_docs.py --list-profiles
 ```
 
 The generated documentation includes channel details, zone organization, contact lists, authorization requirements, and source file references. See the [profile documentation index](docs/profiles/README.md) for a complete overview and comparison of all available profiles.
+
+### Policy Documentation
+
+📋 **[Browse All Policy Documentation →](docs/policies/README.md)**
+
+Generate comprehensive markdown documentation for policies:
+
+```zsh
+# Generate documentation for all policies
+uv run python generate_policy_docs.py
+
+# Generate documentation for a specific policy
+uv run python generate_policy_docs.py --file gmrs_only.yml
+
+# List available policies
+uv run python generate_policy_docs.py --list-files
+```
+
+The generated documentation includes assignment overrides, zone configurations, scan settings, custom names, and TX/RX behavior. See the [policy documentation index](docs/policies/README.md) for a complete overview of all policy configurations and usage patterns.
 
 ### SSRF Data Documentation
 
