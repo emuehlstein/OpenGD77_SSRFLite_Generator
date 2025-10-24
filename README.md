@@ -57,9 +57,11 @@ A few opinions held by this project:
 ## Repository Structure
 
 - `generate_opengd_import.py` – Converts SSRF-Lite YAML inputs into OpenGD77 CPS CSVs (now profile-aware).
+- `generate_profile_docs.py` – Generates markdown documentation for each profile with channel, zone, and contact details.
 - `generate_dm32_import.py` – Builds a Baofeng DM-32 CPS CSV bundle. (experimental/bad)
 - `ssrf/` – SSRF-Lite content split into reusable channel plans and location-bound systems.
 - `policies/` – Optional policy overlays that express codeplug decisions (TX enablement, zones, scan behavior) per profile.
+- `docs/profiles/` – Auto-generated markdown documentation for each profile.
 - `opengd77_cps_import_generated/` – Committed OpenGD77 CSV outputs (one file per CPS import requirement).
 - `dm32_cps_import_generated/` – Committed Baofeng DM-32 CSV outputs generated from the same inputs.
 - `DM32_reference/` – Factory DM-32 CPS export kept for column naming and value reference.
@@ -227,6 +229,25 @@ CSV validation: PASS (headers and column counts correct)
 ```
 
 Copy the `opengd77_cps_import_generated` folder to a location your OpenGD77 CPS can read (for example, a Documents subfolder or removable media). In the CPS, open **File → CSV → Import CSV**, browse to that folder, and select the generated folder and load that into your codeplug project.
+
+## Profile Documentation
+
+📚 **[Browse All Profile Documentation →](docs/profiles/README.md)**
+
+Generate comprehensive markdown documentation for profiles:
+
+```zsh
+# Generate documentation for all profiles
+uv run python generate_profile_docs.py
+
+# Generate documentation for a specific profile
+uv run python generate_profile_docs.py --profile chicago_amateur
+
+# List available profiles
+uv run python generate_profile_docs.py --list-profiles
+```
+
+The generated documentation includes channel details, zone organization, contact lists, authorization requirements, and source file references. See the [profile documentation index](docs/profiles/README.md) for a complete overview and comparison of all available profiles.
 
 ## Data Notes & Conventions
 
