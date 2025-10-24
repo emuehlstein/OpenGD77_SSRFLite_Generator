@@ -9,7 +9,7 @@ policy:
         include:
           - "GMRS"
       scan:
-        all_skip: true
+        all_skip: false
     asg_gmrs_clearwater_675:
       codeplug:
         name: "Clearwater 675"
@@ -18,7 +18,7 @@ policy:
         include:
           - "GMRS"
       scan:
-        all_skip: true
+        all_skip: false
     asg_gmrs_ruskin_700:
       codeplug:
         name: "Ruskin 700"
@@ -27,7 +27,7 @@ policy:
         include:
           - "GMRS"
       scan:
-        all_skip: true
+        all_skip: false
     asg_gmrs_tampa_shores_700:
       codeplug:
         name: "Tampa Shores 700"
@@ -36,7 +36,7 @@ policy:
         include:
           - "GMRS"
       scan:
-        all_skip: true
+        all_skip: false
     asg_gmrs_tampa_shores_650:
       codeplug:
         name: "Tampa Shores 650"
@@ -45,7 +45,7 @@ policy:
         include:
           - "GMRS"
       scan:
-        all_skip: true
+        all_skip: false
     asg_gmrs_west_bradenton_625:
       codeplug:
         name: "Cortez 625"
@@ -54,7 +54,7 @@ policy:
         include:
           - "GMRS"
       scan:
-        all_skip: true
+        all_skip: false
     asg_gmrs_tampa_600:
       codeplug:
         name: "Tampa Bay 600"
@@ -63,4 +63,4 @@ policy:
         include:
           - "GMRS"
       scan:
-        all_skip: true
+        all_skip: false

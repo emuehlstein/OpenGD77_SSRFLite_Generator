@@ -12,6 +12,7 @@ profile:
       - "ssrf/systems/US/FL/Hillsborough/Tampa/amateur/tarc_repeaters.yml"
       - "ssrf/systems/custom/*.yml"
       - "ssrf/systems/US/FL/_Regional/gmrs/st_pete_gmrs_repeaters.yml"
+      - "ssrf/systems/US/IL/Cook/Chicago/gmrs/family_channels.yml"
     services: ["amateur", "gmrs", "marine"]
   policy:
     files:
@@ -26,3 +27,4 @@ profile:
       - "policies/tampa_amateur_radio_club.yml"
       - "policies/marine_vhf.yml"
       - "policies/st_pete_gmrs_repeaters.yml"
+      - "policies/family_channels.yml"
