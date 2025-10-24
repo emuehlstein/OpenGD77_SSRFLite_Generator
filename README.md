@@ -2,6 +2,22 @@
 
 A reproducible, data‑driven codeplug builder for radios running OpenGD77. The generator ingests [SSRF-Lite YAML](#ssrf-lite) files and produces OpenGD77‑compatible CSVs (`Channels.csv`, `Contacts.csv`, `TG_Lists.csv`, `Zones.csv`) suitable for import via the CPS.  The generator is opinionated but superuser configurable.
 
+## Overview
+
+```text
+┌────────────────┐   ┌────────────────────┐   ┌────────────────────┐
+│ SSRF-Lite data │ → │ Profiles (selection│ → │ Policies (opinions │
+│ Reference-only │   │ & scoping)         │   │ & rendering rules) │
+└────────────────┘   └────────────────────┘   └────────────────────┘
+```
+
+
+The generator assembles a codeplug by reading Profile file, assembling the RF information from our SSRFLite library, and finally applying a Policy which describes the radio's presentation of each channel eg. channel name, scan settings, rx only, etc.
+
+Features:
+ - **Library of RF systems and channel plan data** – [Browse SSRF Documentation →](docs/ssrf/README.md)
+ - **Example Profiles for various geographies** – [Browse Profile Documentation →](docs/profiles/README.md)
+
 ## Quick Start
 
 1. **Install prerequisites** – Make sure Python 3.10+ and the `uv` package manager are available on your system.
@@ -53,76 +69,9 @@ A few opinions held by this project:
 - **Safety-first defaults:** transmit remains disabled unless explicitly permitted, reducing the risk of illegal or unintended emissions.
 - **Extensibility:** new services, profiles, or radios should drop in via additional SSRF files or policies without refactoring core code.
   
-
-## Repository Structure
-
-- `generate_opengd_import.py` – Converts SSRF-Lite YAML inputs into OpenGD77 CPS CSVs (now profile-aware).
-- `generate_profile_docs.py` – Generates markdown documentation for each profile with channel, zone, and contact details.
-- `generate_dm32_import.py` – Builds a Baofeng DM-32 CPS CSV bundle. (experimental/bad)
-- `ssrf/` – SSRF-Lite content split into reusable channel plans and location-bound systems.
-- `policies/` – Optional policy overlays that express codeplug decisions (TX enablement, zones, scan behavior) per profile.
-- `docs/profiles/` – Auto-generated markdown documentation for each profile.
-- `opengd77_cps_import_generated/` – Committed OpenGD77 CSV outputs (one file per CPS import requirement).
-- `dm32_cps_import_generated/` – Committed Baofeng DM-32 CSV outputs generated from the same inputs.
-- `DM32_reference/` – Factory DM-32 CPS export kept for column naming and value reference.
-- `opengd_import_csv_file_rules.txt` – Notes on column expectations for OpenGD77 imports.
-- `pyproject.toml`, `uv.lock` – Project dependencies managed via `uv`.
-- `README.md`, `LICENSE`, `NOTICE` – Documentation and licensing.
-
-## SSRF Data Layout
-
-```text
-ssrf/
-  _schema/                # Docs/specs (SSRF-Lite-Spec.md)
-  _defaults.yml           # Reserved for future inheritance defaults
-  plans/                  # Portable channel plans grouped by country
-    US/
-      gmrs/
-        gmrs_channels.yml
-      amateur/
-        ham_vhf_simplex.yml
-        ham_uhf_simplex.yml
-        ham_dmr_simplex.yml
-      murs/
-        murs_channels.yml
-      marine/
-        marine_vhf_channels.yml
-      business/
-        itinerant_business.yml
-      weather/
-        noaa_weather.yml
-      rail/
-        rail_aar_scan.yml
-    EU/
-      pmr446/
-        pmr446_analog.yml
-  systems/                # Location-bound systems organised by country/state/county/city
-    US/
-      IL/
-        Cook/
-          Chicago/
-            amateur/
-            gmrs/
-            public_safety/
-            business/
-            public_works/
-            transit/
-          _Countywide/
-            public_safety/
-      IN/
-        LaPorte/LaPorte/amateur/
-        Northwest/Regional/amateur/
-      MI/
-        Berrien/Niles/amateur/
-```
-
-Notes:
-
-- Transmit only if you hold the appropriate license (Amateur/GMRS) and follow local coordination and emergency traffic practices.
-
 ## Profiles & Policies
 
-Profiles still provide inclusion filters for SSRF reference data, but they no longer carry codeplug opinions. Each profile lives in `profiles/<name>.yml` and declares glob patterns plus optional service filters under `profile.include`.
+Profiles provide inclusion filters for SSRF reference data.  Each profile lives in `profiles/<name>.yml` and declares glob patterns plus optional service filters under `profile.include`.
 
 Profiles can now point at one or more **policy** files using the optional `profile.policy` block:
 
@@ -230,7 +179,9 @@ CSV validation: PASS (headers and column counts correct)
 
 Copy the `opengd77_cps_import_generated` folder to a location your OpenGD77 CPS can read (for example, a Documents subfolder or removable media). In the CPS, open **File → CSV → Import CSV**, browse to that folder, and select the generated folder and load that into your codeplug project.
 
-## Profile Documentation
+## Documentation
+
+### Profile Documentation
 
 📚 **[Browse All Profile Documentation →](docs/profiles/README.md)**
 
@@ -248,6 +199,25 @@ uv run python generate_profile_docs.py --list-profiles
 ```
 
 The generated documentation includes channel details, zone organization, contact lists, authorization requirements, and source file references. See the [profile documentation index](docs/profiles/README.md) for a complete overview and comparison of all available profiles.
+
+### SSRF Data Documentation
+
+📡 **[Browse All SSRF Documentation →](docs/ssrf/README.md)**
+
+Generate comprehensive markdown documentation for SSRF files:
+
+```zsh
+# Generate documentation for all SSRF files
+uv run python generate_ssrf_docs.py
+
+# Generate documentation for a specific SSRF file
+uv run python generate_ssrf_docs.py --file ssrf/plans/US/gmrs/gmrs_channels.yml
+
+# List available SSRF files
+uv run python generate_ssrf_docs.py --list-files
+```
+
+The generated documentation provides detailed views of RF systems, channel plans, assignments, and geographic coverage. Each SSRF file gets its own documentation page with frequency details, service information, and organizational data. See the [SSRF documentation index](docs/ssrf/README.md) for a complete overview and browsable file catalog.
 
 ## Data Notes & Conventions
 
